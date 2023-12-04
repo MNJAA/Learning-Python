@@ -1,18 +1,12 @@
 # small things can destroy big ambitions 
 # MSQ for a desired person
-
+import random
 from random import choice
 from time import sleep
 from ANSI import CR,C,BrightGreen,BrightBlue,BrightYellow,un,SL
+from qs import Anatomy_questions
 
-questions = [{
-      "question": "What is the difference between meiosis I and mitosis?",
-      "correct": "Sister chromatids remain joined at their centromeres throughout meiosis I but are apart completely anaphase in mitosis",
-      "wrong": [
-            "In both meiosis I and mitosis, sister chromatids separate during anaphase, and they are always apart completely from prophase through telophase.",
-            "During meiosis I, sister chromatids separate in anaphase similar to mitosis, and they remain joined at their centromeres throughout mitosis."
-      ]
-}]
+wrong_questions = []
 
 objects = {
       "1": "Anatomy", "2": "Biology", "3": "Chemistry",
@@ -49,7 +43,29 @@ class roll_questions:
            print(C,CR)
            sleep(1)
            print(BrightGreen,choice(Anatomy_ph),un, SL)
-           
+           overall_score = 0 
+           for q in Anatomy_questions:
+                print("Question:", q['question'])
+                all_options = [q['correct_answer']] + q['wrong_answers']
+                random.shuffle(all_options)
+                for index, option in enumerate(all_options, start=1):
+                      print(f"{index}. {option}")
+                user_answer_number = int(input("Enter the number of your answer: "))
+                if 1 <= user_answer_number <= len(all_options):
+                      user_answer_index = user_answer_number - 1
+                      user_answer = all_options[user_answer_index]
+                      if user_answer == q['correct_answer']:
+                            overall_score += 1
+                      else:
+                            wrong_questions.append(q['question'])
+                            q['score'] = 1
+                else:
+                      print("Invalid option number. Please enter a valid number.")
+
+            
+           print(f"Your score is: {overall_score}")
+
+
 
 def main():
       object = object_pick()
@@ -58,5 +74,6 @@ def main():
       
       if object == "1":
             Q.Anatomy()
+      
             
 main()
