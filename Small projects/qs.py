@@ -1,4 +1,19 @@
+from ANSI import CR,C,SL
+print(C,CR)
+
 Anatomy_questions = [
+    
+]
+
+total_questions = len(Anatomy_questions)
+print(f"{SL}created a total of {total_questions} questions for Anatomy questions.{SL}")
+
+Anatomy_ph = ["Join the Body Party: Where Bones and Friends Hang Out!", "Anatomy Antics: Fun with Organs and Friends!",
+              "Anatomy Quest: Where Cells and Smiles Collide!", "Anatomy Aces: Where Learning Meets Limb-rary!",
+              "Anatomy Excellence: Charting the Course to Success!", "Body Brilliance Begins with Anatomy Excellence!",
+              ]
+
+Biology_questions = [
       {
         "question": "What is the difference between meiosis I and mitosis?",
         "correct_answer": "Sister chromatids remain joined at their centromeres throughout meiosis I but are apart completely in anaphase in mitosis",
@@ -12,12 +27,6 @@ Anatomy_questions = [
         "question": "IVF uses?",
         "correct_answer": "Phase contrast",
         "wrong_answers": ["SEM", "TEM", "LM"],
-        "score": 0
-    },
-    {
-        "question": "Label objectives (pic of microscope) number 2",
-        "correct_answer": "Microscope",
-        "wrong_answers": ["Telescope", "Camera", "Binoculars"],
         "score": 0
     },
     {
@@ -48,12 +57,6 @@ Anatomy_questions = [
         "question": "What is responsible for dilated pupils?",
         "correct_answer": "Oculomotor",
         "wrong_answers": ["Optic nerve", "Trochlear nerve", "Abducens nerve"],
-        "score": 0
-    },
-    {
-        "question": "(Image) What is the dominant type of cell?",
-        "correct_answer": "Muscle cells",
-        "wrong_answers": ["Nerve cells", "Epithelial cells", "Connective tissue cells"],
         "score": 0
     },
     {
@@ -189,12 +192,6 @@ Anatomy_questions = [
         "score": 0
     },
     {
-        "question": "Dashed line in the picture, asking which type of tissue?",
-        "correct_answer": "Connective tissue",
-        "wrong_answers": ["Epithelium", "Muscle tissue", "Nervous tissue"],
-        "score": 0
-    },
-    {
         "question": "What is the function of the cell?",
         "correct_answer": "Receives/transmits impulses",
         "wrong_answers": ["Produces energy", "Stores genetic information", "Synthesizes proteins"],
@@ -241,8 +238,16 @@ Anatomy_questions = [
       
 ]
 
-total_questions = len(Anatomy_questions)
-CR = "\033[H"
-C = "\033[2J"
-print(C,CR)
-print(f"created a total of {total_questions} questions for Anatomy questions.")
+Biology_ph = [
+    "Dive into the magical world of cells and discover the secret dance of life!","Explore the jungle of DNA, where each gene is like a colorful treasure waiting to be found!",
+    "Biology is like a playful puzzle – let's piece together the wonders of living organisms!","Embark on a thrilling adventure through the ecosystems, where every creature has its own story!",
+    "Unleash your inner scientist and watch as the mysteries of Biology unfold like a cheerful storybook!","Get ready for a Bio-party where cells mingle, genes groove, and nature throws the happiest surprises!"
+]
+
+total_questions = len(Biology_questions)
+print(f"{SL}created a total of {total_questions} questions for Biology questions.{SL}")
+
+
+
+total_questions = len(Biology_questions + Anatomy_questions)
+print(f"{SL}created a total of {total_questions} questions in this test for all of the objects.{SL}")

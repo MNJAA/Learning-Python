@@ -4,7 +4,7 @@ import random
 from random import choice
 from time import sleep
 from ANSI import CR,C,BrightGreen,BrightBlue,BrightYellow,un,SL
-from qs import Anatomy_questions
+from qs import Anatomy_ph,Biology_questions,Biology_ph
 
 wrong_questions = []
 
@@ -13,10 +13,6 @@ objects = {
       "4": "LLM",     "5": "PPC",     "6": "NIT"
       }
 
-Anatomy_ph = ["Join the Body Party: Where Bones and Friends Hang Out!", "Anatomy Antics: Fun with Organs and Friends!",
-              "Anatomy Quest: Where Cells and Smiles Collide!", "Anatomy Aces: Where Learning Meets Limb-rary!",
-              "Anatomy Excellence: Charting the Course to Success!", "Body Brilliance Begins with Anatomy Excellence!",
-              ]
 
 print(C,CR)
 name = input(f"{BrightGreen}Hey, what you should be called: {un}")
@@ -45,26 +41,105 @@ class roll_questions:
            print(BrightGreen,choice(Anatomy_ph),un, SL)
            overall_score = 0 
            for q in Anatomy_questions:
-                print("Question:", q['question'])
-                all_options = [q['correct_answer']] + q['wrong_answers']
-                random.shuffle(all_options)
-                for index, option in enumerate(all_options, start=1):
-                      print(f"{index}. {option}")
-                user_answer_number = int(input("Enter the number of your answer: "))
-                if 1 <= user_answer_number <= len(all_options):
-                      user_answer_index = user_answer_number - 1
-                      user_answer = all_options[user_answer_index]
-                      if user_answer == q['correct_answer']:
-                            overall_score += 1
-                      else:
-                            wrong_questions.append(q['question'])
-                            q['score'] = 1
-                else:
-                      print("Invalid option number. Please enter a valid number.")
+               while True:
+                   print(SL,"Question:", q['question'],SL)
+                   
+                   # Combine correct and wrong answers
+                   all_options = [q['correct_answer']] + q['wrong_answers']
+                   
+                   # Shuffle the options
+                   random.shuffle(all_options)
+                   
+                   # Print numbered and shuffled options
+                   for index, option in enumerate(all_options, start=1):
+                       print(f"{SL}{index}. {option}")
+                   
+                   # Prompt the user for a number input
+                   user_answer_input = input("{SL}Enter the number of your answer: ")
+           
+                   if user_answer_input.strip() == "":
+                       # If the user pressed only enter, repeat the question
+                       print("{SL}Please enter a valid number.{SL}")
+                       continue
+           
+                   try:
+                       user_answer_number = int(user_answer_input)
+                   except ValueError:
+                       print("{SL}Invalid input. Please enter a valid number.{SL}")
+                       continue
+           
+                   # Check if the entered number is a valid option
+                   if 1 <= user_answer_number <= len(all_options):
+                       # Convert the user's number to an index (0-based) in the list of options
+                       user_answer_index = user_answer_number - 1
+           
+                       # Retrieve the selected option
+                       user_answer = all_options[user_answer_index]
+           
+                       if user_answer == q['correct_answer']:
+                           overall_score += 1
+                           break  # Break the loop if the answer is correct
+                       else:
+                           wrong_questions.append(q['question'])
+                           q['score'] = 1
+                           break  # Break the loop if the answer is incorrect
+                   else:
+                       print("{SL}Invalid option number. Please enter a valid number.{SL}")
 
-            
-           print(f"Your score is: {overall_score}")
+           print(f"{SL}Your score is: {overall_score}")
+     def Biology(self):
+           print(C,CR)
+           sleep(1)
+           print(BrightGreen,choice(Biology_ph),un, SL)
+           overall_score = 0 
+           for q in Biology_questions:
+               while True:
+                   print(SL,"Question:", q['question'],SL)
+                   
+                   # Combine correct and wrong answers
+                   all_options = [q['correct_answer']] + q['wrong_answers']
+                   
+                   # Shuffle the options
+                   random.shuffle(all_options)
+                   
+                   # Print numbered and shuffled options
+                   for index, option in enumerate(all_options, start=1):
+                       print(f"{SL}{index}. {option}")
+                   
+                   # Prompt the user for a number input
+                   user_answer_input = input("{SL}Enter the number of your answer: ")
+           
+                   if user_answer_input.strip() == "":
+                       # If the user pressed only enter, repeat the question
+                       print("{SL}Please enter a valid number.{SL}")
+                       continue
+           
+                   try:
+                       user_answer_number = int(user_answer_input)
+                   except ValueError:
+                       print("{SL}Invalid input. Please enter a valid number.{SL}")
+                       continue
+           
+                   # Check if the entered number is a valid option
+                   if 1 <= user_answer_number <= len(all_options):
+                       # Convert the user's number to an index (0-based) in the list of options
+                       user_answer_index = user_answer_number - 1
+           
+                       # Retrieve the selected option
+                       user_answer = all_options[user_answer_index]
+           
+                       if user_answer == q['correct_answer']:
+                           overall_score += 1
+                           break  # Break the loop if the answer is correct
+                       else:
+                           wrong_questions.append(q['question'])
+                           q['score'] = 1
+                           break  # Break the loop if the answer is incorrect
+                   else:
+                       print("{SL}Invalid option number. Please enter a valid number.{SL}")
 
+           print(f"{SL}Your score is: {overall_score}")
+      
 
 
 def main():
@@ -74,6 +149,20 @@ def main():
       
       if object == "1":
             Q.Anatomy()
+
+      if object == "2":
+            Q.Biology()
+
+            
+      
+      maybe = input(f"{SL}{name}, wanna repeat? 0 for no 1 for yes{SL}")
+      if maybe == "1":
+            main()
+      else:
+            print(C,CR)
+            print(f"See you then {name.upper()}")
+            sleep(5)
       
             
 main()
+
