@@ -17,8 +17,9 @@ objects = {
     "1": "Anatomy", "2": "Biology","3":
     "Chemistry","4": "PPC","5": "NIT"
     }
+
 class roll_questions:
-    def object_pick():
+    def object_pick(self):
       print(C,CR)
       print(f"{BrightYellow}Okay {name} What would you test yourself with?{un} {SL}")
       for index, object in enumerate(objects.values(), start=1):
@@ -34,7 +35,7 @@ class roll_questions:
       sleep(1)
       print(f" \n{BrightYellow}So {name} after you have chose one from the above objects\nyou will get to answer some questions and and you can see your\nmark at the end and wich questions you answerd wrong.{un}")
       return get_object
-    
+
     def Anatomy(self):
         print(C,CR)
         sleep(1)
@@ -43,7 +44,7 @@ class roll_questions:
         for q in Anatomy_questions:
            while True:
                q["score"] = 0
-               print(SL,"Question:", q['question'],SL)
+               print(C,CR,"Question:", q['question'],SL)
                
                # Combine correct and wrong answers
                all_options = [q['correct_answer']] + q['wrong_answers']
@@ -97,7 +98,7 @@ class roll_questions:
         for q in Biology_questions:
             while True:
                 q["score"] = 0
-                print(SL,"Question:", q['question'],SL)
+                print(C,CR,"Question:", q['question'],SL)
                 
                 # Combine correct and wrong answers
                 all_options = [q['correct_answer']] + q['wrong_answers']
@@ -151,7 +152,7 @@ class roll_questions:
         for q in Chemistry_questions:
             while True:
                 q["score"] = 0
-                print(SL,"Question:", q['question'],SL)
+                print(C,CR,"Question:", q['question'],SL)
                 
                 # Combine correct and wrong answers
                 all_options = [q['correct_answer']] + q['wrong_answers']
@@ -204,7 +205,7 @@ class roll_questions:
         for q in NIT_questions:
             while True:
                 q["score"] = 0
-                print(SL,"Question:", q['question'],SL)
+                print(C,CR,"Question:", q['question'],SL)
                 
                 # Combine correct and wrong answers
                 all_options = [q['correct_answer']] + q['wrong_answers']
@@ -257,7 +258,7 @@ class roll_questions:
         for q in PPC_questions:
             while True:
                 q["score"] = 0
-                print(SL,"Question:", q['question'],SL)
+                print(C,CR,"Question:", q['question'],SL)
                 
                 # Combine correct and wrong answers
                 all_options = [q['correct_answer']] + q['wrong_answers']
@@ -304,8 +305,10 @@ class roll_questions:
         print(f"{SL}{SL}Your score is: {overall_score}/{len(PPC_questions)}")
         
 def main():
+    
     Q = roll_questions()
-    object = Q.object_pick
+    object = Q.object_pick()
+    
     if object == "1":
         Q.Anatomy()
 
@@ -313,13 +316,13 @@ def main():
         Q.Biology()
             
     elif object == "3":
-        Q.Chemistry
+        Q.Chemistry()
 
     elif object == "4":
-        Q.PPC
+        Q.PPC()
 
     elif object == "5":
-        Q.NIT
+        Q.NIT()
 
 
 
