@@ -1047,7 +1047,7 @@ Biology_ph = [
 ]
 
 total_questions = len(Biology_questions)
-print(f"{SL}created a total of {total_questions} questions for Biology questions.{SL}")
+print(f"created a total of {total_questions} questions for Biology questions.{SL}")
 
 
 Chemistry_questions = [
@@ -1322,7 +1322,7 @@ Chemistry_ph = [
 ]
 
 total_questions = len(Chemistry_questions)
-print(f"{SL}created a total of {total_questions} questions for Chemistry questions.{SL}")
+print(f"created a total of {total_questions} questions for Chemistry questions.{SL}")
 
 NIT_questions = [
     {
@@ -1628,7 +1628,7 @@ NIT_questions = [
 ]
 
 total_questions = len(NIT_questions)
-print(f"{SL}created a total of {total_questions} questions for NIT questions.{SL}")
+print(f"created a total of {total_questions} questions for NIT questions.{SL}")
 
 PPC_questions = [
     {
@@ -2057,8 +2057,8 @@ PPC_questions = [
 ]
 
 total_questions = len(NIT_questions)
-print(f"{SL}created a total of {total_questions} questions for PPC questions.{SL}")
+print(f"created a total of {total_questions} questions for PPC questions.{SL}")
 
 
 total_questions = len(Anatomy_questions + Biology_questions + Chemistry_questions + NIT_questions + PPC_questions)
-print(f"{SL}created a total of {total_questions} questions. practical not included{SL}")
+print(f"created a total of {total_questions} questions. practical not included{SL}")
