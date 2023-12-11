@@ -20,7 +20,7 @@ def add():
     n1 = Input.get()
     n1 = float(n1)
     Input.delete(0,END)
-
+ 
 def equal():
     n2 = Input.get()
     n2 = float(n2)
