@@ -6,14 +6,17 @@ f2 = "TimesNewRoman 11"
 root = Tk()
 root.title("THE BEST CALCULATOR")
 root.configure(bg="#404040")
+root.iconbitmap("Images\Icons\Calculator.ico")
 Label1 = Label(root, text="\nادخل رقماً",bg="#404040",fg="White",font=f).grid(row=0,column=0,columnspan=4)
 Input = Entry(root,border="5",background="#404046",fg="White",font=f2)
 Input.grid(row=1,column=0,columnspan=4)
-
+result = Label(root,text="",fg="White",bg="#404040")
+result.grid(row=2,column=0)
 def click(i):
-    global currenti
+    global currenti,result
     currenti = Input.get()
     Input.delete(0,END)
+    result.grid_forget()
     Input.insert(0, str(currenti) + str(i) )
 
 def add():
@@ -45,29 +48,30 @@ def divide():
     Eq = "divide"
 
 def equal():
-    global n1,Eq
+    global n1,Eq,result
     n2 = Input.get()
     n2 = float(n2)
     Input.delete(0,END)
 
     if Eq == "add":
-        result = Label(root,text=f"الناتج:  {n1}+{n2} = {n1 + n2}",font=f2,fg="White",bg="#404040")
+        result = Label(root,text=f"Result:  {n1}+{n2} = {n1 + n2}",font=f2,fg="White",bg="#404040")
     elif Eq == "sub":
-        result = Label(root,text=f"الناتج:  {n1}-{n2} = {n1 - n2}",font=f2,fg="White",bg="#404040")
+        result = Label(root,text=f"Result:  {n1}-{n2} = {n1 - n2}",font=f2,fg="White",bg="#404040")
     elif Eq == "multi":
-        result = Label(root,text=f"الناتج:  {n1}÷{n2} = {n1 * n2}",font=f2,fg="White",bg="#404040")
+        result = Label(root,text=f"Result:  {n1}×{n2} = {n1 * n2}",font=f2,fg="White",bg="#404040")
     elif Eq == "divide":
         if n2 != 0:
-            result = Label(root,text=f"الناتج:  {n1}÷{n2} = {n1 / n2}",font=f2,fg="White",bg="#404040")
+            result = Label(root,text=f"Result:  {n1}÷{n2} = {n1 / n2}",font=f2,fg="White",bg="#404040")
         else:result = Label(root,text=f"مايصير تقسم على صفر",font=f,fg="White",bg="#404040")
 
-    result.grid(row=2,column=0,columnspan=4)
+    result.grid(row=2,column=0,columnspan=18)
 
 def clear():
+    global result
     Input.delete(0,END)
-    result = Label(root,bg="#404040",width="34").grid(row=2,column=0,columnspan=6)
+    result.grid_forget()
 
-blank = Label(root,text="",fg="White",bg="#404040").grid(row=2,column=1)
+blank = Label(root,text="",fg="White",bg="#404040").grid(row=2,column=0)
 button0 = Button(root,text="0",padx=30,pady=10,font=f,bg="#d9d9d9",border=3,command=lambda: click(0)).grid(row=6,column=0)
 button1 = Button(root,text="1",padx=30,pady=10,font=f,bg="#d9d9d9",border=3,command=lambda: click(1)).grid(row=5,column=0)
 button2 = Button(root,text="2",padx=30,pady=10,font=f,bg="#d9d9d9",border=3,command=lambda: click(2)).grid(row=5,column=1)
