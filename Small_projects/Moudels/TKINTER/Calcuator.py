@@ -59,7 +59,7 @@ def equal():
     elif Eq == "divide":
         if n2 != 0:
             result = Label(root,text=f"الناتج:  {n1}÷{n2} = {n1 / n2}",font=f2,fg="White",bg="#404040")
-        else:result = Label(root,text=f"Can't Divide By ZERO",font=f,fg="White",bg="#404040")
+        else:result = Label(root,text=f"مايصير تقسم على صفر",font=f,fg="White",bg="#404040")
 
     result.grid(row=2,column=0,columnspan=4)
 
