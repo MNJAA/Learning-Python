@@ -40,7 +40,8 @@ class roll_questions:
         print(C,CR)
         sleep(1)
         print(BrightGreen,choice(Anatomy_ph),un, SL)
-        overall_score = 0 
+        overall_score = 0
+        random.shuffle(Anatomy_questions)
         for q in Anatomy_questions:
            while True:
                q["score"] = 0
@@ -57,17 +58,17 @@ class roll_questions:
                    print(f"{SL}{index}. {option}")
                
                # Prompt the user for a number input
-               user_answer_input = input("{SL}Enter the number of your answer: ")
+               user_answer_input = input(f"{SL}Enter the number of your answer: ")
         
                if user_answer_input.strip() == "":
                    # If the user pressed only enter, repeat the question
-                   print("{SL}Please enter a valid number.{SL}")
+                   print(f"{SL}Please enter a valid number.{SL}")
                    continue
         
                try:
                    user_answer_number = int(user_answer_input)
                except ValueError:
-                   print("{SL}Invalid input. Please enter a valid number.{SL}")
+                   print(f"{SL}Invalid input. Please enter a valid number.{SL}")
                    continue
         
                # Check if the entered number is a valid option
@@ -86,7 +87,7 @@ class roll_questions:
                        q['score'] = 1
                        break  # Break the loop if the answer is incorrect
                else:
-                   print("{SL}Invalid option number. Please enter a valid number.{SL}")
+                   print("f{SL}Invalid option number. Please enter a valid number.{SL}")
         print(C,CR)
         print(f"{SL}{SL}Your score is: {overall_score}/{len(Anatomy_questions)}")
         
@@ -95,6 +96,7 @@ class roll_questions:
         sleep(1)
         print(BrightGreen,choice(Biology_ph),un, SL)
         overall_score = 0 
+        random.shuffle(Biology_questions)
         for q in Biology_questions:
             while True:
                 q["score"] = 0
@@ -148,7 +150,8 @@ class roll_questions:
         print(C,CR)
         sleep(1)
         print(BrightGreen,choice(Chemistry_ph),un, SL)
-        overall_score = 0 
+        overall_score = 0
+        random.shuffle(Chemistry_questions)
         for q in Chemistry_questions:
             while True:
                 q["score"] = 0
@@ -201,7 +204,8 @@ class roll_questions:
     def NIT(self):
         print(C,CR)
         sleep(1)
-        overall_score = 0 
+        overall_score = 0
+        random.shuffle(NIT_questions)
         for q in NIT_questions:
             while True:
                 q["score"] = 0
@@ -254,7 +258,8 @@ class roll_questions:
     def PPC(self):
         print(C,CR)
         sleep(1)
-        overall_score = 0 
+        overall_score = 0
+        random.shuffle(PPC_questions)
         for q in PPC_questions:
             while True:
                 q["score"] = 0

@@ -1,5 +1,5 @@
 # escape codes to do 'MAGIC'
-SL = "\033[1B"
+SL = "\033[2E"
 B = "\033[1m"
 un = "\033[0m"
 C = "\033[2J"

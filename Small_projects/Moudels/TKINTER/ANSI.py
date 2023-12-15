@@ -1,5 +1,5 @@
 # escape codes to do 'MAGIC'
-SL = "\033[1B"
+SL = "\033[2E"
 B = "\033[1m"
 un = "\033[0m"
 C = "\033[2J"
@@ -20,3 +20,6 @@ BrightBlue = "\033[94m"
 BrightMagenta = "\033[95m"
 BrightCyan = "\033[96m"
 BrightWhite = "\033[97m"
+
+print(C,CR)
+print(f"{Blue}Name:Abdualziz{un}{SL}{BrightBlue}Age:19{un}{SL}{BrightYellow}Birthdate:2004/12/22{un}")
