@@ -6,7 +6,7 @@ f2 = "TimesNewRoman 11"
 root = Tk()
 root.title("THE BEST CALCULATOR")
 root.configure(bg="#404040")
-root.iconbitmap("Images\Icons\Calculator.ico")
+root.iconbitmap(r"Images\Icons\Calculator.ico")
 Label1 = Label(root, text="\nادخل رقماً",bg="#404040",fg="White",font=f).grid(row=0,column=0,columnspan=4)
 Input = Entry(root,border="5",background="#404046",fg="White",font=f2)
 Input.grid(row=1,column=0,columnspan=4)

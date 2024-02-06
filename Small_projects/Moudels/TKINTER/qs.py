@@ -1,6 +1,7 @@
 from ANSI import CR,C,SL
 print(C,CR)
 
+
 Anatomy_questions = [
     {
         'question': "Stab in 1st IC space, what major vessel is injured?",
@@ -748,13 +749,15 @@ Anatomy_questions = [
     }
 ]
 
+Anatomy_practical = [1,2,3]
+
 Anatomy_ph = ["Join the Body Party: Where Bones and Friends Hang Out!", "Anatomy Antics: Fun with Organs and Friends!",
               "Anatomy Quest: Where Cells and Smiles Collide!", "Anatomy Aces: Where Learning Meets Limb-rary!",
               "Anatomy Excellence: Charting the Course to Success!", "Body Brilliance Begins with Anatomy Excellence!",
               ]
 
-total_questions = len(Anatomy_questions)
-print(f"{SL}created a total of {total_questions} questions for Anatomy questions.{SL}")
+total_Anatomy = len(Anatomy_questions)
+print(f"{SL}created a total of {total_Anatomy} questions for Anatomy questions.{SL}")
 
 
 Biology_questions = [
@@ -1046,8 +1049,8 @@ Biology_ph = [
     "Unleash your inner scientist and watch as the mysteries of Biology unfold like a cheerful storybook!","Get ready for a Bio-party where cells mingle, genes groove, and nature throws the happiest surprises!"
 ]
 
-total_questions = len(Biology_questions)
-print(f"created a total of {total_questions} questions for Biology questions.{SL}")
+total_Biology = len(Biology_questions)
+print(f"created a total of {total_Biology} questions for Biology questions.{SL}")
 
 
 Chemistry_questions = [
@@ -1339,15 +1342,15 @@ Chemistry_practical = [
     }
 ]
 
-
 Chemistry_ph = [
     "Unlocking the secrets of matter, one element at a time!","In the laboratory of curiosity, every experiment is a journey.",
     "Molecules whispering tales of connections, sparking the mind.","Energetic atoms, weaving the fabric of scientific exploration.",
     "Chemistry, where the beauty of understanding meets the joy of discovery.","From tiny particles to boundless discoveries, chemistry fuels curiosity."
 ]
 
-total_questions = len(Chemistry_questions)
-print(f"created a total of {total_questions} questions for Chemistry questions.{SL}")
+total_chemistry = len(Chemistry_questions + Chemistry_practical)
+print(f"created a total of {total_chemistry} questions for Chemistry questions.{SL}")
+
 
 NIT_questions = [
     {
@@ -1652,8 +1655,9 @@ NIT_questions = [
     },
 ]
 
-total_questions = len(NIT_questions)
-print(f"created a total of {total_questions} questions for NIT questions.{SL}")
+total_NIT = len(NIT_questions)
+print(f"created a total of {total_NIT} questions for NIT questions.{SL}")
+
 
 PPC_questions = [
     {
@@ -2081,9 +2085,9 @@ PPC_questions = [
     }
 ]
 
-total_questions = len(NIT_questions)
-print(f"created a total of {total_questions} questions for PPC questions.{SL}")
+total_PPC = len(PPC_questions)
+print(f"created a total of {total_PPC} questions for PPC questions.{SL}")
 
 
-total_questions = len(Anatomy_questions + Biology_questions + Chemistry_questions + NIT_questions + PPC_questions)
+total_questions = (total_Anatomy + total_Biology + total_chemistry + total_NIT + total_PPC)
 print(f"created a total of {total_questions} questions. practical not included{SL}")

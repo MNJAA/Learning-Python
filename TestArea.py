@@ -1,9 +1,11 @@
-def n():
-    nn = "Yay" 
-    return nn
-def m():
-    pass
+
+def test1():
+    global m
+    print(m)
 
 
-if n():
-    print("WORKEEED!!")
+def test():
+    global m
+    m = "wew"
+
+test1()
