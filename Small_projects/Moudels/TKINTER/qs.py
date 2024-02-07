@@ -751,13 +751,8 @@ Anatomy_questions = [
 
 Anatomy_practical = [1,2,3]
 
-Anatomy_ph = ["Join the Body Party: Where Bones and Friends Hang Out!", "Anatomy Antics: Fun with Organs and Friends!",
-              "Anatomy Quest: Where Cells and Smiles Collide!", "Anatomy Aces: Where Learning Meets Limb-rary!",
-              "Anatomy Excellence: Charting the Course to Success!", "Body Brilliance Begins with Anatomy Excellence!",
-              ]
-
 total_Anatomy = len(Anatomy_questions)
-print(f"{SL}created a total of {total_Anatomy} questions for Anatomy questions.{SL}")
+print(f"created a total of {total_Anatomy} questions for Anatomy questions.")
 
 
 Biology_questions = [
@@ -1043,14 +1038,8 @@ Biology_questions = [
       
 ]
 
-Biology_ph = [
-    "Dive into the magical world of cells and discover the secret dance of life!","Explore the jungle of DNA, where each gene is like a colorful treasure waiting to be found!",
-    "Biology is like a playful puzzle – let's piece together the wonders of living organisms!","Embark on a thrilling adventure through the ecosystems, where every creature has its own story!",
-    "Unleash your inner scientist and watch as the mysteries of Biology unfold like a cheerful storybook!","Get ready for a Bio-party where cells mingle, genes groove, and nature throws the happiest surprises!"
-]
-
 total_Biology = len(Biology_questions)
-print(f"created a total of {total_Biology} questions for Biology questions.{SL}")
+print(f"created a total of {total_Biology} questions for Biology questions.")
 
 
 Chemistry_questions = [
@@ -1342,14 +1331,9 @@ Chemistry_practical = [
     }
 ]
 
-Chemistry_ph = [
-    "Unlocking the secrets of matter, one element at a time!","In the laboratory of curiosity, every experiment is a journey.",
-    "Molecules whispering tales of connections, sparking the mind.","Energetic atoms, weaving the fabric of scientific exploration.",
-    "Chemistry, where the beauty of understanding meets the joy of discovery.","From tiny particles to boundless discoveries, chemistry fuels curiosity."
-]
 
 total_chemistry = len(Chemistry_questions + Chemistry_practical)
-print(f"created a total of {total_chemistry} questions for Chemistry questions.{SL}")
+print(f"created a total of {total_chemistry} questions for Chemistry questions.")
 
 
 NIT_questions = [
@@ -1656,7 +1640,7 @@ NIT_questions = [
 ]
 
 total_NIT = len(NIT_questions)
-print(f"created a total of {total_NIT} questions for NIT questions.{SL}")
+print(f"created a total of {total_NIT} questions for NIT questions.")
 
 
 PPC_questions = [
@@ -2086,8 +2070,8 @@ PPC_questions = [
 ]
 
 total_PPC = len(PPC_questions)
-print(f"created a total of {total_PPC} questions for PPC questions.{SL}")
+print(f"created a total of {total_PPC} questions for PPC questions.")
 
 
 total_questions = (total_Anatomy + total_Biology + total_chemistry + total_NIT + total_PPC)
-print(f"created a total of {total_questions} questions. practical not included{SL}")
+print(f"{SL}created a total of {total_questions} questions. practical not included")
