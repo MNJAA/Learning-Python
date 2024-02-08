@@ -19,3 +19,5 @@ while True:
             keyboard.press('w')
             sleep(1)
             keyboard.press('s')
+
+#i made this to afk in GTA V online
