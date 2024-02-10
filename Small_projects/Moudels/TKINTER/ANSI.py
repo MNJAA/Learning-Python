@@ -20,6 +20,3 @@ BrightBlue = "\033[94m"
 BrightMagenta = "\033[95m"
 BrightCyan = "\033[96m"
 BrightWhite = "\033[97m"
-
-print(C,CR)
-print(f"{Blue}Name:Abdualziz{un}{SL}{BrightBlue}Age:19{un}{SL}{BrightYellow}Birthdate:2004/12/22{un}")
