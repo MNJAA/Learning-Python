@@ -1,11 +1,4 @@
+from datetime import datetime
 
-def test1():
-    global m
-    print(m)
-
-
-def test():
-    global m
-    m = "wew"
-
-test1()
+y = datetime.now().time()
+print(y)
