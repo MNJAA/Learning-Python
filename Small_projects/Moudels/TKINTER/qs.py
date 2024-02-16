@@ -2,6 +2,27 @@ from ANSI import CR,C,SL
 print(C,CR)
 
 
+TESTING = [
+    {"question": "What is true about bilayer in the cell membrane?",
+     "correct_answer": "Hydrophilic is always in the outer layer",
+     "wrong_answers": ["Hydrophobic is always in the outer layer", "Both layers are hydrophobic",
+                       "Hydrophilic is always in the inner layer"]
+     },
+    {
+        "question": "What can't be oxidized?",
+     "correct_answer": "Tertiary alcohol",
+     "wrong_answers": ["Primary alcohol", "Secondary alcohol", "Quaternary alcohol"]
+     },
+    {
+        "question": "Which one of the following tests positive for Tollen's reagent?",
+     "correct_answer": "Aldehyde",
+     "wrong_answers": ["Ketone", "Carboxylic acid", "Ester"]
+     }
+]
+
+
+
+
 Anatomy_questions = [
     {
         'question': "Stab in 1st IC space, what major vessel is injured?",
@@ -2073,5 +2094,581 @@ total_PPC = len(PPC_questions)
 print(f"created a total of {total_PPC} questions for PPC questions.")
 
 
-total_questions = (total_Anatomy + total_Biology + total_chemistry + total_NIT + total_PPC)
+PPC_terms = [
+    {
+        "question": "What does the term 'xanth/o' refer to?",
+        "correct_answer": "yellow",
+        "wrong_answers": ["red", "green", "purple"]
+    },
+    {
+        "question": "What does the term 'melan/o' refer to?",
+        "correct_answer": "black",
+        "wrong_answers": ["white", "brown", "gray"]
+    },
+    {
+        "question": "What does the term 'cyan/o' refer to?",
+        "correct_answer": "blue",
+        "wrong_answers": ["orange", "pink", "purple"]
+    },
+    {
+        "question": "What medical condition is described as a 'black tumor of the skin'?",
+        "correct_answer": "melanoma",
+        "wrong_answers": ["leukemia", "cyanosis", "xanthoma"]
+    },
+    {
+        "question": "What does the term 'cyanosis' refer to?",
+        "correct_answer": "blueness may be due to cold or not enough oxygen in blood",
+        "wrong_answers": ["overabundance of white blood cells", "yellow tumor", "black tumor of the skin"]
+    },
+    {
+        "question": "What does the term 'xanthoma' refer to?",
+        "correct_answer": "yellow tumor",
+        "wrong_answers": ["leukemia", "cyanosis", "melanoma"]
+    },
+    {
+        "question": "What medical condition is described as an 'overabundance of white blood cells'?",
+        "correct_answer": "leukemia",
+        "wrong_answers": ["melanoma", "cyanosis", "xanthoma"]
+    },
+    {
+        "question": "What does the term 'Aden/o' refer to?",
+        "correct_answer": "gland",
+        "wrong_answers": ["fat", "muscle", "lymph tissue"]
+    },
+    {
+        "question": "What does the term 'Lip/o' refer to?",
+        "correct_answer": "fat",
+        "wrong_answers": ["gland", "muscle", "lymph tissue"]
+    },
+    {
+        "question": "What does the term 'My/o' refer to?",
+        "correct_answer": "muscle",
+        "wrong_answers": ["gland", "fat", "lymph tissue"]
+    },
+    {
+        "question": "What does the term 'Lymph/o' refer to?",
+        "correct_answer": "lymph tissue",
+        "wrong_answers": ["gland", "fat", "muscle"]
+    },
+    {
+        "question": "What does the term 'Carcin/o' refer to?",
+        "correct_answer": "malignant",
+        "wrong_answers": ["benign", "non-cancerous", "metastasis"]
+    },
+    {
+        "question": "What does the term 'Osteo/o' refer to?",
+        "correct_answer": "bone",
+        "wrong_answers": ["muscle", "gland", "fat"]
+    },
+    {
+        "question": "What does the prefix 'Endo-' mean?",
+        "correct_answer": "within, inside of",
+        "wrong_answers": ["around", "behind", "upon, on top"]
+    },
+    {
+        "question": "What does the prefix 'Peri-' mean?",
+        "correct_answer": "around",
+        "wrong_answers": ["within, inside of", "behind", "through"]
+    },
+    {
+        "question": "What does the prefix 'Circum-' mean?",
+        "correct_answer": "around",
+        "wrong_answers": ["within, inside of", "behind", "through"]
+    },
+    {
+        "question": "What does the prefix 'Retro-' mean?",
+        "correct_answer": "behind",
+        "wrong_answers": ["within, inside of", "around", "through"]
+    },
+    {
+        "question": "What does the prefix 'Epi-' mean?",
+        "correct_answer": "upon, on top",
+        "wrong_answers": ["within, inside of", "around", "behind"]
+    },
+    {
+        "question": "What does the prefix 'Trans-' mean?",
+        "correct_answer": "through",
+        "wrong_answers": ["within, inside of", "around", "upon, on top"]
+    },
+    {
+        "question": "What does the prefix 'Intra-' mean?",
+        "correct_answer": "within",
+        "wrong_answers": ["around", "behind", "through"]
+    },
+    {
+        "question": "What does the prefix 'Sub-' mean?",
+        "correct_answer": "below",
+        "wrong_answers": ["around", "behind", "upon, on top"]
+    },
+    {
+        "question": "What does the prefix 'Hem/o, -emia' mean?",
+        "correct_answer": "blood",
+        "wrong_answers": ["vein", "vessel", "heart"]
+    },
+    {
+        "question": "What does the suffix '-cyte' mean?",
+        "correct_answer": "cell",
+        "wrong_answers": ["blood", "vein", "heart"]
+    },
+    {
+        "question": "What does the suffix '-stasis' mean?",
+        "correct_answer": "to stop",
+        "wrong_answers": ["blood", "vein", "heart"]
+    },
+    {
+        "question": "What does the prefix 'Veno/phlebo-' mean?",
+        "correct_answer": "vein",
+        "wrong_answers": ["blood", "vessel", "heart"]
+    },
+    {
+        "question": "What does the prefix 'Angi/o-' mean?",
+        "correct_answer": "vessel",
+        "wrong_answers": ["blood", "vein", "heart"]
+    },
+    {
+        "question": "What does the prefix 'Brady/tachy-' mean?",
+        "correct_answer": "slow/fast",
+        "wrong_answers": ["blood", "vein", "heart"]
+    },
+    {
+        "question": "What does the prefix 'Cardi/o-' mean?",
+        "correct_answer": "heart",
+        "wrong_answers": ["blood", "vein", "vessel"]
+    },
+    {
+        "question": "What type of cancer does 'adenoma' refer to?",
+        "correct_answer": "glandular cancer",
+        "wrong_answers": ["fat tissue cancer", "muscle tissue cancer", "lymph tissue cancer"]
+    },
+    {
+        "question": "What type of cancer does 'lipoma' refer to?",
+        "correct_answer": "fat tissue cancer",
+        "wrong_answers": ["glandular cancer", "muscle tissue cancer", "lymph tissue cancer"]
+    },
+    {
+        "question": "What type of cancer does 'myoma' refer to?",
+        "correct_answer": "muscle tissue cancer",
+        "wrong_answers": ["glandular cancer", "fat tissue cancer", "lymph tissue cancer"]
+    },
+    {
+        "question": "What type of cancer does 'lymphoma' refer to?",
+        "correct_answer": "lymph tissue cancer",
+        "wrong_answers": ["glandular cancer", "fat tissue cancer", "muscle tissue cancer"]
+    },
+    {
+        "question": "What type of cancer does 'carcinoma' refer to?",
+        "correct_answer": "epithelial tissue cancer",
+        "wrong_answers": ["glandular cancer", "fat tissue cancer", "muscle tissue cancer"]
+    },
+    {
+        "question": "What type of cancer does 'osteoma' refer to?",
+        "correct_answer": "bone cancer",
+        "wrong_answers": ["glandular cancer", "fat tissue cancer", "muscle tissue cancer"]
+    },
+    {
+        "question": "Endocarditis",
+        "correct_answer": "inflammation of the lining of the heart",
+        "wrong_answers": ["inflammation of the muscle layer of the heart", "inflammation of the outer layer of the heart", "heart attack"]
+    },
+    {
+        "question": "Myocarditis",
+        "correct_answer": "inflammation of the muscle layer of the heart",
+        "wrong_answers": ["inflammation of the lining of the heart", "inflammation of the outer layer of the heart", "heart attack"]
+    },
+    {
+        "question": "Pericarditis",
+        "correct_answer": "inflammation of the outer layer of the heart",
+        "wrong_answers": ["inflammation of the lining of the heart", "inflammation of the muscle layer of the heart", "heart attack"]
+    },
+    {
+        "question": "What is Angiography?",
+        "correct_answer": "X-ray of artery",
+        "wrong_answers": ["MRI of artery", "Ultrasound of artery", "CT scan of artery"]
+    },
+    {
+        "question": "What is Angiogram?",
+        "correct_answer": "X-ray of artery",
+        "wrong_answers": ["MRI of artery", "Ultrasound of artery", "CT scan of artery"]
+    },
+    {
+        "question": "What is Venogram?",
+        "correct_answer": "X-ray of veins",
+        "wrong_answers": ["MRI of veins", "Ultrasound of veins", "CT scan of veins"]
+    },
+    {
+        "question": "What is Phlebitis?",
+        "correct_answer": "inflammation of veins",
+        "wrong_answers": ["inflammation of arteries", "blood clot in veins", "heart disease"]
+    },
+    {
+        "question": "What is Hemostasis?",
+        "correct_answer": "to stop bleeding",
+        "wrong_answers": ["to promote bleeding", "to prevent clotting", "to dilate blood vessels"]
+    },
+    {
+        "question": "What is a Hemostat?",
+        "correct_answer": "a clamp-like instrument",
+        "wrong_answers": ["a surgical needle", "a syringe", "a scalpel"]
+    },
+    {
+        "question": "What are Erythrocytes?",
+        "correct_answer": "red blood cells",
+        "wrong_answers": ["white blood cells", "platelets", "plasma"]
+    },
+    {
+        "question": "What are Leukocytes?",
+        "correct_answer": "white blood cells",
+        "wrong_answers": ["red blood cells", "platelets", "plasma"]
+    },
+    {
+        "question": "What is Hypoxemia?",
+        "correct_answer": "low oxygen",
+        "wrong_answers": ["high oxygen", "low carbon dioxide", "high carbon dioxide"]
+    },
+    {
+        "question": "What is Hematosalpinx?",
+        "correct_answer": "blood in the uterine tubes",
+        "wrong_answers": ["blood in the uterus", "blood in the ovaries", "blood in the vagina"]
+    },
+    {
+        "question": "What is Atherosclerosis?",
+        "correct_answer": "Fatty deposits in arteries.",
+        "wrong_answers": [
+            "Irregular heartbeats.",
+            "High blood pressure.",
+            "Dilated blood vessels."
+        ]
+    },
+    {
+        "question": "What is Myocardial Infarction (MI)?",
+        "correct_answer": "Heart attack.",
+        "wrong_answers": [
+            "Weak heart muscle.",
+            "Increased heart rate.",
+            "Malfunctioning heart valves."
+        ]
+    },
+    {
+        "question": "What are Mitral Prolapse, Stenosis, and Regurgitation?",
+        "correct_answer": "Conditions affecting the mitral valve.",
+        "wrong_answers": [
+            "Conditions affecting the aorta.",
+            "Conditions affecting the coronary arteries.",
+            "Conditions affecting the pulmonary arteries."
+        ]
+    },
+    {
+        "question": "What is Angina Pectoris?",
+        "correct_answer": "Chest pain due to insufficient blood flow to the heart.",
+        "wrong_answers": [
+            "Irregular heartbeats.",
+            "Dilated blood vessels.",
+            "Malfunctioning heart valves."
+        ]
+    },
+    {
+        "question": "What is Ischemia?",
+        "correct_answer": "Restricted blood flow.",
+        "wrong_answers": [
+            "Excess blood flow.",
+            "Low blood pressure.",
+            "Dilated blood vessels."
+        ]
+    },
+    {
+        "question": "What is a Cardiologist?",
+        "correct_answer": "Heart specialist.",
+        "wrong_answers": [
+            "Lung specialist.",
+            "Kidney specialist.",
+            "Liver specialist."
+        ]
+    },
+    {
+        "question": "What is Arrhythmia/Dysrhythmia?",
+        "correct_answer": "Irregular heartbeat.",
+        "wrong_answers": [
+            "Difficulty breathing.",
+            "Malfunctioning heart valves.",
+            "Blood clots in the heart."
+        ]
+    },
+    {
+        "question": "What is an Electrocardiogram?",
+        "correct_answer": "Heart's electrical activity test.",
+        "wrong_answers": [
+            "Heart structure test.",
+            "Blood flow test.",
+            "Blood vessel test."
+        ]
+    },
+    {
+        "question": "What is a Hematologist?",
+        "correct_answer": "Blood specialist.",
+        "wrong_answers": [
+            "Heart specialist.",
+            "Lung specialist.",
+            "Kidney specialist."
+        ]
+    },
+    {
+        "question": "What is Echocardiography?",
+        "correct_answer": "Heart ultrasound.",
+        "wrong_answers": [
+            "X-ray of the heart.",
+            "MRI of the heart.",
+            "Nuclear scan of the heart."
+        ]
+    },
+    {
+        "question": "What is Cardiac Catheterization?",
+        "correct_answer": "Heart procedure with a catheter.",
+        "wrong_answers": [
+            "Lung procedure with a catheter.",
+            "Kidney procedure with a catheter.",
+            "Liver procedure with a catheter."
+        ]
+    },
+    {
+        "question": "What is a Phlebotomist/Venipuncturist?",
+        "correct_answer": "Blood drawing professional.",
+        "wrong_answers": [
+            "Vaccine administrator.",
+            "Surgeon.",
+            "Dentist."
+        ]
+    },
+    {
+        "question": "What does the term 'Encephal/o' refer to?",
+        "correct_answer": "Inside the head (brain)",
+        "wrong_answers": ["Head", "Paralysis", "Development, formation, growth"]
+    },
+    {
+        "question": "What does the term 'Cephal/o' refer to?",
+        "correct_answer": "Head",
+        "wrong_answers": ["Inside the head (brain)", "Paralysis", "Development, formation, growth"]
+    },
+    {
+        "question": "What does the term '-plegia' refer to?",
+        "correct_answer": "Paralysis",
+        "wrong_answers": ["Inside the head (brain)", "Head", "Development, formation, growth"]
+    },
+    {
+        "question": "What does the term '-plasia' refer to?",
+        "correct_answer": "Development, formation, growth",
+        "wrong_answers": ["Inside the head (brain)", "Head", "Paralysis"]
+    },
+    {
+        "question": "What does the term '-pathy' refer to?",
+        "correct_answer": "Disease, abnormality",
+        "wrong_answers": ["Inside the head (brain)", "Head", "Paralysis"]
+    },
+    {
+        "question": "What does the term '-cele' refer to?",
+        "correct_answer": "Hernia, abnormal protrusion of structure out of normal anatomical position",
+        "wrong_answers": ["Inside the head (brain)", "Head", "Paralysis"]
+    },
+    {
+        "question": "What does the prefix 'Dys' refer to?",
+        "correct_answer": "Difficult, painful, abnormal",
+        "wrong_answers": ["Inside the head (brain)", "Head", "Paralysis"]
+    },
+    {
+        "question": "What does the term 'Neur/o' refer to?",
+        "correct_answer": "Nerve",
+        "wrong_answers": ["Inside the head (brain)", "Head", "Paralysis"]
+    },
+    {
+        "question": "What does the term 'Myel/o' refer to?",
+        "correct_answer": "Spinal cord",
+        "wrong_answers": ["Inside the head (brain)", "Head", "Paralysis"]
+    },
+    {
+        "question": "What does the term 'Mening/o' refer to?",
+        "correct_answer": "Membranes surrounding the brain and spinal cord",
+        "wrong_answers": ["Inside the head (brain)", "Head", "Paralysis"]
+    },
+     {
+        "question": "What does the term 'Cephalgia' refer to?",
+        "correct_answer": "A headache",
+        "wrong_answers": ["Paralysis of one side of the body", "No development", "Disease of the brain"]
+    },
+    {
+        "question": "What does the term 'Hemiplegia' refer to?",
+        "correct_answer": "Paralysis of one side of the body",
+        "wrong_answers": ["A headache", "No development", "Disease of the brain"]
+    },
+    {
+        "question": "What does the term 'Quadriplegia' refer to?",
+        "correct_answer": "Paralysis of all four limbs",
+        "wrong_answers": ["A headache", "No development", "Disease of the brain"]
+    },
+    {
+        "question": "What does the term 'Aplasia' refer to?",
+        "correct_answer": "No development",
+        "wrong_answers": ["A headache", "Paralysis of one side of the body", "Disease of the brain"]
+    },
+    {
+        "question": "What does the term 'Hyperplasia' refer to?",
+        "correct_answer": "Over development",
+        "wrong_answers": ["A headache", "Paralysis of one side of the body", "Disease of the brain"]
+    },
+    {
+        "question": "What does the term 'Encephalopathy' refer to?",
+        "correct_answer": "Disease of the brain",
+        "wrong_answers": ["A headache", "Paralysis of one side of the body", "No development"]
+    },
+    {
+        "question": "What does the term 'Neuropathy' refer to?",
+        "correct_answer": "Disease of the nerves",
+        "wrong_answers": ["A headache", "Paralysis of one side of the body", "No development"]
+    },
+    {
+        "question": "What does the term 'Meningomyelocele' refer to?",
+        "correct_answer": "Protrusion of membranes and spinal cord",
+        "wrong_answers": ["A headache", "Paralysis of one side of the body", "No development"]
+    },
+    {
+        "question": "What does the term 'Dyslexia' refer to?",
+        "correct_answer": "Difficulty reading",
+        "wrong_answers": ["Tumor", "Inflammation", "X-ray of the spinal cord"]
+    },
+    {
+        "question": "What does the term 'Neuroma' refer to?",
+        "correct_answer": "Tumor",
+        "wrong_answers": ["Difficulty reading", "Inflammation", "X-ray of the spinal cord"]
+    },
+    {
+        "question": "What does the term 'Neuritis' refer to?",
+        "correct_answer": "Inflammation",
+        "wrong_answers": ["Difficulty reading", "Tumor", "X-ray of the spinal cord"]
+    },
+    {
+        "question": "What does the term 'Myelogram' refer to?",
+        "correct_answer": "X-ray of the spinal cord",
+        "wrong_answers": ["Difficulty reading", "Tumor", "Inflammation"]
+    },
+    {
+        "question": "What does the term 'Meningitis' refer to?",
+        "correct_answer": "Inflammation of the membranes",
+        "wrong_answers": ["Difficulty reading", "Tumor", "X-ray of the spinal cord"]
+    },
+    {
+        "question": "What does the term 'Encephalitis' refer to?",
+        "correct_answer": "Inflammation of the brain",
+        "wrong_answers": ["Difficulty reading", "Tumor", "X-ray of the spinal cord"]
+    },
+    {
+        "question": "What does the term 'Anencephalic' refer to?",
+        "correct_answer": "Born without a brain",
+        "wrong_answers": ["Inflammation of the brain", "X-ray of the spinal cord", "Difficulty reading"]
+    },
+    {
+        "question": "What is Multiple Sclerosis?",
+        "correct_answer": "Autoimmune disease affecting the central nervous system.",
+        "wrong_answers": [
+            "Infectious disease affecting the brain.",
+            "Genetic disorder affecting the muscles.",
+            "Degenerative disease affecting the bones."
+        ]
+    },
+    {
+        "question": "What is Cerebrovascular Accident (CVA)?",
+        "correct_answer": "Stroke caused by interruption of blood flow to the brain.",
+        "wrong_answers": [
+            "Brain infection caused by a virus.",
+            "Brain tumor pressing on a nerve.",
+            "Muscle spasm in the brain."
+        ]
+    },
+    {
+        "question": "What is Transient Ischemic Attack (TIA)?",
+        "correct_answer": "Mini-stroke with temporary symptoms.",
+        "wrong_answers": [
+            "Temporary loss of consciousness.",
+            "Sudden severe headache.",
+            "Permanent loss of brain function."
+        ]
+    },
+    {
+        "question": "What is Epilepsy?",
+        "correct_answer": "Neurological disorder characterized by recurrent seizures.",
+        "wrong_answers": [
+            "Inflammatory disorder of the spine.",
+            "Degenerative disorder of the muscles.",
+            "Vascular disorder affecting the heart."
+        ]
+    },
+    {
+        "question": "What is Aphasia?",
+        "correct_answer": "Language disorder affecting comprehension or expression.",
+        "wrong_answers": [
+            "Visual disorder affecting sight.",
+            "Hearing disorder affecting hearing.",
+            "Motor disorder affecting movement."
+        ]
+    },
+    {
+        "question": "What is a Neurologist?",
+        "correct_answer": "Medical doctor specializing in nervous system disorders.",
+        "wrong_answers": [
+            "Medical doctor specializing in heart disorders.",
+            "Medical doctor specializing in lung disorders.",
+            "Medical doctor specializing in kidney disorders."
+        ]
+    },
+    {
+        "question": "What is Lumbar (spinal) puncture or tap (LP)?",
+        "correct_answer": "Procedure to collect cerebrospinal fluid from the lower back.",
+        "wrong_answers": [
+            "Procedure to inject medication into the spine.",
+            "Procedure to remove bone tissue from the spine.",
+            "Procedure to repair a herniated disc in the spine."
+        ]
+    },
+    {
+        "question": "What is a Brain scan?",
+        "correct_answer": "Imaging test to visualize the brain's structure and function.",
+        "wrong_answers": [
+            "Blood test to analyze brain chemistry.",
+            "Physical examination to assess brain health.",
+            "Surgical procedure to remove brain tissue."
+        ]
+    },
+    {
+        "question": "What is Electroencephalography (EEG)?",
+        "correct_answer": "Test to record electrical activity in the brain.",
+        "wrong_answers": [
+            "Test to measure blood flow in the brain.",
+            "Test to assess nerve function in the brain.",
+            "Test to evaluate hormone levels in the brain."
+        ]
+    },
+    {
+        "question": "What is Computed Tomography (CT)?",
+        "correct_answer": "Imaging technique using X-rays to create cross-sectional images of the body.",
+        "wrong_answers": [
+            "Imaging technique using sound waves to visualize internal organs.",
+            "Imaging technique using magnetic fields and radio waves to produce detailed images of the body.",
+            "Surgical procedure to remove abnormal tissue from the body."
+        ]
+    },
+    {
+        "question": "What is Magnetic Resonance Imaging (MRI)?",
+        "correct_answer": "Imaging technique using magnetic fields and radio waves to produce detailed images of the body.",
+        "wrong_answers": [
+            "Imaging technique using X-rays to create cross-sectional images of the body.",
+            "Imaging technique using sound waves to visualize internal organs.",
+            "Surgical procedure to remove abnormal tissue from the body."
+        ]
+    },
+    
+]
+
+
+total_PPCT = len(PPC_terms)
+print(f"created a total of {total_PPCT} questions for PPCT questions.")
+
+
+total_questions = (total_Anatomy + total_Biology + total_chemistry + total_NIT + total_PPC + total_PPCT)
 print(f"{SL}created a total of {total_questions} questions. practical not included")

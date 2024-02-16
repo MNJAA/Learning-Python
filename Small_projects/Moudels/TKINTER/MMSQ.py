@@ -11,6 +11,11 @@ root.title("First Year MSQ Exam")
 root.config(bg="#242424")
 root.iconbitmap("Images\Icons\MSQ.ico")
 
+f = "TimesNewRoman 16 bold"
+f2 = "TimesNewRoman 11"
+f3 = "TimesNewRoman 8"
+f4 = "TimesNewRoman 1"
+
 objects_list = " "
 
 #displays two options prac and imprac 
