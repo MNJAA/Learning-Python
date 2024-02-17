@@ -2047,8 +2047,6 @@ PPC_questions = [
 Anatomy_practical = [1,2,3]
 
 
-
-
 Chemistry_practical = [
     {
         "question": "What is this?",
@@ -2644,6 +2642,336 @@ PPC_terms = [
             "Surgical procedure to remove abnormal tissue from the body."
         ]
     },
+    {
+        "question": "What does 'Gastr/o' refer to?",
+        "correct_answer": "Stomach",
+        "wrong_answers": ["Liver", "Gall, bile", "Vomit"]
+    },
+    {
+        "question": "What does 'Hepat/o' refer to?",
+        "correct_answer": "Liver",
+        "wrong_answers": ["Stomach", "Gall, bile", "Vomit"]
+    },
+    {
+        "question": "What does 'Chol/e' refer to?",
+        "correct_answer": "Gall, bile",
+        "wrong_answers": ["Stomach", "Liver", "Vomit"]
+    },
+    {
+        "question": "What does 'Emes/o' refer to?",
+        "correct_answer": "Vomit",
+        "wrong_answers": ["Stomach", "Liver", "Gall, bile"]
+    },
+    {
+        "question": "What does 'Lith/o' refer to?",
+        "correct_answer": "Stone",
+        "wrong_answers": ["Stomach", "Liver", "Gall, bile"]
+    },
+    {
+        "question": "What does 'Lapar/o' refer to?",
+        "correct_answer": "Abdominal wall",
+        "wrong_answers": ["Stomach", "Liver", "Gall, bile"]
+    },
+    {
+        "question": "What does '-centesis' mean?",
+        "correct_answer": "To puncture",
+        "wrong_answers": ["To crush", "Flow, discharge", "Abnormal condition"]
+    },
+    {
+        "question": "What does '-tripsy' mean?",
+        "correct_answer": "To crush",
+        "wrong_answers": ["To puncture", "Flow, discharge", "Abnormal condition"]
+    },
+    {
+        "question": "What does '-rrhea' mean?",
+        "correct_answer": "Flow, discharge",
+        "wrong_answers": ["To puncture", "To crush", "Abnormal condition"]
+    },
+    {
+        "question": "What does '-iasis (-osis)' mean?",
+        "correct_answer": "Abnormal condition",
+        "wrong_answers": ["To puncture", "To crush", "Flow, discharge"]
+    },
+    {
+        "question": "What is a cystoscopy?",
+        "correct_answer": "Examining the lining of a bladder.",
+        "wrong_answers": [
+            "Surgical removal of bladder stones.",
+            "Treatment of bladder infection.",
+            "Measurement of bladder capacity."
+        ]
+    },
+     {
+        "question": "What is Gastroesophageal Reflux Disease (GERD)?",
+        "correct_answer": "Stomach acid flowing back into the esophagus.",
+        "wrong_answers": [
+            "Inflammation of the stomach lining.",
+            "Liver disorder causing yellowing of the skin.",
+            "Inflammation of diverticula in the colon."
+        ]
+    },
+    {
+        "question": "What is Jaundice?",
+        "correct_answer": "Yellowing of skin due to high bilirubin levels.",
+        "wrong_answers": [
+            "Stomach acid flowing back into the esophagus.",
+            "Inflammation of diverticula in the colon.",
+            "Liver disorder causing portal hypertension."
+        ]
+    },
+    {
+        "question": "What is Diverticulosis/diverticulitis?",
+        "correct_answer": "Small pouches in the colon wall, with or without inflammation.",
+        "wrong_answers": [
+            "Liver disorder causing yellowing of the skin.",
+            "Stomach acid flowing back into the esophagus.",
+            "Liver disorder causing portal hypertension."
+        ]
+    },
+    {
+        "question": "What is Cirrhosis?",
+        "correct_answer": "Chronic liver disease with scarring and loss of function.",
+        "wrong_answers": [
+            "Stomach acid flowing back into the esophagus.",
+            "Inflammation of diverticula in the colon.",
+            "Liver disorder causing portal hypertension."
+        ]
+    },
+    {
+        "question": "What is Portal Hypertension?",
+        "correct_answer": "High blood pressure in portal vein system due to liver disease.",
+        "wrong_answers": [
+            "Stomach acid flowing back into the esophagus.",
+            "Liver disorder causing yellowing of the skin.",
+            "Inflammation of diverticula in the colon."
+        ]
+    },
+    {
+        "question": "What are Esophageal Varices?",
+        "correct_answer": "Enlarged veins in the esophagus due to liver disease.",
+        "wrong_answers": [
+            "Stomach acid flowing back into the esophagus.",
+            "Liver disorder causing yellowing of the skin.",
+            "Inflammation of diverticula in the colon."
+        ]
+    },
+    {
+        "question": "What is Dysphagia?",
+        "correct_answer": "Difficulty swallowing.",
+        "wrong_answers": [
+            "Stomach acid flowing back into the esophagus.",
+            "Liver disorder causing yellowing of the skin.",
+            "Inflammation of diverticula in the colon."
+        ]
+    },
+    {
+        "question": "What is Crohn’s Disease?",
+        "correct_answer": "Chronic inflammatory bowel disease affecting any part of the digestive tract.",
+        "wrong_answers": [
+            "Stomach acid flowing back into the esophagus.",
+            "Liver disorder causing yellowing of the skin.",
+            "Inflammation of diverticula in the colon."
+        ]
+    },
+    {
+        "question": "What is Peritonitis?",
+        "correct_answer": "Inflammation of the peritoneum, the lining of the abdominal cavity.",
+        "wrong_answers": [
+            "Stomach acid flowing back into the esophagus.",
+            "Liver disorder causing yellowing of the skin.",
+            "Chronic inflammatory bowel disease."
+        ]
+    },
+    {
+        "question": "What is Rhin/o?",
+        "correct_answer": "Nose",
+        "wrong_answers": [
+            "Larynx",
+            "Trachea",
+            "Lung air passageways"
+        ]
+    },
+    {
+        "question": "What is Laryng/o?",
+        "correct_answer": "Larynx, or 'voice box'.",
+        "wrong_answers": [
+            "Nose",
+            "Trachea",
+            "Lung air passageways"
+        ]
+    },
+    {
+        "question": "What is Trache/o?",
+        "correct_answer": "Trachea, or 'windpipe'.",
+        "wrong_answers": [
+            "Nose",
+            "Larynx",
+            "Lung air passageways"
+        ]
+    },
+    {
+        "question": "What is Bronch/o?",
+        "correct_answer": "Lung air passageways.",
+        "wrong_answers": [
+            "Nose",
+            "Larynx",
+            "Trachea"
+        ]
+    },
+    {
+        "question": "What is Pne/u, -pnea?",
+        "correct_answer": "Breath, air, lung.",
+        "wrong_answers": [
+            "Nose",
+            "Larynx",
+            "Trachea"
+        ]
+    },
+    {
+        "question": "What is Pulmo/o?",
+        "correct_answer": "Lung.",
+        "wrong_answers": [
+            "Nose",
+            "Larynx",
+            "Trachea"
+        ]
+    },
+    {
+        "question": "What is -ptysis?",
+        "correct_answer": "Spitting (coughing).",
+        "wrong_answers": [
+            "Reconstruction",
+            "Breath, air, lung",
+            "Larynx"
+        ]
+    },
+    {
+        "question": "What is -plasty?",
+        "correct_answer": "Reconstruction.",
+        "wrong_answers": [
+            "Spitting (coughing)",
+            "Breath, air, lung",
+            "Larynx"
+        ]
+    },
+    {
+        "question": "What is Rhinitis?",
+        "correct_answer": "Inflammation of the nose.",
+        "wrong_answers": [
+            "Inflammation of the larynx.",
+            "Inflammation of the trachea.",
+            "Inflammation of the bronchi."
+        ]
+    },
+    {
+        "question": "What is Rhinorrhea?",
+        "correct_answer": "Runny nose.",
+        "wrong_answers": [
+            "Cutting into the larynx.",
+            "Looking into the bronchi.",
+            "Accelerated breathing."
+        ]
+    },
+    {
+        "question": "What is Laryngotomy?",
+        "correct_answer": "Cutting into the larynx.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Temporary opening into the trachea.",
+            "Looking into the bronchi."
+        ]
+    },
+    {
+        "question": "What is Laryngectomy?",
+        "correct_answer": "Surgical removal of the larynx.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Temporary opening into the trachea.",
+            "Looking into the bronchi."
+        ]
+    },
+    {
+        "question": "What is Tracheotomy?",
+        "correct_answer": "Creation of a temporary opening into the trachea.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Cutting into the larynx.",
+            "Looking into the bronchi."
+        ]
+    },
+    {
+        "question": "What is Tracheostomy?",
+        "correct_answer": "Creation of a permanent opening into the trachea.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Cutting into the larynx.",
+            "Looking into the bronchi."
+        ]
+    },
+    {
+        "question": "What is Bronchoscopy?",
+        "correct_answer": "Procedure to look into the bronchi.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Inflammation of the larynx.",
+            "Surgical reconstruction of the nose."
+        ]
+    },
+    {
+        "question": "What is Tachypnea?",
+        "correct_answer": "Accelerated breathing.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Inflammation of the larynx.",
+            "Inflammation of the trachea."
+        ]
+    },
+    {
+        "question": "What is Dyspnea?",
+        "correct_answer": "Difficult or painful breathing.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Inflammation of the larynx.",
+            "Inflammation of the trachea."
+        ]
+    },
+    {
+        "question": "What is Apnea?",
+        "correct_answer": "Cessation of breathing.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Inflammation of the larynx.",
+            "Inflammation of the trachea."
+        ]
+    },
+    {
+        "question": "What is Pulmonary Artery?",
+        "correct_answer": "Artery carrying blood from heart to lungs.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Inflammation of the larynx.",
+            "Inflammation of the trachea."
+        ]
+    },
+    {
+        "question": "What is Hemoptysis?",
+        "correct_answer": "Spitting or coughing up blood from lungs.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Inflammation of the larynx.",
+            "Inflammation of the trachea."
+        ]
+    },
+    {
+        "question": "What is Rhinoplasty?",
+        "correct_answer": "Surgical reconstruction of the nose.",
+        "wrong_answers": [
+            "Inflammation of the larynx.",
+            "Temporary opening into the trachea.",
+            "Looking into the bronchi."
+        ]
+    },
+    
     
 ]
 

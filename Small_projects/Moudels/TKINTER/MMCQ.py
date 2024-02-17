@@ -9,7 +9,7 @@ root.config(bg="#242424")
 root.iconbitmap("Images\Icons\MSQ.ico")
 
 f = "TimesNewRoman 16 bold"
-f2 = "TimesNewRoman 11"
+f2 = "TimesNewRoman 11 bold"
 f3 = "TimesNewRoman 8"
 f4 = "TimesNewRoman 1"
 
@@ -28,7 +28,6 @@ img_list = [
     load_image(r"Images\MSQ_Practical\img2.png"),
     load_image(r"Images\MSQ_Practical\img3.png")
 ]
-
 
 
 def The_satrt():
@@ -62,7 +61,7 @@ def md1_imprac():
     Label(root, text="⇃Choose your subject⇂", font=f, bg="#404040",fg="White").grid(row=0, column=0)
     object_row = 1
     for object in objects:
-        obj_button = Button(root, text=object, bd=5, width=20,command=lambda obj=object:get(obj))
+        obj_button = Button(root, text=object,font=f, bd=5, width=20,command=lambda obj=object:get(obj))
         obj_button.grid(row=object_row, column=0)
         object_row += 1
     
@@ -118,7 +117,7 @@ def anatomy():
     shuffle(all_a)
     
     for answer in all_a:
-        button = Button(root, text=answer,font=f ,width=120, bd=5, command=lambda a=answer: check_anat(a))
+        button = Button(root, text=answer,font=f ,width = 100, bd=5, command=lambda a=answer: check_anat(a))
         button.grid(row=row, column=0)
         row += 1
 
@@ -254,7 +253,7 @@ def ppc():
     shuffle(all_a)
     
     for answer in all_a:
-        button = Button(root, text=answer,font=f ,width=120, bd=5, command=lambda a=answer: check_ppc(a))
+        button = Button(root, text=answer,font=f ,width = 100, bd=5, command=lambda a=answer: check_ppc(a))
         button.grid(row=row, column=0)
         row += 1
 
