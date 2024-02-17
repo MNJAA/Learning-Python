@@ -2047,10 +2047,6 @@ PPC_questions = [
 Anatomy_practical = [1,2,3]
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> af5413712c5cadda241772980c7cb029d9118347
 Chemistry_practical = [
     {
         "question": "What is this?",

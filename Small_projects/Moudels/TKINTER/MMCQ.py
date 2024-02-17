@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from random import shuffle
-from qs import Chemistry_practical,Anatomy_practical,Anatomy_questions,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
+from qs import Anatomy_practical,Anatomy_questions,Biology_questions,Chemistry_practical,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
 
 root = Tk()
 root.title("First Year MCQ Exam")
