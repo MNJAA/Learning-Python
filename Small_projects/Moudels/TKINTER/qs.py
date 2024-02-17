@@ -8,20 +8,10 @@ TESTING = [
      "wrong_answers": ["Hydrophobic is always in the outer layer", "Both layers are hydrophobic",
                        "Hydrophilic is always in the inner layer"]
      },
-    {
-        "question": "What can't be oxidized?",
-     "correct_answer": "Tertiary alcohol",
-     "wrong_answers": ["Primary alcohol", "Secondary alcohol", "Quaternary alcohol"]
-     },
-    {
-        "question": "Which one of the following tests positive for Tollen's reagent?",
-     "correct_answer": "Aldehyde",
-     "wrong_answers": ["Ketone", "Carboxylic acid", "Ester"]
-     }
 ]
 
 
-
+#premid 1 impractical 
 
 Anatomy_questions = [
     {
@@ -770,11 +760,6 @@ Anatomy_questions = [
     }
 ]
 
-Anatomy_practical = [1,2,3]
-
-total_Anatomy = len(Anatomy_questions)
-print(f"created a total of {total_Anatomy} questions for Anatomy questions.")
-
 
 Biology_questions = [
       {
@@ -1059,9 +1044,6 @@ Biology_questions = [
       
 ]
 
-total_Biology = len(Biology_questions)
-print(f"created a total of {total_Biology} questions for Biology questions.")
-
 
 Chemistry_questions = [
     {"question": "What is true about bilayer in the cell membrane?",
@@ -1327,34 +1309,6 @@ Chemistry_questions = [
             "Carboxylic acid + Alcohol"]
     }
 ]
-
-Chemistry_practical = [
-    {
-        "question": "What is this?",
-        'correct_answer': "N,N-diethyl-m-toulamide",
-        'wrong_answers': ["N,N-dimethyl-m-toulamide", "N-ethyl-m-toulamide", "N,N-dipropyl-m-toulamide"]
-    },
-
-    {
-        "question": "What is this?",
-        'correct_answer': "4-ethyl-5,6-dimethyldecane",
-        'wrong_answers': ["2-methyl-3-propylhexane", "3-ethyl-4,5-dimethylheptane", "5,6-dimethyl-4-ethyldecane"]
-    },
-    {
-        "question": "What is this?",
-        'correct_answer': "2-ethyl-1-pentene",
-        'wrong_answers': ["3-methyl-1-butene", "1,2-dimethylcyclohexane", "4-propyl-2-hexene"]
-    },
-    {
-        "question": "What is this?",
-        'correct_answer': "cis-5-chloro-2-hexene",
-        'wrong_answers': ["trans-5-chloro-2-hexene", "3-methyl-1-butene", "1,2-dimethylcyclohexane"]
-    }
-]
-
-
-total_chemistry = len(Chemistry_questions + Chemistry_practical)
-print(f"created a total of {total_chemistry} questions for Chemistry questions.")
 
 
 NIT_questions = [
@@ -1659,9 +1613,6 @@ NIT_questions = [
         "wrong_answers": ["Keyword search", "Boolean operators", "Wildcard search"]
     },
 ]
-
-total_NIT = len(NIT_questions)
-print(f"created a total of {total_NIT} questions for NIT questions.")
 
 
 PPC_questions = [
@@ -2090,9 +2041,40 @@ PPC_questions = [
     }
 ]
 
-total_PPC = len(PPC_questions)
-print(f"created a total of {total_PPC} questions for PPC questions.")
 
+#premid 1 practical
+
+Anatomy_practical = [1,2,3]
+
+
+
+
+Chemistry_practical = [
+    {
+        "question": "What is this?",
+        'correct_answer': "N,N-diethyl-m-toulamide",
+        'wrong_answers': ["N,N-dimethyl-m-toulamide", "N-ethyl-m-toulamide", "N,N-dipropyl-m-toulamide"]
+    },
+
+    {
+        "question": "What is this?",
+        'correct_answer': "4-ethyl-5,6-dimethyldecane",
+        'wrong_answers': ["2-methyl-3-propylhexane", "3-ethyl-4,5-dimethylheptane", "5,6-dimethyl-4-ethyldecane"]
+    },
+    {
+        "question": "What is this?",
+        'correct_answer': "2-ethyl-1-pentene",
+        'wrong_answers': ["3-methyl-1-butene", "1,2-dimethylcyclohexane", "4-propyl-2-hexene"]
+    },
+    {
+        "question": "What is this?",
+        'correct_answer': "cis-5-chloro-2-hexene",
+        'wrong_answers': ["trans-5-chloro-2-hexene", "3-methyl-1-butene", "1,2-dimethylcyclohexane"]
+    }
+]
+
+
+#premid 2 impractical 
 
 PPC_terms = [
     {
@@ -2666,9 +2648,31 @@ PPC_terms = [
 ]
 
 
+
+
+#Total questions for premid 1
+
+total_Anatomy = len(Anatomy_questions + Anatomy_practical)
+print(f"created a total of {total_Anatomy} questions for Anatomy questions.")
+
+total_Biology = len(Biology_questions)
+print(f"created a total of {total_Biology} questions for Biology questions.")
+
+total_chemistry = len(Chemistry_questions + Chemistry_practical)
+print(f"created a total of {total_chemistry} questions for Chemistry questions.")
+
+total_NIT = len(NIT_questions)
+print(f"created a total of {total_NIT} questions for NIT questions.")
+
+total_PPC = len(PPC_questions)
+print(f"created a total of {total_PPC} questions for PPC questions.")
+
+
+total_questions = (total_Anatomy + total_Biology + total_chemistry + total_NIT + total_PPC )
+print(f"{SL}created a total of {total_questions} for premid 1 questions. practical not included{SL}")
+
+
+#Total questions for premid 2
+
 total_PPCT = len(PPC_terms)
 print(f"created a total of {total_PPCT} questions for PPCT questions.")
-
-
-total_questions = (total_Anatomy + total_Biology + total_chemistry + total_NIT + total_PPC + total_PPCT)
-print(f"{SL}created a total of {total_questions} questions. practical not included")
