@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from random import shuffle
-from qs import Chemistry_practical,Anatomy_practical,Anatomy_questions,Biology_questions,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
+from qs import Chemistry_practical,Anatomy_practical,Anatomy_questions,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
 
 root = Tk()
 root.title("First Year MCQ Exam")
@@ -186,7 +186,7 @@ def chemistry():
     shuffle(all_a)
     
     for answer in all_a:
-        button = Button(root, text=answer,font=f ,width=100, bd=5, command=lambda a=answer: check_bio(a))
+        button = Button(root, text=answer,font=f ,width=100, bd=5, command=lambda a=answer: check_chem(a))
         button.grid(row=row, column=0)
         row += 1
 
@@ -295,7 +295,7 @@ def chemistry_p():
         button.grid(row=row, column=0)
         row += 1
 
-def check_chem(a):
+def check_pchem(a):
     global current_question_index, overall_score
     cq = Chemistry_practical[current_question_index]
     
