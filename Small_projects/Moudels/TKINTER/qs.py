@@ -2692,6 +2692,56 @@ PPC_terms = [
         "correct_answer": "Abnormal condition",
         "wrong_answers": ["To puncture", "To crush", "Flow, discharge"]
     },
+      {
+        "question": "What does 'Gastr/o' refer to?",
+        "correct_answer": "Stomach",
+        "wrong_answers": ["Liver", "Gall, bile", "Vomit"]
+    },
+    {
+        "question": "What does 'Hepat/o' refer to?",
+        "correct_answer": "Liver",
+        "wrong_answers": ["Stomach", "Gall, bile", "Vomit"]
+    },
+    {
+        "question": "What does 'Chol/e' refer to?",
+        "correct_answer": "Gall, bile",
+        "wrong_answers": ["Stomach", "Liver", "Vomit"]
+    },
+    {
+        "question": "What does 'Emes/o' refer to?",
+        "correct_answer": "Vomit",
+        "wrong_answers": ["Stomach", "Liver", "Gall, bile"]
+    },
+    {
+        "question": "What does 'Lith/o' refer to?",
+        "correct_answer": "Stone",
+        "wrong_answers": ["Stomach", "Liver", "Gall, bile"]
+    },
+    {
+        "question": "What does 'Lapar/o' refer to?",
+        "correct_answer": "Abdominal wall",
+        "wrong_answers": ["Stomach", "Liver", "Gall, bile"]
+    },
+    {
+        "question": "What does '-centesis' mean?",
+        "correct_answer": "To puncture",
+        "wrong_answers": ["To crush", "Flow, discharge", "Abnormal condition"]
+    },
+    {
+        "question": "What does '-tripsy' mean?",
+        "correct_answer": "To crush",
+        "wrong_answers": ["To puncture", "Flow, discharge", "Abnormal condition"]
+    },
+    {
+        "question": "What does '-rrhea' mean?",
+        "correct_answer": "Flow, discharge",
+        "wrong_answers": ["To puncture", "To crush", "Abnormal condition"]
+    },
+    {
+        "question": "What does '-iasis (-osis)' mean?",
+        "correct_answer": "Abnormal condition",
+        "wrong_answers": ["To puncture", "To crush", "Flow, discharge"]
+    },
     {
         "question": "What is a cystoscopy?",
         "correct_answer": "Examining the lining of a bladder.",
@@ -2971,6 +3021,1573 @@ PPC_terms = [
             "Looking into the bronchi."
         ]
     },
+    
+     {
+        "question": "What is Pneumoconiosis?",
+        "correct_answer": "Lung disease caused by inhalation of dust particles.",
+        "wrong_answers": [
+            "Inflammation of the nose.",
+            "Surgical reconstruction of the nose.",
+            "Cutting into or surgically removing the larynx."
+        ]
+    },
+    {
+        "question": "What is Epistaxis?",
+        "correct_answer": "Bleeding from the nose.",
+        "wrong_answers": [
+            "Lung disease caused by inhalation of dust particles.",
+            "Looking into the bronchi.",
+            "Accelerated breathing."
+        ]
+    },
+    {
+        "question": "What is Cystic Fibrosis?",
+        "correct_answer": "Inherited disorder causing mucus buildup in the lungs and digestive system.",
+        "wrong_answers": [
+            "Bleeding from the nose.",
+            "Temporary opening into the trachea.",
+            "Lung disease caused by inhalation of dust particles."
+        ]
+    },
+    {
+        "question": "What is Emphysema (COPD)?",
+        "correct_answer": "Chronic lung disease characterized by damaged air sacs in the lungs.",
+        "wrong_answers": [
+            "Bleeding from the nose.",
+            "Inherited disorder causing mucus buildup.",
+            "Looking into the bronchi."
+        ]
+    },
+    {
+        "question": "What is Atelectasis?",
+        "correct_answer": "Collapsed lung.",
+        "wrong_answers": [
+            "Chronic lung disease characterized by damaged air sacs.",
+            "Inherited disorder causing mucus buildup.",
+            "Surgical reconstruction of the nose."
+        ]
+    },
+    {
+        "question": "What is a Pulmonologist?",
+        "correct_answer": "Doctor specializing in lung diseases.",
+        "wrong_answers": [
+            "Bleeding from the nose.",
+            "Temporary opening into the trachea.",
+            "Chronic lung disease characterized by damaged air sacs."
+        ]
+    },
+    {
+        "question": "What is a Respiratory Therapist?",
+        "correct_answer": "Healthcare professional specializing in respiratory care.",
+        "wrong_answers": [
+            "Doctor specializing in lung diseases.",
+            "Surgical reconstruction of the nose.",
+            "Looking into the bronchi."
+        ]
+    },
+    {
+        "question": "What is Pulmonary Angiography?",
+        "correct_answer": "Imaging test to visualize blood vessels in the lungs.",
+        "wrong_answers": [
+            "Chronic lung disease characterized by damaged air sacs.",
+            "Bleeding from the nose.",
+            "Inherited disorder causing mucus buildup."
+        ]
+    },
+    {
+        "question": "What is Laryngoscopy?",
+        "correct_answer": "Procedure to examine the larynx.",
+        "wrong_answers": [
+            "Chronic lung disease characterized by damaged air sacs.",
+            "Inherited disorder causing mucus buildup.",
+            "Imaging test to visualize blood vessels in the lungs."
+        ]
+    },
+    {
+        "question": "What is Endotracheal Intubation?",
+        "correct_answer": "Placement of a tube into the trachea to maintain an open airway.",
+        "wrong_answers": [
+            "Chronic lung disease characterized by damaged air sacs.",
+            "Procedure to examine the larynx.",
+            "Imaging test to visualize blood vessels in the lungs."
+        ]
+    },
+    {
+        "question": "What is Nephr/o or ren/o?",
+        "correct_answer": "Kidney.",
+        "wrong_answers": [
+            "Water.",
+            "Bladder.",
+            "Renal collecting ducts."
+        ]
+    },
+    {
+        "question": "What is Hydro/o?",
+        "correct_answer": "Water.",
+        "wrong_answers": [
+            "Kidney.",
+            "Bladder.",
+            "Renal collecting ducts."
+        ]
+    },
+    {
+        "question": "What is Cyst/o?",
+        "correct_answer": "Bladder.",
+        "wrong_answers": [
+            "Kidney.",
+            "Water.",
+            "Renal collecting ducts."
+        ]
+    },
+    {
+        "question": "What is Pyel/o?",
+        "correct_answer": "Renal collecting ducts.",
+        "wrong_answers": [
+            "Kidney.",
+            "Water.",
+            "Bladder."
+        ]
+    },
+    {
+        "question": "What is Ur/o or -uria?",
+        "correct_answer": "Urine.",
+        "wrong_answers": [
+            "Kidney.",
+            "Water.",
+            "Bladder."
+        ]
+    },
+    {
+        "question": "What is Olig/o?",
+        "correct_answer": "Scanty or less than normal.",
+        "wrong_answers": [
+            "Kidney.",
+            "Water.",
+            "Bladder."
+        ]
+    },
+    {
+        "question": "What is -pexy?",
+        "correct_answer": "To surgically reattach or fix in normal position.",
+        "wrong_answers": [
+            "Kidney.",
+            "Water.",
+            "Bladder."
+        ]
+    },
+    {
+        "question": "What is Nephritis?",
+        "correct_answer": "Inflammation of the kidney.",
+        "wrong_answers": [
+            "Renal artery.",
+            "Abnormal condition involving back up of urine into the kidney.",
+            "Inflammation of, removal of bladder."
+        ]
+    },
+    {
+        "question": "What is Hydronephrosis?",
+        "correct_answer": "Abnormal condition involving back up of urine into the kidney.",
+        "wrong_answers": [
+            "Inflammation of the kidney.",
+            "X-ray of the collecting ducts.",
+            "Frequent urination, no urine formation."
+        ]
+    },
+    {
+        "question": "What is Cystitis?",
+        "correct_answer": "Inflammation of the bladder.",
+        "wrong_answers": [
+            "X-ray of the collecting ducts.",
+            "Abnormal condition involving back up of urine into the kidney.",
+            "Reduced urine formation."
+        ]
+    },
+    {
+        "question": "What is Cystectomy?",
+        "correct_answer": "Surgical removal of the bladder.",
+        "wrong_answers": [
+            "Inflammation of the bladder.",
+            "Frequent urination, no urine formation.",
+            "Surgically attach kidney in normal anatomical position."
+        ]
+    },
+    {
+        "question": "What is Pyelogram?",
+        "correct_answer": "X-ray of the collecting ducts.",
+        "wrong_answers": [
+            "Inflammation of the kidney.",
+            "Surgically attach kidney in normal anatomical position.",
+            "Reduced urine formation."
+        ]
+    },
+    {
+        "question": "What is Polyuria?",
+        "correct_answer": "Frequent urination.",
+        "wrong_answers": [
+            "Abnormal condition involving back up of urine into the kidney.",
+            "Surgically attach kidney in normal anatomical position.",
+            "Inflammation of the bladder."
+        ]
+    },
+    {
+        "question": "What is Anuria?",
+        "correct_answer": "No urine formation.",
+        "wrong_answers": [
+            "Frequent urination.",
+            "Abnormal condition involving back up of urine into the kidney.",
+            "Inflammation of the kidney."
+        ]
+    },
+    {
+        "question": "What is Oliguria?",
+        "correct_answer": "Reduced urine formation.",
+        "wrong_answers": [
+            "Surgical removal of the bladder.",
+            "Inflammation of the bladder.",
+            "No urine formation."
+        ]
+    },
+    {
+        "question": "What is Nephropexy?",
+        "correct_answer": "Surgically attach kidney in normal anatomical position.",
+        "wrong_answers": [
+            "Inflammation of the bladder.",
+            "X-ray of the collecting ducts.",
+            "Frequent urination."
+        ]
+    },
+    {
+        "question": "What is Nephrosis?",
+        "correct_answer": "Abnormal condition of the kidney.",
+        "wrong_answers": [
+            "Formation of kidney stones.",
+            "Inflammation of the urethra.",
+            "Frequent urination during the night."
+        ]
+    },
+    {
+        "question": "What is Nephrolith?",
+        "correct_answer": "Kidney stone.",
+        "wrong_answers": [
+            "Abnormal condition of the kidney.",
+            "Inflammation of the urethra.",
+            "Frequent urination during the night."
+        ]
+    },
+    {
+        "question": "What is Urethritis?",
+        "correct_answer": "Inflammation of the urethra.",
+        "wrong_answers": [
+            "Abnormal condition of the kidney.",
+            "Formation of kidney stones.",
+            "Frequent urination during the night."
+        ]
+    },
+    {
+        "question": "What is Nocturia?",
+        "correct_answer": "Frequent urination during the night.",
+        "wrong_answers": [
+            "Abnormal condition of the kidney.",
+            "Formation of kidney stones.",
+            "Inflammation of the urethra."
+        ]
+    },
+    {
+        "question": "What is Enuresis?",
+        "correct_answer": "Involuntary discharge of urine, especially at night; bed-wetting.",
+        "wrong_answers": [
+            "Abnormal condition of the kidney.",
+            "Formation of kidney stones.",
+            "Inflammation of the urethra."
+        ]
+    },
+    {
+        "question": "What is Nephrologist?",
+        "correct_answer": "Medical specialist in kidney diseases.",
+        "wrong_answers": [
+            "Medical specialist in urinary tract diseases.",
+            "Medical specialist in kidney stone removal.",
+            "Medical specialist in urology."
+        ]
+    },
+    {
+        "question": "What is Urologist?",
+        "correct_answer": "Medical specialist in urinary tract diseases and male reproductive system.",
+        "wrong_answers": [
+            "Medical specialist in kidney diseases.",
+            "Medical specialist in kidney stone removal.",
+            "Medical specialist in nephrology."
+        ]
+    },
+    {
+        "question": "What is Intravenous Pyelogram?",
+        "correct_answer": "X-ray of kidneys and urinary tract after injection of contrast material.",
+        "wrong_answers": [
+            "X-ray of the bladder after injection of contrast material.",
+            "X-ray of the kidneys without injection of contrast material.",
+            "Ultrasound of the kidneys and urinary tract."
+        ]
+    },
+    {
+        "question": "What is Retrograde Pyelogram?",
+        "correct_answer": "X-ray of kidneys and urinary tract after injection of contrast material through a catheter into the ureters.",
+        "wrong_answers": [
+            "X-ray of the kidneys without injection of contrast material.",
+            "X-ray of the bladder after injection of contrast material.",
+            "Ultrasound of the kidneys and urinary tract."
+        ]
+    },
+    {
+        "question": "What is Voiding Cystourethrogram?",
+        "correct_answer": "X-ray of bladder and urethra during urination.",
+        "wrong_answers": [
+            "X-ray of the kidneys and urinary tract after injection of contrast material.",
+            "Ultrasound of the kidneys and urinary tract.",
+            "X-ray of the bladder after injection of contrast material."
+        ]
+    },
+    {
+        "question": "What is Dialysis?",
+        "correct_answer": "Medical procedure to remove waste products and excess fluid from the blood when the kidneys are unable to do so.",
+        "wrong_answers": [
+            "Medical procedure to break down kidney stones.",
+            "Medical procedure to examine the kidneys using sound waves.",
+            "Surgical removal of the kidneys."
+        ]
+    },
+    {
+        "question": "What is Lithotripsy?",
+        "correct_answer": "Medical procedure to break up kidney stones using shock waves.",
+        "wrong_answers": [
+            "Medical procedure to remove waste products from the blood.",
+            "Medical procedure to examine the kidneys using sound waves.",
+            "Surgical removal of the kidneys."
+        ]
+    },
+     {
+        "question": "What is Orchid/o or test/o?",
+        "correct_answer": "Testes (male gonad).",
+        "wrong_answers": [
+            "Head of the penis.",
+            "Male.",
+            "Prostate."
+        ]
+    },
+    {
+        "question": "What is Balan/o?",
+        "correct_answer": "Head of the penis.",
+        "wrong_answers": [
+            "Testes (male gonad).",
+            "Male.",
+            "Prostate."
+        ]
+    },
+    {
+        "question": "What is Andr/o?",
+        "correct_answer": "Male.",
+        "wrong_answers": [
+            "Testes (male gonad).",
+            "Head of the penis.",
+            "Prostate."
+        ]
+    },
+    {
+        "question": "What is Prostat/o?",
+        "correct_answer": "Prostate.",
+        "wrong_answers": [
+            "Testes (male gonad).",
+            "Head of the penis.",
+            "Male."
+        ]
+    },
+    {
+        "question": "What is Vas/o?",
+        "correct_answer": "Vessel or duct.",
+        "wrong_answers": [
+            "Testes (male gonad).",
+            "Head of the penis.",
+            "Prostate."
+        ]
+    },
+    {
+        "question": "What is -rrhaphy?",
+        "correct_answer": "Suturing.",
+        "wrong_answers": [
+            "Testes (male gonad).",
+            "Head of the penis.",
+            "Prostate."
+        ]
+    },
+     {
+        "question": "What is Orchiditis?",
+        "correct_answer": "Inflammation of the testes.",
+        "wrong_answers": [
+            "Surgical removal of the testes.",
+            "Artery supplying blood to the testes.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Orchidectomy?",
+        "correct_answer": "Surgical removal of the testes.",
+        "wrong_answers": [
+            "Inflammation of the testes.",
+            "Artery supplying blood to the testes.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Testicular Artery?",
+        "correct_answer": "Artery supplying blood to the testes.",
+        "wrong_answers": [
+            "Inflammation of the testes.",
+            "Surgical removal of the testes.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Testosterone?",
+        "correct_answer": "Male sex hormone.",
+        "wrong_answers": [
+            "Inflammation of the testes.",
+            "Surgical removal of the testes.",
+            "Artery supplying blood to the testes."
+        ]
+    },
+    {
+        "question": "What is Balanitis?",
+        "correct_answer": "Inflammation of the head of the penis.",
+        "wrong_answers": [
+            "Surgical removal of the testes.",
+            "Male sex hormone.",
+            "Artery supplying blood to the testes."
+        ]
+    },
+    {
+        "question": "What is Androgenic?",
+        "correct_answer": "Stimulating maleness.",
+        "wrong_answers": [
+            "Surgical removal of the testes.",
+            "Inflammation of the head of the penis.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Androgynous?",
+        "correct_answer": "Having characteristics of both male and female appearance.",
+        "wrong_answers": [
+            "Surgical removal of the testes.",
+            "Inflammation of the head of the penis.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Prostatitis?",
+        "correct_answer": "Inflammation of the prostate gland.",
+        "wrong_answers": [
+            "Surgical removal of the testes.",
+            "Inflammation of the head of the penis.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Prostatectomy?",
+        "correct_answer": "Surgical removal of the prostate gland.",
+        "wrong_answers": [
+            "Inflammation of the testes.",
+            "Inflammation of the head of the penis.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Vas Deferens?",
+        "correct_answer": "Duct carrying semen from testes to urethra.",
+        "wrong_answers": [
+            "Inflammation of the testes.",
+            "Inflammation of the head of the penis.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Vasectomy?",
+        "correct_answer": "Surgical cutting of the vas deferens.",
+        "wrong_answers": [
+            "Inflammation of the testes.",
+            "Inflammation of the head of the penis.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Herniorrhaphy?",
+        "correct_answer": "Surgical correction of inguinal hernia.",
+        "wrong_answers": [
+            "Inflammation of the testes.",
+            "Inflammation of the head of the penis.",
+            "Male sex hormone."
+        ]
+    },
+    {
+        "question": "What is Hypospadias?",
+        "correct_answer": "A congenital condition where the opening of the urethra is on the underside of the penis.",
+        "wrong_answers": [
+            "A condition where the scrotum fills with fluid.",
+            "Enlarged veins within the scrotum.",
+            "Undescended testicle(s)."
+        ]
+    },
+    {
+        "question": "What is Hydrocele?",
+        "correct_answer": "A condition where fluid accumulates in the sac around the testicle(s).",
+        "wrong_answers": [
+            "A congenital condition where the opening of the urethra is on the underside of the penis.",
+            "Enlarged veins within the scrotum.",
+            "Undescended testicle(s)."
+        ]
+    },
+    {
+        "question": "What is Varicocele?",
+        "correct_answer": "Enlarged veins within the scrotum.",
+        "wrong_answers": [
+            "A congenital condition where the opening of the urethra is on the underside of the penis.",
+            "A condition where fluid accumulates in the sac around the testicle(s).",
+            "Undescended testicle(s)."
+        ]
+    },
+    {
+        "question": "What is Cryptorchidism?",
+        "correct_answer": "A condition where one or both testicles fail to descend into the scrotum.",
+        "wrong_answers": [
+            "A congenital condition where the opening of the urethra is on the underside of the penis.",
+            "A condition where fluid accumulates in the sac around the testicle(s).",
+            "Enlarged veins within the scrotum."
+        ]
+    },
+    {
+        "question": "What is Benign Prostatic Hypertrophy (BPH)?",
+        "correct_answer": "Non-cancerous enlargement of the prostate gland.",
+        "wrong_answers": [
+            "A condition where the opening of the urethra is on the underside of the penis.",
+            "A condition where fluid accumulates in the sac around the testicle(s).",
+            "Enlarged veins within the scrotum."
+        ]
+    },
+    {
+        "question": "What is Transurethral Resection of the Prostate (TURP)?",
+        "correct_answer": "Surgical procedure to remove excess prostate tissue that is blocking urine flow.",
+        "wrong_answers": [
+            "A condition where the opening of the urethra is on the underside of the penis.",
+            "A condition where fluid accumulates in the sac around the testicle(s).",
+            "Non-cancerous enlargement of the prostate gland."
+        ]
+    },
+    {
+        "question": "What is Prostate Specific Antigen (PSA)?",
+        "correct_answer": "A protein produced by the prostate gland, elevated levels may indicate prostate cancer.",
+        "wrong_answers": [
+            "A congenital condition where the opening of the urethra is on the underside of the penis.",
+            "A condition where fluid accumulates in the sac around the testicle(s).",
+            "Non-cancerous enlargement of the prostate gland."
+        ]
+    },
+    {
+        "question": "What is Hyster/o or metr/?",
+        "correct_answer": "Uterus.",
+        "wrong_answers": [
+            "Uterine tube.",
+            "Vagina.",
+            "Ovary."
+        ]
+    },
+    {
+        "question": "What is Salping/o or -salpinx?",
+        "correct_answer": "Uterine tube.",
+        "wrong_answers": [
+            "Uterus.",
+            "Vagina.",
+            "Ovary."
+        ]
+    },
+    {
+        "question": "What is Colp/o?",
+        "correct_answer": "Vagina.",
+        "wrong_answers": [
+            "Uterus.",
+            "Uterine tube.",
+            "Ovary."
+        ]
+    },
+    {
+        "question": "What is Oophor/o?",
+        "correct_answer": "Ovary.",
+        "wrong_answers": [
+            "Uterus.",
+            "Uterine tube.",
+            "Vagina."
+        ]
+    },
+    {
+        "question": "What is Men/o?",
+        "correct_answer": "Menstruation.",
+        "wrong_answers": [
+            "Uterus.",
+            "Uterine tube.",
+            "Vagina."
+        ]
+    },
+    {
+        "question": "What is Mamm/o or mast/o?",
+        "correct_answer": "Breast.",
+        "wrong_answers": [
+            "Uterus.",
+            "Uterine tube.",
+            "Ovary."
+        ]
+    },
+    {
+        "question": "What is -pareunia or coitus?",
+        "correct_answer": "Intercourse.",
+        "wrong_answers": [
+            "Uterus.",
+            "Uterine tube.",
+            "Ovary."
+        ]
+    },
+    {
+        "question": "What is Hysterectomy?",
+        "correct_answer": "Surgical removal of the uterus.",
+        "wrong_answers": [
+            "Inflammation of the lining of the uterus.",
+            "Surgical reconstruction of the vagina.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Endometritis?",
+        "correct_answer": "Inflammation of the lining of the uterus.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Blood in the uterine tube.",
+            "Painful menstruation."
+        ]
+    },
+    {
+        "question": "What is Salpingitis?",
+        "correct_answer": "Inflammation of the uterine tube.",
+        "wrong_answers": [
+            "Surgical reconstruction of the vagina.",
+            "Painful menstruation.",
+            "Blood in the uterine tube."
+        ]
+    },
+    {
+        "question": "What is Hematosalpinx?",
+        "correct_answer": "Blood in the uterine tube.",
+        "wrong_answers": [
+            "Inflammation of the lining of the uterus.",
+            "Surgical removal of the uterus.",
+            "Surgical reconstruction of the vagina."
+        ]
+    },
+    {
+        "question": "What is Colporrhaphy?",
+        "correct_answer": "Suturing a tear in the vagina.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Colpoplasty?",
+        "correct_answer": "Surgical reconstruction of the vagina.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Colposcopy?",
+        "correct_answer": "Medical procedure to view the interior of the vagina and cervix.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Oophorectomy?",
+        "correct_answer": "Surgical removal of the ovary.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Blood in the uterine tube."
+        ]
+    },
+    {
+        "question": "What is Oophoropexy?",
+        "correct_answer": "Surgical fixation or reattachment of the ovary.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Blood in the uterine tube."
+        ]
+    },
+    {
+        "question": "What is Menarche?",
+        "correct_answer": "The first occurrence of menstruation.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Painful menstruation."
+        ]
+    },
+    {
+        "question": "What is Dysmenorrhea?",
+        "correct_answer": "Painful menstruation.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Blood in the uterine tube."
+        ]
+    },
+    {
+        "question": "What is Mammogram?",
+        "correct_answer": "X-ray of the breast.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Mastectomy?",
+        "correct_answer": "Surgical removal of the breast.",
+        "wrong_answers": [
+            "Inflammation of the lining of the uterus.",
+            "Blood in the uterine tube.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Dyspareunia?",
+        "correct_answer": "Painful intercourse.",
+        "wrong_answers": [
+            "Surgical removal of the uterus.",
+            "Inflammation of the lining of the uterus.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Precoital?",
+        "correct_answer": "Before intercourse.",
+        "wrong_answers": [
+            "Painful intercourse.",
+            "Surgical removal of the uterus.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Postcoital?",
+        "correct_answer": "After intercourse.",
+        "wrong_answers": [
+            "Painful intercourse.",
+            "Surgical removal of the uterus.",
+            "Surgical removal of the ovary."
+        ]
+    },
+    {
+        "question": "What is Endometriosis?",
+        "correct_answer": "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+        "wrong_answers": [
+            "Inflammation of the pelvic organs.",
+            "Downward displacement of the uterus into the vaginal canal.",
+            "A surgical procedure to view the inside of the vagina and cervix."
+        ]
+    },
+    {
+        "question": "What is Pelvic Inflammatory Disease (PID)?",
+        "correct_answer": "An infection of the female reproductive organs.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "Downward displacement of the uterus into the vaginal canal.",
+            "A surgical procedure to view the inside of the vagina and cervix."
+        ]
+    },
+    {
+        "question": "What is Prolapsed Uterus?",
+        "correct_answer": "Downward displacement of the uterus into the vaginal canal.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "Inflammation of the pelvic organs.",
+            "A surgical procedure to view the inside of the vagina and cervix."
+        ]
+    },
+    {
+        "question": "What is Obstetrician?",
+        "correct_answer": "A medical doctor specializing in pregnancy, childbirth, and postpartum care.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "An infection of the female reproductive organs.",
+            "Downward displacement of the uterus into the vaginal canal."
+        ]
+    },
+    {
+        "question": "What is Gynecologist?",
+        "correct_answer": "A medical doctor specializing in the female reproductive system.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "An infection of the female reproductive organs.",
+            "A surgical procedure to view the inside of the vagina and cervix."
+        ]
+    },
+    {
+        "question": "What is Episiotomy?",
+        "correct_answer": "A surgical incision made in the perineum to widen the vaginal opening during childbirth.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "An infection of the female reproductive organs.",
+            "A medical procedure to view the inside of the vagina and cervix."
+        ]
+    },
+    {
+        "question": "What is Hysterosalpingogram?",
+        "correct_answer": "An X-ray procedure to examine the uterus and fallopian tubes.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "An infection of the female reproductive organs.",
+            "A surgical procedure to widen the vaginal opening during childbirth."
+        ]
+    },
+    {
+        "question": "What is Colposcopy?",
+        "correct_answer": "A medical procedure to view the cervix and vagina in detail.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "An infection of the female reproductive organs.",
+            "A surgical procedure to widen the vaginal opening during childbirth."
+        ]
+    },
+    {
+        "question": "What is Dilation and Curettage (D & C)?",
+        "correct_answer": "A surgical procedure to remove tissue from the inside of the uterus.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "An infection of the female reproductive organs.",
+            "A medical procedure to view the cervix and vagina in detail."
+        ]
+    },
+    {
+        "question": "What is Mammoplasty?",
+        "correct_answer": "Surgical reconstruction or augmentation of the breast.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "An infection of the female reproductive organs.",
+            "A surgical procedure to widen the vaginal opening during childbirth."
+        ]
+    },
+    {
+        "question": "What is Pudendal Block?",
+        "correct_answer": "A regional anesthetic injection used during childbirth to numb the perineum and surrounding area.",
+        "wrong_answers": [
+            "A condition where tissue similar to the lining of the uterus grows outside the uterus.",
+            "An infection of the female reproductive organs.",
+            "A surgical procedure to widen the vaginal opening during childbirth."
+        ]
+    },
+     {
+        "question": "What does -gravida mean?",
+        "correct_answer": "Pregnancy.",
+        "wrong_answers": [
+            "Live birth.",
+            "Labor/birth/delivery.",
+            "A medical condition related to the uterus."
+        ]
+    },
+    {
+        "question": "What does -para mean?",
+        "correct_answer": "Live birth.",
+        "wrong_answers": [
+            "Pregnancy.",
+            "Labor/birth/delivery.",
+            "A medical condition related to the uterus."
+        ]
+    },
+    {
+        "question": "What does Part/o or toc/o mean?",
+        "correct_answer": "Labor, birth, or delivery.",
+        "wrong_answers": [
+            "Pregnancy.",
+            "Live birth.",
+            "A medical condition related to the uterus."
+        ]
+    },
+    {
+        "question": "What is Nulligravida?",
+        "correct_answer": "Never pregnant.",
+        "wrong_answers": [
+            "First-time pregnant.",
+            "Many pregnancies.",
+            "Many live births."
+        ]
+    },
+    {
+        "question": "What is Primigravida?",
+        "correct_answer": "First-time pregnant.",
+        "wrong_answers": [
+            "Never pregnant.",
+            "Many pregnancies.",
+            "Many live births."
+        ]
+    },
+    {
+        "question": "What is Multigravida?",
+        "correct_answer": "Many pregnancies.",
+        "wrong_answers": [
+            "Never pregnant.",
+            "First-time pregnant.",
+            "Many live births."
+        ]
+    },
+    {
+        "question": "What is Prepartum?",
+        "correct_answer": "Before delivery.",
+        "wrong_answers": [
+            "After delivery.",
+            "Difficult delivery.",
+            "Many live births."
+        ]
+    },
+    {
+        "question": "What is Postpartum?",
+        "correct_answer": "After delivery.",
+        "wrong_answers": [
+            "Before delivery.",
+            "Difficult delivery.",
+            "Many live births."
+        ]
+    },
+    {
+        "question": "What is Dystocia?",
+        "correct_answer": "Difficult delivery.",
+        "wrong_answers": [
+            "Before delivery.",
+            "After delivery.",
+            "Many live births."
+        ]
+    },
+    {
+        "question": "What is Nullipara?",
+        "correct_answer": "No live births.",
+        "wrong_answers": [
+            "Never pregnant.",
+            "First-time pregnant.",
+            "Many pregnancies."
+        ]
+    },
+    {
+        "question": "What is Multipara?",
+        "correct_answer": "Many live births.",
+        "wrong_answers": [
+            "Never pregnant.",
+            "First-time pregnant.",
+            "Many pregnancies."
+        ]
+    },
+    {
+        "question": "What is Abruptio Placentae?",
+        "correct_answer": "Premature separation of the placenta from the uterine wall.",
+        "wrong_answers": [
+            "Abnormal placement of the placenta over or near the cervix.",
+            "Seizures during pregnancy.",
+            "A pregnancy that occurs outside the uterus."
+        ]
+    },
+    {
+        "question": "What is Placenta Previa?",
+        "correct_answer": "Abnormal placement of the placenta over or near the cervix.",
+        "wrong_answers": [
+            "Premature separation of the placenta from the uterine wall.",
+            "Seizures during pregnancy.",
+            "A pregnancy that occurs outside the uterus."
+        ]
+    },
+    {
+        "question": "What is Eclampsia?",
+        "correct_answer": "Seizures during pregnancy.",
+        "wrong_answers": [
+            "Premature separation of the placenta from the uterine wall.",
+            "Abnormal placement of the placenta over or near the cervix.",
+            "A pregnancy that occurs outside the uterus."
+        ]
+    },
+    {
+        "question": "What is Ectopic Pregnancy?",
+        "correct_answer": "A pregnancy that occurs outside the uterus, often in the fallopian tube.",
+        "wrong_answers": [
+            "Premature separation of the placenta from the uterine wall.",
+            "Abnormal placement of the placenta over or near the cervix.",
+            "Seizures during pregnancy."
+        ]
+    },
+    {
+        "question": "What is Osteomalacia?",
+        "correct_answer": "Softening of the bone.",
+        "wrong_answers": [
+            "Cartilage.",
+            "Joint.",
+            "Bone marrow."
+        ]
+    },
+    {
+        "question": "What is Osteoporosis?",
+        "correct_answer": "Porous bone.",
+        "wrong_answers": [
+            "Softening of the bone.",
+            "Cartilage.",
+            "Joint."
+        ]
+    },
+    {
+        "question": "What is Arthralgia?",
+        "correct_answer": "Pain in a joint.",
+        "wrong_answers": [
+            "Softening of the bone.",
+            "Cartilage.",
+            "Bone marrow."
+        ]
+    },
+    {
+        "question": "What is Myasthenia?",
+        "correct_answer": "Weakness or loss of strength in muscles.",
+        "wrong_answers": [
+            "Bone marrow.",
+            "Tendon.",
+            "Ligament."
+        ]
+    },
+    {
+        "question": "What is Hypertrophy?",
+        "correct_answer": "Development or stimulation of tissues.",
+        "wrong_answers": [
+            "Bone marrow.",
+            "Cartilage.",
+            "Muscle."
+        ]
+    },
+    {
+        "question": "What is Tenosynovitis?",
+        "correct_answer": "Inflammation of the tendon and its sheath.",
+        "wrong_answers": [
+            "Bone marrow.",
+            "Cartilage.",
+            "Ligament."
+        ]
+    },
+    {
+        "question": "What is Myalgia?",
+        "correct_answer": "Muscle pain.",
+        "wrong_answers": [
+            "Bone marrow.",
+            "Cartilage.",
+            "Tendon."
+        ]
+    },
+    {
+        "question": "What is Bursitis?",
+        "correct_answer": "Inflammation of the bursa.",
+        "wrong_answers": [
+            "Softening of the bone.",
+            "Pain in a joint.",
+            "Weakness or loss of strength in muscles."
+        ]
+    },
+     {
+        "question": "What is Osteitis?",
+        "correct_answer": "Inflammation of the bone.",
+        "wrong_answers": [
+            "Abnormal growth of bone tissue.",
+            "Mature bone cell.",
+            "Inflammation of cartilage."
+        ]
+    },
+    {
+        "question": "What is Chondritis?",
+        "correct_answer": "Inflammation of cartilage.",
+        "wrong_answers": [
+            "Abnormal growth of bone tissue.",
+            "Mature bone cell.",
+            "Inflammation of bone."
+        ]
+    },
+    {
+        "question": "What is Arthritis?",
+        "correct_answer": "Inflammation of a joint.",
+        "wrong_answers": [
+            "Surgical repair of a joint.",
+            "Abnormal growth of bone tissue.",
+            "Inflammation of muscle."
+        ]
+    },
+    {
+        "question": "What is Myeloma?",
+        "correct_answer": "Cancerous tumor of the bone marrow.",
+        "wrong_answers": [
+            "Inflammation of the bone.",
+            "Abnormal growth of bone tissue.",
+            "Mature bone cell."
+        ]
+    },
+    {
+        "question": "What is Tendonitis?",
+        "correct_answer": "Inflammation of a tendon.",
+        "wrong_answers": [
+            "Surgical repair of a tendon.",
+            "Abnormal growth of bone tissue.",
+            "Inflammation of muscle."
+        ]
+    },
+    {
+        "question": "What is Ligamentous Injury?",
+        "correct_answer": "Injury to a ligament.",
+        "wrong_answers": [
+            "Inflammation of a ligament.",
+            "Abnormal growth of bone tissue.",
+            "Inflammation of muscle."
+        ]
+    },
+    {
+        "question": "What is Bursitis?",
+        "correct_answer": "Inflammation of the bursa.",
+        "wrong_answers": [
+            "Inflammation of the bone.",
+            "Inflammation of cartilage.",
+            "Inflammation of muscle."
+        ]
+    },
+    {
+        "question": "What is Myositis?",
+        "correct_answer": "Inflammation of muscle tissue.",
+        "wrong_answers": [
+            "Inflammation of bone.",
+            "Inflammation of cartilage.",
+            "Inflammation of tendon."
+        ]
+    },
+    {
+        "question": "What is Osteomalacia?",
+        "correct_answer": "Softening of the bone due to vitamin D deficiency.",
+        "wrong_answers": [
+            "Softening of cartilage.",
+            "Weakness of muscle.",
+            "Shriveling of muscles."
+        ]
+    },
+    {
+        "question": "What is Osteoporosis?",
+        "correct_answer": "A condition characterized by porous and weakened bones.",
+        "wrong_answers": [
+            "Softening of cartilage.",
+            "Inflammation of tendon.",
+            "Increase in muscle size and strength."
+        ]
+    },
+    {
+        "question": "What is Myasthenia Gravis?",
+        "correct_answer": "An autoimmune neuromuscular disorder characterized by weakness and fatigue of voluntary muscles.",
+        "wrong_answers": [
+            "Inflammation of bone marrow.",
+            "Inflammation of muscle.",
+            "Take away pain."
+        ]
+    },
+    {
+        "question": "What is Atrophy?",
+        "correct_answer": "Shriveling or wasting away of tissues, such as muscles.",
+        "wrong_answers": [
+            "Increase in size and strength of muscles.",
+            "Inflammation of bone.",
+            "Inflammation of cartilage."
+        ]
+    },
+    {
+        "question": "What is Analgesia?",
+        "correct_answer": "A state of pain relief.",
+        "wrong_answers": [
+            "Pain in joints.",
+            "Inflammation of bone.",
+            "Increase in muscle size."
+        ]
+    },
+    {
+        "question": "What is Arthritis?",
+        "correct_answer": "Inflammation of a joint.",
+        "wrong_answers": [
+            "A condition characterized by porous and weakened bones.",
+            "Softening of the bone due to vitamin D deficiency.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+    {
+        "question": "What is Osteoporosis?",
+        "correct_answer": "A condition characterized by porous and weakened bones.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "Softening of the bone due to vitamin D deficiency.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+    {
+        "question": "What is Osteomalacia?",
+        "correct_answer": "Softening of the bone due to vitamin D deficiency.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "A condition characterized by porous and weakened bones.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+    {
+        "question": "What is Carpal Tunnel Syndrome?",
+        "correct_answer": "Compression of the median nerve in the wrist.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "A condition characterized by porous and weakened bones.",
+            "Softening of the bone due to vitamin D deficiency."
+        ]
+    },
+    {
+        "question": "What is Tendonitis?",
+        "correct_answer": "Inflammation of a tendon.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "A condition characterized by porous and weakened bones.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+    {
+        "question": "What is Rotator Cuff Tear?",
+        "correct_answer": "Tear or injury in the rotator cuff of the shoulder.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "A condition characterized by porous and weakened bones.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+    {
+        "question": "What is Bursitis?",
+        "correct_answer": "Inflammation of the bursa, a fluid-filled sac near a joint.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "A condition characterized by porous and weakened bones.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+    {
+        "question": "What is Muscular Dystrophy?",
+        "correct_answer": "A group of genetic disorders characterized by progressive weakness and loss of muscle mass.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "A condition characterized by porous and weakened bones.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+    {
+        "question": "What is Myasthenia Gravis?",
+        "correct_answer": "An autoimmune neuromuscular disorder characterized by weakness and fatigue of voluntary muscles.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "A condition characterized by porous and weakened bones.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+    {
+        "question": "What is Lupus Erythematosus?",
+        "correct_answer": "An autoimmune disease that causes inflammation in various parts of the body, including joints, skin, kidneys, and other organs.",
+        "wrong_answers": [
+            "Inflammation of a joint.",
+            "A condition characterized by porous and weakened bones.",
+            "Compression of the median nerve in the wrist."
+        ]
+    },
+     {
+        "question": "What does an Orthopaedist specialize in?",
+        "correct_answer": "Diagnosis and treatment of musculoskeletal conditions, including bones, joints, ligaments, tendons, and muscles.",
+        "wrong_answers": [
+            "Diagnosis and treatment of autoimmune diseases affecting joints and connective tissues.",
+            "Treatment of bone disorders using osteopathic techniques.",
+            "Treatment of foot disorders and diseases."
+        ]
+    },
+    {
+        "question": "What does a Rheumatologist specialize in?",
+        "correct_answer": "Diagnosis and treatment of autoimmune diseases affecting joints and connective tissues.",
+        "wrong_answers": [
+            "Diagnosis and treatment of musculoskeletal conditions, including bones, joints, ligaments, tendons, and muscles.",
+            "Treatment of bone disorders using osteopathic techniques.",
+            "Treatment of foot disorders and diseases."
+        ]
+    },
+    {
+        "question": "What does an Osteopath/Osteopathic Physician (D.O.) specialize in?",
+        "correct_answer": "Treatment of bone disorders using osteopathic techniques.",
+        "wrong_answers": [
+            "Diagnosis and treatment of musculoskeletal conditions, including bones, joints, ligaments, tendons, and muscles.",
+            "Diagnosis and treatment of autoimmune diseases affecting joints and connective tissues.",
+            "Treatment of foot disorders and diseases."
+        ]
+    },
+    {
+        "question": "What does a Podiatrist specialize in?",
+        "correct_answer": "Treatment of foot disorders and diseases.",
+        "wrong_answers": [
+            "Diagnosis and treatment of musculoskeletal conditions, including bones, joints, ligaments, tendons, and muscles.",
+            "Diagnosis and treatment of autoimmune diseases affecting joints and connective tissues.",
+            "Treatment of bone disorders using osteopathic techniques."
+        ]
+    },
+    {
+        "question": "What does a Physical Therapist do?",
+        "correct_answer": "Assists in rehabilitation and improvement of physical function through exercises, manual therapy, and other techniques.",
+        "wrong_answers": [
+            "Diagnosis and treatment of musculoskeletal conditions, including bones, joints, ligaments, tendons, and muscles.",
+            "Diagnosis and treatment of autoimmune diseases affecting joints and connective tissues.",
+            "Treatment of foot disorders and diseases."
+        ]
+    },
+    {
+        "question": "What is Arthroscopy?",
+        "correct_answer": "A minimally invasive surgical procedure used to visualize, diagnose, and treat problems inside a joint.",
+        "wrong_answers": [
+            "A diagnostic imaging technique used to assess bone density and detect abnormalities.",
+            "A procedure used to measure electrical activity in muscles.",
+            "A surgical procedure to remove a small piece of muscle tissue for examination."
+        ]
+    },
+    {
+        "question": "What is a Bone Scan?",
+        "correct_answer": "A nuclear imaging test used to diagnose and monitor bone disorders, such as fractures, infections, and tumors.",
+        "wrong_answers": [
+            "A minimally invasive surgical procedure used to visualize, diagnose, and treat problems inside a joint.",
+            "A procedure used to measure electrical activity in muscles.",
+            "A surgical procedure to remove a small piece of muscle tissue for examination."
+        ]
+    },
+    {
+        "question": "What is Electromyography?",
+        "correct_answer": "A diagnostic procedure used to assess the health of muscles and the nerve cells that control them by measuring electrical activity.",
+        "wrong_answers": [
+            "A minimally invasive surgical procedure used to visualize, diagnose, and treat problems inside a joint.",
+            "A nuclear imaging test used to diagnose and monitor bone disorders.",
+            "A surgical procedure to remove a small piece of muscle tissue for examination."
+        ]
+    },
+    {
+        "question": "What is a Muscle Biopsy?",
+        "correct_answer": "A surgical procedure to remove a small piece of muscle tissue for examination under a microscope.",
+        "wrong_answers": [
+            "A minimally invasive surgical procedure used to visualize, diagnose, and treat problems inside a joint.",
+            "A nuclear imaging test used to diagnose and monitor bone disorders.",
+            "A diagnostic procedure used to assess the health of muscles and nerve cells."
+        ]
+    },
+    {
+        "question": "Is 'Benign' associated with good or bad news?",
+        "correct_answer": "Good news (non-cancerous).",
+        "wrong_answers": [
+            "Bad news (cancerous).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Low grade' associated with good or bad news?",
+        "correct_answer": "Usually good news (indicating slower-growing cancer cells).",
+        "wrong_answers": [
+            "Usually bad news (indicating aggressive cancer cells).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Radiosensitive' associated with good or bad news?",
+        "correct_answer": "Good news (cancer cells are sensitive to radiation treatment).",
+        "wrong_answers": [
+            "Bad news (cancer cells are resistant to radiation treatment).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'No metastases' associated with good or bad news?",
+        "correct_answer": "Good news (cancer has not spread to other parts of the body).",
+        "wrong_answers": [
+            "Bad news (cancer has spread to other parts of the body).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Well differentiated' associated with good or bad news?",
+        "correct_answer": "Usually good news (cells look similar to normal cells and tend to grow and spread more slowly).",
+        "wrong_answers": [
+            "Usually bad news (cells look very abnormal and tend to grow and spread quickly).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Negative nodes' associated with good or bad news?",
+        "correct_answer": "Good news (lymph nodes do not contain cancer cells).",
+        "wrong_answers": [
+            "Bad news (lymph nodes contain cancer cells).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'In remission' associated with good or bad news?",
+        "correct_answer": "Good news (cancer is under control or in a state of improvement).",
+        "wrong_answers": [
+            "Bad news (cancer is worsening or spreading).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Surgically resectable' associated with good or bad news?",
+        "correct_answer": "Usually good news (cancer can be removed with surgery).",
+        "wrong_answers": [
+            "Usually bad news (cancer cannot be removed with surgery).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Malignant' associated with good or bad news?",
+        "correct_answer": "Bad news (cancerous).",
+        "wrong_answers": [
+            "Good news (non-cancerous).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'High grade' associated with good or bad news?",
+        "correct_answer": "Usually bad news (indicating more aggressive cancer cells).",
+        "wrong_answers": [
+            "Usually good news (indicating slower-growing cancer cells).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Radioresistant' associated with good or bad news?",
+        "correct_answer": "Bad news (cancer cells are resistant to radiation treatment).",
+        "wrong_answers": [
+            "Good news (cancer cells are sensitive to radiation treatment).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Metastases' associated with good or bad news?",
+        "correct_answer": "Bad news (cancer has spread to other parts of the body).",
+        "wrong_answers": [
+            "Good news (cancer has not spread to other parts of the body).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Poorly differentiated' associated with good or bad news?",
+        "correct_answer": "Usually bad news (cells look very abnormal and tend to grow and spread quickly).",
+        "wrong_answers": [
+            "Usually good news (cells look similar to normal cells and tend to grow and spread more slowly).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Positive nodes' associated with good or bad news?",
+        "correct_answer": "Bad news (lymph nodes contain cancer cells).",
+        "wrong_answers": [
+            "Good news (lymph nodes do not contain cancer cells).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Relapse' associated with good or bad news?",
+        "correct_answer": "Bad news (cancer has returned after a period of improvement).",
+        "wrong_answers": [
+            "Good news (cancer is under control or in a state of improvement).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+    {
+        "question": "Is 'Inoperable' associated with good or bad news?",
+        "correct_answer": "Usually bad news (cancer cannot be removed with surgery).",
+        "wrong_answers": [
+            "Usually good news (cancer can be removed with surgery).",
+            "Neither good nor bad news.",
+            "Unknown."
+        ]
+    },
+     {
+        "question": "What is Carcinoma?",
+        "correct_answer": "A malignant tumor that arises from epithelial cells.",
+        "wrong_answers": [
+            "A benign tumor composed of glandular tissue.",
+            "A type of cancer that starts in connective tissue.",
+            "A type of autoimmune disease."
+        ]
+    },
+    {
+        "question": "What is Sarcoma?",
+        "correct_answer": "A malignant tumor that arises from connective tissue (such as bone, muscle, or cartilage).",
+        "wrong_answers": [
+            "A benign tumor composed of connective tissue.",
+            "A type of cancer that starts in epithelial cells.",
+            "A type of viral infection."
+        ]
+    },
+    {
+        "question": "What are Tumor Markers?",
+        "correct_answer": "Usually used for monitoring cancer activity or response to treatment.",
+        "wrong_answers": [
+            "Indicative of cancer diagnosis.",
+            "Associated with benign tumors only.",
+            "Used for vaccination against cancer."
+        ]
+    },
+    {
+        "question": "What is Radiation?",
+        "correct_answer": "A treatment method for cancer that uses high-energy rays or particles to destroy cancer cells.",
+        "wrong_answers": [
+            "A diagnostic imaging technique.",
+            "A form of chemotherapy.",
+            "A surgical procedure to remove tumors."
+        ]
+    },
+    {
+        "question": "What is Chemotherapy?",
+        "correct_answer": "A treatment method for cancer that uses drugs to kill cancer cells.",
+        "wrong_answers": [
+            "A form of radiation therapy.",
+            "A type of surgery to remove tumors.",
+            "A method for monitoring cancer activity."
+        ]
+    },
+    {
+        "question": "What is Surgery?",
+        "correct_answer": "A treatment method for cancer that involves physically removing the tumor from the body.",
+        "wrong_answers": [
+            "A form of radiation therapy.",
+            "A type of chemotherapy.",
+            "A method for monitoring cancer activity."
+        ]
+    }
     
     
 ]
