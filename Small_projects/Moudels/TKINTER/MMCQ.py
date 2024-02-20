@@ -19,18 +19,10 @@ wrong_questions = []
 current_question_index = 0
 overall_score = 0
 
-def load_image(file_path):
-    return ImageTk.PhotoImage(Image.open(file_path))
-
-img_list = [
-    load_image(r"Images\MSQ_Practical\img0.png"),
-    load_image(r"Images\MSQ_Practical\img1.png"),
-    load_image(r"Images\MSQ_Practical\img2.png"),
-    load_image(r"Images\MSQ_Practical\img3.png")
-]
 
 
-#global defs
+
+# global defs
 def clear_widgets():
             for widget in root.winfo_children():
                 widget.destroy()
@@ -59,53 +51,92 @@ def starting(a):
     clear_widgets()
     if a == 'PreMid 1':
         Label(root,text='Easy or Hard?',font=f, bg="#404040",fg="White").grid(row=0,column=0)
-        button = Button(root,text='Practical',font=f, bd=5, width=20)
+        button = Button(root,text='Practical',font=f, bd=5, width=20,command=mid1("Prac").md1_theo,)
         button.grid(row=1,column=0)
-        button1 = Button(root,text='Impractical',font=f,command=mid1().md1_imprac, bd=5, width=20)
+        button1 = Button(root,text='Theoretical',font=f, bd=5, width=20,command=mid1("Theo").md1_theo)
         button1.grid(row=2,column=0)
     if a == 'PreMid 2':
         Label(root,text='Easy or Hard?',font=f, bg="#404040",fg="White").grid(row=0,column=0)
         button = Button(root,text='Practical',font=f, bd=5, width=20)
         button.grid(row=1,column=0)
-        button1 = Button(root,text='Impractical',font=f, bd=5, width=20,command=mid2().md2_imprac)
+        button1 = Button(root,text='Theoretical',font=f, bd=5, width=20,command=mid2().md2_theo)
         button1.grid(row=2,column=0)
 
-   
-class mid1:
-#premid 1 impratcial 
-    objects = ["Anatomy","Biology","Chemistry","NIT","PPC"]
+def load_image(file_path):
+    return ImageTk.PhotoImage(Image.open(file_path))
 
-    def md1_imprac(self):
+anatimgs= [
+    
+    load_image(r"Images\MMCQ_Practical\Anatomy\img0.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img1.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img2.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img2.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img3.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img4.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img4.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img5.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img5.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img6.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\img6.png")
+]
+
+chemimgs = [
+    load_image(r"Images\MMCQ_Practical\Chemistry\img0.png"),
+    load_image(r"Images\MMCQ_Practical\Chemistry\img1.png"),
+    load_image(r"Images\MMCQ_Practical\Chemistry\img2.png"),
+    load_image(r"Images\MMCQ_Practical\Chemistry\img3.png")
+]
+
+class mid1:
+# premid 1 
+# Theoretical 
+    def __init__(self,state):
+        self.state = state
+
+    objects = ["Anatomy","Biology","Chemistry","NIT","PPC"]
+    Pobjects = ["Anatomy","Chemistry"]
+
+    def md1_theo(self):
         clear_widgets()
         Label(root, text="⇃Choose your subject⇂", font=f, bg="#404040",fg="White").grid(row=0, column=0)
         object_row = 1
-        for object in self.objects:
-            obj_button = Button(root, text=object,font=f, bd=5, width=20,command=lambda obj=object:self.get(obj))
-            obj_button.grid(row=object_row, column=0)
-            object_row += 1
+        if self.state == "Theo":
+            for object in self.objects:
+                obj_button = Button(root, text=object,font=f, bd=5, width=20,command=lambda selection=object:self.get(selection))
+                obj_button.grid(row=object_row, column=0)
+                object_row += 1
+        else:
+            for object in self.Pobjects:
+                obj_button = Button(root, text=object,font=f, bd=5, width=20,command=lambda selection=object:self.Pget(selection))
+                obj_button.grid(row=object_row, column=0)
+                object_row += 1
     
     def get(self,selection):
-        global obj
-        if selection == self.self.objects[0]:
+        if selection == self.objects[0]:
             clear_widgets()
-            obj = self.objects[0]
             self.anatomy()
         elif selection == self.objects[1]:
             clear_widgets()
-            obj = self.objects[1]
             self.biology()
         elif selection == self.objects[2]:
             clear_widgets()
-            obj = self.objects[2]
             self.chemistry()
         elif selection == self.objects[3]:
             clear_widgets()
-            obj = self.objects[3]
             self.nit()
         elif selection == self.objects[4]:
             clear_widgets()
-            obj = self.objects[4]
             self.ppc()
+
+    def Pget(self,selection):
+        if selection == self.Pobjects[0]:
+            clear_widgets()
+            self.Panatomy()
+        elif selection == self.Pobjects[1]:
+            clear_widgets()
+            self.Pchemistry()
+        
+            
 
 
     def anatomy(self):
@@ -280,10 +311,45 @@ class mid1:
 
     #premid 1 practical
 
-    def chemistry_p(self):
+    def Panatomy(self):
+        aq = Anatomy_practical[current_question_index]
+        row = 3
+        img = anatimgs[current_question_index]
+        Label(root, image=img).grid(row=0, column=0)
+        Label(root, text=aq['question'], font=f, fg="White", bg="#404040").grid(row=1, column=0)
+
+        all_a = [aq['correct_answer']] + aq['wrong_answers']
+        shuffle(all_a)
+
+        for answers in all_a:
+            button = Button(root, text=answers, width=50, bd=5, command=lambda a=answers: self.check_Panat(a))
+            button.grid(row=row, column=0)
+            row += 1
+
+    def check_Panat(self,a):
+        global current_question_index, overall_score
+        aq = Anatomy_practical[current_question_index]
+        
+        if a in aq['correct_answer']:
+            overall_score += 1
+            print("Correct")
+        
+        else:  
+            print("Incorrect")
+            wrong_questions.append(aq['correct_answer'])
+
+        if current_question_index < len(Anatomy_practical) - 1:
+            clear_widgets()
+            current_question_index += 1
+            self.Panatomy()
+        else:
+            show_result(Anatomy_practical)
+
+        
+    def Pchemistry(self):
         cq = Chemistry_practical[current_question_index]
         row = 3
-        img = img_list[current_question_index]
+        img = chemimgs[current_question_index]
         Label(root, image=img).grid(row=0, column=0)
         Label(root, text=cq['question'], font=f, fg="White", bg="#404040").grid(row=1, column=0)
 
@@ -291,11 +357,11 @@ class mid1:
         shuffle(all_a)
 
         for answers in all_a:
-            button = Button(root, text=answers, width=30, bd=5, command=lambda a=answers: self.check_chem(a))
+            button = Button(root, text=answers, width=30, bd=5, command=lambda a=answers: self.check_Pchem(a))
             button.grid(row=row, column=0)
             row += 1
 
-    def check_pchem(self,a):
+    def check_Pchem(self,a):
         global current_question_index, overall_score
         cq = Chemistry_practical[current_question_index]
         
@@ -310,18 +376,17 @@ class mid1:
         if current_question_index < len(Chemistry_practical) - 1:
             clear_widgets()
             current_question_index += 1
-            self.chemistry_p()
+            self.Pchemistry()
         else:
             show_result(Chemistry_practical)
 
 
-
 class mid2:
-#premid 2 
-#impractical
+# premid 2 
+# Theoretical
     objects = ["Anatomy","Biology","Chemistry","NIT","All PPC terms"]
     
-    def md2_imprac(self):
+    def md2_theo(self):
         clear_widgets()
         Label(root, text="⇃Choose your subject⇂", font=f, bg="#404040",fg="White").grid(row=0, column=0)
         object_row = 1

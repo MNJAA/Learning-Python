@@ -11,7 +11,8 @@ TESTING = [
 ]
 
 
-#premid 1 impractical 
+
+#premid 1 Theoretical 
 
 Anatomy_questions = [
     {
@@ -2044,7 +2045,107 @@ PPC_questions = [
 
 #premid 1 practical
 
-Anatomy_practical = [1,2,3]
+Anatomy_practical = [
+    {
+        "question": "What is the first/second arrow?",
+        "correct_answer": "Internal Thoracic Artery and Transversus Thoracis Muscle",
+        "wrong_answers": [
+            "Superior Vena Cava and Left Atrium",
+            "Descending Aorta and Esophagus",
+            "Pulmonary Artery and Left Ventricle"
+        ]
+    },
+    {
+        "question": "What is the first/second arrow?",
+        "correct_answer": "Superior Articular Facet and Spinous Process",
+        "wrong_answers": [
+            "Costal Facet and Rib Tubercle",
+            "Transverse Process and Inferior Articular Facet",
+            "Vertebral Body and Pedicle"
+        ]
+    },
+    {
+        "question": "Which muscle is this?",
+        "correct_answer": "External Intercostal Muscle",
+        "wrong_answers": [
+            "Internal Intercostal Muscle",
+            "Subcostal Muscle",
+            "Diaphragm"
+        ]
+    },
+    {
+        "question": "What is the motor supply of this muscle?",
+        "correct_answer": "Muscular branch of the intercostal nerves",
+        "wrong_answers": [
+            "Phrenic nerve",
+            "Long thoracic nerve",
+            "Spinal accessory nerve"
+        ]
+    },
+    {
+        "question": "What is the first/second arrow?",
+        "correct_answer": "Trachea and Left Subclavian artery",
+        "wrong_answers": [
+            "Esophagus and Azygos Vein",
+            "Vagus Nerve and Right Subclavian Artery",
+            "Thoracic Duct and Thoracic Aorta"
+        ]
+    },
+    {
+        "question": "Which vertebra does this rib articulate with?",
+        "correct_answer": "T7",
+        "wrong_answers": [
+            "T6",
+            "T8",
+            "T5"
+        ]
+    },
+    {
+        "question": "What is the name of the joint formed here?",
+        "correct_answer": "Costotransverse joint",
+        "wrong_answers": [
+            "Costovertebral joint",
+            "Sternocostal joint",
+            "Costochondral joint"
+        ]
+    },
+    {
+        "question": "Identify the blood vessel",
+        "correct_answer": "Brachiocephalic Trunk",
+        "wrong_answers": [
+            "Subclavian Artery",
+            "Superior Vena Cava",
+            "Pulmonary Trunk"
+        ]
+    },
+    {
+        "question": "Identify the blood vessel",
+        "correct_answer": "Internal thoracic vein",
+        "wrong_answers": [
+            "Internal thoracic artery",
+            "Azygos vein",
+            "Inferior vena cava"
+        ]
+    },
+    {
+        "question": "What is the vertebral level for the bony body?",
+        "correct_answer": "T10",
+        "wrong_answers": [
+            "T11",
+            "T9",
+            "T12"
+        ]
+    },
+    {
+        "question": "What is the vertebral level for the level on the arrow?",
+        "correct_answer": "T4-T5",
+        "wrong_answers": [
+            "T3-T4",
+            "T5-T6",
+            "T2-T3"
+        ]
+    }
+]
 
 
 Chemistry_practical = [
@@ -2072,7 +2173,7 @@ Chemistry_practical = [
 ]
 
 
-#premid 2 impractical 
+#premid 2 Theoretical 
 
 PPC_terms = [
     {
