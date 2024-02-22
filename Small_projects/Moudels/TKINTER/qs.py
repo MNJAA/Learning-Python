@@ -2175,6 +2175,244 @@ Chemistry_practical = [
 
 #premid 2 Theoretical 
 
+Anatomy2_questions = [
+    {
+        "question": "What's located at the transtubercular line?",
+        "correct_answer": "Origin of IVC",
+        "wrong_answers": [
+            "Origin of the aorta",
+            "Origin of the renal arteries",
+            "Origin of the common iliac artery"
+        ]
+    },
+    {
+        "question": "What structures pass through the lacuna vasorum?",
+        "correct_answer": "Femoral vein, femoral artery, genitofemoral nerve",
+        "wrong_answers": [
+            "Popliteal vein, popliteal artery, saphenous nerve",
+            "Sciatic nerve, femoral nerve, obturator artery",
+            "Saphenous vein, deep femoral artery, femoral nerve"
+        ]
+    },
+    {
+        "question": "Right suprarenal hilum?",
+        "correct_answer": "Anterior border",
+        "wrong_answers": [
+            "Posterior border",
+            "Medial border",
+            "Lateral border"
+        ]
+    },
+    {
+        "question": "What structure helps you locate the appendix?",
+        "correct_answer": "Tenia coli",
+        "wrong_answers": [
+            "Appendicular artery",
+            "Haustra",
+            "Peyer's patches"
+        ]
+    },
+    {
+        "question": "Ulcer of the posterior part of the 1st Duodenum which vessel will be damaged?",
+        "correct_answer": "Gastroduodenal Artery",
+        "wrong_answers": [
+            "Superior mesenteric artery",
+            "Celiac trunk",
+            "Hepatic artery"
+        ]
+    },
+    {
+        "question": "Ulcer of the posterior part of the stomach, which main vessel will be affected?",
+        "correct_answer": "Splenic Artery",
+        "wrong_answers": [
+            "Left gastric artery",
+            "Common hepatic artery",
+            "Gastroduodenal artery"
+        ]
+    },
+    {
+        "question": "Where does the McBurney's point located?",
+        "correct_answer": "Right spino-umbilical line",
+        "wrong_answers": [
+            "Left spino-umbilical line",
+            "Mid-clavicular line",
+            "Right mid-clavicular line"
+        ]
+    },
+    {
+        "question": "If the 10th rib on the left was fractured which organ will be damaged?",
+        "correct_answer": "Spleen",
+        "wrong_answers": [
+            "Liver",
+            "Stomach",
+            "Pancreas"
+        ]
+    },
+    {
+        "question": "Which of the following structures is retroperitoneal?",
+        "correct_answer": "Adrenal glands",
+        "wrong_answers": [
+            "Liver",
+            "Spleen",
+            "Gallbladder"
+        ]
+    },
+    {
+        "question": "Which vessel is parallel to the inguinal ligament?",
+        "correct_answer": "Deep circumflex iliac artery",
+        "wrong_answers": [
+            "Femoral artery",
+            "External iliac artery",
+            "Internal iliac artery"
+        ]
+    },
+     {
+        "question": "Which nerves constrict the pyloric sphincter to allow the stomach to fill with food first?",
+        "correct_answer": "Sympathetic nerve fibers",
+        "wrong_answers": [
+            "Parasympathetic nerve fibers",
+            "Vagus nerve",
+            "Somatic nerve fibers"
+        ]
+    },
+    {
+        "question": "Removal of gall bladder will LEAST likely damage which of the following?",
+        "correct_answer": "Left hepatic vein",
+        "wrong_answers": [
+            "Common bile duct",
+            "Hepatic artery",
+            "Portal vein"
+        ]
+    },
+    {
+        "question": "Liver fibrosis (overproduction of fibers that obstruct liver passageways). What structure that takes fluid directly away from the liver is damaged?",
+        "correct_answer": "Common bile duct",
+        "wrong_answers": [
+            "Hepatic artery",
+            "Hepatic portal vein",
+            "Hepatic vein"
+        ]
+    },
+    {
+        "question": "What is true about the ileum?",
+        "correct_answer": "Has lymphoid aggregations",
+        "wrong_answers": [
+            "Contains intestinal villi",
+            "Has a thick muscular layer",
+            "Reabsorbs most of the water and electrolytes"
+        ]
+    },
+    {
+        "question": "How to differentiate between jejunum and ileum?",
+        "correct_answer": "Arterial arcades",
+        "wrong_answers": [
+            "Presence of Peyer's patches",
+            "Thickness of muscular layer",
+            "Length of the segment"
+        ]
+    },
+    {
+        "question": "Cancer in neck of pancreas affects which vessel?",
+        "correct_answer": "Portal vein",
+        "wrong_answers": [
+            "Common bile duct",
+            "Hepatic artery",
+            "Superior mesenteric vein"
+        ]
+    },
+    {
+        "question": "What part of the lumbar plexus is on the posterior side of the kidney?",
+        "correct_answer": "Ilioinguinal nerve",
+        "wrong_answers": [
+            "Femoral nerve",
+            "Obturator nerve",
+            "Genitofemoral nerve"
+        ]
+    },
+    {
+        "question": "Left gonadal vein drains in what?",
+        "correct_answer": "Left renal vein",
+        "wrong_answers": [
+            "Inferior vena cava",
+            "Left common iliac vein",
+            "Superior mesenteric vein"
+        ]
+    },
+    {
+        "question": "Which branch of abdominal aorta is paired?",
+        "correct_answer": "Suprarenal branch (paired branch)",
+        "wrong_answers": [
+            "Inferior phrenic artery",
+            "Celiac trunk",
+            "Superior mesenteric artery"
+        ]
+    },
+    {
+        "question": "Physiologic lobes of the liver are divided based on the distribution of what?",
+        "correct_answer": "Portal vein",
+        "wrong_answers": [
+            "Hepatic artery",
+            "Hepatic vein",
+            "Hepatic portal vein"
+        ]
+    },
+    {
+        "question": "Cholecystitis?",
+        "correct_answer": "Inflammation of gallbladder",
+        "wrong_answers": [
+            "Inflammation of liver",
+            "Inflammation of pancreas",
+            "Inflammation of stomach"
+        ]
+    },
+    {
+        "question": "Free margin of the lesser omentum damaged. Bleeding in the peritoneal cavity. Which vessel is damaged?",
+        "correct_answer": "Hepatic artery",
+        "wrong_answers": [
+            "Gastroduodenal artery",
+            "Left gastric artery",
+            "Splenic artery"
+        ]
+    },
+    {
+        "question": "Posterior of epiploic foramen?",
+        "correct_answer": "IVC",
+        "wrong_answers": [
+            "Aorta",
+            "Common bile duct",
+            "Pancreatic duct"
+        ]
+    },
+    {
+        "question": "As the ureter travels down from the abdomen to the pelvis it is constricted at?",
+        "correct_answer": "Bifurcation of the common iliac artery",
+        "wrong_answers": [
+            "Iliac crest",
+            "Ischial spine",
+            "Sacral promontory"
+        ]
+    },
+    {
+        "question": "Inferior mesenteric artery damaged. Which structure is affected?",
+        "correct_answer": "Descending colon",
+        "wrong_answers": [
+            "Ascending colon",
+            "Transverse colon",
+            "Sigmoid colon"
+        ]
+    },
+    {
+        "question": "Someone swallowed something. Upper part of the esophagus is stretched. Which nerve fibers send information to brain?",
+        "correct_answer": "Vagus",
+        "wrong_answers": [
+            "Glossopharyngeal",
+            "Hypoglossal",
+            "Accessory"
+        ]
+    },
+    
+]
+
 PPC_terms = [
     {
         "question": "What does the term 'xanth/o' refer to?",

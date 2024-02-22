@@ -8,9 +8,9 @@ root.title("First Year MCQ Exam")
 root.config(bg="#242424")
 root.iconbitmap("Images\Icons\MSQ.ico")
 
-f = "TimesNewRoman 16 bold"
-f2 = "TimesNewRoman 11 bold"
-f3 = "TimesNewRoman 8"
+f = "TimesNewRoman 13 bold"
+f2 = "TimesNewRoman 10 bold"
+f3 = "TimesNewRoman 8 bold"
 f4 = "TimesNewRoman 1"
 
 
@@ -34,7 +34,7 @@ def show_result(object):
         Label(root, text="Your wrong questions are: ").grid(row=1, column=0,columnspan=3)
         r,c = 2,0
         for index,wrq in enumerate(wrong_questions,start=1):
-            Label(root, text=f'{index}- {wrq}',font=f2).grid(row=r, column=c,sticky=W+N)
+            Label(root, text=f'{index}- {wrq}',font=f2,wraplength=450).grid(row=r, column=c,sticky=W+N)
             r += 1
             if r == 31:
                 r = 2
@@ -89,12 +89,13 @@ chemimgs = [
 
 class mid1:
 # premid 1 
-# Theoretical 
-    def __init__(self,state):
-        self.state = state
-
+# Theoretical
     objects = ["Anatomy","Biology","Chemistry","NIT","PPC"]
     Pobjects = ["Anatomy","Chemistry"]
+ 
+    def __init__(self,state):
+        self.state = state
+    
 
     def md1_theo(self):
         clear_widgets()
@@ -136,20 +137,18 @@ class mid1:
             clear_widgets()
             self.Pchemistry()
         
-            
-
 
     def anatomy(self):
         shuffle(Anatomy_questions)
         aq = Anatomy_questions[current_question_index]
         row = 3
-        Label(root, text=f"Question - {aq['question']}", font=f, fg="White", bg="#404040").grid(row=1, column=0)
+        Label(root, text=f"Question - {aq['question']}", font=f, fg="White", bg="#404040",wraplength=1000).grid(row=1, column=0)
 
         all_a = [aq['correct_answer']] + aq['wrong_answers']
         shuffle(all_a)
         
         for answer in all_a:
-            button = Button(root, text=answer,font=f ,width = 100, bd=5, command=lambda a=answer: self.check_anat(a))
+            button = Button(root, text=answer,font=f ,width = 100, bd=5,wraplength=1000, command=lambda a=answer: self.check_anat(a))
             button.grid(row=row, column=0)
             row += 1
 
@@ -163,7 +162,7 @@ class mid1:
         
         else:  
             print("Incorrect")
-            wrong_questions.append(cq['correct_answer'])
+            wrong_questions.append(cq['question'])
 
         if current_question_index < len(Anatomy_questions) - 1:
             clear_widgets()
@@ -177,13 +176,13 @@ class mid1:
         shuffle(Biology_questions)
         bq = Biology_questions[current_question_index]
         row = 3
-        Label(root, text=f"Question - {bq['question']}", font=f, fg="White", bg="#404040").grid(row=1, column=0)
+        Label(root, text=f"Question - {bq['question']}", font=f, fg="White",wraplength=1000, bg="#404040").grid(row=1, column=0)
 
         all_a = [bq['correct_answer']] + bq['wrong_answers']
         shuffle(all_a)
         
         for answer in all_a:
-            button = Button(root, text=answer,font=f ,width=100, bd=5, command=lambda a=answer: self.check_bio(a))
+            button = Button(root, text=answer,font=f ,width=100,wraplength=1000, bd=5, command=lambda a=answer: self.check_bio(a))
             button.grid(row=row, column=0)
             row += 1
 
@@ -197,7 +196,7 @@ class mid1:
         
         else:  
             print("Incorrect")
-            wrong_questions.append(bq['correct_answer'])
+            wrong_questions.append(bq['question'])
 
         if current_question_index < len(Biology_questions) - 1:
             clear_widgets()
@@ -211,13 +210,13 @@ class mid1:
         shuffle(Chemistry_questions)
         cq = Chemistry_questions[current_question_index]
         row = 3
-        Label(root, text=f"Question - {cq['question']}", font=f, fg="White", bg="#404040").grid(row=1, column=0)
+        Label(root, text=f"Question - {cq['question']}",wraplength=1000, font=f, fg="White", bg="#404040").grid(row=1, column=0)
 
         all_a = [cq['correct_answer']] + cq['wrong_answers']
         shuffle(all_a)
         
         for answer in all_a:
-            button = Button(root, text=answer,font=f ,width=100, bd=5, command=lambda a=answer: self.check_chem(a))
+            button = Button(root, text=answer,wraplength=1000,font=f ,width=100, bd=5, command=lambda a=answer: self.check_chem(a))
             button.grid(row=row, column=0)
             row += 1
 
@@ -231,7 +230,7 @@ class mid1:
         
         else:  
             print("Incorrect")
-            wrong_questions.append(cq['correct_answer'])
+            wrong_questions.append(cq['question'])
 
         if current_question_index < len(Chemistry_questions) - 1:
             clear_widgets()
@@ -245,7 +244,7 @@ class mid1:
         shuffle(NIT_questions)
         nq = NIT_questions[current_question_index]
         row = 3
-        Label(root, text=f"Question - {nq['question']}", font=f, fg="White", bg="#404040").grid(row=1, column=0)
+        Label(root, text=f"Question - {nq['question']}",wraplength=1000, font=f, fg="White", bg="#404040").grid(row=1, column=0)
 
         all_a = [nq['correct_answer']] + nq['wrong_answers']
         shuffle(all_a)
@@ -265,7 +264,7 @@ class mid1:
         
         else:  
             print("Incorrect")
-            wrong_questions.append(nq['correct_answer'])
+            wrong_questions.append(nq['question'])
 
         if current_question_index < len(NIT_questions) - 1:
             clear_widgets()
@@ -279,7 +278,7 @@ class mid1:
         shuffle(PPC_questions)
         pq = PPC_questions[current_question_index]
         row = 3
-        Label(root, text=f"Question - {pq['question']}", font=f, fg="White", bg="#404040").grid(row=1, column=0)
+        Label(root, text=f"Question - {pq['question']}",wraplength=1000, font=f, fg="White", bg="#404040").grid(row=1, column=0)
 
         all_a = [pq['correct_answer']] + pq['wrong_answers']
         shuffle(all_a)
@@ -299,7 +298,7 @@ class mid1:
         
         else:  
             print("Incorrect")
-            wrong_questions.append(pq['correct_answer'])
+            wrong_questions.append(pq['question'])
 
         if current_question_index < len(PPC_questions) - 1:
             clear_widgets()
@@ -316,13 +315,13 @@ class mid1:
         row = 3
         img = anatimgs[current_question_index]
         Label(root, image=img).grid(row=0, column=0)
-        Label(root, text=aq['question'], font=f, fg="White", bg="#404040").grid(row=1, column=0)
+        Label(root, text=aq['question'],wraplength=1000, font=f, fg="White", bg="#404040").grid(row=1, column=0)
 
         all_a = [aq['correct_answer']] + aq['wrong_answers']
         shuffle(all_a)
 
         for answers in all_a:
-            button = Button(root, text=answers, width=50, bd=5, command=lambda a=answers: self.check_Panat(a))
+            button = Button(root, text=answers,wraplength=1000, width=50, bd=5, command=lambda a=answers: self.check_Panat(a))
             button.grid(row=row, column=0)
             row += 1
 
@@ -351,13 +350,13 @@ class mid1:
         row = 3
         img = chemimgs[current_question_index]
         Label(root, image=img).grid(row=0, column=0)
-        Label(root, text=cq['question'], font=f, fg="White", bg="#404040").grid(row=1, column=0)
+        Label(root, text=cq['question'],wraplength=1000, font=f, fg="White", bg="#404040").grid(row=1, column=0)
 
         all_a = [cq['correct_answer']] + cq['wrong_answers']
         shuffle(all_a)
 
         for answers in all_a:
-            button = Button(root, text=answers, width=30, bd=5, command=lambda a=answers: self.check_Pchem(a))
+            button = Button(root, text=answers,wraplength=1000, width=30, bd=5, command=lambda a=answers: self.check_Pchem(a))
             button.grid(row=row, column=0)
             row += 1
 
@@ -417,19 +416,20 @@ class mid2:
             clear_widgets()
             obj = self.objects[4]
             self.ppct()
+
     
     def ppct(self):
         clear_widgets()
         shuffle(PPC_terms)
         pt = PPC_terms[current_question_index]
         row = 3
-        Label(root, text=f"Question - {pt['question']}", font=f, fg="White", bg="#404040").grid(row=1, column=0)
+        Label(root, text=f"Question - {pt['question']}",wraplength=1000, font=f, fg="White", bg="#404040").grid(row=1, column=0)
 
         all_a = [pt['correct_answer']] + pt['wrong_answers']
         shuffle(all_a)
         
         for answer in all_a:
-            button = Button(root, text=answer,font=f ,width=100, bd=5, command=lambda a=answer: self.check_ppct(a))
+            button = Button(root, text=answer,wraplength=1000,font=f ,width=100, bd=5, command=lambda a=answer: self.check_ppct(a))
             button.grid(row=row, column=0)
             row += 1
 
