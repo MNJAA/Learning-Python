@@ -2410,7 +2410,168 @@ Anatomy2_questions = [
             "Accessory"
         ]
     },
-    
+    {
+        "question": "Esophageal variations, talking about the portosystemic anastomoses, if we close one vein forming these anastomoses, which one is it?",
+        "correct_answer": "Left gastric",
+        "wrong_answers": [
+            "Inferior mesenteric",
+            "Superior mesenteric",
+            "Splenic"
+        ]
+    },
+    {
+        "question": "A blocked vessel that drains FLUID from the liver, causing liver fibrosis?",
+        "correct_answer": "Common bile duct",
+        "wrong_answers": [
+            "Hepatic portal vein",
+            "Hepatic vein",
+            "Hepatic artery"
+        ]
+    },
+    {
+        "question": "What is the muscle that makes the inguinal canal?",
+        "correct_answer": "External oblique",
+        "wrong_answers": [
+            "Internal oblique",
+            "Transversus abdominis",
+            "Rectus abdominis"
+        ]
+    },
+    {
+        "question": "If the gastroduodenal artery was ligated, which of the following will CONTINUE to supply the small intestine?",
+        "correct_answer": "Superior mesenteric artery",
+        "wrong_answers": [
+            "Inferior mesenteric artery",
+            "Celiac trunk",
+            "Hepatic artery"
+        ]
+    },
+    {
+        "question": "Liver",
+        "correct_answer": "Common bile duct",
+        "wrong_answers": [
+            "Hepatic portal vein",
+            "Hepatic vein",
+            "Hepatic artery"
+        ]
+    },
+    {
+        "question": "What is Cholelithiasis?",
+        "correct_answer": "Stones in the gallbladder",
+        "wrong_answers": [
+            "Inflammation of the gallbladder",
+            "Enlargement of the gallbladder",
+            "Tumor in the gallbladder"
+        ]
+    },
+    {
+        "question": "Floor of inguinal canal?",
+        "correct_answer": "Inguinal ligament",
+        "wrong_answers": [
+            "Transversalis fascia",
+            "Internal oblique muscle",
+            "Conjoint tendon"
+        ]
+    },
+    {
+        "question": "Ulcer in the posterior wall of the stomach opens it to?",
+        "correct_answer": "Lesser sac/omental bursa",
+        "wrong_answers": [
+            "Greater sac/peritoneal cavity",
+            "Peritoneal cavity",
+            "Hepatorenal recess"
+        ]
+    },
+    {
+        "question": "How to find the tail of the pancreas?",
+        "correct_answer": "Splenorenal ligament",
+        "wrong_answers": [
+            "Gastrocolic ligament",
+            "Duodenorenal ligament",
+            "Gastrosplenic ligament"
+        ]
+    },
+    {
+        "question": "The lesser sac connects the stomach to?",
+        "correct_answer": "Liver",
+        "wrong_answers": [
+            "Spleen",
+            "Pancreas",
+            "Duodenum"
+        ]
+    },
+    {
+        "question": "Which of the following is intraperitoneal?",
+        "correct_answer": "Stomach",
+        "wrong_answers": [
+            "Kidneys",
+            "Ureters",
+            "Bladder"
+        ]
+    },
+    {
+        "question": "What is found in Calot's triangle?",
+        "correct_answer": "Cystic artery",
+        "wrong_answers": [
+            "Common bile duct",
+            "Hepatic artery",
+            "Hepatic duct"
+        ]
+    },
+    {
+        "question": "Earlier Abdominal pain around the umbilicus region, then it transferred to the right inferior quadrant, what’s the structure inflamed?",
+        "correct_answer": "Vermiform appendix",
+        "wrong_answers": [
+            "Cecum",
+            "Ascending colon",
+            "Ileocecal valve"
+        ]
+    },
+    {
+        "question": "Where’s the normal constriction in the ureter of the kidney?",
+        "correct_answer": "Pelviureteric junction",
+        "wrong_answers": [
+            "Ureterovesical junction",
+            "Ureteropelvic junction",
+            "Ureteral hiatus"
+        ]
+    },
+    {
+        "question": "What is true about the jejunum?",
+        "correct_answer": "It has fewer blood arcades long (vasa recta)",
+        "wrong_answers": [
+            "It has more blood arcades",
+            "It has no blood arcades",
+            "It has more lymphatics"
+        ]
+    },
+    {
+        "question": "Which part of the pancreas cancer can cause jaundice?",
+        "correct_answer": "Head",
+        "wrong_answers": [
+            "Body",
+            "Tail",
+            "Uncinate process"
+        ]
+    },
+    {
+        "question": "The appendix is not in its normal place, in which peritoneal recess do you expect to find it?",
+        "correct_answer": "Retrocecal",
+        "wrong_answers": [
+            "Hepatorenal",
+            "Paracolic",
+            "Subhepatic"
+        ]
+    },
+    {
+        "question": "Where does the left suprarenal artery drain?",
+        "correct_answer": "Left renal vein",
+        "wrong_answers": [
+            "Inferior vena cava",
+            "Hepatic vein",
+            "Left gonadal vein"
+        ]
+    }
 ]
 
 PPC_terms = [
