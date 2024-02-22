@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from random import shuffle
-from qs import Anatomy_practical,Anatomy_questions,Biology_questions,Chemistry_practical,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
+from qs import Anatomy_practical,Anatomy2_questions,Anatomy_questions,Biology_questions,Chemistry_practical,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
 
 root = Tk()
 root.title("First Year MCQ Exam")
@@ -36,7 +36,7 @@ def show_result(object):
         for index,wrq in enumerate(wrong_questions,start=1):
             Label(root, text=f'{index}- {wrq}',font=f2,wraplength=450).grid(row=r, column=c,sticky=W+N)
             r += 1
-            if r == 31:
+            if r == 20:
                 r = 2
                 c += 1
 
@@ -399,7 +399,7 @@ class mid2:
         if selection == self.objects[0]:
             clear_widgets()
             obj = self.objects[0]
-            self.anatomy()
+            self.anatomy2()
         elif selection == self.objects[1]:
             clear_widgets()
             obj = self.objects[1]
@@ -416,6 +416,40 @@ class mid2:
             clear_widgets()
             obj = self.objects[4]
             self.ppct()
+
+
+    def anatomy2(self):
+        shuffle(Anatomy2_questions)
+        aq = Anatomy2_questions[current_question_index]
+        row = 3
+        Label(root, text=f"Question - {aq['question']}", font=f, fg="White", bg="#404040",wraplength=1000).grid(row=1, column=0)
+
+        all_a = [aq['correct_answer']] + aq['wrong_answers']
+        shuffle(all_a)
+        
+        for answer in all_a:
+            button = Button(root, text=answer,font=f ,width = 100, bd=5,wraplength=1000, command=lambda a=answer: self.check_anat2(a))
+            button.grid(row=row, column=0)
+            row += 1
+
+    def check_anat2(self,a):
+        global current_question_index, overall_score
+        cq = Anatomy2_questions[current_question_index]
+        
+        if a in cq['correct_answer']:
+            overall_score += 1
+            print("Correct")
+        
+        else:  
+            print("Incorrect")
+            wrong_questions.append(cq['question'])
+
+        if current_question_index < len(Anatomy2_questions) - 1:
+            clear_widgets()
+            current_question_index += 1
+            self.anatomy2()
+        else:
+            show_result(Anatomy2_questions)
 
     
     def ppct(self):

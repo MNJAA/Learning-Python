@@ -2571,7 +2571,950 @@ Anatomy2_questions = [
             "Hepatic vein",
             "Left gonadal vein"
         ]
+    },
+     {
+        "question": "What space lies posterior to the stomach?",
+        "correct_answer": "Lesser sac",
+        "wrong_answers": [
+            "Greater omentum",
+            "Retroperitoneal space",
+            "Peritoneal cavity"
+        ]
+    },
+    {
+        "question": "Policeman of the abdomen?",
+        "correct_answer": "Greater omentum",
+        "wrong_answers": [
+            "Lesser omentum",
+            "Mesentery",
+            "Transverse mesocolon"
+        ]
+    },
+    {
+        "question": "State one thing that is true about the portal vein?",
+        "correct_answer": "It is the formation of Splenic vein and SMV",
+        "wrong_answers": [
+            "It directly drains into the inferior vena cava",
+            "It carries deoxygenated blood",
+            "It is a branch of the hepatic artery"
+        ]
+    },
+    {
+        "question": "The right kidney is behind which part of the duodenum?",
+        "correct_answer": "D2",
+        "wrong_answers": [
+            "D1",
+            "D3",
+            "D4"
+        ]
+    },
+    {
+        "question": "Where is the hepatic artery proper found in the lesser omentum?",
+        "correct_answer": "Hepatoduodenal ligament",
+        "wrong_answers": [
+            "Hepatogastric ligament",
+            "Gastrohepatic ligament",
+            "Hepatocolic ligament"
+        ]
+    },
+    {
+        "question": "An artery in Calot's triangle?",
+        "correct_answer": "Cystic",
+        "wrong_answers": [
+            "Hepatic",
+            "Gastroduodenal",
+            "Splenic"
+        ]
+    },
+    {
+        "question": "During an extraperitoneal approach for the right Kidney, which nerve might be affected?",
+        "correct_answer": "T12",
+        "wrong_answers": [
+            "T10",
+            "L1",
+            "L2"
+        ]
+    },
+    {
+        "question": "A mother noticed that her son's left testis moves upwards when he's crying. What is the ROOT VALUE of the nerve supplying the muscle responsible for this reflex?",
+        "correct_answer": "L2",
+        "wrong_answers": [
+            "L1",
+            "S1",
+            "T12"
+        ]
+    },
+    {
+        "question": "What thing is true about IVC?",
+        "correct_answer": "It receives Left and right renal",
+        "wrong_answers": [
+            "It carries oxygenated blood",
+            "It is a branch of the hepatic artery",
+            "It drains into the portal vein"
+        ]
+    },
+    {
+        "question": "Patient with yellow skin + yellow eyes, suspected obstructive jaundice. Which place the gallstone migrates to in the biliary system duct that causes obstructive jaundice?",
+        "correct_answer": "Common bile duct",
+        "wrong_answers": [
+            "Hepatic duct",
+            "Cystic duct",
+            "Pancreatic duct"
+        ]
+    },
+     {
+        "question": "In a picture showing the biliary system, what’s this structure?",
+        "correct_answer": "Main pancreatic duct",
+        "wrong_answers": [
+            "Common bile duct",
+            "Cystic duct",
+            "Hepatic duct"
+        ]
+    },
+    {
+        "question": "What is the venous route of metastasis in the Cecum?",
+        "correct_answer": "Right lobe of liver",
+        "wrong_answers": [
+            "Left lobe of liver",
+            "Spleen",
+            "Pancreas"
+        ]
+    },
+    {
+        "question": "If the left colic artery was obstructed which of the following marginal arteries will supply the descending colon?",
+        "correct_answer": "Marginal artery of Drummond",
+        "wrong_answers": [
+            "Marginal artery of Bogros",
+            "Marginal artery of Waldeyer",
+            "Marginal artery of Astley"
+        ]
+    },
+    {
+        "question": "Which part of the common bile duct runs beside the D1 of the duodenum?",
+        "correct_answer": "Inferior part",
+        "wrong_answers": [
+            "Superior part",
+            "Middle part",
+            "Proximal part"
+        ]
+    },
+    {
+        "question": "In a coronal section x-ray of the abdomen pointing to the anterior of the aorta, what structure is likely being shown?",
+        "correct_answer": "Esophagus",
+        "wrong_answers": [
+            "Stomach",
+            "Duodenum",
+            "Pancreas"
+        ]
+    },
+    {
+        "question": "Between which organs is the junction of the Z-line?",
+        "correct_answer": "Esophagogastric junction",
+        "wrong_answers": [
+            "Esophageal hiatus",
+            "Gastroesophageal junction",
+            "Cardia"
+        ]
+    },
+    {
+        "question": "An inflamed appendix causes Right ovary to become inflamed/pain, what position is the appendix in?",
+        "correct_answer": "Pelvic",
+        "wrong_answers": [
+            "Subhepatic",
+            "Retrocecal",
+            "Inguinal"
+        ]
+    },
+    {
+        "question": "What are the 2 muscles forming the roof of the inguinal canal?",
+        "correct_answer": "Transversus abdominis + internal oblique",
+        "wrong_answers": [
+            "External oblique + internal oblique",
+            "Rectus abdominis + transversus abdominis",
+            "External oblique + rectus abdominis"
+        ]
+    },
+    {
+        "question": "Esophageal varices, which vein should be 'divided' and ligated?",
+        "correct_answer": "Left Gastric Vein",
+        "wrong_answers": [
+            "Portal Vein",
+            "Superior Mesenteric Vein",
+            "Hepatic Vein"
+        ]
+    },
+    {
+        "question": "During surgery to treat indirect inguinal hernia, which vessel that is medial to deep inguinal ring will be damaged if accident?",
+        "correct_answer": "Inferior Epigastric",
+        "wrong_answers": [
+            "Femoral Artery",
+            "External Iliac Artery",
+            "Internal Iliac Artery"
+        ]
+    },
+    {
+        "question": "Which of the following muscles forms the cremaster muscle?",
+        "correct_answer": "Internal abdominal oblique",
+        "wrong_answers": [
+            "External abdominal oblique",
+            "Transversus abdominis",
+            "Rectus abdominis"
+        ]
+    },
+    {
+        "question": "Which of the following structures/parts of the pancreas will lead to a nutcracker effect on the third part of the duodenum?",
+        "correct_answer": "Uncinate process",
+        "wrong_answers": [
+            "Head",
+            "Body",
+            "Tail"
+        ]
+    },
+    {
+        "question": "Right suprarenal gland cancer surgery (something like that), which structure may be damaged?",
+        "correct_answer": "IVC",
+        "wrong_answers": [
+            "Aorta",
+            "Renal Artery",
+            "Renal Vein"
+        ]
+    },
+    {
+        "question": "Quadrate lobe, the left border of it is formed by?",
+        "correct_answer": "Fissure ligamentum teres hepatis",
+        "wrong_answers": [
+            "Ligamentum venosum",
+            "Coronary ligament",
+            "Falciform ligament"
+        ]
+    },
+    {
+        "question": "Branches of arteries from abdominal aorta supplying the head of the pancreas?",
+        "correct_answer": "SMA & celiac trunk",
+        "wrong_answers": [
+            "Inferior mesenteric artery & hepatic artery",
+            "Superior mesenteric artery & splenic artery",
+            "Renal artery & gonadal artery"
+        ]
+    },
+    {
+        "question": "What is true about the psoas major muscle?",
+        "correct_answer": "Main Flexor of trunk",
+        "wrong_answers": [
+            "Main Extensor of trunk",
+            "Main Abductor of trunk",
+            "Main Rotator of trunk"
+        ]
+    },
+    {
+        "question": "Duodenum at hepatoduodenal ligament?",
+        "correct_answer": "Supradudanal",
+        "wrong_answers": [
+            "Infradudenal",
+            "Interdudenal",
+            "Paradudenal",
+            "Perideudenal"
+        ]
+    },
+    {
+        "question": "True about spleen?",
+        "correct_answer": "Remove accessory spleens in splenic anemia",
+        "wrong_answers": [
+            "Produces insulin",
+            "Located in the right upper quadrant of the abdomen",
+            "Contains large amounts of bile",
+            "Connected to the stomach by the greater omentum"
+        ]
+    },
+    {
+        "question": "What describes the celiac trunk?",
+        "correct_answer": "Unpaired ventral visceral",
+        "wrong_answers": [
+            "Paired dorsal visceral",
+            "Unpaired dorsal visceral",
+            "Paired ventral somatic",
+            "Unpaired dorsal somatic"
+        ]
     }
+]
+
+Histology_questions = [
+    {
+        "question": "Which cellular structure is responsible for ribosomes production?",
+        "correct_answer": "Arrow pointing at the nucleolus",
+        "wrong_answers": [
+            "Mitochondria",
+            "Endoplasmic reticulum",
+            "Golgi apparatus",
+            "Cell membrane"
+        ]
+    },
+    {
+        "question": "What is the next step after fixation?",
+        "correct_answer": "Dehydration",
+        "wrong_answers": [
+            "Embedding",
+            "Sectioning",
+            "Staining",
+            "Mounting"
+        ]
+    },
+    {
+        "question": "Periodic acid-Schiff (PAS) stains which of the following structures?",
+        "correct_answer": "Mucus",
+        "wrong_answers": [
+            "Nucleus",
+            "Cell membrane",
+            "Cytoplasm",
+            "Ribosomes"
+        ]
+    },
+    {
+        "question": "Protein that regulates cell cycle restriction point?",
+        "correct_answer": "Retinoblastoma",
+        "wrong_answers": [
+            "P53",
+            "Cyclin D",
+            "Cyclin-dependent kinase",
+            "Ras protein"
+        ]
+    },
+    {
+        "question": "Cell that goes under continuous renewal?",
+        "correct_answer": "Epidermis",
+        "wrong_answers": [
+            "Liver",
+            "Skeletal muscle",
+            "Brain",
+            "Cartilage"
+        ]
+    },
+    {
+        "question": "Which type of collagen is in the basement membrane?",
+        "correct_answer": "Collagen IV",
+        "wrong_answers": [
+            "Collagen I",
+            "Collagen II",
+            "Collagen III",
+            "Collagen V"
+        ]
+    },
+    {
+        "question": "What type of epithelium in the bronchioles?",
+        "correct_answer": "Simple columnar epithelium",
+        "wrong_answers": [
+            "Stratified squamous epithelium",
+            "Pseudostratified columnar epithelium",
+            "Transitional epithelium",
+            "Simple cuboidal epithelium"
+        ]
+    },
+    {
+        "question": "Transitional epithelium in which structure?",
+        "correct_answer": "Urinary bladder",
+        "wrong_answers": [
+            "Stomach",
+            "Small intestine",
+            "Kidney",
+            "Ureter"
+        ]
+    },
+    {
+        "question": "Type of junctions that prevent the movement of molecules and foreign structures?",
+        "correct_answer": "Zonula occludens",
+        "wrong_answers": [
+            "Desmosomes",
+            "Gap junctions",
+            "Hemidesmosomes",
+            "Tight junctions"
+        ]
+    },
+    {
+        "question": "Which of the following structures absorbs water the most?",
+        "correct_answer": "Glycosaminoglycans",
+        "wrong_answers": [
+            "Collagen fibers",
+            "Elastin fibers",
+            "Proteoglycans",
+            "Fibronectin"
+        ]
+    },
+    {
+        "question": "Which cell is responsible for the production of the bone matrix?",
+        "correct_answer": "Osteoblasts",
+        "wrong_answers": [
+            "Osteocytes",
+            "Osteoclasts",
+            "Chondrocytes",
+            "Fibroblasts"
+        ]
+    },
+    {
+        "question": "Which cell is responsible for production of collagen and other extracellular components?",
+        "correct_answer": "Fibroblasts",
+        "wrong_answers": [
+            "Osteoblasts",
+            "Chondrocytes",
+            "Macrophages",
+            "Lymphocytes"
+        ]
+    },
+    {
+        "question": "Which of the following is a tissue-fixed connective tissue cell?",
+        "correct_answer": "Macrophages",
+        "wrong_answers": [
+            "Mast cells",
+            "Plasma cells",
+            "Eosinophils",
+            "Neutrophils"
+        ]
+    },
+    {
+        "question": "Which type of bone in the epiphysis (adult)?",
+        "correct_answer": "Spongy",
+        "wrong_answers": [
+            "Compact",
+            "Cancellous",
+            "Trabecular",
+            "Dense"
+        ]
+    },
+    {
+        "question": "Which cells are able to differentiate into plasma cells?",
+        "correct_answer": "B lymphocytes",
+        "wrong_answers": [
+            "T lymphocytes",
+            "Natural killer cells",
+            "Monocytes",
+            "Neutrophils"
+        ]
+    },
+    {
+        "question": "Which of the following structures is avascular?",
+        "correct_answer": "Cartilage",
+        "wrong_answers": [
+            "Bone",
+            "Muscle",
+            "Tendon",
+            "Ligament"
+        ]
+    },
+    {
+        "question": "Which of the following structures has cartilage rich in collagen type 1 fibers?",
+        "correct_answer": "Meniscus",
+        "wrong_answers": [
+            "Articular cartilage",
+            "Costal cartilage",
+            "Nasal cartilage",
+            "Elastic cartilage"
+        ]
+    },
+    {
+        "question": "Which of the following cells is not capable of mitosis?",
+        "correct_answer": "Osteocytes",
+        "wrong_answers": [
+            "Osteoblasts",
+            "Osteoclasts",
+            "Chondrocytes",
+            "Fibroblasts"
+        ]
+    },
+    {
+        "question": "Structure that is responsible for bone elongation in woven bone?",
+        "correct_answer": "Epiphyseal plate",
+        "wrong_answers": [
+            "Periosteum",
+            "Endosteum",
+            "Haversian canal",
+            "Sharpey's fibers"
+        ]
+    },
+    {
+        "question": "Cartilage is avascular, so chondrocytes receive nutrients from where?",
+        "correct_answer": "Perichondrium",
+        "wrong_answers": [
+            "Blood vessels within cartilage",
+            "Synovial fluid",
+            "Bone marrow",
+            "Adjacent muscles"
+        ]
+    },
+    {
+        "question": "Which cell is responsible for the production of the bone matrix?",
+        "correct_answer": "Osteoblasts",
+        "wrong_answers": [
+            "Osteoclasts",
+            "Chondrocytes",
+            "Fibroblasts",
+            "Adipocytes"
+        ]
+    },
+    {
+        "question": "Which cell is responsible for production of collagen and other extracellular components?",
+        "correct_answer": "Fibroblasts",
+        "wrong_answers": [
+            "Osteocytes",
+            "Chondrocytes",
+            "Macrophages",
+            "T lymphocytes"
+        ]
+    },
+    {
+        "question": "Which of the following is a tissue-fixed connective tissue cell?",
+        "correct_answer": "Macrophages",
+        "wrong_answers": [
+            "Neutrophils",
+            "Eosinophils",
+            "Mast cells",
+            "Basophils"
+        ]
+    },
+    {
+        "question": "Which type of bone in the epiphysis ( adult )?",
+        "correct_answer": "Spongy",
+        "wrong_answers": [
+            "Compact",
+            "Woven",
+            "Cancellous",
+            "Trabecular"
+        ]
+    },
+    {
+        "question": "Which cells are able to differentiate into plasma cells?",
+        "correct_answer": "B lymphocytes",
+        "wrong_answers": [
+            "T lymphocytes",
+            "Natural killer cells",
+            "Macrophages",
+            "Neutrophils"
+        ]
+    },
+    {
+        "question": "Which of the following structures is avascular?",
+        "correct_answer": "Cartilage",
+        "wrong_answers": [
+            "Bone",
+            "Tendon",
+            "Ligament",
+            "Muscle"
+        ]
+    },
+    {
+        "question": "Which of the following structures has cartilage rich in collagen type 1 fibers?",
+        "correct_answer": "Meniscus",
+        "wrong_answers": [
+            "Articular cartilage",
+            "Costal cartilage",
+            "Nasal cartilage",
+            "Tracheal cartilage"
+        ]
+    },
+    {
+        "question": "Which of the following cells is not capable of mitosis?",
+        "correct_answer": "Osteocytes",
+        "wrong_answers": [
+            "Osteoblasts",
+            "Osteoclasts",
+            "Chondrocytes",
+            "Fibroblasts"
+        ]
+    },
+    {
+        "question": "Structure that is responsible for bone elongation in woven bone?",
+        "correct_answer": "Epiphyseal plate",
+        "wrong_answers": [
+            "Periosteum",
+            "Endosteum",
+            "Sharpey's fibers",
+            "Canaliculi"
+        ]
+    },
+    {
+        "question": "Cartilage is avascular, so chondrocytes receive nutrients from where?",
+        "correct_answer": "Perichondrium",
+        "wrong_answers": [
+            "Synovial fluid",
+            "Capsular ligaments",
+            "Haversian canals",
+            "Osteocytes"
+        ]
+    },
+    {
+        "question": "What makes the space around the chondrocytes more basophilic?",
+        "correct_answer": "Proteoglycans",
+        "wrong_answers": [
+            "Collagen fibers",
+            "Glycoproteins",
+            "Elastin fibers",
+            "Fibrinogen"
+        ]
+    },
+    {
+        "question": "Which structure is present in compact bone but not in spongy bone?",
+        "correct_answer": "Haversian systems",
+        "wrong_answers": [
+            "Volkmann's canals",
+            "Lamellae",
+            "Osteons",
+            "Canaliculi"
+        ]
+    },
+    {
+        "question": "Remains of old lamellae that were resorbed?",
+        "correct_answer": "Interstitial lamellae",
+        "wrong_answers": [
+            "Concentric lamellae",
+            "Circumferential lamellae",
+            "Lacunae",
+            "Trabeculae"
+        ]
+    },
+    {
+        "question": "One of the special features of hyaline cartilage?",
+        "correct_answer": "Interstitial growth",
+        "wrong_answers": [
+            "Appositional growth",
+            "Endochondral ossification",
+            "Perichondrial growth",
+            "Intracartilaginous ossification"
+        ]
+    },
+    {
+        "question": "Which type of bone appears in intrauterine life?",
+        "correct_answer": "Woven bone",
+        "wrong_answers": [
+            "Lamellar bone",
+            "Compact bone",
+            "Spongy bone",
+            "Cancellous bone"
+        ]
+    },
+    {
+        "question": "Women aged 65 came with a fractured femur, low bone density and few trabeculae. What is the reason?",
+        "correct_answer": "Increase of osteoclasts activity",
+        "wrong_answers": [
+            "Decrease of osteoblasts activity",
+            "Decrease of osteocytes activity",
+            "Increase of osteoblasts activity",
+            "Decrease of osteoclasts activity"
+        ]
+    },
+    {
+        "question": "Photo of injured child (surface abrasion of skin)?",
+        "correct_answer": "Epithelium proliferation, migration and differentiation",
+        "wrong_answers": [
+            "Collagen deposition",
+            "Neovascularization",
+            "Hematoma formation"
+        ]
+    },
+    {
+        "question": "Photo Dense regular found in?",
+        "correct_answer": "Tendon",
+        "wrong_answers": [
+            "Muscle",
+            "Ligament",
+            "Bone"
+        ]
+    },
+    {
+        "question": "What part of goblet produces mucus?",
+        "correct_answer": "Golgi apparatus",
+        "wrong_answers": [
+            "Nucleus",
+            "Mitochondria",
+            "Endoplasmic reticulum"
+        ]
+    },
+    {
+        "question": "Parallel fibers that are acidophilic (collagen) and have few chondrocytes in between, where is this type of tissue found in the human body?",
+        "correct_answer": "Intervertebral disc",
+        "wrong_answers": [
+            "Tendon",
+            "Ligament",
+            "Articular cartilage"
+        ]
+    },
+    {
+        "question": "Most abundant protein in the extracellular matrix?",
+        "correct_answer": "Collagen",
+        "wrong_answers": [
+            "Elastin",
+            "Fibronectin",
+            "Laminin"
+        ]
+    },
+    {
+        "question": "Tracheal rings (cartilage) need nutrients from blood vessels, where are the BVs found?",
+        "correct_answer": "Perichondrium",
+        "wrong_answers": [
+            "Submucosa",
+            "Adventitia",
+            "Basement membrane"
+        ]
+    },
+    {
+        "question": "What is the step directly after dehydration?",
+        "correct_answer": "Clearing",
+        "wrong_answers": [
+            "Embedding",
+            "Fixation",
+            "Staining"
+        ]
+    },
+    {
+        "question": "Toludine blue dye, colors a cell (description of mast cell) purple, what does the cell produce?",
+        "correct_answer": "Histamine",
+        "wrong_answers": [
+            "Serotonin",
+            "Acetylcholine",
+            "Prostaglandins"
+        ]
+    },
+    {
+        "question": "What type of tissue is important for protection?",
+        "correct_answer": "Stratified squamous epithelium",
+        "wrong_answers": [
+            "Simple cuboidal epithelium",
+            "Pseudostratified columnar epithelium",
+            "Transitional epithelium"
+        ]
+    },
+    {
+        "question": "What is the feature of hyaline cartilage?",
+        "correct_answer": "Interstitial growth",
+        "wrong_answers": [
+            "Appositional growth",
+            "Perichondrial growth",
+            "Endochondral ossification"
+        ]
+    },
+    {
+        "question": "Dermis contains?",
+        "correct_answer": "Dense irregular connective tissue",
+        "wrong_answers": [
+            "Loose connective tissue",
+            "Adipose tissue",
+            "Reticular connective tissue"
+        ]
+    },
+    {
+        "question": "The key protein that is involved in the restriction point?",
+        "correct_answer": "Retinoblastoma protein",
+        "wrong_answers": [
+            "p53 protein",
+            "Cyclin D",
+            "Cyclin-dependent kinase"
+        ]
+    },
+    {
+        "question": "Which of the following is a feature of hyaline cartilage?",
+        "correct_answer": "Avascular",
+        "wrong_answers": [
+            "Highly innervated",
+            "Richly vascularized",
+            "Contains many osteocytes"
+        ]
+    },
+    {
+        "question": "Which one is avascular?",
+        "correct_answer": "Articular cartilage",
+        "wrong_answers": [
+            "Fibrocartilage",
+            "Elastic cartilage",
+            "Hyaline cartilage"
+        ]
+    },
+    {
+        "question": "Photo, the structure in the middle is?",
+        "correct_answer": "Stratified cuboidal epithelial",
+        "wrong_answers": [
+            "Simple squamous epithelial",
+            "Stratified squamous epithelial",
+            "Pseudostratified columnar epithelial"
+        ]
+    },
+    {
+        "question": "The junction that separates epithelium from the lumen?",
+        "correct_answer": "Zonula occludens",
+        "wrong_answers": [
+            "Zonula adherens",
+            "Macula adherens",
+            "Hemidesmosome"
+        ]
+    },
+    {
+        "question": "Most abundant protein in the wall of the aorta (elastic cartilage)?",
+        "correct_answer": "Elastin",
+        "wrong_answers": [
+            "Collagen",
+            "Fibrillin",
+            "Keratin"
+        ]
+    },
+    {
+        "question": "Child with diarrhea and small intestine biopsy was taken. There is an absent structure that is at the top of epithelium (pointing at microvilli) what is the function of this missing structure?",
+        "correct_answer": "Increase the surface area of absorption",
+        "wrong_answers": [
+            "Secretion of mucus",
+            "Protection against pathogens",
+            "Maintenance of cell shape"
+        ]
+    },
+    {
+        "question": "Which of the respiratory tract with simple squamous?",
+        "correct_answer": "Alveoli",
+        "wrong_answers": [
+            "Trachea",
+            "Bronchi",
+            "Bronchioles"
+        ]
+    },
+    {
+        "question": "Cells that are polarized, 2 layers, elongated?",
+        "correct_answer": "Stratified columnar epithelium",
+        "wrong_answers": [
+            "Simple columnar epithelium",
+            "Stratified squamous epithelium",
+            "Simple squamous epithelium"
+        ]
+    },
+    {
+        "question": "Cells that are polarized, elongated?",
+        "correct_answer": "Simple columnar epithelium",
+        "wrong_answers": [
+            "Stratified columnar epithelium",
+            "Stratified squamous epithelium",
+            "Simple squamous epithelium"
+        ]
+    },
+    {
+        "question": "Cell that has Centered nucleus and is metachromatic (purple). Whats it’s function? (Mast cells)",
+        "correct_answer": "Secrete histamine",
+        "wrong_answers": [
+            "Absorption of nutrients",
+            "Synthesis of antibodies",
+            "Production of mucus"
+        ]
+    },
+    {
+        "question": "Cells 2 layers, the superficial layer cells are equal longitudinally and transversely?",
+        "correct_answer": "Stratified cuboidal epithelium",
+        "wrong_answers": [
+            "Stratified columnar epithelium",
+            "Simple cuboidal epithelium",
+            "Simple squamous epithelium"
+        ]
+    },
+    {
+        "question": "Parallel fibers that are acidophilic (collagen) and have few chondrocytes in between, where is this type of tissue found in the human body?",
+        "correct_answer": "Intervertebral disc",
+        "wrong_answers": [
+            "Articular cartilage",
+            "Costal cartilage",
+            "Nasal cartilage"
+        ]
+    },
+    {
+        "question": "A picture of a type of bone that has trabeculae and spicules which type of bone?",
+        "correct_answer": "Spongy bone",
+        "wrong_answers": [
+            "Compact bone",
+            "Long bone",
+            "Flat bone"
+        ]
+    },
+    {
+        "question": "Which of the following is a Multinucleated cell?",
+        "correct_answer": "Osteoclasts",
+        "wrong_answers": [
+            "Osteoblasts",
+            "Osteocytes",
+            "Chondrocytes"
+        ]
+    },
+    {
+        "question": "Key protein in regulating Cell cycle progression?",
+        "correct_answer": "Cyclin",
+        "wrong_answers": [
+            "CDK (Cyclin-dependent kinase)",
+            "p53",
+            "Rb (Retinoblastoma protein)"
+        ]
+    },{
+        "question": "In the respiratory tract, which type of cell is found among the epithelium?",
+        "correct_answer": "Goblet cells",
+        "wrong_answers": [
+            "Ciliated cells",
+            "Basal cells",
+            "Brush cells"
+        ]
+    },
+    {
+        "question": "Description: Many layers of cells and the superficial layer is like a dome, Where is it found?",
+        "correct_answer": "Urinary bladder",
+        "wrong_answers": [
+            "Epidermis",
+            "Esophagus",
+            "Small intestine"
+        ]
+    },
+    {
+        "question": "Type of ossification where mesenchymal cells immediately become bone?",
+        "correct_answer": "Intramembranous ossification",
+        "wrong_answers": [
+            "Endochondral ossification",
+            "Periosteal ossification",
+            "Appositional ossification"
+        ]
+    },
+    {
+        "question": "You have early embryonic bone and notice basophilic cells forming a layer around the eosinophilic matrix. There is a small pale region in between the two which is paler, what do you call this?",
+        "correct_answer": "Osteoid",
+        "wrong_answers": [
+            "Periosteum",
+            "Haversian canal",
+            "Sharpey's fibers"
+        ]
+    },
+    {
+        "question": "Tendon is dominated mainly by which fiber?",
+        "correct_answer": "Collagen I",
+        "wrong_answers": [
+            "Collagen II",
+            "Collagen III",
+            "Collagen IV"
+        ]
+    },
+    {
+        "question": "Tracheal rings (cartilage) need nutrients from blood vessels, where are they?",
+        "correct_answer": "In perichondrium",
+        "wrong_answers": [
+            "Within lacunae",
+            "Within the cartilage matrix",
+            "In the cartilage canals"
+        ]
+    },
+    {
+        "question": "Description: You see a slide with multiple collagen fibers going in random patterns and few cells, identify the type of tissue.",
+        "correct_answer": "Dense irregular connective tissue",
+        "wrong_answers": [
+            "Dense regular connective tissue",
+            "Elastic connective tissue",
+            "Reticular connective tissue"
+        ]
+    },
+    {
+        "question": "Cell that secretes lots of proteins, what makes it basophilic?",
+        "correct_answer": "Ribosomes",
+        "wrong_answers": [
+            "Golgi apparatus",
+            "Rough endoplasmic reticulum",
+            "Mitochondria"
+        ]
+    },
+    
+    
 ]
 
 PPC_terms = [
@@ -5114,10 +6057,17 @@ print(f"created a total of {total_PPC} questions for PPC questions.")
 
 
 total_questions = (total_Anatomy + total_Biology + total_chemistry + total_NIT + total_PPC )
-print(f"{SL}created a total of {total_questions} for premid 1 questions. practical not included{SL}")
+print(f"{SL}created a total of {total_questions} for premid 1 questions.{SL}")
 
 
 #Total questions for premid 2
 
+total_Anatomy2 = len(Anatomy2_questions)
+print(f"created a total of {total_Anatomy2} questions for Anatomy 2 questions.")
+
 total_PPCT = len(PPC_terms)
 print(f"created a total of {total_PPCT} questions for PPCT questions.")
+
+
+total_questions = (total_Anatomy2 + total_PPCT )
+print(f"{SL}created a total of {total_questions} for premid 2 questions.{SL}")
