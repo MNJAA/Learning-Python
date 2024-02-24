@@ -1,12 +1,14 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from random import shuffle
-from qs import Anatomy_practical,Anatomy2_questions,Anatomy_questions,Biology_questions,Chemistry_practical,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
+from qs import Anatomy_practical,Anatomy_questions,Anatomy2_practical,Anatomy2_questions,Biology_questions,Chemistry_practical,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
+
 
 root = Tk()
 root.title("First Year MCQ Exam")
 root.config(bg="#242424")
 root.iconbitmap("Images\Icons\MSQ.ico")
+
 
 f = "TimesNewRoman 13 bold"
 f2 = "TimesNewRoman 10 bold"
@@ -14,19 +16,35 @@ f3 = "TimesNewRoman 8 bold"
 f4 = "TimesNewRoman 1"
 
 
-
 wrong_questions = []
 current_question_index = 0
 overall_score = 0
 
 
-
-
 # global defs
-def clear_widgets():
-            for widget in root.winfo_children():
-                widget.destroy()
-                
+
+def The_satrt():
+    Label(root,text='Which Mid?',font=f, bg="#404040",fg="White").grid(row=0,column=0)
+    button = Button(root,text='PreMid 1',font=f, bd=5, width=20,command=lambda: starting("PreMid 1"))
+    button.grid(row=1,column=0)
+    button1 = Button(root,text='PreMid 2',font=f, bd=5, width=20,command=lambda: starting("PreMid 2"))
+    button1.grid(row=2,column=0)
+
+def starting(a):
+    clear_widgets()
+    if a == 'PreMid 1':
+        Label(root,text='Easy or Hard?',font=f, bg="#404040",fg="White").grid(row=0,column=0)
+        button = Button(root,text='Practical',font=f, bd=5, width=20,command=mid1("Prac").md1_theo)
+        button.grid(row=1,column=0)
+        button1 = Button(root,text='Theoretical',font=f, bd=5, width=20,command=mid1("Theo").md1_theo)
+        button1.grid(row=2,column=0)
+    if a == 'PreMid 2':
+        Label(root,text='Easy or Hard?',font=f, bg="#404040",fg="White").grid(row=0,column=0)
+        button = Button(root,text='Practical',font=f, bd=5, width=20,command=mid2("Prac").md2_theo)
+        button.grid(row=1,column=0)
+        button1 = Button(root,text='Theoretical',font=f, bd=5, width=20,command=mid2("Theo").md2_theo)
+        button1.grid(row=2,column=0)
+   
 def show_result(object):
         clear_widgets()
         root.config(bg="#f0f0f0")
@@ -40,44 +58,23 @@ def show_result(object):
                 r = 2
                 c += 1
 
-def The_satrt():
-    Label(root,text='Which Mid?',font=f, bg="#404040",fg="White").grid(row=0,column=0)
-    button = Button(root,text='PreMid 1',font=f, bd=5, width=20,command=lambda: starting("PreMid 1"))
-    button.grid(row=1,column=0)
-    button1 = Button(root,text='PreMid 2',font=f, bd=5, width=20,command=lambda: starting("PreMid 2"))
-    button1.grid(row=2,column=0)
-   
-def starting(a):
-    clear_widgets()
-    if a == 'PreMid 1':
-        Label(root,text='Easy or Hard?',font=f, bg="#404040",fg="White").grid(row=0,column=0)
-        button = Button(root,text='Practical',font=f, bd=5, width=20,command=mid1("Prac").md1_theo,)
-        button.grid(row=1,column=0)
-        button1 = Button(root,text='Theoretical',font=f, bd=5, width=20,command=mid1("Theo").md1_theo)
-        button1.grid(row=2,column=0)
-    if a == 'PreMid 2':
-        Label(root,text='Easy or Hard?',font=f, bg="#404040",fg="White").grid(row=0,column=0)
-        button = Button(root,text='Practical',font=f, bd=5, width=20)
-        button.grid(row=1,column=0)
-        button1 = Button(root,text='Theoretical',font=f, bd=5, width=20,command=mid2().md2_theo)
-        button1.grid(row=2,column=0)
+def clear_widgets():
+            for widget in root.winfo_children():
+                widget.destroy()
 
 def load_image(file_path):
     return ImageTk.PhotoImage(Image.open(file_path))
 
+# Practicle imgs for premid 1
 anatimgs= [
     
-    load_image(r"Images\MMCQ_Practical\Anatomy\img0.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img1.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img2.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img2.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img3.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img4.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img4.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img5.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img5.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img6.png"),
-    load_image(r"Images\MMCQ_Practical\Anatomy\img6.png")
+    load_image(r"Images\MMCQ_Practical\Anatomy\1\img0.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\1\img1.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\1\img2.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\1\img3.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\1\img4.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\1\img5.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\1\img6.png")
 ]
 
 chemimgs = [
@@ -86,6 +83,22 @@ chemimgs = [
     load_image(r"Images\MMCQ_Practical\Chemistry\img2.png"),
     load_image(r"Images\MMCQ_Practical\Chemistry\img3.png")
 ]
+
+# Practicle imgs for premid 2
+anat2imgs= [
+    
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img0.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img1.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img2.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img3.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img4.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img5.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img6.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img7.png"),
+    load_image(r"Images\MMCQ_Practical\Anatomy\2\img8.png"),
+    
+]
+           
 
 class mid1:
 # premid 1 
@@ -384,15 +397,26 @@ class mid2:
 # premid 2 
 # Theoretical
     objects = ["Anatomy","Biology","Chemistry","NIT","All PPC terms"]
+    Pobjects = ["Anatomy","Histology"]
+
+    def __init__(self,state):
+        self.state = state
+        
     
     def md2_theo(self):
         clear_widgets()
         Label(root, text="⇃Choose your subject⇂", font=f, bg="#404040",fg="White").grid(row=0, column=0)
         object_row = 1
-        for object in self.objects:
-            obj_button = Button(root, text=object,font=f, bd=5, width=20,command=lambda obj=object:self.get(obj))
-            obj_button.grid(row=object_row, column=0)
-            object_row += 1
+        if self.state == "Theo":
+            for object in self.objects:
+                obj_button = Button(root, text=object,font=f, bd=5, width=20,command=lambda obj=object:self.get(obj))
+                obj_button.grid(row=object_row, column=0)
+                object_row += 1
+        else:
+            for object in self.Pobjects:
+                obj_button = Button(root, text=object,font=f, bd=5, width=20,command=lambda selection=object:self.Pget(selection))
+                obj_button.grid(row=object_row, column=0)
+                object_row += 1
             
     def get(self,selection):
         global obj
@@ -417,6 +441,13 @@ class mid2:
             obj = self.objects[4]
             self.ppct()
 
+    def Pget(self,selection):
+        if selection == self.Pobjects[0]:
+            clear_widgets()
+            self.Panatomy2()
+        elif selection == self.Pobjects[1]:
+            clear_widgets()
+        
 
     def anatomy2(self):
         shuffle(Anatomy2_questions)
@@ -485,6 +516,44 @@ class mid2:
             self.ppct()
         else:
             show_result(PPC_terms)
+
+
+# premid 2
+# practical
+
+    def Panatomy2(self):
+        aq = Anatomy2_practical[current_question_index]
+        row = 3
+        img = anat2imgs[current_question_index]
+        Label(root, image=img).grid(row=0, column=0)
+        Label(root, text=aq['question'],wraplength=1000, font=f, fg="White", bg="#404040").grid(row=1, column=0)
+
+        all_a = [aq['correct_answer']] + aq['wrong_answers']
+        shuffle(all_a)
+
+        for answers in all_a:
+            button = Button(root, text=answers,wraplength=1000, width=50, bd=5, command=lambda a=answers: self.check_Panat2(a))
+            button.grid(row=row, column=0)
+            row += 1
+
+    def check_Panat2(self,a):
+        global current_question_index, overall_score
+        aq = Anatomy2_practical[current_question_index]
+        
+        if a in aq['correct_answer']:
+            overall_score += 1
+            print("Correct")
+        
+        else:  
+            print("Incorrect")
+            wrong_questions.append(aq['correct_answer'])
+
+        if current_question_index < len(Anatomy2_practical) - 1:
+            clear_widgets()
+            current_question_index += 1
+            self.Panatomy2()
+        else:
+            show_result(Anatomy2_practical)
 
 
 

@@ -13,7 +13,6 @@ TESTING = [
 
 
 #premid 1 Theoretical 
-
 Anatomy_questions = [
     {
         'question': "Stab in 1st IC space, what major vessel is injured?",
@@ -2044,7 +2043,6 @@ PPC_questions = [
 
 
 #premid 1 practical
-
 Anatomy_practical = [
     {
         "question": "What is the first/second arrow?",
@@ -2065,21 +2063,12 @@ Anatomy_practical = [
         ]
     },
     {
-        "question": "Which muscle is this?",
-        "correct_answer": "External Intercostal Muscle",
+        "question": "Which muscle is this and what is its motor supply?",
+        "correct_answer": "External Intercostal Muscle; Muscular branch of the intercostal nerves",
         "wrong_answers": [
-            "Internal Intercostal Muscle",
-            "Subcostal Muscle",
-            "Diaphragm"
-        ]
-    },
-    {
-        "question": "What is the motor supply of this muscle?",
-        "correct_answer": "Muscular branch of the intercostal nerves",
-        "wrong_answers": [
-            "Phrenic nerve",
-            "Long thoracic nerve",
-            "Spinal accessory nerve"
+            "Internal Intercostal Muscle; Phrenic nerve",
+            "Subcostal Muscle; Long thoracic nerve",
+            "Diaphragm; Spinal accessory nerve"
         ]
     },
     {
@@ -2092,59 +2081,31 @@ Anatomy_practical = [
         ]
     },
     {
-        "question": "Which vertebra does this rib articulate with?",
-        "correct_answer": "T7",
+        "question": "Which vertebra does this rib articulate with and what is the name of the joint formed here?",
+        "correct_answer": "T7; Costotransverse joint",
         "wrong_answers": [
-            "T6",
-            "T8",
-            "T5"
+            "T6; Costovertebral joint",
+            "T8; Sternocostal joint",
+            "T5; Costochondral joint"
         ]
     },
     {
-        "question": "What is the name of the joint formed here?",
-        "correct_answer": "Costotransverse joint",
-        "wrong_answers": [
-            "Costovertebral joint",
-            "Sternocostal joint",
-            "Costochondral joint"
-        ]
+    "question": "Identify the blood vessel",
+    "correct_answer": "A) Brachiocephalic Trunk\nB) Internal thoracic vein",
+    "wrong_answers": [
+        "A) Subclavian Artery\nB) Internal thoracic artery",
+        "A) Superior Vena Cava\nB) Azygos vein",
+        "A) Pulmonary Trunk\nB) Inferior vena cava"
+    ]
     },
     {
-        "question": "Identify the blood vessel",
-        "correct_answer": "Brachiocephalic Trunk",
-        "wrong_answers": [
-            "Subclavian Artery",
-            "Superior Vena Cava",
-            "Pulmonary Trunk"
-        ]
-    },
-    {
-        "question": "Identify the blood vessel",
-        "correct_answer": "Internal thoracic vein",
-        "wrong_answers": [
-            "Internal thoracic artery",
-            "Azygos vein",
-            "Inferior vena cava"
-        ]
-    },
-    {
-        "question": "What is the vertebral level for the bony body?",
-        "correct_answer": "T10",
-        "wrong_answers": [
-            "T11",
-            "T9",
-            "T12"
-        ]
-    },
-    {
-        "question": "What is the vertebral level for the level on the arrow?",
-        "correct_answer": "T4-T5",
-        "wrong_answers": [
-            "T3-T4",
-            "T5-T6",
-            "T2-T3"
-        ]
-    }
+    "question": "What is the vertebral level for the bony body and the level on the arrow?",
+    "correct_answer": "A) T10\nB) T4-T5",
+    "wrong_answers": [
+        "A) T11\nB) T3-T4",
+        "A) T9\nB) T5-T6",
+        "A) T12\nB) T2-T3"]
+}
 ]
 
 
@@ -2174,7 +2135,6 @@ Chemistry_practical = [
 
 
 #premid 2 Theoretical 
-
 Anatomy2_questions = [
     {
         "question": "What's located at the transtubercular line?",
@@ -6036,10 +5996,59 @@ PPC_terms = [
 ]
 
 
+#premid 1 practical
+Anatomy2_practical = [
+    {
+        "question": "What is the structure labelled D?",
+        "correct_answer": "Stomach",
+        "wrong_answers": ["Liver", "Pancreas", "Spleen"]
+    },
+    {
+        "question": "What is the structure labelled?",
+        "correct_answer": "Descending aorta",
+        "wrong_answers": ["Ascending aorta", "Aortic arch", "Thoracic aorta"]
+    },
+    {
+        "question": "What are the structures shown?",
+        "correct_answer": "A) Quadrate lobe\nB) IVC",
+        "wrong_answers": ["A) Caudate lobe\nB) Hepatic portal vein", "A) Splenic flexure\nB) Hepatic vein", "A) Falciform ligament\nB) Inferior mesenteric vein"]
+    },
+    {
+        "question": "What are the functions of the structures labelled?",
+        "correct_answer": "A) Gastric folds (function: increase the surface area for absorption)\nB) Arteries supplying this area: Right & left gastric arteries",
+        "wrong_answers": ["A) Rugae (function: secrete gastric juices)\nB) Arteries supplying this area: Gastroduodenal artery", "A) Pyloric sphincter (function: regulate food passage)\nB) Arteries supplying this area: Splenic artery", "A) Cardiac sphincter (function: prevent acid reflux)\nB) Arteries supplying this area: Inferior mesenteric artery"]
+    },
+    {
+        "question": "What are the structures shown?",
+        "correct_answer": "A) Tendinous intersection\nB) External oblique muscle",
+        "wrong_answers": ["A) Linea alba\nB) Internal oblique muscle", "A) Semilunar line\nB) Transversus abdominis muscle", "A) Inguinal ligament\nB) Rectus abdominis muscle"]
+    },
+    {
+        "question": "What are the structures shown?",
+        "correct_answer": "A) Terminal part of the Ileum\nB) Appendix",
+        "wrong_answers": ["A) Gastric folds\nB) Descending aorta", "A) Tendinous intersection\nB) External oblique muscle", "A) Spleen\nB) Renal artery"]
+    },
+    {
+        "question": "What are A and B?",
+        "correct_answer": "A: Main pancreatic duct\nB: Major duodenal papilla or 2nd part of the duodenum",
+        "wrong_answers": ["A: Hepatic duct\nB: Cystic duct", "A: Liver\nB: Common bile duct", "A: Stomach\nB: Pyloric sphincter"]
+    },
+    {
+        "question": "What’s this structure shown? Name one nerve passing through it.",
+        "correct_answer": "A: Superficial inguinal ring\nB: Ilioinguinal nerve (L1)",
+        "wrong_answers": ["A: Femoral ring\nB: Femoral nerve (L2-L4)", "A: Deep inguinal ring\nB: Genitofemoral nerve (L1-L2)", "A: Obturator foramen\nB: Obturator nerve (L2-L4)"]
+    },
+    {
+        "question": "What’s the structure showing, name one artery supplying this structure (there are multiple arteries)",
+        "correct_answer": "A: External oblique\nB: Inferior epigastric",
+        "wrong_answers": ["A: Internal oblique\nB: Superior epigastric", "A: Transversus abdominis\nB: Deep circumflex iliac", "A: Rectus abdominis\nB: Deep epigastric"]
+    },
+    
+    
+]
 
 
 #Total questions for premid 1
-
 total_Anatomy = len(Anatomy_questions + Anatomy_practical)
 print(f"created a total of {total_Anatomy} questions for Anatomy questions.")
 
@@ -6065,9 +6074,12 @@ print(f"{SL}created a total of {total_questions} for premid 1 questions.{SL}")
 total_Anatomy2 = len(Anatomy2_questions)
 print(f"created a total of {total_Anatomy2} questions for Anatomy 2 questions.")
 
+total_Histology = len(Histology_questions)
+print(f"created a total of {total_Histology} questions for Histology questions.")
+
 total_PPCT = len(PPC_terms)
 print(f"created a total of {total_PPCT} questions for PPCT questions.")
 
 
-total_questions = (total_Anatomy2 + total_PPCT )
+total_questions = (total_Anatomy2 + total_Histology + total_PPCT )
 print(f"{SL}created a total of {total_questions} for premid 2 questions.{SL}")
