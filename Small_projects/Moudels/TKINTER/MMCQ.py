@@ -1,7 +1,7 @@
 from tkinter import *
 from PIL import Image, ImageTk
 from random import shuffle
-from qs import Anatomy_practical,Anatomy_questions,Anatomy2_practical,Anatomy2_questions,Biology_questions,Chemistry_practical,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms
+from qs import Anatomy_practical,Anatomy_questions,Anatomy2_practical,Anatomy2_questions,Biology_questions,Chemistry_practical,Chemistry_questions,NIT_questions,PPC_questions,PPC_terms,Histology_practical
 
 
 root = Tk()
@@ -96,6 +96,11 @@ anat2imgs= [
     load_image(r"Images\MMCQ_Practical\Anatomy\2\img6.png"),
     load_image(r"Images\MMCQ_Practical\Anatomy\2\img7.png"),
     load_image(r"Images\MMCQ_Practical\Anatomy\2\img8.png"),
+    
+]
+
+histoimgs = [
+    load_image(r"Images\MMCQ_Practical\Histology\img0.png"),
     
 ]
            
