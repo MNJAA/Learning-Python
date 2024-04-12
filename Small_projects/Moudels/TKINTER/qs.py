@@ -6047,6 +6047,19 @@ Anatomy2_practical = [
     
 ]
 
+Histology_practical = [
+    {
+    "question": "What is the structure shown in the picture, and what does the arrows point to?",
+    "correct_answer": "A) Loose (areolar) connective tissue\nB) Elastic fibers",
+    "wrong_answers": [
+        "A) Dense irregular connective tissue\nB) Collagen fibers",
+        "A) Adipose tissue\nB) Reticular fibers",
+        "A) Hyaline cartilage\nB) Chondrocytes"
+    ]
+    },
+    
+]
+
 
 #Total questions for premid 1
 total_Anatomy = len(Anatomy_questions + Anatomy_practical)
