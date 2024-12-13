@@ -1255,8 +1255,1320 @@ HEM = [
      "wrong_answers": ["Between left and right atrium", 
                        "Between left and right ventricle", 
                        "Between aorta and pulmonary artery"]
+     },
+    {"question": "Outermost layer of embryo",
+     "correct_answer": "Chorion",
+     "wrong_answers": ["Amnion", "Allantois", "Mesoderm"]
+     },
+    {"question": "Villous trees grow into maternal blood lakes and are patted on them",
+     "correct_answer": "Hemochorial",
+     "wrong_answers": ["Endometrial", "Syncytiotrophoblast", "Cytotrophoblast"]
+     },
+    {"question": "The blastocyst implanted in the internal os of cervical",
+     "correct_answer": "Placenta previa",
+     "wrong_answers": ["Placenta accreta", "Ectopic pregnancy", "Placenta abruptio"]
+     },
+    {"question": "Which of the 5 pictures represents the best transposition of great vessels?",
+     "correct_answer": "Transposition of great vessels",
+     "wrong_answers": ["Tetralogy of Fallot", "Aortic stenosis", "Coarctation of the aorta"]
+     },
+    {"question": "How to check the presence of NTD",
+     "correct_answer": "Alpha fetoprotein serum",
+     "wrong_answers": ["Amniocentesis", "Ultrasound", "MRI"]
+     },
+    {"question": "Septum secondum not formed (blood flow after birth)",
+     "correct_answer": "From left to right atrium",
+     "wrong_answers": ["From right to left atrium", "From left ventricle to aorta", "From right ventricle to pulmonary trunk"]
+     },
+    {"question": "What formed after septum primum",
+     "correct_answer": "Osteum primum",
+     "wrong_answers": ["Osteum secundum", "Septum secondum", "Interventricular septum"]
+     },
+    {"question": "Due date (20 July 2015)",
+     "correct_answer": "27 April 2016",
+     "wrong_answers": ["30 June 2015", "15 August 2015", "10 October 2015"]
+     },
+    {"question": "Atrial septum not formed, what will happen before birth",
+     "correct_answer": "Nothing",
+     "wrong_answers": ["Heart failure", "Oxygen deprivation", "Fetal death"]
+     },
+    {"question": "Membranous part of interventricular septum not formed",
+     "correct_answer": "Blood between left and right ventricles",
+     "wrong_answers": ["Aortic stenosis", "Pulmonary hypertension", "Atrial septal defect"]
+     },
+    {"question": "If superior and inferior cushions not formed",
+     "correct_answer": "Blood in all chambers",
+     "wrong_answers": ["Pulmonary edema", "Aortic dissection", "Biventricular failure"]
+     },
+    {"question": "In tricuspid atresia, what will not happen?",
+     "correct_answer": "Fused bicuspid",
+     "wrong_answers": ["No oxygenated blood to the body", "Underdeveloped right ventricle", "Hypoxia"]
+     },
+    {"question": "Cause of bulging of abdomen contents",
+     "correct_answer": "Myotome",
+     "wrong_answers": ["Endoderm", "Mesoderm", "Ectoderm"]
+     },
+    {"question": "What abnormality must exist with transposition of great vessels",
+     "correct_answer": "Ductus arteriosus stays open",
+     "wrong_answers": ["Persistent pulmonary hypertension", "Ventricular septal defect", "Aortic coarctation"]
+     },
+    {"question": "Even though the aorta is abnormal in atresia of aortic valve, why is it important for ascending aorta to develop?",
+     "correct_answer": "Coronary arteries opening in ascending aorta to supply itself (heart)",
+     "wrong_answers": ["To supply the left ventricle", "To supply the right ventricle", "To maintain blood flow to lungs"]
+     },
+    {"question": "Why is the left atrium smooth?",
+     "correct_answer": "Absorption of pulmonary veins in its wall",
+     "wrong_answers": ["Failure to form trabeculations", "Incorrect development of the atrial septum", "Increased pulmonary blood flow"]
+     },
+    {"question": "Where can we find the right subclavian artery (abnormal)?",
+     "correct_answer": "Posterior to left subclavian artery",
+     "wrong_answers": ["In front of the left subclavian artery", "At the level of the aortic arch", "Between the left common carotid and left subclavian"]
+     },
+    {"question": "Double aortic arches",
+     "correct_answer": "Dorsal aorta in right side is present",
+     "wrong_answers": ["Left aortic arch", "Truncus arteriosus", "Coarctation of the aorta"]
+     },
+    {"question": "What causes the abnormal presence of right subclavian?",
+     "correct_answer": "4th arch",
+     "wrong_answers": ["3rd arch", "6th arch", "1st arch"]
+     },
+    {"question": "Bone of skull",
+     "correct_answer": "Neural crest",
+     "wrong_answers": ["Mesoderm", "Ectoderm", "Endoderm"]
+     },
+    {"question": "Sequence of blood flow from the heart to descending aorta in postductal condition?",
+     "correct_answer": "Ascending aorta -> subclavian -> internal thoracic -> anterior intercostal -> posterior intercostal",
+     "wrong_answers": ["Ascending aorta -> brachiocephalic -> subclavian -> internal thoracic", "Descending aorta -> right atrium", "Ascending aorta -> left common carotid"]
+     },
+    {"question": "How many vessels contribute to supplying the right atrium in only left superior vena cava?",
+     "correct_answer": "2 (coronary sinus and inferior vena cava)",
+     "wrong_answers": ["3", "4", "5"]
+     },
+    {"question": "You are a red blood cell in the right atrium, we have an interventricular septum defect. In which chamber will you be next?",
+     "correct_answer": "Right ventricle",
+     "wrong_answers": ["Left atrium", "Left ventricle", "Pulmonary trunk"]
+     },
+    {"question": "Your thumb is in the aorta and your index is in the pulmonary trunk. What embryological tissue are you touching when you press them together?",
+     "correct_answer": "Truncoconal septum",
+     "wrong_answers": ["Aortic sac", "Septum primum", "Interventricular septum"]
+     },
+    {"question": "You are a red blood cell in the right ventricle. We have an interventricular defect. Which structure will the blood cell next enter?",
+     "correct_answer": "Pulmonary trunk and arteries",
+     "wrong_answers": ["Aorta", "Left atrium", "Left ventricle"]
+     },
+    {"question": "Label the foramen ovale and ask about the tissue we will touch when we put our thumb in this area",
+     "correct_answer": "Septum primum",
+     "wrong_answers": ["Septum secundum", "Endocardial cushion", "Atrial septum"]
+     },
+    {"question": "What is the cause of spina bifida?",
+     "correct_answer": "Neural tube not closing properly",
+     "wrong_answers": ["Chromosomal abnormality", "Cytomegalovirus infection", "Vitamin D deficiency"]
+     },
+    {"question": "What causes the ductus arteriosus to stay open in certain conditions?",
+     "correct_answer": "Too much blood in aorta or insufficient blood to the lungs",
+     "wrong_answers": ["Patent foramen ovale", "Truncus arteriosus", "Tetralogy of Fallot"]
+     },
+    {"question": "A baby was born with skin problems, which cells are involved?",
+     "correct_answer": "Ectoderm",
+     "wrong_answers": ["Mesoderm", "Endoderm", "Neural crest"]
+     },
+    {"question": "January 23, 2019 is the LNMP, what is the EDD?",
+     "correct_answer": "30 Oct 2019",
+     "wrong_answers": ["15 Aug 2019", "5 Sept 2019", "25 Dec 2019"]
+     },
+    {"question": "Spongy and basal layers are present, which day of the menstrual cycle it is?",
+     "correct_answer": "14",
+     "wrong_answers": ["1", "7", "21"]
+     },
+    {"question": "If blood vessels are added to this structure (primary villi), what would it form?",
+     "correct_answer": "Definitive placental villus",
+     "wrong_answers": ["Trophoblast", "Intermediate villus", "Chorionic villus"]
+     },
+    {"question": "The structure in the embryo at the caudal end of primitive streak is going to form?",
+     "correct_answer": "Anal opening",
+     "wrong_answers": ["Mouth", "Heart", "Spinal cord"]
+     },
+    {"question": "Ectoderm invagination?",
+     "correct_answer": "Neural groove",
+     "wrong_answers": ["Neural tube", "Somite", "Neural crest"]
+     },
+    {"question": "If cranial neuropore fails to close?",
+     "correct_answer": "Anencephaly",
+     "wrong_answers": ["Spina bifida", "Hydrocephalus", "Meningocele"]
+     },
+    {"question": "Ultrasound shows that the embryo is implanted at the internal os, what is this condition’s name?",
+     "correct_answer": "Placenta previa",
+     "wrong_answers": ["Placenta accreta", "Placenta abruptio", "Ectopic pregnancy"]
+     },
+    {"question": "Most common place for ectopic pregnancies?",
+     "correct_answer": "Uterine tube",
+     "wrong_answers": ["Ovary", "Cervix", "Abdominal cavity"]
+     },
+    {"question": "Two cavities in the embryo, which day it is?",
+     "correct_answer": "Day 9",
+     "wrong_answers": ["Day 5", "Day 12", "Day 14"]
+     },
+    {"question": "Which tissue is responsible for maintaining progesterone and estrogen during pregnancy?",
+     "correct_answer": "Syncytiotrophoblast",
+     "wrong_answers": ["Chorion", "Cytotrophoblast", "Placenta"]
+     },
+    {"question": "What keeps the corpus luteum alive after fertilization?",
+     "correct_answer": "hCG",
+     "wrong_answers": ["Progesterone", "Estrogen", "FSH"]
+     },
+    {"question": "Secondary oocyte’s membrane?",
+     "correct_answer": "Zona pellucida",
+     "wrong_answers": ["Cumulus oophorus", "Theca interna", "Granulosa cells"]
+     },
+    {"question": "Cells surrounding primary oocyte that are pushed to the side?",
+     "correct_answer": "Cumulus oophorus cells",
+     "wrong_answers": ["Theca cells", "Granulosa cells", "Zona pellucida cells"]
+     },
+    {"question": "Chronological order?",
+     "correct_answer": "54321",
+     "wrong_answers": ["12345", "35421", "43215"]
+     },
+    {"question": "18 somites?",
+     "correct_answer": "25 days",
+     "wrong_answers": ["20 days", "30 days", "35 days"]
+     },
+    {"question": "Hypoblast migrates and forms a membrane called?",
+     "correct_answer": "Heuser’s membrane",
+     "wrong_answers": ["Trophoblast", "Epiblast", "Chorion"]
+     },
+    {"question": "Depression in the anus, further examination revealed a communication between the rectum and urethra?",
+     "correct_answer": "Urorectal fistula",
+     "wrong_answers": ["Rectal atresia", "Anal stenosis", "Colorectal malformation"]
+     },
+    {"question": "Which are intraperitoneal and retroperitoneal?",
+     "correct_answer": "3 and 5",
+     "wrong_answers": ["1 and 2", "4 and 6", "2 and 4"]
+     },
+    {"question": "Azygous is formed by?",
+     "correct_answer": "Supracardinal veins",
+     "wrong_answers": ["Inferior vena cava", "Cardinal veins", "Subclavian veins"]
+     },
+    {"question": "Outflow tract?",
+     "correct_answer": "Truncus arteriosum",
+     "wrong_answers": ["Bulbus cordis", "Conus arteriosus", "Sinus venosus"]
+     },
+    {"question": "Smooth part in the left atrium is formed by?",
+     "correct_answer": "Absorption of pulmonary veins",
+     "wrong_answers": ["Absorption of left ventricle", "Formation of atrial septum", "Growth of left atrium"]
+     },
+    {"question": "Scaphocephaly is a premature closure of?",
+     "correct_answer": "Sagittal suture",
+     "wrong_answers": ["Coronal suture", "Lambdoid suture", "Metopic suture"]
+     },
+    {"question": "Prenatal till 7 months bronchioles divide continuously, this phase is known as?",
+     "correct_answer": "Canalicular",
+     "wrong_answers": ["Alveolar", "Pseudoglandular", "Terminal sac"]
+     },
+    {"question": "What forms directly after Septum premium?",
+     "correct_answer": "Foramen Premium",
+     "wrong_answers": ["Foramen ovale", "Foramen secundum", "Ostium secundum"]
+     },
+    {"question": "Right recurrent n. hooks around the remnants of which arch?",
+     "correct_answer": "6th",
+     "wrong_answers": ["4th", "3rd", "5th"]
+     },
+    {"question": "Postductal aortic coarctation causes?",
+     "correct_answer": "Rib notching",
+     "wrong_answers": ["Heart murmur", "Abdominal aorta narrowing", "Pulmonary hypertension"]
+     },
+    {"question": "Anterior cardinal vein anastomosis fails, which structure will be absent?",
+     "correct_answer": "Left brachiocephalic vein",
+     "wrong_answers": ["Right subclavian vein", "Superior vena cava", "Inferior vena cava"]
+     },
+    {"question": "Ventricular septum defect in the membranous part is caused by?",
+     "correct_answer": "Endocardial cushions",
+     "wrong_answers": ["Truncus arteriosus", "Aortic arches", "Conus cordis"]
+     },
+    {"question": "Truncoconal septum fails to form, blood between which two chambers is mixed?",
+     "correct_answer": "Left ventricle and right ventricle",
+     "wrong_answers": ["Right atrium and right ventricle", "Left atrium and right atrium", "Right atrium and left ventricle"]
+     },
+    {"question": "Esophagus atresia and trunchoesophageal septum?",
+     "correct_answer": "Atresia of the cranial portion of the esophagus and a fistula between the caudal part of the esophagus and the trachea",
+     "wrong_answers": ["Tracheoesophageal fistula", "Esophageal stenosis", "Esophageal duplication"]
+     },
+    {"question": "Germ cells form in?",
+     "correct_answer": "Yolk sac",
+     "wrong_answers": ["Mesoderm", "Neural crest", "Endoderm"]
+     },
+    {"question": "If a portion of vitelline duct fails to degenerate this will result in?",
+     "correct_answer": "Meckel’s diverticulum",
+     "wrong_answers": ["Umbilical hernia", "Intestinal obstruction", "Omphalomesenteric cyst"]
+     },
+    {"question": "Extra set of chromosomes?",
+     "correct_answer": "Polyploidy",
+     "wrong_answers": ["Trisomy", "Monosomy", "Mosaicism"]
+     },
+    {"question": "Karyotype of turner syndrome?",
+     "correct_answer": "Hypoploid",
+     "wrong_answers": ["Euploid", "Triploid", "Hyperploid"]
+     },
+    {"question": "Chromosomal abnormality shown is?",
+     "correct_answer": "Duplication",
+     "wrong_answers": ["Deletion", "Inversion", "Translocation"]
+     },
+    {"question": "1-2 layers of cells surrounding secondary oocyte?",
+     "correct_answer": "Corona radiata",
+     "wrong_answers": ["Cumulus oophorus", "Zona pellucida", "Granulosa cells"]
+     },
+    {"question": "Triad syndrome is due to defect in?",
+     "correct_answer": "Abdominal musculature",
+     "wrong_answers": ["Neural crest", "Mesoderm", "Ectoderm"]
+     },
+    {"question": "Specific cells will make specific structures?",
+     "correct_answer": "Lateralization",
+     "wrong_answers": ["Induction", "Differentiation", "Mesodermal folding"]
+     },
+    {"question": "Tertiary villus from fetal blood to maternal?",
+     "correct_answer": "Fetal vessels endothelium > mesoderm > cytotrophoblast > syncytiotrophoblast",
+     "wrong_answers": ["Fetal vessels > maternal vessels", "Maternal blood > cytotrophoblast", "Syncytiotrophoblast > maternal blood"]
+     },
+    {"question": "12-13 somites (calc it yourself ofc), age of embryo?",
+     "correct_answer": "23 days",
+     "wrong_answers": ["20 days", "24 days", "26 days"]
+     },
+    {"question": "Bilaminar germ disc divides into two?",
+     "correct_answer": "Single placenta, common amniotic and chorionic cavities",
+     "wrong_answers": ["Two separate placentas", "Single amniotic cavity", "Two chorionic cavities"]
+     },
+    {"question": "After ovulation, the structure that disintegrates if no fertilization?",
+     "correct_answer": "Corpus luteum",
+     "wrong_answers": ["Graafian follicle", "Primary oocyte", "Zygote"]
+     },
+    {"question": "Most external fetal structure?",
+     "correct_answer": "Chorion",
+     "wrong_answers": ["Amnion", "Placenta", "Yolk sac"]
+     },
+    {"question": "Fetus is most susceptible to injuries during?",
+     "correct_answer": "First trimester",
+     "wrong_answers": ["Second trimester", "Third trimester", "Postnatal period"]
+     },
+    {"question": "Diaphragm hernia is caused by defect in the of closure of?",
+     "correct_answer": "Pleuroperitoneal membrane",
+     "wrong_answers": ["Pericardioperitoneal canal", "Transversus abdominis", "Mesentery"]
+     },
+    {"question": "Separates peritoneal and pericardial cavities?",
+     "correct_answer": "Septum transversum",
+     "wrong_answers": ["Pleuroperitoneal membrane", "Mesoderm", "Peritoneal diaphragm"]
+     },
+    {"question": "Pic of mirror image of the leg?",
+     "correct_answer": "ZPA",
+     "wrong_answers": ["Nodal signaling", "Primitive streak", "Anterior primitive streak"]
+     },
+    {"question": "Which would indicate chromosomal abnormality if decreased?",
+     "correct_answer": "AFP",
+     "wrong_answers": ["hCG", "Inhibin A", "Estriol"]
+     },
+    {"question": "2nd of Feb 2019 and she’s pregnant in her 5th week. Calc the LNMP?",
+     "correct_answer": "15 Dec 2018",
+     "wrong_answers": ["1 Jan 2019", "25 Dec 2018", "10 Dec 2018"]
+     },
+    {"question": "Gives rise to the outflow tract?",
+     "correct_answer": "Truncus arteriosum",
+     "wrong_answers": ["Bulbus cordis", "Conus arteriosus", "Sinus venosus"]
+     },
+    {"question": "Fetal tissues bathed in maternal blood?",
+     "correct_answer": "Heamochorial",
+     "wrong_answers": ["Endothelial", "Mesodermal", "Non-chorial"]
+     },
+    {"question": "Pic/ labeled structure is?",
+     "correct_answer": "Pleuroperitoneal fold",
+     "wrong_answers": ["Septum transversum", "Mesentery", "Pericardium"]
+     },
+    {"question": "A 7 weeks embryo bones would have which cells?",
+     "correct_answer": "Osteoblasts",
+     "wrong_answers": ["Chondrocytes", "Fibroblasts", "Mesenchymal cells"]
+     },
+    {"question": "Movements of the baby?",
+     "correct_answer": "5th month",
+     "wrong_answers": ["4th month", "6th month", "7th month"]
+     },
+    {"question": "After antrum formation follicle is known as?",
+     "correct_answer": "Secondary follicle",
+     "wrong_answers": ["Primordial follicle", "Graafian follicle", "Primary follicle"]
+     },
+    {"question": "Scaphocephaly is due to premature closure of?",
+     "correct_answer": "Sagittal suture",
+     "wrong_answers": ["Coronal suture", "Lambdoid suture", "Metopic suture"]
+     },
+    {"question": "Fascial bones defects along with heart abnormalities?",
+     "correct_answer": "Neural crest cells",
+     "wrong_answers": ["Mesodermal defects", "Endodermal defects", "Ectodermal defects"]
+     },
+    {"question": "Capacitation?",
+     "correct_answer": "Losses glycoprotein coat",
+     "wrong_answers": ["Sperm tail formation", "Acrosomal reaction", "Cortical reaction"]
+     },
+    {"question": "SHF?",
+     "correct_answer": "Lengthens outflow tract",
+     "wrong_answers": ["Shortens outflow tract", "Forms atrial septum", "Forms ventricles"]
+     },
+    {"question": "Projections of decidua basalis separating placenta (embryo side)?",
+     "correct_answer": "Chorion frondosum",
+     "wrong_answers": ["Chorion laeve", "Trophoblast", "Amnion"]
+     },
+    {"question": "High level of hCG but no embryo?",
+     "correct_answer": "Hydatidiform mole",
+     "wrong_answers": ["Ectopic pregnancy", "Molar pregnancy", "Incomplete miscarriage"]
+     },
+    {"question": "Cerebellum is absent due to absence of?",
+     "correct_answer": "Metencephalon",
+     "wrong_answers": ["Myelencephalon", "Mesencephalon", "Telencephalon"]
+     },
+    {"question": "What forms the Azygos vein?",
+     "correct_answer": "Right Supracardinal vein & posterior cardinal veins",
+     "wrong_answers": ["Left supracardinal vein", "Cardinal veins", "Inferior vena cava"]
+     },
+    {"question": "Teratology of fallot forms because?",
+     "correct_answer": "Anterior displacement of the conotruncal septum",
+     "wrong_answers": ["Ventricular septal defect", "Aortic arch malformation", "Truncus arteriosus malformation"]
+     },
+    {"question": "Which structure did not develop & caused VSD?",
+     "correct_answer": "Endocardial cushion",
+     "wrong_answers": ["Conus arteriosus", "Truncus arteriosus", "Aortic arches"]
+     },
+    {"question": "What comes after Septum premium?",
+     "correct_answer": "Ostium Premium",
+     "wrong_answers": ["Foramen ovale", "Foramen secundum", "Septum secundum"]
+     },
+    {"question": "Legamentum venosum is absent because?",
+     "correct_answer": "Left umbilical veins right-hepatocardial channel did not anastomose",
+     "wrong_answers": ["Failure of right umbilical veins", "Non-closure of ductus arteriosus", "Non-fusion of the right and left arches"]
+     },
+    {"question": "What forms the Diaphragm?",
+     "correct_answer": "Pleuroperitoneal membrane",
+     "wrong_answers": ["Mesoderm", "Transversus abdominis", "Mesentery"]
+     },
+    {"question": "180 degree rotation happened in the opposite side, what will result?",
+     "correct_answer": "Abnormal rotation of gut",
+     "wrong_answers": ["Defective stomach rotation", "Malrotation of intestines", "Heart malformation"]
+     },
+    {"question": "Smith-lemli-Ortiz-syndrome?",
+     "correct_answer": "Prosencephalon",
+     "wrong_answers": ["Metencephalon", "Mesencephalon", "Telencephalon"]
+     },
+    {"question": "Ear Ossicles differentiate from?",
+     "correct_answer": "Pharyngeal arches",
+     "wrong_answers": ["Somites", "Neural crest", "Ectoderm"]
+     },
+    {"question": "After giving surfactants to 23-week embryo, breathing was better but still difficult because?",
+     "correct_answer": "Immature lungs",
+     "wrong_answers": ["Inadequate surfactant", "Incomplete alveolar development", "Pulmonary hypertension"]
+     },
+    {"question": "What cells you will find in a 7-week embryo humerus?",
+     "correct_answer": "Chondrocyte",
+     "wrong_answers": ["Osteoblasts", "Fibroblasts", "Endothelial cells"]
+     },
+    {"question": "Maternal serum screening, decrease in what will be a sign of down-syndrome?",
+     "correct_answer": "Alpha-fetoprotein",
+     "wrong_answers": ["hCG", "Inhibin A", "Estriol"]
+     },
+    {"question": "Pronephros found in?",
+     "correct_answer": "Cervical region",
+     "wrong_answers": ["Thoracic region", "Lumber region", "Sacral region"]
+     },
+    {"question": "Extra set of chromosomes?",
+     "correct_answer": "Polydiploid",
+     "wrong_answers": ["Polyploidy", "Trisomy", "Monosomy"]
+     },
+    {"question": "Layer that divides and moves to the outer layer?",
+     "correct_answer": "Cytotrophoblast",
+     "wrong_answers": ["Syncytiotrophoblast", "Mesoderm", "Endoderm"]
+     },
+    {"question": "Not part of morning pill?",
+     "correct_answer": "FSH",
+     "wrong_answers": ["Estrogen", "Progestin", "LH"]
+     },
+    {"question": "Hormone involved in testis descent?",
+     "correct_answer": "Anti-Müllerian",
+     "wrong_answers": ["Testosterone", "LH", "FSH"]
+     },
+    {"question": "Persistence of vitelline duct?",
+     "correct_answer": "Meckle’s diverticulum",
+     "wrong_answers": ["Umbilical hernia", "Intestinal obstruction", "Omphalomesenteric cyst"]
+     },
+    {"question": "Postductal coarctation, can be seen in x-ray?",
+     "correct_answer": "Rib notching",
+     "wrong_answers": ["Pulmonary edema", "Aortic aneurysm", "Mediastinal widening"]
+     },
+    {"question": "Left recurrent laryngeal nerve hooks around the remnant of which Aortic arch?",
+     "correct_answer": "6th",
+     "wrong_answers": ["4th", "5th", "3rd"]
+     },
+    {"question": "4th aortic arch absent, what artery will be absent in future?",
+     "correct_answer": "Subclavian artery",
+     "wrong_answers": ["Common carotid artery", "Pulmonary artery", "Aortic arch"]
+     },
+    {"question": "Germ cells originate from?",
+     "correct_answer": "Yolk sac",
+     "wrong_answers": ["Mesoderm", "Neural crest", "Endoderm"]
+     },
+    {"question": "Plagiocephaly is closure of which suture?",
+     "correct_answer": "Lambdoid",
+     "wrong_answers": ["Sagittal", "Metopic", "Coronal"]
+     },
+    {"question": "Absence of the gliablast cells will result in the absence of which cells in the brain?",
+     "correct_answer": "Protoplasmic astrocyte",
+     "wrong_answers": ["Oligodendrocyte", "Ependymal cells", "Microglia"]
+     },
+    {"question": "Villous trees (fetal tissues) grow into the maternal blood lakes and are bathed in them. Type of placenta?",
+     "correct_answer": "Hemochorial",
+     "wrong_answers": ["Endotheliochorial", "Haemodichorial", "Placental barrier"]
+     },
+    {"question": "Arrangement of the layers from maternal to fetal blood?",
+     "correct_answer": "Syncytiotrophoblast > Cytotrophoblast > Mesoderm > Endothelium",
+     "wrong_answers": ["Endothelium > Cytotrophoblast > Syncytiotrophoblast", "Syncytiotrophoblast > Endothelium > Mesoderm", "Cytotrophoblast > Mesoderm > Endothelium"]
+     },
+    {"question": "Mature alveoli have made an epithelial-endothelial contact, what phase?",
+     "correct_answer": "Alveolar period",
+     "wrong_answers": ["Canalicular period", "Terminal sac period", "Pseudoglandular period"]
+     },
+    {"question": "A condition where an infant with a ventral opening in the penis, urine flows through this opening?",
+     "correct_answer": "Hypospadias",
+     "wrong_answers": ["Epispadias", "Phimosis", "Hypogonadism"]
+     },
+    {"question": "An organ that is secondary retroperitoneal?",
+     "correct_answer": "Pancreas",
+     "wrong_answers": ["Kidneys", "Spleen", "Liver"]
+     },
+    {"question": "Where will you find the somatomotor nuclei in the brain (that is similar to the spinal cord)?",
+     "correct_answer": "Near the anterior median sulcus limitans",
+     "wrong_answers": ["Dorsal horn", "Lateral column", "Ventral horn"]
+     },
+    {"question": "Hydrocephalus due to a growing tumor blocking the area connecting the lateral ventricle & the 3rd ventricles. Probably blockage in?",
+     "correct_answer": "Interventricular foramina of Monro",
+     "wrong_answers": ["Cerebral aqueduct", "Fourth ventricle", "Lateral recess"]
+     },
+    {"question": "Pregnant female with bleeding during her 2nd half of pregnancy, a condition caused by placenta blocking the internal opening of cervix?",
+     "correct_answer": "Placenta previa",
+     "wrong_answers": ["Placental abruption", "Ectopic pregnancy", "Molar pregnancy"]
+     },
+    {"question": "Sperm capacitation?",
+     "correct_answer": "Removal of the glycoprotein coat & plasma seminal proteins from the head of sperm",
+     "wrong_answers": ["Acrosomal reaction", "Sperm fusion", "Seminal vesicle secretion"]
+     },
+    {"question": "Cavity dividing the epiblast?",
+     "correct_answer": "Amniotic cavity",
+     "wrong_answers": ["Primitive streak", "Chorionic cavity", "Yolk sac"]
+     },
+    {"question": "LNMP 23 July 2019. Estimated due date?",
+     "correct_answer": "30 April 2020",
+     "wrong_answers": ["15 April 2020", "1 May 2020", "10 May 2020"]
+     },
+    {"question": "Follicular cells surround the secondary oocyte?",
+     "correct_answer": "Corona radiata",
+     "wrong_answers": ["Granulosa cells", "Cumulus oophorus", "Zona pellucida"]
+     },
+    {"question": "Outermost layer of embryo?",
+     "correct_answer": "Chorion",
+     "wrong_answers": ["Amnion", "Allantois", "Yolk sac"]
+     },
+    {"question": "Villous trees grow into maternal blood lakes and are pathed on them -> hemochorial.",
+     "correct_answer": "Hemochorial",
+     "wrong_answers": ["Endotheliochorial", "Epitheliochorial", "Synepitheliochorial"]
+     },
+    {"question": "The blastocyst impeded in internal os of cervical ->",
+     "correct_answer": "Placenta previa",
+     "wrong_answers": ["Placental abruption", "Ectopic pregnancy", "Miscarriage"]
+     },
+    {"question": "5 pictures, which one of them represents the best transposition of great vessels?",
+     "correct_answer": "Refer to the image for identification",
+     "wrong_answers": ["Image 2", "Image 3", "Image 4"]
+     },
+    {"question": "How to check the presence of NTD?",
+     "correct_answer": "Alpha fetoprotein serum",
+     "wrong_answers": ["Amniocentesis", "Ultrasound", "MRI"]
+     },
+    {"question": "Septum secundum not formed (blood flow after birth) ->",
+     "correct_answer": "From left to right atrium",
+     "wrong_answers": ["From right to left atrium", "Through the foramen ovale", "Through the ductus arteriosus"]
+     },
+    {"question": "What forms after septum premium?",
+     "correct_answer": "Osteum premium",
+     "wrong_answers": ["Foramen ovale", "Septum secundum", "Interventricular septum"]
+     },
+    {"question": "Atrial septum not formed, what will happen before birth?",
+     "correct_answer": "Nothing",
+     "wrong_answers": ["Heart failure", "Acyanotic heart disease", "Pulmonary hypertension"]
+     },
+    {"question": "Membranous part of interventricular septum not formed ->",
+     "correct_answer": "Blood between left and right ventricles",
+     "wrong_answers": ["Tetralogy of Fallot", "Transposition of great vessels", "Atrial septal defect"]
+     },
+    {"question": "If sup. and inf. cushion not formed ->",
+     "correct_answer": "Blood in all chambers",
+     "wrong_answers": ["Pulmonary hypertension", "Atrial septal defect", "Ventricular septal defect"]
+     },
+    {"question": "In tricuspid atresia, what will not happen?",
+     "correct_answer": "Fused bicuspid",
+     "wrong_answers": ["Right atrial enlargement", "Hypoplastic right ventricle", "Ductus arteriosus stay open"]
+     },
+    {"question": "Cause of bulging of abdomen contents?",
+     "correct_answer": "Myotome",
+     "wrong_answers": ["Endoderm", "Neural crest", "Mesoderm"]
+     },
+    {"question": "Due date (20 July 2015) ->",
+     "correct_answer": "27 April 2016",
+     "wrong_answers": ["12 March 2016", "1 June 2016", "30 July 2015"]
+     },
+    {"question": "What abnormality must exist with transposition of great vessels?",
+     "correct_answer": "Ductus arteriosus stay open",
+     "wrong_answers": ["Pulmonary stenosis", "Aortic atresia", "Truncus arteriosus"]
+     },
+    {"question": "Even though the aorta is abnormal in atresia of aortic valve, it is important for ascending aorta to develop. Why?",
+     "correct_answer": "Coronary arteries opening in ascending aorta to supply itself (heart)",
+     "wrong_answers": ["Foramen ovale must remain open", "Ductus arteriosus must close", "Pulmonary artery must bypass lungs"]
+     },
+    {"question": "Why is the left atrium smooth?",
+     "correct_answer": "Absorption of pulmonary veins in its wall",
+     "wrong_answers": ["Presence of foramen ovale", "Congenital heart defect", "Endocardial cushion formation"]
+     },
+    {"question": "Where can we find the right subclavian artery (abnormal)?",
+     "correct_answer": "Post. to left subclavian artery",
+     "wrong_answers": ["Above left subclavian", "Below right subclavian", "Next to brachiocephalic trunk"]
+     },
+    {"question": "Double aortic arches ->",
+     "correct_answer": "Dorsal aorta in right side is present",
+     "wrong_answers": ["Left side aorta persists", "Absence of aortic arch", "Arteries form abnormally"]
+     },
+    {"question": "What causes the abnormal presence of right subclavian?",
+     "correct_answer": "4th arch",
+     "wrong_answers": ["6th arch", "3rd arch", "5th arch"]
+     },
+    {"question": "Bone of skull?",
+     "correct_answer": "Neural crest",
+     "wrong_answers": ["Mesoderm", "Ectoderm", "Endoderm"]
+     },
+    {"question": "Sequence of blood flow from the heart to descending aorta in postductal condition?",
+     "correct_answer": "Ascending aorta -> subclavian -> internal thoracic -> ant. intercostal -> post. intercostal",
+     "wrong_answers": ["Pulmonary trunk -> lungs -> heart", "Aortic arch -> descending aorta", "Right ventricle -> left ventricle"]
+     },
+    {"question": "How many vessels contribute in supplying right atrium in only left sup. vena?",
+     "correct_answer": "2 (coronary sinus and inf. vena cava)",
+     "wrong_answers": ["1", "3", "4"]
+     },
+    {"question": "You are a red blood cell in right atrium, we have interventricular septum defect. In which chamber will you be next?",
+     "correct_answer": "Right ventricle",
+     "wrong_answers": ["Left ventricle", "Pulmonary artery", "Left atrium"]
+     },
+    {"question": "Your thumb in aorta and your index in pulmonary trunk. What embryological tissue are you touching when you press them together?",
+     "correct_answer": "Truncoconal septum",
+     "wrong_answers": ["Endocardial cushion", "Septum secundum", "Mesodermal tissue"]
+     },
+    {"question": "Outflow -> pulmonary trunk and aorta",
+     "correct_answer": "Truncoconal septum",
+     "wrong_answers": ["Interventricular septum", "Aortic arch", "Pulmonary arteries"]
+     },
+    {"question": "You are a red blood cell in right ventricle. We have interventricular defect. Which structure will the blood cell next enter?",
+     "correct_answer": "Pulmonary trunk and arteries",
+     "wrong_answers": ["Aorta", "Left ventricle", "Right atrium"]
+     },
+    {"question": "Labeled the foramen ovale and ask about the tissue we will touch when we put our thumb in this area?",
+     "correct_answer": "Septum premium",
+     "wrong_answers": ["Septum secundum", "Truncoconal septum", "Aortic valve"]
+     },
+    {"question": "What is the cause of spina bifida?",
+     "correct_answer": "Neural tube not close properly",
+     "wrong_answers": ["Deficient folate intake", "Maternal infection", "Chromosomal abnormality"]
+     },
+    {"question": "What causes the ductus arteriosus to stay open in certain conditions?",
+     "correct_answer": "Too much blood in aorta OR insufficient blood to lungs",
+     "wrong_answers": ["Increase in pulmonary pressure", "Pulmonary hypertension", "Absence of right ventricle"]
+     },
+    {"question": "Where does foramen ovale form?",
+     "correct_answer": "Septum premium",
+     "wrong_answers": ["Septum secundum", "Truncus arteriosus", "Endocardial cushion"]
+     },
+    {"question": "Secondary heart field?",
+     "correct_answer": "Lengthening of outflow tract",
+     "wrong_answers": ["Formation of atria", "Formation of ventricles", "Septation of heart"]
+     },
+    {"question": "X-ray, count somites? Age of embryo?",
+     "correct_answer": "23 days",
+     "wrong_answers": ["16 days", "30 days", "12 days"]
+     },
+    {"question": "Image osteoblasts, ossification? Age of embryo?",
+     "correct_answer": "10 weeks",
+     "wrong_answers": ["6 weeks", "12 weeks", "8 weeks"]
+     },
+    {"question": "Bleeding in 2nd trimester?",
+     "correct_answer": "Placenta previa",
+     "wrong_answers": ["Placental abruption", "Ectopic pregnancy", "Miscarriage"]
+     },
+    {"question": "Maternal serum screening?",
+     "correct_answer": "Serum alpha fetoprotein",
+     "wrong_answers": ["Amniocentesis", "Chorionic villus sampling", "Ultrasound"]
+     },
+    {"question": "Insufficient amniotic fluid?",
+     "correct_answer": "Problem in kidneys",
+     "wrong_answers": ["Problem in liver", "Problem in placenta", "Problem in lungs"]
+     },
+    {"question": "Intermediate mesoderm forms?",
+     "correct_answer": "Gonads",
+     "wrong_answers": ["Kidneys", "Heart", "Lungs"]
+     },
+    {"question": "What forms tendons, cartilage, and bones?",
+     "correct_answer": "Sclerotome",
+     "wrong_answers": ["Myotome", "Dermatome", "Neural crest"]
+     },
+    {"question": "Outflow tract formed by?",
+     "correct_answer": "Truncus arteriosus",
+     "wrong_answers": ["Conus arteriosus", "Aortic arch", "Septum secundum"]
+     },
+    {"question": "Neural tube defect, cranial part will cause?",
+     "correct_answer": "Anencephaly",
+     "wrong_answers": ["Spina bifida", "Holoprosencephaly", "Meningomyelocele"]
+     },
+    {"question": "Last menstrual cycle July 20, 2016; due date?",
+     "correct_answer": "April 27, 2017",
+     "wrong_answers": ["March 15, 2017", "June 1, 2017", "December 20, 2016"]
+     },
+    {"question": "Outermost part of embryo?",
+     "correct_answer": "Chorion",
+     "wrong_answers": ["Amnion", "Yolk sac", "Allantois"]
+     },
+    {"question": "Blood vessels come in?",
+     "correct_answer": "Definitive placental villi",
+     "wrong_answers": ["Primary villi", "Secondary villi", "Tertiary villi"]
+     },
+    {"question": "Blood islands?",
+     "correct_answer": "Vasculogenesis",
+     "wrong_answers": ["Angiogenesis", "Hemopoiesis", "Erythropoiesis"]
+     },
+    {"question": "Mirror duplication of left hand?",
+     "correct_answer": "Duplication of ZPA",
+     "wrong_answers": ["Failure of left-right axis", "Polydactyly", "Syndactyly"]
+     },
+    {"question": "Order of villi?",
+     "correct_answer": "Primary, secondary, tertiary",
+     "wrong_answers": ["Tertiary, secondary, primary", "Secondary, primary, tertiary", "Primary, tertiary, secondary"]
+     },
+    {"question": "First septum premium forms, next is?",
+     "correct_answer": "Foramen premium",
+     "wrong_answers": ["Septum secundum", "Interventricular septum", "Truncus arteriosus"]
+     },
+    {"question": "Absence of abdominal muscles?",
+     "correct_answer": "Myotome",
+     "wrong_answers": ["Dermatome", "Sclerotome", "Neural crest"]
+     },
+    {"question": "Pregnancy test?",
+     "correct_answer": "HCG",
+     "wrong_answers": ["Amniocentesis", "Ultrasound", "Blood test"]
+     },
+    {"question": "Mother can feel fetal movement by?",
+     "correct_answer": "5th month",
+     "wrong_answers": ["4th month", "6th month", "7th month"]
+     },
+    {"question": "Compaction?",
+     "correct_answer": "Blastomeres",
+     "wrong_answers": ["Morula", "Zygote", "Trophoblast"]
+     },
+    {"question": "Twins (divides at the stage of the blastocyst)?",
+     "correct_answer": "Single placenta, common chorion, separate yolk sac, separate amniotic cavity",
+     "wrong_answers": ["Separate placentas", "Shared amniotic cavity", "Separate chorion"]
+     },
+    {"question": "Diagram points at?",
+     "correct_answer": "Cytotrophoblast shell",
+     "wrong_answers": ["Syncytiotrophoblast", "Chorionic villi", "Amnion"]
+     },
+    {"question": "Diagram points at?",
+     "correct_answer": "Septum transversum",
+     "wrong_answers": ["Neural tube", "Somite", "Heart tube"]
+     },
+    {"question": "Stomach and intestines in thorax?",
+     "correct_answer": "Pleuroperitoneal membrane did not close",
+     "wrong_answers": ["Increased intra-abdominal pressure", "Defective diaphragm formation", "Failure of lung development"]
+     },
+    {"question": "Diagram points at?",
+     "correct_answer": "Notochordal plate",
+     "wrong_answers": ["Somite", "Neural tube", "Mesoderm"]
+     },
+    {"question": "Extra chromosome in each blastomere?",
+     "correct_answer": "Hyperdiploid",
+     "wrong_answers": ["Hypodiploid", "Triploid", "Tetraploid"]
+     },
+    {"question": "Pericentric inversion?",
+     "correct_answer": "Chromosomal mutation",
+     "wrong_answers": ["Duplication", "Translocation", "Deletion"]
+     },
+    {"question": "Transposition of great vessels, how is the baby still alive?",
+     "correct_answer": "Due to a persistent ductus arteriosus",
+     "wrong_answers": ["Due to patent foramen ovale", "Due to pulmonary stenosis", "Due to ventricular septal defect"]
+     },
+    {"question": "Villus tree?",
+     "correct_answer": "Hemochorial type",
+     "wrong_answers": ["Epitheliochorial type", "Endotheliochorial type", "Synepitheliochorial type"]
+     },
+    {"question": "Chorionic frondosum and decidua basalis form?",
+     "correct_answer": "The placenta",
+     "wrong_answers": ["The amniotic sac", "The umbilical cord", "The yolk sac"]
+     },
+    {"question": "Diagram points at?",
+     "correct_answer": "Decidua basalis",
+     "wrong_answers": ["Chorionic villi", "Amnion", "Trophoblast"]
+     },
+    {"question": "Coronary sinus comes from the?",
+     "correct_answer": "Left sinus venosus horn",
+     "wrong_answers": ["Right sinus venosus horn", "Endocardial cushion", "Pulmonary veins"]
+     },
+    {"question": "Smooth part of left atrium comes from?",
+     "correct_answer": "Pulmonary veins",
+     "wrong_answers": ["Left atrial septum", "Right atrium", "Aortic valve"]
+     },
+    {"question": "If smooth part of right atrium doesn’t form?",
+     "correct_answer": "SA node won't form",
+     "wrong_answers": ["AV node won't form", "Pulmonary veins won't form", "Foramen ovale won't close"]
+     },
+    {"question": "Hyaline cartilage?",
+     "correct_answer": "Cartilage type",
+     "wrong_answers": ["Fibrous cartilage", "Elastic cartilage", "Bone"]
+     },
+    {"question": "How many somites correspond to 21 days of development?",
+     "correct_answer": "5 somites",
+     "wrong_answers": ["6 somites", "4 somites", "3 somites"]
+     },
+    {"question": "Which part of the ectoderm forms the central nervous system?",
+     "correct_answer": "CNS",
+     "wrong_answers": ["Skin", "Glands", "Teeth"]
+     },
+    {"question": "What does the endoderm form?",
+     "correct_answer": "Gut and derivatives",
+     "wrong_answers": ["Heart", "Muscles", "Bones"]
+     },
+    {"question": "What is the order of twins based on the images provided?",
+     "correct_answer": "2, 3, 1",
+     "wrong_answers": ["1, 2, 3", "3, 1, 2", "1, 3, 2"]
+     },
+    {"question": "From which tissue do progesterone and estrogen originate in the corpus luteum?",
+     "correct_answer": "Syncytiotrophoblast",
+     "wrong_answers": ["Granulosa cells", "Theca cells", "Cytotrophoblast"]
+     },
+    {"question": "What condition results from the opposite rotation of the intestinal loop?",
+     "correct_answer": "Duodenum in front of transverse colon",
+     "wrong_answers": ["Stomach herniation", "Heart inversion", "Cranial displacement of intestines"]
+     },
+    {"question": "Given a last menstrual cycle of 30th July 2017, what is the estimated due date?",
+     "correct_answer": "7th May 2017",
+     "wrong_answers": ["7th April 2017", "5th May 2017", "1st June 2017"]
+     },
+    {"question": "Given a last menstrual cycle of 7th December 2017, when was the conception date?",
+     "correct_answer": "1st November 2017",
+     "wrong_answers": ["10th November 2017", "15th October 2017", "20th November 2017"]
+     },
+    {"question": "What are the follicular cells surrounding the secondary oocyte called?",
+     "correct_answer": "Cumulus oophorous cells",
+     "wrong_answers": ["Granulosa cells", "Theca cells", "Zona pellucida"]
+     },
+    {"question": "What structure will not form if the ostium secundum is absent?",
+     "correct_answer": "Fenestrated wall of the atrium",
+     "wrong_answers": ["Foramen ovale", "Ventricular septum", "Tricuspid valve"]
+     },
+    {"question": "Which organ remains intraperitoneal even after stomach rotation?",
+     "correct_answer": "Spleen",
+     "wrong_answers": ["Pancreas", "Kidney", "Liver"]
+     },
+    {"question": "What is the cause of accumulation of fluid in the lateral ventricle?",
+     "correct_answer": "Blockage of the interventricular canal",
+     "wrong_answers": ["Cerebral hemorrhage", "Cerebral palsy", "Hydrocephalus"]
+     },
+    {"question": "The decidua reaction protects the endometrium from which structure?",
+     "correct_answer": "Syncytiotrophoblast",
+     "wrong_answers": ["Maternal immune cells", "Viral infections", "Bacterial growth"]
+     },
+    {"question": "What forms the cotyledons?",
+     "correct_answer": "Projection in the intervillous space that does not reach the chorionic plate",
+     "wrong_answers": ["Amniotic fluid", "Primary villi", "Cytotrophoblast"]
+     },
+    {"question": "The most common location of ectopic pregnancy when experiencing lower right abdominal pain?",
+     "correct_answer": "Uterine tube",
+     "wrong_answers": ["Ovary", "Abdominal cavity", "Cervix"]
+     },
+    {"question": "What term is used to describe an extra set of chromosomes?",
+     "correct_answer": "Polyploidy",
+     "wrong_answers": ["Hyperdiploid", "Aneuploidy", "Diploid"]
+     },
+    {"question": "What condition occurs if there is a scrotum without testis?",
+     "correct_answer": "Cryptorchidism",
+     "wrong_answers": ["Hypospadias", "Epispadias", "Micropenis"]
+     },
+    {"question": "When can the sex of the embryo be determined in histologic slides?",
+     "correct_answer": "7th week",
+     "wrong_answers": ["5th week", "9th week", "12th week"]
+     },
+    {"question": "What is the secondary heart field responsible for?",
+     "correct_answer": "Lengthening of the outflow tract",
+     "wrong_answers": ["Formation of the atria", "Ventricular septation", "Formation of the valves"]
+     },
+    {"question": "What is the cause of a congenital diaphragmatic hernia?",
+     "correct_answer": "Pleuroperitoneal membrane did not close",
+     "wrong_answers": ["Abnormal lung growth", "Excessive abdominal pressure", "Incomplete diaphragm formation"]
+     },
+    {"question": "What is the effect of an absent telencephalon?",
+     "correct_answer": "Cerebral hemisphere will not form",
+     "wrong_answers": ["Medulla oblongata", "Cerebellum", "Pons"]
+     },
+    {"question": "What is the role of the right subclavian artery?",
+     "correct_answer": "Derived from the 4th aortic arch",
+     "wrong_answers": ["Arises from the brachiocephalic trunk", "Develops from the 3rd arch", "Forms part of the coronary artery"]
+     },
+    {"question": "Where do you check for an extra nipple below the actual nipple in the left?",
+     "correct_answer": "Line from the axilla to the inguinal",
+     "wrong_answers": ["Along the chest line", "Along the spine", "Above the clavicle"]
+     },
+    {"question": "What causes weak muscles in the body?",
+     "correct_answer": "Ventral horn",
+     "wrong_answers": ["Dorsal horn", "Cerebellum", "Spinal cord injury"]
+     },
+    {"question": "What is a neural defect maternal screening test?",
+     "correct_answer": "Serum alpha-fetoprotein",
+     "wrong_answers": ["Ultrasound", "Amniocentesis", "Chorionic villus sampling"]
+     },
+    {"question": "What is the outermost layer in the embryo?",
+     "correct_answer": "Chorion",
+     "wrong_answers": ["Endoderm", "Mesoderm", "Ectoderm"]
+     },
+    {"question": "In a truncoconal septum defect, which blood flow is affected?",
+     "correct_answer": "Blood flows freely between the right and left ventricles",
+     "wrong_answers": ["Blood flows from left to right ventricle", "Blood flows to the aorta", "Blood flows to the pulmonary trunk"]
+     },
+    {"question": "What does the morning pill contain?",
+     "correct_answer": "Estrogen",
+     "wrong_answers": ["Progesterone", "Testosterone", "Insulin"]
+     },
+    {"question": "What hormone is produced by the follicular cells?",
+     "correct_answer": "Estrogen",
+     "wrong_answers": ["Progesterone", "Testosterone", "Cortisol"]
+     },
+    {"question": "What causes problems in breathing for a child?",
+     "correct_answer": "Cuboidal cells still not become flat",
+     "wrong_answers": ["Infection", "Obstruction", "Underdeveloped lungs"]
+     },
+    {"question": "What gives rise to the epidermis of the skin?",
+     "correct_answer": "Ectoderm",
+     "wrong_answers": ["Mesoderm", "Endoderm", "Neural crest"]
+     },
+    {"question": "From which layer does the dermis arise?",
+     "correct_answer": "Dermatome",
+     "wrong_answers": ["Ectoderm", "Endoderm", "Mesoderm"]
+     },
+    {"question": "What stage is a cell ball-like in vitro fertilization after 3 days?",
+     "correct_answer": "Morula",
+     "wrong_answers": ["Blastula", "Zygote", "Blastocyst"]
+     },
+    {"question": "What is the cavity in the outer and inner cell mass called?",
+     "correct_answer": "Blastocele",
+     "wrong_answers": ["Amniotic cavity", "Yolk sac", "Chorionic cavity"]
+     },
+    {"question": "What causes a sacrococcygeal tumor?",
+     "correct_answer": "Persistence of the primitive streak",
+     "wrong_answers": ["Abnormal growth of the neural tube", "Failure of spinal cord formation", "Defect in the notochord"]
+     },
+    {"question": "Which of the following does not contribute to the diaphragm?",
+     "correct_answer": "Muscles of the body wall",
+     "wrong_answers": ["Pleuroperitoneal membrane", "Septum transversum", "Mesoderm"]
+     },
+    {"question": "What forms the external auditory meatus?",
+     "correct_answer": "1st cleft",
+     "wrong_answers": ["2nd cleft", "3rd cleft", "4th cleft"]
+     },
+    {"question": "The semicircular canals are derived from which structure?",
+     "correct_answer": "Utricle",
+     "wrong_answers": ["Saccule", "Cochlea", "Vestibule"]
+     },
+    {"question": "The optic vesicle induces which structure?",
+     "correct_answer": "Lens placodes",
+     "wrong_answers": ["Cornea", "Retina", "Pupil"]
+     },
+    {"question": "In the case of transposition of the great vessels, which structure will not form?",
+     "correct_answer": "Truncoconal septum did not spiral",
+     "wrong_answers": ["Aorta", "Pulmonary trunk", "Left ventricle"]
+     },
+    {"question": "What causes hydrocephalus due to blockage of the mesencephalon?",
+     "correct_answer": "Adequate of Sylvius",
+     "wrong_answers": ["Obstruction of the foramen of Magendie", "Choroid plexus malformation", "Abnormal CSF absorption"]
+     },
+    {"question": "What causes a horse-shape kidney?",
+     "correct_answer": "Inferior mesentery artery",
+     "wrong_answers": ["Renal artery", "Ureter obstruction", "Renal vein"]
+     },
+    {"question": "What condition is characterized by a brachycephalic skull shape?",
+     "correct_answer": "Coronal suture",
+     "wrong_answers": ["Sagittal suture", "Lambdoid suture", "Metopic suture"]
+     },
+    {"question": "What condition is caused by the failure of the choroid fissure to close?",
+     "correct_answer": "Keyhole defect",
+     "wrong_answers": ["Spina bifida", "Cleft lip", "Hydrocephalus"]
+     },
+    {"question": "What condition occurs with the lack of closure of the urethral fold?",
+     "correct_answer": "Hypospadias",
+     "wrong_answers": ["Epispadias", "Cryptorchidism", "Testicular torsion"]
+     },
+    {"question": "What causes Tetralogy of Fallot?",
+     "correct_answer": "Endocardial cushion failure, interventricular membranous not formed",
+     "wrong_answers": ["Truncoconal septum defect", "Failure of ventricular septation", "Pulmonary valve stenosis"]
+     },
+    {"question": "What is the condition that includes both spina bifida and meningocele?",
+     "correct_answer": "Spina bifida with meningocele",
+     "wrong_answers": ["Spina bifida occulta", "Anencephaly", "Hydrocephalus"]
+     },
+    {"question": "What is capacitation?",
+     "correct_answer": "Glycoprotein coat and seminal plasma are removed from sperm head",
+     "wrong_answers": ["Sperm head becomes more rigid", "Sperm tail becomes elongated", "Sperm undergoes division"]
+     },
+    {"question": "What is the most common site for ectopic pregnancy?",
+     "correct_answer": "Uterine tube",
+     "wrong_answers": ["Ovary", "Abdomen", "Cervix"]
+     },
+    {"question": "What do morning-after pills contain?",
+     "correct_answer": "Estrogens and progestin inhibit implantation",
+     "wrong_answers": ["Progestin only", "Estrogen only", "Progesterone"]
+     },
+    {"question": "What is the anomaly where the stomach is outside the fetus?",
+     "correct_answer": "Gastroschisis",
+     "wrong_answers": ["Omphalocele", "Cleft lip", "Spina bifida"]
+     },
+    {"question": "What forms the tertiary villus?",
+     "correct_answer": "Syncytium, cytotrophoblast, connective tissue, endothelium",
+     "wrong_answers": ["Endometrial epithelium", "Placental arteries", "Embryonic blood vessels"]
+     },
+    {"question": "What is the condition where a blastomere has an extra chromosome?",
+     "correct_answer": "Hyper-diploid / Polydiploid",
+     "wrong_answers": ["Hypo-diploid", "Monosomy", "Trisomy"]
+     },
+    {"question": "What structure is high when a baby has a neural tube defect?",
+     "correct_answer": "Serum alpha-fetoprotein",
+     "wrong_answers": ["HCG levels", "Progesterone levels", "Amniotic fluid volume"]
+     },
+    {"question": "What forms the diaphragm?",
+     "correct_answer": "Pleuroperitoneal folds, muscles from the body wall, dorsal mesentery, septum transversum",
+     "wrong_answers": ["Mesodermal folds only", "Endodermal structures", "Muscles from the limbs"]
+     },
+    {"question": "What is most likely to happen when a woman has polyhydramnios?",
+     "correct_answer": "Tracheoesophageal fistula",
+     "wrong_answers": ["Down syndrome", "Congenital heart defect", "Spina bifida"]
+     },
+    {"question": "What does the vitelline duct connect when it does not fully degenerate?",
+     "correct_answer": "Ileum and umbilicus",
+     "wrong_answers": ["Small intestine and stomach", "Large intestine and rectum", "Rectum and anus"]
+     },
+    {"question": "What embryological tissue are you touching when you touch the gut tube?",
+     "correct_answer": "Endoderm",
+     "wrong_answers": ["Mesoderm", "Ectoderm", "Neural crest"]
+     },
+    {"question": "After the gut tube rotates 90 degrees, what will be the appendix position?",
+     "correct_answer": "Middle/right",
+     "wrong_answers": ["Left", "Upper", "Lower"]
+     },
+    {"question": "Where does the mesonephric duct remain in females?",
+     "correct_answer": "Junction of the 2 parts of vagina",
+     "wrong_answers": ["Cervix", "Ovary", "Uterus"]
+     },
+    {"question": "Where will an abnormal bifid ureter open?",
+     "correct_answer": "Opening of urethra",
+     "wrong_answers": ["Renal pelvis", "Bladder", "Ureteral orifice"]
+     },
+    {"question": "Where will the accessory artery of the kidney be located?",
+     "correct_answer": "Inferior pole",
+     "wrong_answers": ["Superior pole", "Medial side", "Lateral side"]
+     },
+    {"question": "What causes hypospadias?",
+     "correct_answer": "Urethral folds fail to fuse",
+     "wrong_answers": ["Excessive androgen production", "Incomplete closure of the urethra", "Failure of the urethra to develop"]
+     },
+    {"question": "What happens if a woman has two uterus and two vaginas?",
+     "correct_answer": "Paramesonephric ducts do not fuse",
+     "wrong_answers": ["Müllerian ducts do not form", "Failure of the mesonephric ducts to form", "Abnormal hormonal influence"]
+     },
+    {"question": "In which month does cleft lip damage occur in the fetus?",
+     "correct_answer": "2nd month",
+     "wrong_answers": ["1st month", "3rd month", "4th month"]
+     },
+    {"question": "Where does the left superior vena cava drain?",
+     "correct_answer": "Coronary sinus",
+     "wrong_answers": ["Right atrium", "Pulmonary veins", "Left atrium"]
+     },
+    {"question": "Why do double arches of the aorta occur?",
+     "correct_answer": "Right dorsal aorta does not degenerate",
+     "wrong_answers": ["Failure of left aortic arch to form", "Defect in aortic arch remodeling", "Increased blood pressure"]
+     },
+    {"question": "Which nerve supplies the beginning of the mouth?",
+     "correct_answer": "1st cranial nerve",
+     "wrong_answers": ["2nd cranial nerve", "3rd cranial nerve", "4th cranial nerve"]
+     },
+    {"question": "Where is the most common site for a thyroglossal cyst?",
+     "correct_answer": "Immediately anterior to the hyoid bone / in the midline of thyroid gland",
+     "wrong_answers": ["Near the thyroid cartilage", "Along the clavicle", "On the cervical spine"]
+     },
+    {"question": "Which pharyngeal cleft gives rise to the external auditory meatus?",
+     "correct_answer": "1st cleft",
+     "wrong_answers": ["2nd cleft", "3rd cleft", "4th cleft"]
+     },
+    {"question": "Where can you examine a cervical cyst?",
+     "correct_answer": "Palatine tonsil",
+     "wrong_answers": ["Thyroid gland", "Esophagus", "Larynx"]
+     },
+    {"question": "Boy with hydrocephalus, why did it occur?",
+     "correct_answer": "Blockage of ventricular canal",
+     "wrong_answers": ["Infection in the brain", "Excessive production of CSF", "Failure of absorption of CSF"]
+     },
+    {"question": "When does implantation occur?",
+     "correct_answer": "7th day after fertilization",
+     "wrong_answers": ["3rd day after fertilization", "10th day after fertilization", "5th day after fertilization"]
+     },
+    {"question": "When is sex determined in an embryo?",
+     "correct_answer": "At fertilization",
+     "wrong_answers": ["At 5 weeks", "At 7 weeks", "At birth"]
+     },
+    {"question": "What covers an omphalocele?",
+     "correct_answer": "Amnion",
+     "wrong_answers": ["Peritoneum", "Skin", "Decidua"]
+     },
+    {"question": "What causes a horseshoe kidney?",
+     "correct_answer": "Stuck by inferior mesenteric artery",
+     "wrong_answers": ["Failure of fusion of kidneys", "Abnormal development of ureters", "Failure of the kidney to ascend"]
+     },
+    {"question": "What forms the ventral mesentery?",
+     "correct_answer": "Umbilical vein",
+     "wrong_answers": ["Dorsal mesentery", "Ventral body wall", "Abdominal cavity"]
+     },
+    {"question": "What is the primary abnormality in tetralogy of Fallot?",
+     "correct_answer": "Pulmonary stenosis",
+     "wrong_answers": ["Aortic coarctation", "Ventricular septal defect", "Atrial septal defect"]
+     },
+    {"question": "Why is a prematurely born baby with artificial surfactants still having difficulty breathing?",
+     "correct_answer": "Undeveloped terminal sacs (still cuboidal)",
+     "wrong_answers": ["Incomplete surfactant production", "Excessive lung fluid", "Obstruction in the airway"]
+     },
+    {"question": "What type of cells are present in an embryo?",
+     "correct_answer": "Pluripotent",
+     "wrong_answers": ["Totipotent", "Multipotent", "Unipotent"]
+     },
+    {"question": "If a doctor finds no testis in the right scrotum, where will it be found?",
+     "correct_answer": "Inguinal ligament",
+     "wrong_answers": ["Pelvic cavity", "Abdominal cavity", "Left scrotum"]
+     },
+    {"question": "The recurrent nerve hangs on which arch?",
+     "correct_answer": "4th arch",
+     "wrong_answers": ["1st arch", "2nd arch", "3rd arch"]
+     },
+    {"question": "What will a baby with post-ductal narrowing show?",
+     "correct_answer": "No femoral pulse",
+     "wrong_answers": ["Bluish skin", "Weak heart sounds", "Hypertension"]
+     },
+    {"question": "If I were in the aorta, which part would I enter?",
+     "correct_answer": "Right atrium",
+     "wrong_answers": ["Left atrium", "Right ventricle", "Pulmonary trunk"]
+     },
+    {"question": "What is the abnormality associated with tricuspid atresia?",
+     "correct_answer": "No blood flow from the right atrium to the right ventricle",
+     "wrong_answers": ["Absence of the left ventricle", "Failure of septum formation", "Inability to close the ductus arteriosus"]
+     },
+    {"question": "If I were in the pulmonary trunk, which part would I enter?",
+     "correct_answer": "Left atrium",
+     "wrong_answers": ["Right atrium", "Right ventricle", "Aorta"]
+     },
+    {"question": "If I were in the right atrium, which part would I enter?",
+     "correct_answer": "Right ventricle",
+     "wrong_answers": ["Left atrium", "Left ventricle", "Pulmonary trunk"]
+     },
+    {"question": "Which pharyngeal arch is associated with hearing problems?",
+     "correct_answer": "1st arch",
+     "wrong_answers": ["2nd arch", "3rd arch", "4th arch"]
+     },
+    {"question": "What causes a woman to have a Gartner's cyst?",
+     "correct_answer": "Remaining of mesonephric duct",
+     "wrong_answers": ["Failure of paramesonephric duct development", "Absence of the urogenital sinus", "Persistence of the Müllerian duct"]
+     },
+    {"question": "What does a high amount of GnRH lead to?",
+     "correct_answer": "Secretion of LH and FSH",
+     "wrong_answers": ["Inhibition of LH and FSH", "Stimulated ovulation", "Regulation of estrogen production"]
+     },
+    {"question": "What structure should remain open in the abnormality of the great vessels (transposition)?",
+     "correct_answer": "Ductus arteriosus",
+     "wrong_answers": ["Foramen ovale", "Ventricular septum", "Aortic arch"]
+     },
+    {"question": "CNS blocked at the mesencephalon; which structure is blocked?",
+     "correct_answer": "Aqueduct of Sylvius",
+     "wrong_answers": ["Cerebral cortex", "Cerebellum", "Medulla oblongata"]
+     },
+    {"question": "Polydactyly? ",
+     "correct_answer": "Zone of polarizing activity",
+     "wrong_answers": ["Zona pellucida", "Somite", "Mesonephric duct"]
+     },
+    {"question": "The anal opening is not there… What is the condition?",
+     "correct_answer": "Urorectal fistula",
+     "wrong_answers": ["Anal atresia", "Rectal prolapse", "Imperforate anus"]
+     },
+    {"question": "Open vitelline duct… what is the condition?",
+     "correct_answer": "Meckel’s diverticulum",
+     "wrong_answers": ["Hirschsprung's disease", "Gastric ulcer", "Gastroesophageal reflux"]
+     },
+    {"question": "Lack of closure in urethral orifice?",
+     "correct_answer": "Hypospadias",
+     "wrong_answers": ["Epispadias", "Balanitis", "Cryptorchidism"]
+     },
+    {"question": "IV septal defect? ",
+     "correct_answer": "Endocardial cushion",
+     "wrong_answers": ["Ventricular septum", "Aortic arch", "Pulmonary artery"]
+     },
+    {"question": "Descending testes?",
+     "correct_answer": "Antimullerian hormone",
+     "wrong_answers": ["Estrogen", "Testosterone", "Inhibin"]
+     },
+    {"question": "Increase in serum alpha fetoprotein, in what fetal organ is it released from?",
+     "correct_answer": "Liver",
+     "wrong_answers": ["Kidneys", "Spleen", "Intestines"]
+     },
+    {"question": "There is a basal and spongy layer, at which stage of menstruation is this?",
+     "correct_answer": "Proliferation stage",
+     "wrong_answers": ["Menstrual phase", "Secretory phase", "Follicular phase"]
+     },
+    {"question": "Most common site for ectopic pregnancy outside the uterine tube?",
+     "correct_answer": "Rectouterine pouch",
+     "wrong_answers": ["Ovary", "Cervix", "Abdominal cavity"]
+     },
+    {"question": "Unable to pass a catheter from the esophagus to the stomach… what is the condition?",
+     "correct_answer": "Atresia",
+     "wrong_answers": ["Tracheoesophageal fistula", "Gastroesophageal reflux", "Duodenal atresia"]
+     },
+    {"question": "Can feel peristalsis of small intestine in the thorax: what is the condition?",
+     "correct_answer": "Congenital diaphragmatic hernia",
+     "wrong_answers": ["Esophageal atresia", "Tracheoesophageal fistula", "Pyloric stenosis"]
+     },
+    {"question": "3rd aortic arch: what does it form?",
+     "correct_answer": "Common carotid arteries",
+     "wrong_answers": ["Pulmonary arteries", "Brachial arteries", "Coronary arteries"]
+     },
+    {"question": "What causes double aortic arches?",
+     "correct_answer": "Persistent right dorsal aorta",
+     "wrong_answers": ["Aortic stenosis", "Ventricular septal defect", "Aortic coarctation"]
+     },
+    {"question": "Primitive cerebral hemisphere forms which part of the brain?",
+     "correct_answer": "Telencephalon",
+     "wrong_answers": ["Diencephalon", "Mesencephalon", "Rhombencephalon"]
+     },
+    {"question": "Where do the germ line cells originate?",
+     "correct_answer": "Yolk sac",
+     "wrong_answers": ["Endoderm", "Mesoderm", "Ectoderm"]
+     },
+    {"question": "A patient has a thin and long head, what is the condition?",
+     "correct_answer": "Scaphocephaly",
+     "wrong_answers": ["Brachycephaly", "Dolichocephaly", "Plagiocephaly"]
+     },
+    {"question": "In vitro fertilization, after 3 days what stage is observed?",
+     "correct_answer": "Morula",
+     "wrong_answers": ["Blastocyst", "Zygote", "Embryoblast"]
+     },
+    {"question": "When does implantation occur?",
+     "correct_answer": "About 1 week after fertilization",
+     "wrong_answers": ["At fertilization", "After 3 days", "At 2 weeks"]
+     },
+    {"question": "What forms the semicircular canal?",
+     "correct_answer": "Utricle",
+     "wrong_answers": ["Cochlea", "Saccule", "Endolymph"]
+     },
+    {"question": "Which cells are responsible for gas exchange in the lungs?",
+     "correct_answer": "Alveolar type 1 cells",
+     "wrong_answers": ["Type 2 alveolar cells", "Ciliated cells", "Goblet cells"]
+     },
+    {"question": "Azygous veins come from?",
+     "correct_answer": "Right supracardinal and posterior cardinal",
+     "wrong_answers": ["Left supracardinal", "Right subclavian vein", "Posterior cardinal vein"]
+     },
+    {"question": "No anastomosis between IVC and hepatic vessels, what else would be missing?",
+     "correct_answer": "Common iliac vein",
+     "wrong_answers": ["Caval vein", "Hepatic portal vein", "Renal vein"]
+     },
+    {"question": "What causes fingers to be fused?",
+     "correct_answer": "Syndactyly",
+     "wrong_answers": ["Polydactyly", "Brachydactyly", "Camptodactyly"]
+     },
+    {"question": "Muscle weakness, where is the problem?",
+     "correct_answer": "Ventral motor horn",
+     "wrong_answers": ["Dorsal root ganglion", "Cerebellum", "Brainstem"]
+     },
+    {"question": "Where does the coronary sinus come from?",
+     "correct_answer": "Left sinus horn",
+     "wrong_answers": ["Right sinus horn", "Right atrium", "Aortic arch"]
+     },
+    {"question": "In the case of a double superior vena cava, where will the coronary sinus drain?",
+     "correct_answer": "Directly into the right atrium",
+     "wrong_answers": ["Into the left atrium", "Into the pulmonary veins", "Into the aortic arch"]
+     },
+    {"question": "Diencephalon reaches surface ectoderm and induces what?",
+     "correct_answer": "Lens placodes",
+     "wrong_answers": ["Neural tube", "Optic vesicle", "Spinal cord"]
+     },
+    {"question": "When the heart is dividing into right and left, first the septum primum forms, then what?",
+     "correct_answer": "Ostium/foramen primum",
+     "wrong_answers": ["Ostium secundum", "Ventricular septum", "Aorticopulmonary septum"]
+     },
+    {"question": "What forms the outflow tract?",
+     "correct_answer": "Truncus arteriosus",
+     "wrong_answers": ["Endocardial cushion", "Pulmonary trunk", "Aortic arch"]
+     },
+    {"question": "In transposition of great vessels, what keeps the baby alive for a short while?",
+     "correct_answer": "Patent ductus arteriosus",
+     "wrong_answers": ["Atrial septal defect", "Ventricular septal defect", "Ductus venosus"]
+     },
+    {"question": "What does the morning after pill not act on?",
+     "correct_answer": "FSH",
+     "wrong_answers": ["LH", "Progesterone", "Estrogen"]
+     },
+    {"question": "Right and left anterior cardinal veins form what?",
+     "correct_answer": "Left brachiocephalic vein",
+     "wrong_answers": ["Superior vena cava", "Inferior vena cava", "Pulmonary veins"]
+     },
+    {"question": "If there was no vasculature and mesenchyme in the brain, what cells are missing?",
+     "correct_answer": "Microglia",
+     "wrong_answers": ["Astrocytes", "Oligodendrocytes", "Neurons"]
+     },
+    {"question": "What is the condition where abdominal contents stick out?",
+     "correct_answer": "Gastroschisis",
+     "wrong_answers": ["Omphalocele", "Umbilical hernia", "Diaphragmatic hernia"]
+     },
+    {"question": "Spina bifida and meningocele involve what?",
+     "correct_answer": "B",
+     "wrong_answers": ["A", "C", "D"]
+     },
+    {"question": "Where can you find the right recurrent laryngeal nerve at the remnant of?",
+     "correct_answer": "4th aortic arch",
+     "wrong_answers": ["6th aortic arch", "Right subclavian artery", "Left vagus nerve"]
+     },
+    {"question": "Absence of ligamentum venosus leads to what?",
+     "correct_answer": "Left umbilical and right hepatocardiac veins have not developed",
+     "wrong_answers": ["Right subclavian artery", "Pulmonary artery", "Aortic arch"]
+     },
+    {"question": "What phase do bronchioles divide continuously in?",
+     "correct_answer": "Canalicular phase",
+     "wrong_answers": ["Saccular phase", "Terminal phase", "Alveolar phase"]
+     },
+    {"question": "In a blastomere of zygotes each with 23 chromosomes, what is the chromosome number?",
+     "correct_answer": "Haploid",
+     "wrong_answers": ["Diploid", "Polyploid", "Tetraploid"]
+     },
+    {"question": "What divides the body cavity into the pericardium and peritoneum?",
+     "correct_answer": "Septum transversum",
+     "wrong_answers": ["Pleuroperitoneal membrane", "Pericardial membrane", "Somatic mesoderm"]
+     },
+    {"question": "Communication between pleura and peritoneum occurs in which canal?",
+     "correct_answer": "Pleuroperitoneal canal",
+     "wrong_answers": ["Inguinal canal", "Omental foramen", "Pericardial cavity"]
+     },
+    {"question": "Last menstrual cycle was June 20, 2017, when is her due date?",
+     "correct_answer": "March 27, 2018",
+     "wrong_answers": ["April 20, 2018", "May 1, 2018", "July 10, 2018"]
+     },
+    {"question": "What is rare in females?",
+     "correct_answer": "Indirect hernia",
+     "wrong_answers": ["Direct hernia", "Umbilical hernia", "Femoral hernia"]
      }
-
+    
 ]
 
 
