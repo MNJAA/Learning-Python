@@ -1,9 +1,10 @@
 import tkinter as tk
 from tkinter import ttk
+from tkinter import messagebox
 import random
 import time
-import winsound  # Import winsound for sound effects
-from qs import Example_questions_form  # Import your questions from qs.py
+import winsound
+from qs import HEM,Example_questions_form  # Import your questions from qs.py
 
 class Quiz:
     def __init__(self, root, questions):
@@ -11,52 +12,95 @@ class Quiz:
         self.questions = questions  # Questions list
         random.shuffle(self.questions)  # Shuffle the questions
         self.current_question_index = 0
-        self.selected_option = None  # Store selected option for each question
         self.score = 0
+        self.answered_questions = 0  # Track number of questions answered
         self.total_questions = len(questions)
-        self.answered_questions = 0  # Track number of answered questions
         self.incorrect_questions = []  # To track incorrect questions
         self.start_time = time.time()  # Record the start time for the timer
         self.quiz_ended = False  # Flag to track if quiz has ended
         self.elapsed_seconds = 0
         self.timer_running = False  # Flag to control when the timer should run
-
-        # Set background color
-        self.root.configure(bg="#204040")
-
-        # UI Elements
-        self.timer_label = tk.Label(root, text="Time: 0s", font=("Arial", 14), bg="#204040", fg="white")
-        self.timer_label.pack(pady=10)  # Timer above the question
-
-        self.question_label = tk.Label(root, text="", wraplength=400, font=("Arial", 14), bg="#204040", fg="white")
-        self.question_label.pack(pady=20)
-
-        self.options_frame = tk.Frame(root, bg="#204040")
-        self.options_frame.pack(pady=20)
-
+        self.answered_set = set()  # Set to track answered question indices
         self.check_buttons = []  # Store checkbox widgets
         self.check_vars = []  # List of IntVar for each checkbox (check if selected)
         self.answer_options = []  # To store the actual answers (used for checking correctness)
 
-        self.submit_button = tk.Button(root, text="Submit", command=self.submit_answer, bg="#5c7f7f", fg="white", font=("Arial", 12))
-        self.submit_button.pack(pady=20)
+        # Set background color
+        self.root.configure(bg="#204040")
 
-        # Finish Quiz Button (for finishing early)
-        self.finish_button = tk.Button(root, text="Finish Quiz Early", command=self.finish_quiz_early, bg="#ff5733", fg="white", font=("Arial", 12))
-        self.finish_button.place(x=10, y=10)  # Position the button at the top-left corner
+        # Top frame for "Finish Early", Timer, and Question Number
+        self.top_frame = tk.Frame(root, bg="#204040")
+        self.top_frame.pack(fill="x", pady=10)  # Fill horizontally at the top
 
-        # Progress Bar
-        self.progress = ttk.Progressbar(root, orient="horizontal", length=300, mode="determinate")
-        self.progress.pack(pady=10)
-        self.progress["maximum"] = self.total_questions  # Set progress bar max to total questions
-        self.progress["value"] = self.current_question_index  # Initialize progress bar
+        # "Finish Early" button
+        self.finish_button = tk.Button(
+            self.top_frame,
+            text="Finish Early",
+            command=self.finish_quiz_early,
+            bg="#ff5733",
+            fg="white",
+            font=("Arial", 12)
+        )
+        self.finish_button.pack(side="left", padx=20)
 
-        # Question number label under the progress bar
-        self.question_number_label = tk.Label(root, text=f"Question {self.current_question_index + 1} of {self.total_questions}", font=("Arial", 12), bg="#204040", fg="white")
-        self.question_number_label.pack(pady=5)
+        # Timer label (centered in top frame)
+        self.timer_label = tk.Label(
+            self.top_frame,
+            text="Time: 00:00:00",
+            font=("Arial", 14),
+            bg="#204040",
+            fg="white"
+        )
+        self.timer_label.pack(side="left", expand=True)  # Expand to center it
 
+        # Question number label (right-aligned in top frame)
+        self.question_number_label = tk.Label(
+            self.top_frame,
+            text=f"Question {self.current_question_index + 1} of {self.total_questions}",
+            font=("Arial", 12),
+            bg="#204040",
+            fg="white"
+        )
+        self.question_number_label.pack(side="right", padx=20)
+
+        # Define a frame for the buttons (Back and Submit) at the bottom
+        self.bottom_frame = tk.Frame(self.root, bg="#204040")
+        self.bottom_frame.pack(side="bottom", pady=20)
+
+        # Question label
+        self.question_label = tk.Label(
+            root, text="", wraplength=400, font=("Arial", 14), bg="#204040", fg="white"
+        )
+        self.question_label.pack(pady=20)
+        
+        # Frame for the answer options (checkboxes)
+        self.button_frame = tk.Frame(self.root, bg="#204040")
+        self.button_frame.pack(pady=10)
+
+
+        # Define a frame for the buttons (Back and Submit) at the bottom
+        self.bottom_frame = tk.Frame(self.root, bg="#204040")
+        self.bottom_frame.pack(side="bottom", pady=20)
+
+        # Button Frame (to hold Back and Submit buttons in the same line)
+        self.button1_frame = tk.Frame(self.bottom_frame, bg="#204040")
+        self.button1_frame.pack()
+
+        # Back Button
+        self.back_button = tk.Button(self.button1_frame, text="Back", command=self.go_back, bg="#ffd700", fg="black", font=("Arial", 12))
+        self.back_button.pack(side="left", padx=20)
+
+        # Submit Button
+        self.submit_button = tk.Button(self.button1_frame, text="Submit", command=self.submit_answer, bg="#5c7f7f", fg="white", font=("Arial", 12))
+        self.submit_button.pack(side="left", padx=20)
+
+        # Progress Bar (directly below the buttons)
+        self.progress = ttk.Progressbar(self.bottom_frame, orient="horizontal", length=250, mode="determinate")
+        self.progress.pack(pady=10)  # Add spacing between buttons and progress bar
+        self.progress["maximum"] = self.total_questions 
+        self.progress["value"] = self.current_question_index
         self.show_question()
-
+    
     def show_question(self):
         # Clear any existing checkboxes before creating new ones
         for cb in self.check_buttons:
@@ -77,9 +121,9 @@ class Quiz:
 
         # Create checkboxes dynamically based on the number of answers
         for i, answer in enumerate(all_answers):
-            var = tk.IntVar(value=0)
+            var = tk.IntVar(value=0)  # Ensure all checkboxes start unchecked
             cb = tk.Checkbutton(
-                self.options_frame,
+                self.button_frame,
                 text=answer,
                 variable=var,
                 font=("Arial", 12),
@@ -95,6 +139,10 @@ class Quiz:
             self.check_buttons.append(cb)
             self.check_vars.append(var)
 
+        # Ensure all options are unchecked when revisiting a question
+        for var in self.check_vars:
+            var.set(0)  # Force all checkboxes to be unchecked
+
         # Update progress bar and question number label
         self.progress["value"] = self.current_question_index + 1
         self.question_number_label.config(text=f"Question {self.current_question_index + 1} of {self.total_questions}")
@@ -108,7 +156,7 @@ class Quiz:
         if not self.quiz_ended:  # Only update the timer if quiz hasn't ended
             # Increment the elapsed time by 1 second
             self.elapsed_seconds += 1
-            
+
             # Calculate hours, minutes, and seconds
             hours = self.elapsed_seconds // 3600
             minutes = (self.elapsed_seconds % 3600) // 60
@@ -138,29 +186,51 @@ class Quiz:
                 break
 
         if selected_answer:
-            correct_answer = self.questions[self.current_question_index]["correct_answer"]
+            question_data = self.questions[self.current_question_index]
+            correct_answer = question_data["correct_answer"]
+
+            # Check if the question was previously answered
+            if self.current_question_index not in self.answered_set:
+                # Mark this question as answered
+                self.answered_set.add(self.current_question_index)
+                self.answered_questions += 1
+
             # Check if the selected answer is correct
             if selected_answer == correct_answer:
+                # If the answer is correct, increase score and remove it from incorrect questions
                 self.score += 1
+                self.incorrect_questions = [
+                    q for q in self.incorrect_questions 
+                    if q["question_index"] != self.current_question_index
+                ]
                 self.provide_feedback("correct")
             else:
-                # Track the wrong question and selected answer
-                self.incorrect_questions.append({
-                    "question": self.questions[self.current_question_index]["question"],
-                    "correct_answer": correct_answer,
-                    "selected_answer": selected_answer
-                })
+                # If the answer is incorrect, add or update the incorrect question
+                existing = next(
+                    (q for q in self.incorrect_questions if q["question_index"] == self.current_question_index),
+                    None
+                )
+                if existing:
+                    # Update the selected answer if already in the list
+                    existing["selected_answer"] = selected_answer
+                else:
+                    # Add to the list if not already present
+                    self.incorrect_questions.append({
+                        "question": question_data["question"],
+                        "correct_answer": correct_answer,
+                        "selected_answer": selected_answer,
+                        "question_index": self.current_question_index
+                    })
                 self.provide_feedback("incorrect")
 
-        # Increment answered questions count
-        self.answered_questions += 1
-
-        # Move to the next question or end quiz
+        # Move to the next question or end the quiz
         self.current_question_index += 1
         if self.current_question_index < self.total_questions:
             self.show_question()
         else:
             self.end_quiz()
+
+
 
     def provide_feedback(self, result):
         if result == "correct":
@@ -171,81 +241,115 @@ class Quiz:
             winsound.Beep(500, 500)  # Frequency = 500Hz, Duration = 500ms
 
     def end_quiz(self):
-        # Stop the timer when the quiz ends
+            # Stop the timer when the quiz ends
         self.quiz_ended = True
 
         # Calculate the total time taken
         end_time = int(time.time() - self.start_time)  # Time in seconds
 
-        # Display the final score and time taken
-        self.question_label.config(text=f"Quiz Over! Your score: {self.score}/{self.answered_questions}")
+        # Ensure the total number of questions answered is correctly calculated
+        total_answered = self.answered_questions  # Only count answered questions
+
+        # Display the final score and total questions answered
+        self.question_label.config(text=f"Quiz Over! Your score: {self.score}/{total_answered}")
         self.timer_label.config(text=f"Time taken: {end_time}s")
-        self.options_frame.destroy()
+        
+        # Remove unnecessary UI elements
+        self.button_frame.destroy()
         self.submit_button.destroy()
         self.progress.destroy()
         self.question_number_label.destroy()
         self.finish_button.destroy()  # Hide the finish button once quiz ends
+        self.back_button.destroy()  # Hide the back button once quiz ends
 
-        # Create a scrollable frame to show incorrect answers
-        scroll_frame = tk.Frame(self.root, bg="#204040")
-        scroll_frame.pack(pady=20, fill="both", expand=True)
+        # Create a frame for results with scroll capability
+        results_frame = tk.Frame(self.root, bg="#204040")
+        results_frame.pack(pady=20, fill="both", expand=True)
 
-        canvas = tk.Canvas(scroll_frame, bg="#204040")
+        canvas = tk.Canvas(results_frame, bg="#204040")  # Canvas for scrolling
         canvas.pack(side="left", fill="both", expand=True)
 
-        scrollbar = tk.Scrollbar(scroll_frame, orient="vertical", command=canvas.yview)
+        scrollbar = tk.Scrollbar(results_frame, orient="vertical", command=canvas.yview)
         scrollbar.pack(side="right", fill="y")
-
         canvas.configure(yscrollcommand=scrollbar.set)
 
-        incorrect_frame = tk.Frame(canvas, bg="#204040")
-        canvas.create_window((0, 0), window=incorrect_frame, anchor="nw")
+        results_container = tk.Frame(canvas, bg="#204040")  # Inner frame to hold the result labels
+        canvas.create_window((0, 0), window=results_container, anchor="nw")
 
-        # Create better alignment for incorrect questions
-        for idx, q in enumerate(self.incorrect_questions, 1):
-            # Add question number and format the labels properly
-            question_label = tk.Label(
-                incorrect_frame, 
-                text=f"Q{idx}: {q['question']}", 
-                bg="#204040", 
-                fg="white", 
-                font=("Arial", 12, 'bold')
+        # Update the canvas scroll region after packing all widgets
+        results_container.bind("<Configure>", lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
+
+        if self.incorrect_questions:
+            # Add a title for the incorrect answers
+            incorrect_label = tk.Label(
+                results_container,
+                text="Incorrect Answers:",
+                font=("Arial", 14, "bold"),
+                bg="#204040",
+                fg="red"
             )
-            question_label.grid(row=idx*2-1, column=0, sticky="w", padx=10, pady=5)
+            incorrect_label.pack(pady=10, anchor="w")
 
-            correct_answer_label = tk.Label(
-                incorrect_frame, 
-                text=f"   Correct Answer: {q['correct_answer']}", 
-                bg="#204040", 
-                fg="#3fff00", 
-                font=("Arial", 12)
+            # Display each incorrect question, correct answer, and user's answer
+            for idx, q in enumerate(self.incorrect_questions, 1):
+                question_label = tk.Label(
+                    results_container,
+                    text=f"Q{idx}: {q['question']}",
+                    font=("Arial", 12, "bold"),
+                    bg="#204040",
+                    fg="white",
+                    wraplength=400,
+                    justify="left"
+                )
+                question_label.pack(pady=5, anchor="w")
+
+                correct_answer_label = tk.Label(
+                    results_container,
+                    text=f"   Correct Answer: {q['correct_answer']}",
+                    font=("Arial", 12),
+                    bg="#204040",
+                    fg="#3fff00"
+                )
+                correct_answer_label.pack(pady=2, anchor="w")
+
+                user_answer_label = tk.Label(
+                    results_container,
+                    text=f"   Your Answer: {q['selected_answer']}",
+                    font=("Arial", 12),
+                    bg="#204040",
+                    fg="yellow"
+                )
+                user_answer_label.pack(pady=2, anchor="w")
+        else:
+            # Display a message if there are no incorrect answers
+            success_label = tk.Label(
+                results_container,
+                text="Congratulations! You answered all questions correctly!",
+                font=("Arial", 14, "bold"),
+                bg="#204040",
+                fg="#3fff00",
+                wraplength=400,
+                justify="center"
             )
-            correct_answer_label.grid(row=idx*2, column=0, sticky="w", padx=10, pady=5)
+            success_label.pack(pady=20)
 
-            user_answer_label = tk.Label(
-                incorrect_frame, 
-                text=f"   Your Answer: {q['selected_answer']}", 
-                bg="#204040", 
-                fg="yellow", 
-                font=("Arial", 12)
-            )
-            user_answer_label.grid(row=idx*2, column=1, sticky="w", padx=10, pady=5)
-
-        # Update the scroll region to encompass all widgets in the frame
-        incorrect_frame.update_idletasks()
-        canvas.config(scrollregion=canvas.bbox("all"))
 
     def finish_quiz_early(self):
-        """Method to finish the quiz early and show results."""
-        self.end_quiz()
+        if messagebox.askyesno("Finish Quiz", "Are you sure you want to finish the quiz early?"):
+            self.end_quiz()
+
+    def go_back(self):
+        if self.current_question_index > 0:
+            self.current_question_index -= 1
+            self.show_question()
 
 # Main Application
 if __name__ == "__main__":
     root = tk.Tk()
     root.title("MCQ Quiz")
-    root.geometry("500x600")  # Increase height to accommodate incorrect answers list
-    
-    exam_questions = Example_questions_form  # Questions from qs.py
+    root.geometry("600x464")
+
+    exam_questions = HEM  # Questions from qs.py
     quiz = Quiz(root, exam_questions)
-    
+
     root.mainloop()
