@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import random  # Import random module for shuffling
 import time  # Import time module to handle timer
-from qs import Example_questions_form  # Import questions from your qs.py file
+from qs import HEM  # Import questions from your qs.py file
 
 class Quiz:
     def __init__(self, root, questions):
@@ -221,7 +221,7 @@ if __name__ == "__main__":
     root.title("MCQ Quiz")
     root.geometry("500x600")  # Increase height to accommodate incorrect answers list
     
-    exam_questions = Example_questions_form  # Questions from qs.py
+    exam_questions = HEM  # Questions from qs.py
     quiz = Quiz(root, exam_questions)
     
     root.mainloop()
