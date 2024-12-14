@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import ttk
 import random  # Import random module for shuffling
 import time  # Import time module to handle timer
-from qs import HEM  # Import questions from your qs.py file
+from qs import Example_questions_form  # Import questions from your qs.py file
 
 class Quiz:
     def __init__(self, root, questions):
@@ -15,13 +15,15 @@ class Quiz:
         self.total_questions = len(questions)
         self.incorrect_questions = []  # To track incorrect questions
         self.start_time = time.time()  # Record the start time for the timer
+        self.elapsed_seconds = 0  # Track the elapsed time in seconds
         self.quiz_ended = False  # Flag to track if quiz has ended
+        self.timer_running = True  # Start with the timer running
 
         # Set background color
         self.root.configure(bg="#204040")
 
         # UI Elements
-        self.timer_label = tk.Label(root, text="Time: 0s", font=("Arial", 14), bg="#204040", fg="white")
+        self.timer_label = tk.Label(root, text="Time: 00:00:00", font=("Arial", 14), bg="#204040", fg="white")
         self.timer_label.pack(pady=10)  # Timer above the question
 
         self.question_label = tk.Label(root, text="", wraplength=400, font=("Arial", 14), bg="#204040", fg="white")
@@ -93,13 +95,23 @@ class Quiz:
             self.update_timer()
 
     def update_timer(self):
-        # Calculate elapsed time
-        elapsed_time = int(time.time() - self.start_time)  # Time in seconds
-        self.timer_label.config(text=f"Time: {elapsed_time}s")  # Update timer label
+        if self.timer_running:
+            # Increment the elapsed time by 1 second
+            self.elapsed_seconds = int(time.time() - self.start_time)
 
-        # Continue updating every 1000ms (1 second) if quiz has not ended
-        if not self.quiz_ended:
-            self.root.after(1000, self.update_timer)
+            # Calculate hours, minutes, and seconds
+            hours = self.elapsed_seconds // 3600
+            minutes = (self.elapsed_seconds % 3600) // 60
+            seconds = self.elapsed_seconds % 60
+
+            # Format the time as HH:MM:SS
+            formatted_time = f"{hours:02}:{minutes:02}:{seconds:02}"
+
+            # Update the timer label with the formatted time
+            self.timer_label.config(text=f"Time Elapsed: {formatted_time}")
+
+            # Call this method again after 1 second
+            self.timer_label.after(1000, self.update_timer)
 
     def on_option_select(self, selected_index):
         # Allow only one selection at a time (uncheck others)
@@ -137,14 +149,18 @@ class Quiz:
 
     def end_quiz(self):
         # Calculate the total time taken
-        end_time = int(time.time() - self.start_time)  # Time in seconds
+        self.timer_running = False  # Stop the timer updates
 
-        # Set the quiz_ended flag to True to stop the timer
-        self.quiz_ended = True
+        # Format the final time taken
+        hours = self.elapsed_seconds // 3600
+        minutes = (self.elapsed_seconds % 3600) // 60
+        seconds = self.elapsed_seconds % 60
+
+        formatted_time = f"{hours:02}:{minutes:02}:{seconds:02}"
 
         # Display the final score and time taken
         self.question_label.config(text=f"Quiz Over! Your score: {self.score}/{self.total_questions}")
-        self.timer_label.config(text=f"Time taken: {end_time}s")
+        self.timer_label.config(text=f"Time taken: {formatted_time}")
         self.options_frame.destroy()
         self.submit_button.destroy()
         self.progress.destroy()
@@ -205,7 +221,7 @@ if __name__ == "__main__":
     root.title("MCQ Quiz")
     root.geometry("500x600")  # Increase height to accommodate incorrect answers list
     
-    exam_questions = HEM  # Questions from qs.py
+    exam_questions = Example_questions_form  # Questions from qs.py
     quiz = Quiz(root, exam_questions)
     
     root.mainloop()

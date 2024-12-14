@@ -8660,6 +8660,9 @@ print(f"created a total of {total_Histology} questions for Histology questions."
 total_PPCT = len(PPC_terms)
 print(f"created a total of {total_PPCT} questions for PPCT questions.")
 
+total_HEM = len(HEM)
+print(f"created a total of {total_HEM} questions for HEM questions.")
 
-total_questions = (total_Anatomy2 + total_Histology + total_PPCT )
+
+total_questions = (total_Anatomy2 + total_Histology + total_PPCT + total_HEM )
 print(f"{SL}created a total of {total_questions} for premid 2 questions.{SL}")
