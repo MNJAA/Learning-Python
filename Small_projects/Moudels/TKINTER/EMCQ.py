@@ -343,9 +343,10 @@ class Quiz:
                 text="Skipped Questions:",
                 font=("Times new roman", 14, "bold"),
                 bg="#204040",
-                fg="orange"
+                fg="orange",
+                anchor="e"
             )
-            skipped_label.grid(row=0, column=4, padx=10, pady=10, sticky="w")
+            skipped_label.grid(row=0, column=4, padx=(50,10), pady=10, sticky="ne")
 
             # Iterate through skipped questions
             for idx, question_data in enumerate(self.skipped_questions, 1):
@@ -357,9 +358,10 @@ class Quiz:
                     bg="#204040",
                     fg="white",
                     wraplength=400,
+                    anchor="e",
                     justify="left"
                 )
-                question_label.grid(row=idx * 2 - 1, column=4, padx=10, pady=5, sticky="e", columnspan=2)
+                question_label.grid(row=idx * 2 - 1, column=4, padx=(50,10), pady=5, sticky="e", columnspan=2)
 
                 # Correct Answer (next row)
                 correct_answer_label = tk.Label(
@@ -369,9 +371,10 @@ class Quiz:
                     bg="#204040",
                     fg="#3fff00",
                     wraplength=400,
+                    anchor="e",
                     justify="left"
                 )
-                correct_answer_label.grid(row=idx * 2, column=4, padx=10, pady=5, sticky="e")
+                correct_answer_label.grid(row=idx * 2, column=4, padx=(50,10), pady=5, sticky="e")
 
 
 
