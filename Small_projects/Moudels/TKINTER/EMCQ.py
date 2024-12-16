@@ -359,7 +359,7 @@ class Quiz:
                     wraplength=400,
                     justify="left"
                 )
-                question_label.grid(row=idx * 2 - 1, column=4, padx=10, pady=5, sticky="w", columnspan=2)
+                question_label.grid(row=idx * 2 - 1, column=4, padx=10, pady=5, sticky="e", columnspan=2)
 
                 # Correct Answer (next row)
                 correct_answer_label = tk.Label(
@@ -371,7 +371,7 @@ class Quiz:
                     wraplength=400,
                     justify="left"
                 )
-                correct_answer_label.grid(row=idx * 2, column=4, padx=10, pady=5, sticky="w")
+                correct_answer_label.grid(row=idx * 2, column=4, padx=10, pady=5, sticky="e")
 
 
 
