@@ -20,6 +20,1487 @@ Example_questions_form = [
 
 
 
+MGN = [
+    {"question": "All genes and alleles in a population are called?",
+     "correct_answer": "Gene pool",
+     "wrong_answers": ["Genome", 
+                       "Genetic drift", 
+                       "Allele frequency"]
+    },
+    {"question": "What was the first disease cured by gene therapy?",
+     "correct_answer": "ADA",
+     "wrong_answers": ["Cystic fibrosis", 
+                       "Sickle cell anemia", 
+                       "Retinitis pigmentosa"]
+    },
+    {"question": "Cancer cases are mostly?",
+     "correct_answer": "Sporadic",
+     "wrong_answers": ["Inherited", 
+                       "Epigenetic", 
+                       "Mutated germline"]
+    },
+    {"question": "What is the percentage of BRCA mutation in males?",
+     "correct_answer": "7%",
+     "wrong_answers": ["3%", 
+                       "10%", 
+                       "5%"]
+    },
+    {"question": "Retinitis pigmentosa is an example of?",
+     "correct_answer": "Locus heterogeneity",
+     "wrong_answers": ["Allelic heterogeneity", 
+                       "Dominant mutation", 
+                       "Single-gene defect"]
+    },
+    {"question": "When one allele is eliminated, the other is said to be?",
+     "correct_answer": "Fixed",
+     "wrong_answers": ["Balanced", 
+                       "Dominant", 
+                       "Recessive"]
+    },
+    {"question": "In the UAE, a lot of people with sickle-cell mutations are resistant to malaria infection. This is an example of?",
+     "correct_answer": "Natural selection",
+     "wrong_answers": ["Genetic drift", 
+                       "Founder effect", 
+                       "Gene flow"]
+    },
+    {"question": "How was RBC mutation linked to malaria resistance?",
+     "correct_answer": "Presence of abnormal globin proteins in RBC is not suitable for malaria to complete its life cycle",
+     "wrong_answers": ["Geographical distribution of hemoglobin S overlaps malaria areas", 
+                       "RBCs lyse rapidly in malaria patients", 
+                       "Hemoglobin C mutation prevents infection"]
+    },
+    {"question": "What does reduced penetrance mean?",
+     "correct_answer": "Not all individuals with a mutation express the phenotype",
+     "wrong_answers": ["Disease severity is reduced", 
+                       "Mutation doesn't occur", 
+                       "Alleles become inactive"]
+    },
+    {"question": "What is common in the UAE?",
+     "correct_answer": "Hemoglobinopathies",
+     "wrong_answers": ["Cystic fibrosis", 
+                       "Thalassemia major", 
+                       "Huntington disease"]
+    },
+    {"question": "Null Duffy phenotype results in?",
+     "correct_answer": "Parasite can't attach and invade",
+     "wrong_answers": ["Increased RBC count", 
+                       "Resistance to sickle cell disease", 
+                       "Immune overreaction"]
+    },
+    {"question": "Warfarin variability is 50% dependent on?",
+     "correct_answer": "VKOR & CYP2C9",
+     "wrong_answers": ["CYP3A4 & VKOR", 
+                       "CYP450 enzymes", 
+                       "Vitamin K epoxide only"]
+    },
+    {"question": "What is the risk of a homozygous Factor V Leiden patient on oral contraceptives?",
+     "correct_answer": "50-100 folds increased risk",
+     "wrong_answers": ["5-10 folds increased risk", 
+                       "10-20 folds increased risk", 
+                       "100-200 folds increased risk"]
+    },
+    {"question": "A woman has a brother's son with cystic fibrosis. Her husband is a carrier, and the carrier frequency is 1/20. What is the probability their first child will be affected?",
+     "correct_answer": "1/80",
+     "wrong_answers": ["1/20", 
+                       "1/40", 
+                       "1/160"]
+    },
+    {"question": "What defines multifactorial diseases?",
+     "correct_answer": "Genes and environment",
+     "wrong_answers": ["Only genetic factors", 
+                       "Only environmental factors", 
+                       "Single-gene inheritance"]
+    },
+    {"question": "What is the major challenge of whole genome sequencing (WGS)?",
+     "correct_answer": "Biostatistical analysis is hard",
+     "wrong_answers": ["High costs", 
+                       "Limited sample size", 
+                       "Requires large machines"]
+    },
+    {"question": "Which of the following is true regarding CVS?",
+     "correct_answer": "It's performed around 10-12 weeks",
+     "wrong_answers": ["It's performed after 20 weeks", 
+                       "It diagnoses neural tube defects", 
+                       "It poses no risk to the fetus"]
+    },
+    {"question": "What does exome sequencing focus on?",
+     "correct_answer": "Exons and splice sites",
+     "wrong_answers": ["Only exons sequenced", 
+                       "Whole genome", 
+                       "Introns and regulatory regions"]
+    },
+    {"question": "Which material is not suitable for karyotyping?",
+     "correct_answer": "Bone from burial",
+     "wrong_answers": ["Amniotic fluid", 
+                       "Blood sample", 
+                       "Fetal tissue"]
+    },
+    {"question": "What is produced by G6PD in cells?",
+     "correct_answer": "Reduced glutathione",
+     "wrong_answers": ["Reactive oxygen species", 
+                       "NADP", 
+                       "ATP"]
+    },
+    {"question": "Delta 32/m303 on CCR5 genotype results in what phenotype?",
+     "correct_answer": "Highly resistant",
+     "wrong_answers": ["Mild susceptibility", 
+                       "No resistance", 
+                       "Immunocompromised"]
+    },
+    {"question": "What is the dose adjustment for genotype-guided 6-MP dosing in homozygous *3C/*3C?",
+     "correct_answer": "Reduce 6-10% of standard dose",
+     "wrong_answers": ["Increase 50%", 
+                       "Standard dose", 
+                       "Double the dose"]
+    },
+    {"question": "Which variant is associated with Abacavir hypersensitivity?",
+     "correct_answer": "HLA-B*5701",
+     "wrong_answers": ["CYP2C9*3", 
+                       "VKORC1", 
+                       "HLA-A*0101"]
+    },
+    {"question": "What is the correct term for a disease-causing mutation?",
+     "correct_answer": "Pathogenic",
+     "wrong_answers": ["Benign", 
+                       "Polymorphism", 
+                       "Neutral"]
+    },
+    {"question": "What is a cross test?",
+     "correct_answer": "True-breeding individual exhibiting the recessive phenotype",
+     "wrong_answers": ["Crossing dominant with recessive", 
+                       "Testing heterozygous phenotype", 
+                       "Hybrid gene expression"]
+    },
+    {"question": "Which gene therapy approach involves removing, modifying, and returning cells to the patient?",
+     "correct_answer": "Ex vivo",
+     "wrong_answers": ["In vivo", 
+                       "Somatic therapy", 
+                       "Germline therapy"]
+    },
+    {"question": "What type of mutation is characterized by G>A and a.a > Term* (stop*)?",
+     "correct_answer": "Nonsense",
+     "wrong_answers": ["Missense", 
+                       "Silent", 
+                       "Frameshift"]
+    },
+    {"question": "Angelman and Prader-Willi syndromes involve deletions in chromosome 15. What determines the outcome?",
+     "correct_answer": "Parental and maternal genomically imprinted genes on the chromosomes",
+     "wrong_answers": ["Presence of paternal only", 
+                       "Presence of maternal only", 
+                       "Parental mRNA only"]
+    },
+    {"question": "Fragile X syndrome involves repeats of which nucleotide sequence?",
+     "correct_answer": "CGG",
+     "wrong_answers": ["CAG", 
+                       "GAA", 
+                       "TTC"]
+    },
+    {"question": "Which abnormality is not associated with chromosomes or genetic syndromes?",
+     "correct_answer": "Teratogens",
+     "wrong_answers": ["Structural rearrangements", 
+                       "Chromosome deletions", 
+                       "Gene mutations"]
+    },
+    {"question": "What is true about germ-line therapy?",
+     "correct_answer": "They are NOT inherited",
+     "wrong_answers": ["They are inherited", 
+                       "They target somatic cells", 
+                       "They are always reversible"]
+    },
+    {"question": "A FISH analysis shows 3 green dots representing chromosome 13. What syndrome is indicated?",
+     "correct_answer": "Patau syndrome",
+     "wrong_answers": ["Edwards syndrome", 
+                       "Down syndrome", 
+                       "Turner syndrome"]
+    },
+    {"question": "What mutation type is seen in sickle cell disease?",
+     "correct_answer": "Missense",
+     "wrong_answers": ["Nonsense", 
+                       "Silent", 
+                       "Frameshift"]
+    },
+     {"question": "Arrange the following forms from highest to lowest resolution: Karyotyping, FISH, PCR, DNA sequence.",
+     "correct_answer": "DNA sequence, PCR, FISH, Karyotyping",
+     "wrong_answers": ["Karyotyping, FISH, PCR, DNA sequence",
+                       "FISH, Karyotyping, DNA sequence, PCR",
+                       "PCR, DNA sequence, FISH, Karyotyping"]
+    },
+    {"question": "Beta-1 adrenergic receptor is primarily categorized as?",
+     "correct_answer": "Drug target",
+     "wrong_answers": ["Phase 1", 
+                       "Phase 2", 
+                       "Drug transporter"]
+    },
+    {"question": "What karyotype is seen in Turner Syndrome?",
+     "correct_answer": "One X chromosome",
+     "wrong_answers": ["XXY", 
+                       "Trisomy 21", 
+                       "46 XY"]
+    },
+    {"question": "What is most important for pharmacogenomics?",
+     "correct_answer": "Cytochrome P450",
+     "wrong_answers": ["Drug transporters", 
+                       "Drug receptors", 
+                       "DNA ligase"]
+    },
+    {"question": "What does an electropherogram showing G>A substitution indicate?",
+     "correct_answer": "Single nucleotide substitution",
+     "wrong_answers": ["Gene deletion", 
+                       "Frameshift mutation", 
+                       "Missense mutation"]
+    },
+    {"question": "What is NOT true about loss of function mutations?",
+     "correct_answer": "Gene is turned on",
+     "wrong_answers": ["Protein function is reduced", 
+                       "Protein function is lost", 
+                       "Gene expression decreases"]
+    },
+    {"question": "Triploidy in genetics refers to?",
+     "correct_answer": "An individual with a complete extra set of chromosomes",
+     "wrong_answers": ["A chromosome deletion", 
+                       "Presence of three specific chromosomes", 
+                       "Mosaicism in a single gene"]
+    },
+    {"question": "Mendel's law of segregation, as applied to meiosis, means that?",
+     "correct_answer": "Alleles of a gene separate when homologous chromosomes separate in meiosis",
+     "wrong_answers": ["Alleles combine randomly in meiosis", 
+                       "Genes do not segregate", 
+                       "Chromosomes duplicate twice"]
+    },
+    {"question": "What is an example of a non-invasive prenatal screening method?",
+     "correct_answer": "Maternal blood sampling",
+     "wrong_answers": ["Amniocentesis", 
+                       "Chorionic villus sampling", 
+                       "Ultrasound-guided biopsy"]
+    },
+    {"question": "What is the most controversial gene therapy approach?",
+     "correct_answer": "Germ line",
+     "wrong_answers": ["Somatic", 
+                       "Antisense", 
+                       "In vivo"]
+    },
+    {"question": "Gene fixation is easiest in which population?",
+     "correct_answer": "Founder isolated population",
+     "wrong_answers": ["Large population", 
+                       "Highly diverse population", 
+                       "Urban population"]
+    },
+    {"question": "Which of the following is NOT true about tumor suppressor genes?",
+     "correct_answer": "Prevents differentiation of cell",
+     "wrong_answers": ["Inhibits inappropriate cell division", 
+                       "Maintains genome integrity", 
+                       "Targets cancer cells with apoptosis"]
+    },
+    {"question": "Inborn Errors of Metabolism (IEM) are caused by?",
+     "correct_answer": "Enzyme and coenzyme cannot metabolize food",
+     "wrong_answers": ["Dietary imbalance", 
+                       "Infectious disease", 
+                       "Vitamin deficiency"]
+    },
+    {"question": "What is true about autosomal recessive diseases?",
+     "correct_answer": "Need 2 defective alleles to cause disease",
+     "wrong_answers": ["Need 1 defective allele", 
+                       "Caused by dominant genes", 
+                       "Only occurs in males"]
+    },
+    {"question": "Which of the following is an example of a single gene disorder?",
+     "correct_answer": "Cystic fibrosis (CFTR in chromosome 7)",
+     "wrong_answers": ["G6PD (chromosome X)", 
+                       "Disease caused by multiple mutations", 
+                       "Hemoglobinopathies"]
+    },
+    {"question": "What is a common task in bioinformatics?",
+     "correct_answer": "Sequence alignment",
+     "wrong_answers": ["Protein folding", 
+                       "RNA transcription", 
+                       "Chromosome mapping"]
+    },
+    {"question": "GWAS is used for?",
+     "correct_answer": "Genome-wide analysis and identifying genetic variations",
+     "wrong_answers": ["Single gene sequencing", 
+                       "RNA sequencing", 
+                       "Chromosome karyotyping"]
+    },
+    {"question": "A picture of a Siamese cat fur color is shown. What exception to Mendel's laws does this represent?",
+     "correct_answer": "Environment",
+     "wrong_answers": ["Codominance", 
+                       "Incomplete dominance", 
+                       "Locus heterogeneity"]
+    },
+    {"question": "Where does nondisjunction occur?",
+     "correct_answer": "Meiosis I or Meiosis II",
+     "wrong_answers": ["Mitosis only", 
+                       "Meiosis I only", 
+                       "Meiosis II only"]
+    },
+    {"question": "By the end of Prophase I, what is the ploidy of the cell?",
+     "correct_answer": "4n",
+     "wrong_answers": ["1n", 
+                       "2n", 
+                       "8n"]
+    },
+    {"question": "A woman has two brothers with muscular dystrophy. She experiences muscle weakness because?",
+     "correct_answer": "X-inactivation skewed",
+     "wrong_answers": ["Autosomal dominance", 
+                       "Allelic heterogeneity", 
+                       "New mutation"]
+    },
+    {"question": "What is ACACACAC… an example of?",
+     "correct_answer": "Dinucleotide microsatellite",
+     "wrong_answers": ["Trinucleotide repeat", 
+                       "Tandem repeat", 
+                       "Point mutation"]
+    },
+    {"question": "Two normal parents have two children with osteogenesis imperfecta (autosomal dominant). Blood tests show the children are heterozygous, but the parents are homozygous. What is the most likely cause?",
+     "correct_answer": "One parent has germline mosaicism",
+     "wrong_answers": ["Both parents have germline mosaicism", 
+                       "New mutation", 
+                       "X-linked inheritance"]
+    },
+    {"question": "ABO blood group is an example of codominance. What does codominance mean?",
+     "correct_answer": "Independent expression of both alleles",
+     "wrong_answers": ["Recessive allele is masked", 
+                       "One allele dominates completely", 
+                       "Incomplete dominance of alleles"]
+    },
+    {"question": "What is true about genomes?",
+     "correct_answer": "Starts from conception until death",
+     "wrong_answers": ["Only during fetal period", 
+                       "Starts from conception until childhood", 
+                       "Starts during mitosis"]
+    },
+    {"question": "What process maintains chromosome number between generations?",
+     "correct_answer": "Meiosis and fertilization",
+     "wrong_answers": ["Mitosis and fertilization", 
+                       "Mitosis and meiosis", 
+                       "Mitosis only"]
+    },
+    {"question": "Which factor does NOT affect deletion mutations?",
+     "correct_answer": "Consanguinity",
+     "wrong_answers": ["Radiation", 
+                       "Viruses", 
+                       "Chemicals"]
+    },
+    {"question": "Philadelphia chromosome is caused by which event?",
+     "correct_answer": "Reciprocal translocation between chromosome 22 and chromosome 9",
+     "wrong_answers": ["Non-reciprocal translocation between chromosome 22 and chromosome 9", 
+                       "Reciprocal translocation between chromosome 21 and chromosome 10", 
+                       "Non-reciprocal translocation between chromosome 21 and chromosome 10"]
+    },
+    {"question": "A patient has all typical signs of Down syndrome. Karyotype analysis shows one chromosome 21 is longer than the other. What type of Down syndrome is this?",
+     "correct_answer": "Translocation",
+     "wrong_answers": ["Mosaic", 
+                       "Trisomy", 
+                       "Deletion"]
+    },
+      {"question": "F1 self-fertilization will produce?",
+     "correct_answer": "3 genotypes, 2 phenotypes",
+     "wrong_answers": ["2 genotypes, 1 phenotype", 
+                       "4 genotypes, 3 phenotypes", 
+                       "1 genotype, 2 phenotypes"]
+    },
+    {"question": "What happens in X-linked recessive inheritance if the father is affected?",
+     "correct_answer": "100% daughters are carriers",
+     "wrong_answers": ["100% sons are affected", 
+                       "50% daughters are carriers", 
+                       "50% sons are carriers"]
+    },
+    {"question": "What is the karyotype for Turner syndrome?",
+     "correct_answer": "Monosomy (only one X chromosome)",
+     "wrong_answers": ["Trisomy 21", 
+                       "XXY", 
+                       "Triploidy"]
+    },
+    {"question": "What sample can be used to identify a missing person’s remains?",
+     "correct_answer": "Bone",
+     "wrong_answers": ["Skin", 
+                       "Urine", 
+                       "Liver tissue"]
+    },
+    {"question": "Huntington Disease is an example of?",
+     "correct_answer": "Genetic anticipation",
+     "wrong_answers": ["Incomplete dominance", 
+                       "Variable expression", 
+                       "Locus heterogeneity"]
+    },
+    {"question": "What is the outcome of a chromosome 3 numerical abnormality?",
+     "correct_answer": "Miscarriage in the first trimester",
+     "wrong_answers": ["Edwards syndrome", 
+                       "Turner syndrome", 
+                       "Cri du Chat"]
+    },
+    {"question": "What type of inheritance is shown in a pedigree with only female transmission?",
+     "correct_answer": "Mitochondrial",
+     "wrong_answers": ["Autosomal dominant", 
+                       "X-linked recessive", 
+                       "Autosomal recessive"]
+    },
+    {"question": "What does a monohybrid cross prove according to Mendel?",
+     "correct_answer": "Segregation",
+     "wrong_answers": ["Independent assortment", 
+                       "Aggregation", 
+                       "Variable expression"]
+    },
+    {"question": "An electropherogram at one specific locus shows three separate peaks. What does this indicate?",
+     "correct_answer": "Mixed sample",
+     "wrong_answers": ["Homozygous", 
+                       "Heterozygous", 
+                       "Cannot be identified"]
+    },
+    {"question": "An electropherogram shows one peak on the X chromosome and one peak on the Y chromosome. What is the gender?",
+     "correct_answer": "Male",
+     "wrong_answers": ["Female", 
+                       "Mixed sample", 
+                       "Cannot be identified"]
+    },
+    {"question": "What type of mutation occurs when a single base pair change leads to an amino acid change?",
+     "correct_answer": "Missense mutation",
+     "wrong_answers": ["Silent mutation", 
+                       "Nonsense mutation", 
+                       "Frameshift mutation"]
+    },
+    {"question": "What is the purpose of a test cross?",
+     "correct_answer": "Determine organism with dominant phenotype but unknown genotype",
+     "wrong_answers": ["To identify homozygous recessive traits", 
+                       "To test for genetic linkage", 
+                       "To identify codominance"]
+    },
+    {"question": "What type of mutation is shown in the table?",
+     "correct_answer": "Substitution",
+     "wrong_answers": ["Deletion", "Insertion", "Duplication"]
+    },
+    {"question": "What type of substitution is it if it occurs in an intron?",
+     "correct_answer": "Silent mutation",
+     "wrong_answers": ["Splice site", "Missense mutation", "Nonsense mutation"]
+    },
+    {"question": "What type of abnormality is found in Cri-du-chat syndrome?",
+     "correct_answer": "Structural abnormality in chromosome 5",
+     "wrong_answers": ["Numerical abnormality in chromosome 5", 
+                       "Trisomy 21", "Deletion in chromosome 15"]
+    },
+    {"question": "Turner’s syndrome inheritance?",
+     "correct_answer": "80% paternal and 20% maternal",
+     "wrong_answers": ["100% maternal", "50% paternal, 50% maternal", "75% paternal"]
+    },
+    {"question": "What is the probability that the next child of a carrier female and affected male (Hemophilia A) will be affected?",
+     "correct_answer": "1/2",
+     "wrong_answers": ["1/4", "3/4", "1/8"]
+    },
+    {"question": "What is Triploidy?",
+     "correct_answer": "Three of every chromosome in the fetus",
+     "wrong_answers": ["Two extra chromosomes in the fetus", 
+                       "Only one set of chromosomes", 
+                       "An extra sex chromosome"]
+    },
+    {"question": "Why are autosomal trisomies other than 13, 18, and 21 very rare?",
+     "correct_answer": "Other autosomal trisomies are lethal and baby is aborted",
+     "wrong_answers": ["They occur rarely due to environmental factors", 
+                       "They are undiagnosable", 
+                       "They are usually asymptomatic"]
+    },
+    {"question": "What is the probability that the next two children of sickle cell anemia carriers are affected?",
+     "correct_answer": "1/16",
+     "wrong_answers": ["1/8", "1/4", "1/32"]
+    },
+    {"question": "In a pedigree, which member is the index case?",
+     "correct_answer": "III-6",
+     "wrong_answers": ["II-3", "I-5", "IV-2"]
+    },
+    {"question": "What causes Huntington’s disease to affect individuals of different ages?",
+     "correct_answer": "Genetic anticipation",
+     "wrong_answers": ["Variable expression", "Incomplete dominance", "Epistasis"]
+    },
+    {"question": "What is true regarding XY Gonadal Dysgenesis (Swyer Syndrome)?",
+     "correct_answer": "Hemizygous gene SRY acts on Y chromosome",
+     "wrong_answers": ["Homozygous gene SRY acts on Y chromosome", 
+                       "Heterozygous gene SRY acts on X chromosome", 
+                       "Homozygous gene SRY acts on X chromosome"]
+    },
+    {"question": "In a dominant disease pedigree with two affected children, what is the likely cause?",
+     "correct_answer": "Father is germ mosaic for disease",
+     "wrong_answers": ["Mother is germ mosaic", 
+                       "Both parents are carriers", 
+                       "New mutation"]
+    },
+    {"question": "Why does Achondroplasia appear in a pedigree with normal individuals?",
+     "correct_answer": "New mutation",
+     "wrong_answers": ["Variable expression", "Incomplete dominance", "Germline mosaicism"]
+    },
+    {"question": "What explains the calico cat phenotype?",
+     "correct_answer": "Most genes in one copy of the X chromosome are inactivated",
+     "wrong_answers": ["Genetic anticipation", 
+                       "Variable expression", 
+                       "Codominance"]
+    },
+    {"question": "F1 self-fertilization will produce?",
+     "correct_answer": "3 genotypes and 2 phenotypes",
+     "wrong_answers": ["2 genotypes and 1 phenotype", 
+                       "4 genotypes and 3 phenotypes", 
+                       "1 genotype and 2 phenotypes"]
+    },
+    {"question": "What is Allelic heterogeneity?",
+     "correct_answer": "Different mutations in the same gene",
+     "wrong_answers": ["Mutations in multiple genes", 
+                       "Mutations at the same locus", 
+                       "Mutations in one chromosome"]
+    },
+    {"question": "What is the karyotype for Turner syndrome?",
+     "correct_answer": "One X chromosome",
+     "wrong_answers": ["XXY", "Trisomy 21", "Triploidy"]
+    },
+    {"question": "Retinitis Pigmentosa is an example of?",
+     "correct_answer": "Locus heterogeneity",
+     "wrong_answers": ["Polygenic mutation", "Multifactorial mutation", "Epistasis"]
+    },
+    {"question": "If two parents appear normal but have two affected children, what is the probability their 5th pregnancy will be a carrier?",
+     "correct_answer": "50%",
+     "wrong_answers": ["25%", "33%", "0%"]
+    },
+    {"question": "In what aneuploidy is the parental chance of contribution almost equal?",
+     "correct_answer": "XXY (Klinefelter)",
+     "wrong_answers": ["Trisomy 18", "Trisomy 21", "Trisomy 13"]
+    },
+    {"question": "Execution of the genomic programme in humans occurs?",
+     "correct_answer": "From fertilization to death",
+     "wrong_answers": ["From birth to death", 
+                       "From childhood to adulthood", 
+                       "From fetal period only"]
+    },
+    {"question": "What explains codominance?",
+     "correct_answer": "Both alleles are independently expressed",
+     "wrong_answers": ["One allele dominates the other", 
+                       "Incomplete expression of alleles", 
+                       "Variable dominance"]
+    },
+    {"question": "What does a 9:3:3:1 ratio in a dihybrid cross suggest?",
+     "correct_answer": "Independent assortment",
+     "wrong_answers": ["Segregation", "Codominance", "Linkage"]
+    },
+    {"question": "An electropherogram with three peaks indicates?",
+     "correct_answer": "Mixed sample",
+     "wrong_answers": ["Homozygous", "Heterozygous", "Not identifiable"]
+    },
+    {"question": "What gender is indicated in an electropherogram with one peak on X and one on Y?",
+     "correct_answer": "Male",
+     "wrong_answers": ["Female", "Mixed sample", "Cannot be identified"]
+    },
+    {"question": "Skin color is what type of trait?",
+     "correct_answer": "Quantitative",
+     "wrong_answers": ["Single gene", "Dominant trait", "Mendelian trait"]
+    },
+    {"question": "In X-linked dominant inheritance, which of the following is true?",
+     "correct_answer": "0% transmission from father to son",
+     "wrong_answers": ["0% transmission from father to daughter", 
+                       "50% transmission from father to son", 
+                       "50% transmission from father to daughter"]
+    },
+    {"question": "What is the most common cause of numerical abnormalities (aneuploidies)?",
+     "correct_answer": "Nondisjunction",
+     "wrong_answers": ["Mutations", "Translocations", "Environmental factors"]
+    },
+    {"question": "What results in genetic variation?",
+     "correct_answer": "Meiosis and fertilization",
+     "wrong_answers": ["Mitosis and fertilization", 
+                       "DNA replication", 
+                       "Environmental factors"]
+    },
+    {"question": "How can a child with blood group O result from a father with blood group A and a mother with blood group B?",
+     "correct_answer": "Both parents are heterozygous (A recessive and B recessive with i)",
+     "wrong_answers": ["Father is homozygous A and mother is heterozygous B", 
+                       "Parents are both type O", 
+                       "Mutation occurred"]
+    },
+    {"question": "What are Copy Number Variants (CNVs) associated with?",
+     "correct_answer": "Between 1kb and 3kb",
+     "wrong_answers": ["Less than 1kb", "Greater than 5kb", "Single nucleotide changes"]
+    },
+    {"question": "What is the purpose of a test cross?",
+     "correct_answer": "Determine the genotype of an individual with a dominant phenotype",
+     "wrong_answers": ["Identify recessive traits", 
+                       "Test for linkage", 
+                       "Identify genetic anticipation"]
+    },
+    {"question": "What results from sister chromatids?",
+     "correct_answer": "Identical copies resulting from DNA replication",
+     "wrong_answers": ["Non-identical copies", "Haploid cells", "Chromosome segregation"]
+    },
+    {"question": "What is Mendel's theory of segregation?",
+     "correct_answer": "Alleles are separated when homologous chromosomes separate in meiosis",
+     "wrong_answers": ["Genes are inherited together", 
+                       "Mutations separate alleles", 
+                       "Gametes carry identical alleles"]
+    },
+    {"question": "A patient was diagnosed with cystic fibrosis disease, which of the following is the best type of testing to use?", 
+     "correct_answer": "DNA sequencing", 
+     "wrong_answers": ["Blood test", "X-ray", "Urine test"]
+     },
+    {"question": "Couple had four spontaneous miscarriages, what is the sample that is best suitable for such analysis?", 
+     "correct_answer": "Cytogenetics", 
+     "wrong_answers": ["Blood from both parents", "Fetal cells from embryo IVF", "Urine sample"]
+     },
+    {"question": "Woman has gene BRCA2, she undergoes prophylactic bilateral mastectomy. What is her current risk of developing cancer?", 
+     "correct_answer": "6-10% (since she already did the surgery)", 
+     "wrong_answers": ["40-50%", "60-70%", "10-20%"]
+     },
+    {"question": "Heredity of CAD?", 
+     "correct_answer": "40-60%", 
+     "wrong_answers": ["10-20%", "20-30%", "70-80%"]
+     },
+    {"question": "Two images showing DiGeorge (deletion) FISH. Which of A or/and B have DiGeorge?", 
+     "correct_answer": "B only (red missing)", 
+     "wrong_answers": ["A only", "Both A and B", "Neither A nor B"]
+     },
+    {"question": "Wiedemann syndrome which gene?", 
+     "correct_answer": "LIFR chr15", 
+     "wrong_answers": ["WT1 chr11", "FGFR3 chr4", "HNF1B chr17"]
+     },
+    {"question": "True about karyotyping?", 
+     "correct_answer": "Length, Location of centromere, Banding pattern", 
+     "wrong_answers": ["DNA sequence analysis", "Gene expression profiling", "Chromosome number only"]
+     },
+    {"question": "Which of the following describes the Genome Wide Association Study (GWAS)?", 
+     "correct_answer": "It’s a link between genetic variation and multifactorial diseases", 
+     "wrong_answers": ["It’s a method to sequence the entire genome", "It’s used to find mutations in single genes", "It studies only rare diseases"]
+     },
+    {"question": "What is needed to convert a 'normal' cell into cancerous cell?", 
+     "correct_answer": "Successive mutation", 
+     "wrong_answers": ["A single mutation", "Environmental factors only", "Immunosuppression"]
+     },
+    {"question": "What is true about ciliogenesis?", 
+     "correct_answer": "Abnormal formation or function of cilia", 
+     "wrong_answers": ["It is a rare condition", "Only occurs in male individuals", "It’s related to hair growth"]
+     },
+    {"question": "Non-genetic factor that could be disease causing?", 
+     "correct_answer": "Teratogens", 
+     "wrong_answers": ["Inherited mutations", "DNA replication errors", "Exogenous viruses"]
+     },
+    {"question": "BRCA2 mutations in men?", 
+     "correct_answer": "7%", 
+     "wrong_answers": ["3%", "15%", "10%"]
+     },
+    {"question": "Female undergoes bilateral salpingo-oophorectomy, what’s the cure rate?", 
+     "correct_answer": "50%", 
+     "wrong_answers": ["90%", "20%", "10%"]
+     },
+    {"question": "What is true about mutations that cause loss of function?", 
+     "correct_answer": "Doesn't turn on", 
+     "wrong_answers": ["Turns on", "Increases gene expression", "Decreases protein synthesis"]
+     },
+    {"question": "Suspect was at crime scene", 
+     "correct_answer": "DNA profiling", 
+     "wrong_answers": ["Fingerprint analysis", "Blood typing", "Microscopic examination"]
+     },
+    {"question": "Rare type of mutation?", 
+     "correct_answer": "Dynamic", 
+     "wrong_answers": ["Silent", "Missense", "Frameshift"]
+     },
+    {"question": "Primary immunodeficiency, the man with hands", 
+     "correct_answer": "Severe combined immunodeficiency (SCID)", 
+     "wrong_answers": ["X-linked agammaglobulinemia", "Chronic granulomatous disease", "DiGeorge syndrome"]
+     },
+    {"question": "100 flowers, 10 white, find frequency of R allele", 
+     "correct_answer": "0.75", 
+     "wrong_answers": ["0.25", "0.50", "0.90"]
+     },
+    {"question": "Muscular.... Statin", 
+     "correct_answer": "Myopathy", 
+     "wrong_answers": ["Diabetes", "Hypertension", "Kidney failure"]
+     },
+    {"question": "CYP2D6: codeine - What was the answer?", 
+     "correct_answer": "Codeine effectiveness varies by CYP2D6 metabolizer status", 
+     "wrong_answers": ["CYP2D6 inhibits codeine", "Codeine is always effective", "CYP2D6 does not affect codeine metabolism"]
+     },
+    {"question": "If both alleles of C7382738, what medication should not be taken?", 
+     "correct_answer": "Warfarin", 
+     "wrong_answers": ["Aspirin", "Ibuprofen", "Paracetamol"]
+     },
+    {"question": "III-1 married III-8, what is the possibility that their child will be carrier?", 
+     "correct_answer": "1/8", 
+     "wrong_answers": ["1/4", "1/2", "3/8"]
+     },
+    {"question": "Another frequency question with answer 0.6", 
+     "correct_answer": "0.6", 
+     "wrong_answers": ["0.3", "0.8", "0.5"]
+     },
+    {"question": "FISH picture with chromosome 18 and 22 each labeled with different whole chromosome stain, what’s true?", 
+     "correct_answer": "Translocation of both chr 18 & 22", 
+     "wrong_answers": ["Deletion of 18", "Deletion of 22", "Two microdeletions"]
+     },
+    {"question": "FISH picture best description of the picture?", 
+     "correct_answer": "Female, with Patau syndrome (X chromosome labeled and trisomy 13)", 
+     "wrong_answers": ["Klinefelter syndrome", "Turner syndrome", "Down syndrome"]
+     },
+    {"question": "Asking about poor metabolizers graph", 
+     "correct_answer": "Poor metabolizers metabolize drugs more slowly", 
+     "wrong_answers": ["They metabolize drugs more quickly", "They do not metabolize drugs", "They have no effect on drug metabolism"]
+     },
+    {"question": "Individual 9 does not have the disease", 
+     "correct_answer": "Individual 9 is a carrier", 
+     "wrong_answers": ["Individual 9 is unaffected", "Individual 9 has the disease", "Individual 9 is homozygous dominant"]
+     },
+    {"question": "What is not true about genome?", 
+     "correct_answer": "20% codes for protein", 
+     "wrong_answers": ["50% codes for protein", "95% is functional", "All of the genome is coding"]
+     },
+     {"question": "Pedigree. IV 2 and III 3 get married. Calculate probability that first child is affected?", 
+     "correct_answer": "1/6", 
+     "wrong_answers": ["1/4", "1/2", "1/8"]
+     },
+    {"question": "F2 generation? Three genotypes and two phenotypes", 
+     "correct_answer": "Three genotypes, two phenotypes", 
+     "wrong_answers": ["Two genotypes, one phenotype", "Two genotypes, two phenotypes", "One genotype, three phenotypes"]
+     },
+    {"question": "Which of the following doesn’t follow Mendel’s experiment?", 
+     "correct_answer": "Skin color", 
+     "wrong_answers": ["Pea plant height", "Flower color", "Seed shape"]
+     },
+    {"question": "Chromosomes separation possibilities?", 
+     "correct_answer": "2^23", 
+     "wrong_answers": ["2^46", "2^22", "2^24"]
+     },
+    {"question": "Sister chromatids after meiosis 1?", 
+     "correct_answer": "Not identical because of crossing over", 
+     "wrong_answers": ["Identical", "Completely different", "Same as parental chromatids"]
+     },
+    {"question": "Pedigree. What type?", 
+     "correct_answer": "Dominant autosomal", 
+     "wrong_answers": ["Recessive autosomal", "X-linked dominant", "X-linked recessive"]
+     },
+    {"question": "Karyotype with 1 X chromosome?", 
+     "correct_answer": "Female with Turner’s syndrome", 
+     "wrong_answers": ["Male with Klinefelter syndrome", "Female with Triple X syndrome", "Male with normal karyotype"]
+     },
+    {"question": "Picture of incomplete dominance of purple flower?", 
+     "correct_answer": "Pink flowers (heterozygous phenotype)", 
+     "wrong_answers": ["Purple flowers", "White flowers", "Red flowers"]
+     },
+    {"question": "Chronic myelocytic leukemia is caused by the Philadelphia chromosomes. What happened?", 
+     "correct_answer": "Structural abnormality of chromosomes between 9 and 22", 
+     "wrong_answers": ["Translocation between chromosomes 8 and 9", "Point mutation in chromosome 22", "Duplication of chromosome 9"]
+     },
+    {"question": "True about defect in amino acid metabolism?", 
+     "correct_answer": "Accumulation of toxic intermediates", 
+     "wrong_answers": ["Increased enzyme activity", "Decreased protein synthesis", "Absence of metabolic byproducts"]
+     },
+    {"question": "Couple could not have children. We suspect infertility and want to rule out chromosomal abnormalities using karyotyping. Which sample is best suitable?", 
+     "correct_answer": "Peripheral blood sampling of both parents", 
+     "wrong_answers": ["Urine sample from both parents", "Saliva sample from both parents", "Skin biopsy from both parents"]
+     },
+    {"question": "Figure 1: FISH of Duchenne muscular dystrophy showing two X chromosomes with the color red. One of the red X chromosome has a deletion. The individual is?", 
+     "correct_answer": "Female carrier with deletion", 
+     "wrong_answers": ["Male with Duchenne muscular dystrophy", "Female with Duchenne muscular dystrophy", "Male carrier with deletion"]
+     },
+    {"question": "GWAS?", 
+     "correct_answer": "Links genetic variation with multifactorial diseases", 
+     "wrong_answers": ["Studies single gene disorders", "Uses only environmental data", "Links environmental factors with diseases"]
+     },
+    {"question": "Multifactorial diseases?", 
+     "correct_answer": "Genetic and environmental", 
+     "wrong_answers": ["Only genetic", "Only environmental", "Result from a single gene mutation"]
+     },
+    {"question": "True about cancer?", 
+     "correct_answer": "Several successive mutations turn normal cell into cancerous one", 
+     "wrong_answers": ["A single mutation causes cancer", "Cancer is purely genetic", "Cancer is only caused by environmental factors"]
+     },
+    {"question": "Couple want to reduce the chance of having a child with sickle cell. Which test is best used?", 
+     "correct_answer": "Pre-implantation diagnosis of IVF baby", 
+     "wrong_answers": ["Amniocentesis", "Chorionic villus sampling", "Carrier screening of parents only"]
+     },
+    {"question": "Bioinformatics tool for aligning DNA or protein sequence?", 
+     "correct_answer": "BLAST", 
+     "wrong_answers": ["ClustalW", "MAFFT", "HMMER"]
+     },
+    {"question": "Male risk of getting breast cancer?", 
+     "correct_answer": "~7%", 
+     "wrong_answers": ["~1%", "~15%", "~30%"]
+     },
+    {"question": "True about autosomal recessive?", 
+     "correct_answer": "Two carriers risk of having affected baby is 25%", 
+     "wrong_answers": ["One carrier risk of having affected baby is 25%", "Two carriers risk is 50%", "Two carriers risk is 75%"]
+     },
+    {"question": "Small peak at 9 and 11, big peak at 10. Victim is 9, 10. What is suspect?", 
+     "correct_answer": "10, 11", 
+     "wrong_answers": ["9, 11", "11, 12", "9, 10"]
+     },
+    {"question": "Blood type O. What are the parents not?", 
+     "correct_answer": "AB and O", 
+     "wrong_answers": ["O and O", "A and B", "A and O"]
+     },
+    {"question": "Down syndrome chromosome 21? Paternal 5%, maternal 95%", 
+     "correct_answer": "Paternal 5%, maternal 95%", 
+     "wrong_answers": ["Paternal 10%, maternal 90%", "Paternal 90%, maternal 10%", "Paternal 50%, maternal 50%"]
+     },
+    {"question": "Least clinical symptoms? Female with Triple X", 
+     "correct_answer": "Female with Triple X", 
+     "wrong_answers": ["Turner syndrome", "Klinefelter syndrome", "Down syndrome"]
+     },
+    {"question": "Mother heterozygous hemophilia A (carrier) and father affected. Chance for unaffected child?", 
+     "correct_answer": "1/2", 
+     "wrong_answers": ["1/4", "1/3", "3/4"]
+     },
+    {"question": "Great variation in gametes within individual caused by?", 
+     "correct_answer": "Crossing over and random assortment", 
+     "wrong_answers": ["Mutations", "Replication errors", "Environmental factors"]
+     },
+    {"question": "True about numerical chromosomal abnormalities?", 
+     "correct_answer": "Mother old age", 
+     "wrong_answers": ["Father old age", "Mutations during mitosis", "Environmental exposure"]
+     },
+    {"question": "Underlying cause of numerical chromosomal abnormalities?", 
+     "correct_answer": "Nondisjunction in meiosis", 
+     "wrong_answers": ["Translocation", "Deletion", "Duplication"]
+     },
+    {"question": "Designer baby 3 parents? Mitochondrial disease in mother", 
+     "correct_answer": "Mitochondrial disease in mother", 
+     "wrong_answers": ["Genetic defect in father", "Chromosomal translocation", "Autosomal recessive disease"]
+     },
+    {"question": "Affected father. Normal mother. Carrier daughters. Normal sons? X-Linked recessive", 
+     "correct_answer": "X-Linked recessive", 
+     "wrong_answers": ["X-Linked dominant", "Autosomal dominant", "Autosomal recessive"]
+     },
+    {"question": "Which is true about X-linked dominant in father?", 
+     "correct_answer": "100% of daughters are affected", 
+     "wrong_answers": ["50% of daughters are affected", "50% of sons are affected", "100% of sons are affected"]
+     },
+    {"question": "Picture of deletion on chromosome 15 from father? Prader-Willi syndrome", 
+     "correct_answer": "Prader-Willi syndrome", 
+     "wrong_answers": ["Angelman syndrome", "Turner syndrome", "Klinefelter syndrome"]
+     },
+    {"question": "What is the big difference between meiosis and mitosis?", 
+     "correct_answer": "Homologous chromosomes pair in meiosis and crossing over takes place", 
+     "wrong_answers": ["Mitosis occurs in all cells", "Mitosis produces four cells", "Meiosis results in diploid cells"]
+     },
+    {"question": "Table with deletion it was like the case example at the end of genetic variation ppt. NOT true about Down syndrome caused by translocation?", 
+     "correct_answer": "These cases are caused by translocations of material from other autosomes to chromosome 21", 
+     "wrong_answers": ["This case is not inherited", "Translocation occurs only on chromosome 21", "It is only inherited from the mother"]
+     },
+    {"question": "Phenotype of Mendel’s?", 
+     "correct_answer": "Green seed", 
+     "wrong_answers": ["Yellow seed", "Red flower", "Round seed"]
+     },
+    {"question": "Electropherogram. Which one is homozygous?", 
+     "correct_answer": "The one with one peak", 
+     "wrong_answers": ["The one with two peaks", "The one with three peaks", "The one with no peaks"]
+     },
+    {"question": "Achondroplasia. Parents don’t have mutation in genotype. What is a possible explanation?", 
+     "correct_answer": "New mutation", 
+     "wrong_answers": ["Inheritance from a relative", "Environmental factors", "Autosomal recessive inheritance"]
+     },
+    {"question": "Pedigree (same as the one in the ppt) father with two wives and children affected?", 
+     "correct_answer": "Germline mosaicism", 
+     "wrong_answers": ["Incomplete dominance", "Autosomal dominant inheritance", "Codominance"]
+     },
+    {"question": "What is NOT true about genome?", 
+     "correct_answer": "Information from genome is only from fertilization to live birth", 
+     "wrong_answers": ["Genomic information is present throughout life", "Genome does not include mitochondrial DNA", "Genome information is only inherited from father"]
+     },
+    {"question": "What is true about most genes?", 
+     "correct_answer": "Cause single gene disorders when defective", 
+     "wrong_answers": ["Only cause multifactorial diseases", "Only function in tissue regeneration", "Only present in eukaryotes"]
+     },
+    {"question": "A single gene disorder is when there’s mutation in gene that causes disease except when there is?", 
+     "correct_answer": "Reduced penetrance", 
+     "wrong_answers": ["Increased dominance", "X-linked inheritance", "Environmental mutation"]
+     },
+    {"question": "Swyer syndrome?", 
+     "correct_answer": "Hemizygous mutation on chromosome Y", 
+     "wrong_answers": ["XXY karyotype", "Turner syndrome", "Complete androgen insensitivity"]
+     },
+    {"question": "What maintains the diploid number of chromosomes?", 
+     "correct_answer": "Meiosis and fertilization", 
+     "wrong_answers": ["Mitosis", "Fertilization only", "Meiosis only"]
+     },
+    {"question": "5 pairs. How many different assortments?", 
+     "correct_answer": "(2^5)=32", 
+     "wrong_answers": ["(2^3)=8", "(2^4)=16", "(2^6)=64"]
+     },
+    {"question": "Recessive disorder. One parent affected and one is carrier. Chance of affected child?", 
+     "correct_answer": "1/2", 
+     "wrong_answers": ["1/4", "1/8", "3/4"]
+     },
+    {"question": "Given pedigree. Recessive disorder. One parent has ⅔ chance of being carrier. Other is normal. Probability of child being carrier?", 
+     "correct_answer": "1/3", 
+     "wrong_answers": ["1/2", "1/4", "1/6"]
+     },
+    {"question": "Which of the following is not one of Mendel’s laws?", 
+     "correct_answer": "Blending of traits of parents", 
+     "wrong_answers": ["Law of segregation", "Law of independent assortment", "Law of dominance"]
+     },
+    {"question": "Which is true about Mendel’s law of alleles?", 
+     "correct_answer": "Alleles of a gene will be separated when homologous chromosomes separate", 
+     "wrong_answers": ["Alleles always segregate together", "Alleles are only inherited from the father", "Alleles are never separated"]
+     },
+    {"question": "Test cross used to identify unknown genotype of dominant by crossing it with?", 
+     "correct_answer": "True breeding with recessive phenotype", 
+     "wrong_answers": ["Homozygous dominant", "Heterozygous dominant", "Any recessive trait"]
+     },
+    {"question": "Karyotype with three X chromosomes?", 
+     "correct_answer": "Super female", 
+     "wrong_answers": ["Turner syndrome", "Klinefelter syndrome", "Triple X syndrome"]
+     },
+    {"question": "Most common mutation?", 
+     "correct_answer": "Exons", 
+     "wrong_answers": ["Introns", "Promoters", "Regulatory regions"]
+     },
+    {"question": "Picture of substituting a base results in it showed switching from A to T in the intron at the end AG—->TG?", 
+     "correct_answer": "Splice", 
+     "wrong_answers": ["Missense", "Nonsense", "Silent"]
+     },
+    {"question": "Muscular dystrophy affected her brothers. She had some weakness. Why?", 
+     "correct_answer": "Skewed X-inactivation", 
+     "wrong_answers": ["Incomplete dominance", "Autosomal recessive inheritance", "Heteroplasmy"]
+     },
+    {"question": "Different severity from person to person for mitochondrial diseases?", 
+     "correct_answer": "Heteroplasmic (ratio of mutated to normal)", 
+     "wrong_answers": ["Homoplasmic", "X-linked inheritance", "Autosomal dominant inheritance"]
+     },
+    {"question": "Huntington's disease appears earlier in each generation. Why?", 
+     "correct_answer": "Anticipation", 
+     "wrong_answers": ["Environmental factors", "Recessive inheritance", "Allelic variation"]
+     },
+    {"question": "Abnormalities that happen at early stages and found in all cells?", 
+     "correct_answer": "Constitutional", 
+     "wrong_answers": ["Somatic", "Germline", "Environmental"]
+     },
+    {"question": "What is not true about chromosome 21 translocation?", 
+     "correct_answer": "It is not inherited to offspring", 
+     "wrong_answers": ["It is inherited from both parents", "It only occurs in males", "It can cause Down syndrome"]
+     },
+    {"question": "Pedigree one was affected autosomal recessive and the other was 100% carrier as one of his parents was affected?", 
+     "correct_answer": "1/4", 
+     "wrong_answers": ["1/2", "1/8", "3/4"]
+     },
+    {"question": "Prader-Willi and Angelman syndrome?", 
+     "correct_answer": "Parental and maternal imprinting in deleted part of chromosome", 
+     "wrong_answers": ["Only maternal imprinting", "Only paternal imprinting", "Non-imprinting"]
+     },
+    {"question": "Differences in DNA more than 1kb?", 
+     "correct_answer": "Copy number variant (CNV)", 
+     "wrong_answers": ["Point mutation", "Single nucleotide polymorphism", "Translocation"]
+     },
+    {"question": "Small peak at 9 and 11, big peak at 10. Victim is 9, 10. What is suspect?", 
+     "correct_answer": "10, 11", 
+     "wrong_answers": ["9, 11", "11, 12", "9, 10"]
+     },
+    {"question": "Blood type O. What are the parents not?", 
+     "correct_answer": "AB and O", 
+     "wrong_answers": ["O and O", "A and B", "A and O"]
+     },
+    {"question": "Down syndrome chromosome 21? Paternal 5%, maternal 95%", 
+     "correct_answer": "Paternal 5%, maternal 95%", 
+     "wrong_answers": ["Paternal 10%, maternal 90%", "Paternal 90%, maternal 10%", "Paternal 50%, maternal 50%"]
+     },
+    {"question": "Least clinical symptoms? Female with Triple X", 
+     "correct_answer": "Female with Triple X", 
+     "wrong_answers": ["Turner syndrome", "Klinefelter syndrome", "Down syndrome"]
+     },
+    {"question": "Mother heterozygous hemophilia A (carrier) and father affected. Chance for unaffected child?", 
+     "correct_answer": "1/2", 
+     "wrong_answers": ["1/4", "1/3", "3/4"]
+     },
+    {"question": "Great variation in gametes within individual caused by?", 
+     "correct_answer": "Crossing over and random assortment", 
+     "wrong_answers": ["Mutations", "Replication errors", "Environmental factors"]
+     },
+    {"question": "True about numerical chromosomal abnormalities?", 
+     "correct_answer": "Mother old age", 
+     "wrong_answers": ["Father old age", "Mutations during mitosis", "Environmental exposure"]
+     },
+    {"question": "Underlying cause of numerical chromosomal abnormalities?", 
+     "correct_answer": "Nondisjunction in meiosis", 
+     "wrong_answers": ["Translocation", "Deletion", "Duplication"]
+     },
+    {"question": "Designer baby 3 parents? Mitochondrial disease in mother", 
+     "correct_answer": "Mitochondrial disease in mother", 
+     "wrong_answers": ["Genetic defect in father", "Chromosomal translocation", "Autosomal recessive disease"]
+     },
+    {"question": "Affected father. Normal mother. Carrier daughters. Normal sons? X-Linked recessive", 
+     "correct_answer": "X-Linked recessive", 
+     "wrong_answers": ["X-Linked dominant", "Autosomal dominant", "Autosomal recessive"]
+     },
+    {"question": "Which is true about X-linked dominant in father?", 
+     "correct_answer": "100% of daughters are affected", 
+     "wrong_answers": ["50% of daughters are affected", "50% of sons are affected", "100% of sons are affected"]
+     },
+    {"question": "Picture of deletion on chromosome 15 from father? Prader-Willi syndrome", 
+     "correct_answer": "Prader-Willi syndrome", 
+     "wrong_answers": ["Angelman syndrome", "Turner syndrome", "Klinefelter syndrome"]
+     },
+    {"question": "What is the big difference between meiosis and mitosis?", 
+     "correct_answer": "Homologous chromosomes pair in meiosis and crossing over takes place", 
+     "wrong_answers": ["Mitosis occurs in all cells", "Mitosis produces four cells", "Meiosis results in diploid cells"]
+     },
+    {"question": "Table with deletion it was like the case example at the end of genetic variation ppt. NOT true about Down syndrome caused by translocation?", 
+     "correct_answer": "These cases are caused by translocations of material from other autosomes to chromosome 21", 
+     "wrong_answers": ["This case is not inherited", "Translocation occurs only on chromosome 21", "It is only inherited from the mother"]
+     },
+    {"question": "Phenotype of Mendel’s?", 
+     "correct_answer": "Green seed", 
+     "wrong_answers": ["Yellow seed", "Red flower", "Round seed"]
+     },
+    {"question": "Electropherogram. Which one is homozygous?", 
+     "correct_answer": "The one with one peak", 
+     "wrong_answers": ["The one with two peaks", "The one with three peaks", "The one with no peaks"]
+     },
+    {"question": "Achondroplasia. Parents don’t have mutation in genotype. What is a possible explanation?", 
+     "correct_answer": "New mutation", 
+     "wrong_answers": ["Inheritance from a relative", "Environmental factors", "Autosomal recessive inheritance"]
+     },
+    {"question": "Pedigree (same as the one in the ppt) father with two wives and children affected?", 
+     "correct_answer": "Germline mosaicism", 
+     "wrong_answers": ["Incomplete dominance", "Autosomal dominant inheritance", "Codominance"]
+     },
+    {"question": "What is NOT true about genome?", 
+     "correct_answer": "Information from genome is only from fertilization to live birth", 
+     "wrong_answers": ["Genomic information is present throughout life", "Genome does not include mitochondrial DNA", "Genome information is only inherited from father"]
+     },
+    {"question": "What is true about most genes?", 
+     "correct_answer": "Cause single gene disorders when defective", 
+     "wrong_answers": ["Only cause multifactorial diseases", "Only function in tissue regeneration", "Only present in eukaryotes"]
+     },
+    {"question": "A single gene disorder is when there’s mutation in gene that causes disease except when there is?", 
+     "correct_answer": "Reduced penetrance", 
+     "wrong_answers": ["Increased dominance", "X-linked inheritance", "Environmental mutation"]
+     },
+    {"question": "Swyer syndrome?", 
+     "correct_answer": "Hemizygous mutation on chromosome Y", 
+     "wrong_answers": ["XXY karyotype", "Turner syndrome", "Complete androgen insensitivity"]
+     },
+    {"question": "What maintains the diploid number of chromosomes?", 
+     "correct_answer": "Meiosis and fertilization", 
+     "wrong_answers": ["Mitosis", "Fertilization only", "Meiosis only"]
+     },
+    {"question": "5 pairs. How many different assortments?", 
+     "correct_answer": "(2^5)=32", 
+     "wrong_answers": ["(2^3)=8", "(2^4)=16", "(2^6)=64"]
+     },
+    {"question": "Recessive disorder. One parent affected and one is carrier. Chance of affected child?", 
+     "correct_answer": "1/2", 
+     "wrong_answers": ["1/4", "1/8", "3/4"]
+     },
+    {"question": "Given pedigree. Recessive disorder. One parent has ⅔ chance of being carrier. Other is normal. Probability of child being carrier?", 
+     "correct_answer": "1/3", 
+     "wrong_answers": ["1/2", "1/4", "1/6"]
+     },
+    {"question": "Which of the following is not one of Mendel’s laws?", 
+     "correct_answer": "Blending of traits of parents", 
+     "wrong_answers": ["Law of segregation", "Law of independent assortment", "Law of dominance"]
+     },
+    {"question": "Which is true about Mendel’s law of alleles?", 
+     "correct_answer": "Alleles of a gene will be separated when homologous chromosomes separate", 
+     "wrong_answers": ["Alleles always segregate together", "Alleles are only inherited from the father", "Alleles are never separated"]
+     },
+    {"question": "Test cross used to identify unknown genotype of dominant by crossing it with?", 
+     "correct_answer": "True breeding with recessive phenotype", 
+     "wrong_answers": ["Homozygous dominant", "Heterozygous dominant", "Any recessive trait"]
+     },
+    {"question": "Karyotype with three X chromosomes?", 
+     "correct_answer": "Super female", 
+     "wrong_answers": ["Turner syndrome", "Klinefelter syndrome", "Triple X syndrome"]
+     },
+    {"question": "Most common mutation?", 
+     "correct_answer": "Exons", 
+     "wrong_answers": ["Introns", "Promoters", "Regulatory regions"]
+     },
+    {"question": "Picture of substituting a base results in it showed switching from A to T in the intron at the end AG—->TG?", 
+     "correct_answer": "Splice", 
+     "wrong_answers": ["Missense", "Nonsense", "Silent"]
+     },
+    {"question": "Muscular dystrophy affected her brothers. She had some weakness. Why?", 
+     "correct_answer": "Skewed X-inactivation", 
+     "wrong_answers": ["Incomplete dominance", "Autosomal recessive inheritance", "Heteroplasmy"]
+     },
+    {"question": "Different severity from person to person for mitochondrial diseases?", 
+     "correct_answer": "Heteroplasmic (ratio of mutated to normal)", 
+     "wrong_answers": ["Homoplasmic", "X-linked inheritance", "Autosomal dominant inheritance"]
+     },
+    {"question": "Huntington's disease appears earlier in each generation. Why?", 
+     "correct_answer": "Anticipation", 
+     "wrong_answers": ["Environmental factors", "Recessive inheritance", "Allelic variation"]
+     },
+    {"question": "Abnormalities that happen at early stages and found in all cells?", 
+     "correct_answer": "Constitutional", 
+     "wrong_answers": ["Somatic", "Germline", "Environmental"]
+     },
+    {"question": "What is not true about chromosome 21 translocation?", 
+     "correct_answer": "It is not inherited to offspring", 
+     "wrong_answers": ["It is inherited from both parents", "It only occurs in males", "It can cause Down syndrome"]
+     },
+    {"question": "Pedigree one was affected autosomal recessive and the other was 100% carrier as one of his parents was affected?", 
+     "correct_answer": "1/4", 
+     "wrong_answers": ["1/2", "1/8", "3/4"]
+     },
+    {"question": "Prader-Willi and Angelman syndrome?", 
+     "correct_answer": "Parental and maternal imprinting in deleted part of chromosome", 
+     "wrong_answers": ["Only maternal imprinting", "Only paternal imprinting", "Non-imprinting"]
+     },
+    {"question": "Differences in DNA more than 1kb?", 
+     "correct_answer": "Copy number variant (CNV)", 
+     "wrong_answers": ["Point mutation", "Single nucleotide polymorphism", "Translocation"]
+     },
+    {"question": "Cancer due to anti-growth and avoided apoptosis (cell death) and the question showed it was both types?", 
+     "correct_answer": "Mutations in proto-oncogenes and tumor suppressor genes", 
+     "wrong_answers": ["Increased expression of growth factors", 
+                       "Overexpression of tumor suppressor genes", 
+                       "Defect in DNA repair mechanisms"]
+     },
+    {"question": "Prophylactic bilateral mastectomy reduce breast cancer risk by?", 
+     "correct_answer": "90%", 
+     "wrong_answers": ["50%", 
+                       "30%", 
+                       "70%"]
+     },
+    {"question": "Which of the following is not a cause of cancer?", 
+     "correct_answer": "Being a Male", 
+     "wrong_answers": ["Unlucky genetics", 
+                       "Carcinogen exposure", 
+                       "Obesity"]
+     },
+    {"question": "While genome sequencing doesn't give info about?", 
+     "correct_answer": "Athletic ability of offspring", 
+     "wrong_answers": ["Genetic diseases", 
+                       "Drug resistance", 
+                       "Inherited traits"]
+     },
+    {"question": "True about karyotyping?", 
+     "correct_answer": "Size, position of centromere, banding patterns", 
+     "wrong_answers": ["Only chromosome number", 
+                       "Only chromosomal shape", 
+                       "Only genetic disorders"]
+     },
+    {"question": "Second cousins' percentage?", 
+     "correct_answer": "3.13%", 
+     "wrong_answers": ["6.25%", 
+                       "1.56%", 
+                       "12.5%"]
+     },
+    {"question": "Electropherogram (picture)?", 
+     "correct_answer": "G>A substitution", 
+     "wrong_answers": ["C>T substitution", 
+                       "T>G substitution", 
+                       "A>C substitution"]
+     },
+    {"question": "Accumulation of lactate and pyruvate. Defective PDC?", 
+     "correct_answer": "Defect in glycolysis will lead to affect lactate and pyruvate", 
+     "wrong_answers": ["Defect in oxidative phosphorylation", 
+                       "Defective citric acid cycle", 
+                       "Defect in NADH production"]
+     },
+    {"question": "Whole exome sequencing disadvantages?", 
+     "correct_answer": "Might miss disease-causing mutations outside the coding and splice site regions", 
+     "wrong_answers": ["Not suitable for rare mutations", 
+                       "Expensive and inaccessible", 
+                       "Can only detect large mutations"]
+     },
+    {"question": "Affected female (1) with x-linked dominant mates with male normal male (10). Chance of affected baby?", 
+     "correct_answer": "2/4", 
+     "wrong_answers": ["1/4", 
+                       "1/2", 
+                       "3/4"]
+     },
+    {"question": "High malaria resistance in UAE, why?", 
+     "correct_answer": "Consanguinity or survival of those with resistance", 
+     "wrong_answers": ["Recent malaria outbreaks", 
+                       "Migration of resistant populations", 
+                       "Urbanization in resistant areas"]
+     },
+    {"question": "Common in UAE?", 
+     "correct_answer": "Haemoglobinopathies", 
+     "wrong_answers": ["Cystic fibrosis", 
+                       "Down syndrome", 
+                       "Sickle cell anemia"]
+     },
+    {"question": "Important for drug metabolism (most important)?", 
+     "correct_answer": "CYP 450", 
+     "wrong_answers": ["CYP 1A2", 
+                       "CYP 3A4", 
+                       "CYP 2D6"]
+     },
+    {"question": "Ciliopathy?", 
+     "correct_answer": "Defect in signaling for normal cell function and distribution", 
+     "wrong_answers": ["Defect in cilia structure", 
+                       "Defect in cilia movement", 
+                       "Defect in cellular metabolism"]
+     },
+    {"question": "Familial hypercholesterolemia?", 
+     "correct_answer": "Defect in LDL receptor", 
+     "wrong_answers": ["Defect in HDL receptor", 
+                       "Defect in cholesterol synthesis", 
+                       "Defect in liver metabolism"]
+     },
+    {"question": "Locus heterogeneity?", 
+     "correct_answer": "Mutations in more or different genes", 
+     "wrong_answers": ["Mutations in the same gene", 
+                       "Mutations in a single chromosome", 
+                       "Mutations only on X chromosome"]
+     },
+    {"question": "How can we prevent the birth of a child with mitochondrial condition for a mother with the disease?", 
+     "correct_answer": "Three-Parent designer babies", 
+     "wrong_answers": ["Gene therapy", 
+                       "Embryo selection", 
+                       "Stem cell therapy"]
+     },
+    {"question": "Picture identifying chromosome 2?", 
+     "correct_answer": "B, the longest one", 
+     "wrong_answers": ["A, the shortest one", 
+                       "C, the medium-sized one", 
+                       "D, the second smallest"]
+     },
+    {"question": "Non-invasive paternal testing (NIPT)?", 
+     "correct_answer": "Biochemical analysis of small molecules from maternal blood plasma", 
+     "wrong_answers": ["Ultrasound imaging", 
+                       "Chorionic villus sampling", 
+                       "Amniocentesis"]
+     },
+    {"question": "Lyonization?", 
+     "correct_answer": "X-inactivation of most genes on one X chromosome", 
+     "wrong_answers": ["Activation of both X chromosomes", 
+                       "Inactivation of all X-linked genes", 
+                       "Partial silencing of the X chromosome"]
+     },
+    {"question": "After mass disaster?", 
+     "correct_answer": "Bone", 
+     "wrong_answers": ["Hair", 
+                       "Teeth", 
+                       "Skin"]
+     },
+    {"question": "Triple X chromosome. Which picture?", 
+     "correct_answer": "One with 2 Barr bodies", 
+     "wrong_answers": ["One with 3 Barr bodies", 
+                       "One with no Barr bodies", 
+                       "One with 1 Barr body"]
+     },
+    {"question": "1kb?", 
+     "correct_answer": "CNV", 
+     "wrong_answers": ["SNP", 
+                       "Intron", 
+                       "Exon"]
+     },
+    {"question": "Pic (FISH), trisomy in chromosome 13 and two X chromosomes?", 
+     "correct_answer": "Female with Patau syndrome", 
+     "wrong_answers": ["Female with Down syndrome", 
+                       "Male with Edward syndrome", 
+                       "Female with Turner syndrome"]
+     },
+    {"question": "The reason why cancer cells divide faster every time?", 
+     "correct_answer": "DNA repair damaged", 
+     "wrong_answers": ["Lack of cell cycle control", 
+                       "Overexpression of growth factors", 
+                       "Increased telomerase activity"]
+     },
+    {"question": "Karyotyping used for what?", 
+     "correct_answer": "Cystic fibrosis, infertility, primary immune disease immunodeficiency, thalassemia", 
+     "wrong_answers": ["Cancer diagnostics", 
+                       "Virus detection", 
+                       "HIV testing"]
+     },
+    {"question": "Total 200 plants, 128 purple and 72 white flowers, purple is dominant and white is recessive, what is the frequency of heterozygote genotype?", 
+     "correct_answer": "0.48", 
+     "wrong_answers": ["0.25", 
+                       "0.6", 
+                       "0.3"]
+     },
+    {"question": "Which of the following is equivalent to prostate cancer in males?", 
+     "correct_answer": "Slightly higher than average population", 
+     "wrong_answers": ["Significantly higher than average", 
+                       "Slightly lower than average", 
+                       "None of the above"]
+     },
+    {"question": "Picture: insertion homozygous for single nucleotides", 
+     "correct_answer": "Point mutation", 
+     "wrong_answers": ["Frame-shift mutation", 
+                       "Duplication", 
+                       "Deletion"]
+     },
+    {"question": "Karyotype with XXY?", 
+     "correct_answer": "Klinefelter syndrome", 
+     "wrong_answers": ["Turner syndrome", 
+                       "Down syndrome", 
+                       "Patau syndrome"]
+     },
+    {"question": "Picture: Question mentioning Huntington and CAG. Which person will get it at the youngest age?", 
+     "correct_answer": "II3 (the highest one)", 
+     "wrong_answers": ["I2", 
+                       "II4", 
+                       "III1"]
+     },
+    {"question": "How many genotypes are in ABO?", 
+     "correct_answer": "6", 
+     "wrong_answers": ["4", 
+                       "8", 
+                       "3"]
+     },
+    {"question": "Why do you add colcemid in karyotyping?", 
+     "correct_answer": "Freezes cell at metaphase", 
+     "wrong_answers": ["Inhibits DNA replication", 
+                       "Prevents chromosomal mutations", 
+                       "Enhances chromosome separation"]
+     },
+    {"question": "A father with blood type B and a mother with blood type A and their son with blood type O. What do you conclude from that?", 
+     "correct_answer": "A father heterozygote with both B and i and the mother heterozygote with both A and i", 
+     "wrong_answers": ["Father homozygous B and mother homozygous A", 
+                       "Father homozygous B and mother homozygous O", 
+                       "Father heterozygous B and mother homozygous A"]
+     },
+    {"question": "Which variant is related to hypersensitivity and Abacavir?", 
+     "correct_answer": "HLAB5701", 
+     "wrong_answers": ["CYP2D6", 
+                       "CYP3A4", 
+                       "BCR-ABL"]
+     },
+    {"question": "Gene expression?", 
+     "correct_answer": "Through entire lifespan", 
+     "wrong_answers": ["Only during development", 
+                       "Only in adulthood", 
+                       "Only in specific tissues"]
+     },
+    {"question": "Electropherogram. Which is homozygous?", 
+     "correct_answer": "With one peak", 
+     "wrong_answers": ["With two peaks", 
+                       "With three peaks", 
+                       "With no peaks"]
+     },
+    {"question": "Variation considered a mutation when?", 
+     "correct_answer": "Less than 1% of population", 
+     "wrong_answers": ["More than 10% of population", 
+                       "Present in both parents", 
+                       "Present in a majority of the population"]
+     },
+    {"question": "Translocation 9,22 in BCR, ALB?", 
+     "correct_answer": "Philadelphia chromosome", 
+     "wrong_answers": ["Chromosome inversion", 
+                       "Chromosome duplication", 
+                       "Chromosome deletion"]
+     },
+    {"question": "Picture, change in one aa in the introns area (TG -> CG)?", 
+     "correct_answer": "Splice site", 
+     "wrong_answers": ["Missense mutation", 
+                       "Frameshift mutation", 
+                       "Silent mutation"]
+     },
+    {"question": "Not in phase 1 of metabolism?", 
+     "correct_answer": "Conjugation", 
+     "wrong_answers": ["Oxidation", 
+                       "Reduction", 
+                       "Hydrolysis"]
+     },
+    {"question": "Homozygous for mutant alleles. What dose of 6-MP?", 
+     "correct_answer": "6-10%", 
+     "wrong_answers": ["50-70%", 
+                       "20-30%", 
+                       "40-60%"]
+     },
+    {"question": "Which of the following has highest risk of deep vein thrombosis?", 
+     "correct_answer": "Female homozygous for factor V Leiden AND Oral Contraceptive", 
+     "wrong_answers": ["Male homozygous for factor V Leiden AND Oral Contraceptive", 
+                       "Female heterozygous for factor V Leiden AND No contraceptive", 
+                       "Male heterozygous for factor V Leiden AND Oral Contraceptive"]
+     },
+    {"question": "Why do people who take statin respond differently?", 
+     "correct_answer": "Genetic variation", 
+     "wrong_answers": ["Smoking", 
+                       "Age", 
+                       "Unrelated factors"]
+     },
+    {"question": "Why G6PD increased over time in the UAE?", 
+     "correct_answer": "Our ancestors who were carriers were resistant to malaria and survived and reproduced to pass the mutant gene", 
+     "wrong_answers": ["Malaria caused mutations in our ancestors", 
+                       "Gene mutations increased due to climate change", 
+                       "Malaria introduced the gene mutations directly"]
+     },
+    {"question": "Duffy antigen absent. Malaria?", 
+     "correct_answer": "Cannot attach and invade the RBC", 
+     "wrong_answers": ["Increased RBC lysis", 
+                       "Decreased RBC production", 
+                       "Increased RBC mutation"]
+     },
+    {"question": "Double mutated C2*/C2* CCR5?", 
+     "correct_answer": "Higher resistance to HIV than rest of the population", 
+     "wrong_answers": ["Increased susceptibility to HIV", 
+                       "No effect on HIV resistance", 
+                       "Resistance to all viruses"]
+     },
+    {"question": "Not a sign of primary immunodeficiency?", 
+     "correct_answer": "Dependence on steroids", 
+     "wrong_answers": ["Recurrent infections", 
+                       "Delayed growth", 
+                       "Poor response to vaccines"]
+     },
+    {"question": "Increase in the gene pool of UAE due to?", 
+     "correct_answer": "Migration", 
+     "wrong_answers": ["Inbreeding", 
+                       "Natural selection", 
+                       "Mutation"]
+     },
+    {"question": "Not a condition of Hardy-Weinberg equilibrium?", 
+     "correct_answer": "Environmental instability", 
+     "wrong_answers": ["Random mating", 
+                       "No mutation", 
+                       "No migration"]
+     },
+    {"question": "In the H-W equation, q^2 is?", 
+     "correct_answer": "Homozygous recessive genotype", 
+     "wrong_answers": ["Heterozygous genotype", 
+                       "Homozygous dominant genotype", 
+                       "Allele frequency"]
+     },
+    {"question": "Genetic drift?", 
+     "correct_answer": "Chance", 
+     "wrong_answers": ["Natural selection", 
+                       "Gene flow", 
+                       "Mutation"]
+     },
+    {"question": "The genetics of the ABO blood group is controlled by:",
+     "correct_answer": "one gene with three alleles (A, B and i) with the (A) and (B) alleles dominant to the (i) allele and co-dominant to each other",
+     "wrong_answers": ["three genes with each gene coding for one of the ABO receptors on red blood cells", 
+                       "Two genes (the A and the B genes) that are located on non-homologous chromosomes",
+                       "two genes with one coding the (A) and (B) alleles and the other coding for the () allele"]
+     },
+    {"question": "The parental origin of Klinefelter syndrome cases is:",
+     "correct_answer": "50% paternal and 55% maternal",
+     "wrong_answers": ["10% paternal and 90% maternal", 
+                       "80% paternal and 20% maternal",
+                       "100% paternal and 0% maternal"]
+     },
+    {"question": "A woman with mild Osteogenesis Imperfecta (an autosomal dominant condition) marries a normal male. They are planning on having eight children. In this case, the expected number of children affected by Osteogenesis Imperfecta for this couple is:",
+     "correct_answer": "Four (Aa x aa (½) x 8 = 4)",
+     "wrong_answers": ["Two", 
+                       "Six",
+                       "Eight"]
+     },
+    {"question": "A male affected by Hemophilia A (X-linked recessive condition) marries a heterozygous (carrier) female. Their chances of having an UNAFFECTED child in each pregnancy is:",
+     "correct_answer": "50% (XmX, XmY)",
+     "wrong_answers": ["Zero", 
+                       "25%",
+                       "75%"]
+     },
+    {"question": "Two 'apparently' normal parents have two children with cystic fibrosis (an autosomal recessive condition with 100% penetrance), the probability of them having another affected child in a third pregnancy is:",
+     "correct_answer": "25% (Rr, Rr)",
+     "wrong_answers": ["0%", 
+                       "33%",
+                       "50%"]
+     },
+    {"question": "Mendel's Principle of Segregation is related to the segregation of:",
+     "correct_answer": "alleles of the same gene during meiosis",
+     "wrong_answers": ["alleles of different genes during meiosis", 
+                       "different genes on the same chromosome during meiosis",
+                       "different genes on different chromosomes during meiosis"]
+     },
+    {"question": "The dihybrid crossing of two pure breeding pea plants (one with Round Yellow peas and the other Wrinkled Green peas) yields a single F1 phenotype of Round Yellow. Allowing F1 members to self-fertilize is expected to yield:",
+     "correct_answer": "four phenotypes",
+     "wrong_answers": ["one phenotype", 
+                       "two phenotypes",
+                       "three phenotypes"]
+     },
+    {"question": "Pedigree of man getting an affected child with a rare autosomal recessive disease. The mother dies and the man marries the sister. What is the chance of their child being affected?",
+     "correct_answer": "None of the choices",
+     "wrong_answers": ["0%", 
+                       "25%", 
+                       "50%"]
+     }
+]
+
+
 
 
 
