@@ -27,10 +27,10 @@ class Quiz:
         self.skipped_questions = []
 
         # Set background color
-        self.root.configure(bg="#204040")
+        self.root.configure(bg="#2E3440")
 
         # Top frame
-        self.top_frame = tk.Frame(root, bg="#204040")
+        self.top_frame = tk.Frame(root, bg="#2E3440")
         self.top_frame.pack(fill="x", pady=10)
 
         # Finish Early button
@@ -38,9 +38,10 @@ class Quiz:
             self.top_frame,
             text="Finish Early",
             command=self.finish_quiz_early,
-            bg="#ff5733",
-            fg="white",
-            font=("Times new roman", 16)
+            bg="#5E81AC",
+            fg="black",
+            font=("Times new roman", 16),
+            activebackground="#ff5733"
         )
         self.finish_button.pack(side="left", padx=20)
 
@@ -49,7 +50,7 @@ class Quiz:
             self.top_frame,
             text="Time: 00:00:00",
             font=("Times new roman", 14),
-            bg="#204040",
+            bg="#2E3440",
             fg="white"
         )
         self.timer_label.pack(side="left", expand=True)
@@ -59,33 +60,33 @@ class Quiz:
             self.top_frame,
             text=f"Question {self.current_question_index + 1} of {self.total_questions}",
             font=("Times new roman", 16),
-            bg="#204040",
+            bg="#2E3440",
             fg="white"
         )
         self.question_number_label.pack(side="right", padx=20)
 
         # Bottom frame
-        self.bottom_frame = tk.Frame(self.root, bg="#204040")
+        self.bottom_frame = tk.Frame(self.root, bg="#2E3440")
         self.bottom_frame.pack(side="bottom", pady=20)
 
         # Question label
         self.question_label = tk.Label(
-            root, text="", wraplength=400, font=("Times new roman", 16), bg="#204040", fg="white"
+            root, text="", wraplength=400, font=("Times new roman", 16), bg="#2E3440", fg="white"
         )
         self.question_label.pack(pady=20)
         
         # Answer options frame
-        self.button_frame = tk.Frame(self.root, bg="#204040")
+        self.button_frame = tk.Frame(self.root, bg="#2E3440")
         self.button_frame.pack(pady=10)
 
         # Navigation buttons
-        self.button1_frame = tk.Frame(self.bottom_frame, bg="#204040")
+        self.button1_frame = tk.Frame(self.bottom_frame, bg="#2E3440")
         self.button1_frame.pack()
 
-        self.back_button = tk.Button(self.button1_frame, text="Back", command=self.go_back, bg="#ffd700", fg="black", font=("Times new roman", 16))
+        self.back_button = tk.Button(self.button1_frame, text="Back", command=self.go_back, bg="#5E81AC", fg="black", font=("Times new roman", 16),activebackground="#ffd700")
         self.back_button.pack(side="left", padx=20)
 
-        self.submit_button = tk.Button(self.button1_frame, text="Submit", command=self.submit_answer, bg="#5c7f7f", fg="white", font=("Times new roman", 16))
+        self.submit_button = tk.Button(self.button1_frame, text="Submit", command=self.submit_answer, bg="#5E81AC", fg="black", font=("Times new roman", 16),activebackground="#ffd700")
         self.submit_button.pack(side="left", padx=20)
 
         # Progress bar
@@ -117,9 +118,9 @@ class Quiz:
                 font=("Times new roman", 16),
                 wraplength=400,
                 command=lambda i=i: self.on_option_select(i),
-                bg="#204040",
+                bg="#2E3440",
                 fg="white",
-                activebackground="#204040",
+                activebackground="#2E3440",
                 activeforeground="white",
                 selectcolor="#5c7f7f"
             )
@@ -227,17 +228,17 @@ class Quiz:
         self.back_button.destroy()
         
         # Create a frame for results with scroll capability
-        results_frame = tk.Frame(self.root, bg="#204040")
+        results_frame = tk.Frame(self.root, bg="#2E3440")
         results_frame.pack(pady=20, fill="both", expand=True)  # Use pack instead of grid
 
-        canvas = tk.Canvas(results_frame, bg="#204040")  # Canvas for scrolling
+        canvas = tk.Canvas(results_frame, bg="#2E3440")  # Canvas for scrolling
         canvas.pack(side="left", fill="both", expand=True)  # Use pack instead of grid
 
         scrollbar = tk.Scrollbar(results_frame, orient="vertical", command=canvas.yview)
         scrollbar.pack(side="right", fill="y")  # Use pack instead of grid
         canvas.configure(yscrollcommand=scrollbar.set)
 
-        results_container = tk.Frame(canvas, bg="#204040")  # Inner frame to hold the result labels
+        results_container = tk.Frame(canvas, bg="#2E3440")  # Inner frame to hold the result labels
         canvas.create_window((0, 0), window=results_container, anchor="nw")
 
         # Update the canvas scroll region after packing all widgets
@@ -249,7 +250,7 @@ class Quiz:
                 results_container,
                 text="Incorrect Answers:",
                 font=("Times new roman", 14, "bold"),
-                bg="#204040",
+                bg="#2E3440",
                 fg="red"
             )
             incorrect_label.grid(row=0, column=0, padx=10, pady=10, sticky="w")
@@ -261,7 +262,7 @@ class Quiz:
                     results_container,
                     text=f"{idx}. {q['question']}",
                     font=("Times new roman", 16, "bold"),
-                    bg="#204040",
+                    bg="#2E3440",
                     fg="white",
                     wraplength=400,
                     justify="left"
@@ -273,7 +274,7 @@ class Quiz:
                     results_container,
                     text=f"Your Answer: {q['selected_answer']}",
                     font=("Times new roman", 16),
-                    bg="#204040",
+                    bg="#2E3440",
                     fg="yellow",
                     wraplength=400,
                     justify="left"
@@ -284,7 +285,7 @@ class Quiz:
                     results_container,
                     text=f"Correct Answer: {q['correct_answer']}",
                     font=("Times new roman", 16),
-                    bg="#204040",
+                    bg="#2E3440",
                     fg="#3fff00",
                     wraplength=400,
                     justify="left"
@@ -297,7 +298,7 @@ class Quiz:
                 results_container,
                 text="Skipped Questions:",
                 font=("Times new roman", 14, "bold"),
-                bg="#204040",
+                bg="#2E3440",
                 fg="orange",
                 anchor="e"
             )
@@ -310,7 +311,7 @@ class Quiz:
                     results_container,
                     text=f"{idx}. {question_data['question']}",
                     font=("Times new roman", 16, "bold"),
-                    bg="#204040",
+                    bg="#2E3440",
                     fg="white",
                     wraplength=400,
                     anchor="e",
@@ -323,7 +324,7 @@ class Quiz:
                     results_container,
                     text=f"Correct Answer: {question_data['correct_answer']}",
                     font=("Times new roman", 16),
-                    bg="#204040",
+                    bg="#2E3440",
                     fg="#3fff00",
                     wraplength=400,
                     anchor="e",
@@ -345,7 +346,7 @@ class Quiz:
 if __name__ == "__main__":
     root = tk.Tk()
     root.title("MCQ Quiz")
-    root.config(bg="#204040")
+    root.config(bg="#2E3440")
     root.geometry("1100x600")
     root.resizable(True, True)
     exam_questions = HP_TBL_diving
