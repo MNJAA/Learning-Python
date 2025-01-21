@@ -20,6 +20,120 @@ Example_questions_form = [
 
 
 
+HP_TBL_diving= [
+    {
+        "question": "10m under. Find PN2 and PO2.",
+        "correct_answer": "1201 and 319",
+        "wrong_answers": ["1000 and 300", "1500 and 400", "800 and 250"]
+    },
+    {
+        "question": "What is the percentage of nitrogen and oxygen in air?",
+        "correct_answer": "79% nitrogen and 21% oxygen",
+        "wrong_answers": ["70% nitrogen and 30% oxygen", "85% nitrogen and 15% oxygen", "60% nitrogen and 40% oxygen"]
+    },
+    {
+        "question": "What gas is mostly found in decompression bubbles?",
+        "correct_answer": "Nitrogen",
+        "wrong_answers": ["Oxygen", "Carbon dioxide", "Helium"]
+    },
+    {
+        "question": "Best treatment for decompression sickness?",
+        "correct_answer": "Decompress chamber",
+        "wrong_answers": ["Oxygen therapy", "Antibiotics", "Surgery"]
+    },
+    {
+        "question": "Man went diving and held his breath during the ascent. After coming up he has chest pain and shortness of breath, what may be the cause?",
+        "correct_answer": "Pneumothorax",
+        "wrong_answers": ["Decompression sickness", "Nitrogen narcosis", "Oxygen toxicity"]
+    },
+    {
+        "question": "Man takes in a breath of 6L on the surface, holds his breath, then dives 10m. How much volume of air is in his lungs now?",
+        "correct_answer": "3L",
+        "wrong_answers": ["4L", "5L", "6L"]
+    },
+    {
+        "question": "When compressed air is breathed below 30 meters the narcotic effects of nitrogen can cause impairment of cerebral function. Which of the following statements about nitrogen narcosis is TRUE?",
+        "correct_answer": "The effects of nitrogen narcosis increase with water depth and are reversed on ascent",
+        "wrong_answers": [
+            "Repeated exposure to nitrogen increases the risk of air embolism",
+            "Despite repeated exposure divers cannot develop tolerance to nitrogen",
+            "The narcotic effects of nitrogen are associated with improved mental alertness and visual acuity"
+        ]
+    },
+    {
+        "question": "Which one of the following equations represents 'Boyle's law'?",
+        "correct_answer": "y α 1/P",
+        "wrong_answers": ["y = P", "y = 1 × P", "y α P/1", "y × P = 1"]
+    },
+    {
+        "question": "In SCUBA diving the golden rule 'not to hold the breath during ascent' is mainly to avoid the risk of:",
+        "correct_answer": "lung volume expansion and spontaneous pneumothorax",
+        "wrong_answers": [
+            "lung volume shrinkage and alveolar collapse",
+            "lung volume expansion and oxygen toxicity",
+            "lung volume shrinkage and decompression sickness"
+        ]
+    },
+    {
+        "question": "Understanding the effect of partial pressure on the solubility of gases in fluid (Henry’s law) is physiologically important because it is helpful in understanding:",
+        "correct_answer": "gas toxicity and nitrogen narcosis",
+        "wrong_answers": [
+            "pneumothorax and emboli",
+            "depth of water and volume of air in the divers lungs",
+            "the gas volume pressure relationship"
+        ]
+    },
+    {
+        "question": "Nitrogen narcosis can be avoided by replacing some or all of the nitrogen in the diving cylinder with:",
+        "correct_answer": "helium and oxygen",
+        "wrong_answers": [
+            "hydrogen and oxygen",
+            "helium and carbon dioxide",
+            "oxygen and carbon monoxide"
+        ]
+    },
+    {
+        "question": "Which of the following statements is the most accurate with respect to oxygen poisoning?",
+        "correct_answer": "Oxygen poisoning may occur when the partial pressure of oxygen is twice the normal",
+        "wrong_answers": [
+            "Dissolved oxygen in the plasma will facilitate the removal of carbon dioxide from tissues",
+            "High partial pressure of oxygen in the blood can prevent pneumonia",
+            "Oxygen poisoning symptoms may include visual sharpness and mental alertness"
+        ]
+    },
+    {
+        "question": "Mohamed and his friends decide to spend the weekend SCUBA diving. They make two dives on the Friday and 2 dives on the Saturday. The last dive was to 120 feet for 20 min. However, towards the end of the dive Mohammed got stuck in a fishing net. It took him 20 minutes to free himself. Shortly after the dive Mohamed experienced some aching pain in his elbows and shoulders which became worse as the day progressed. The most likely cause of his problem is:",
+        "correct_answer": "decompression sickness",
+        "wrong_answers": [
+            "carbon monoxide poisoning",
+            "oxygen poisoning",
+            "nitrogen narcosis"
+        ]
+    },
+    {
+        "question": "The partial pressure (PN2) of nitrogen at a depth of 30 meters of sea water is approximately:",
+        "correct_answer": "2400 mmHg",
+        "wrong_answers": ["150 mmHg", "320 mmHg", "480 mmHg"]
+    },
+    {
+        "question": "A diver breathing from a SCUBA cylinder takes in 1.5 liters of air at a depth of 30 meters. If the diver holds his breath during ascent, what will be the volume of air in his lungs when he reaches the surface?",
+        "correct_answer": "6 liters",
+        "wrong_answers": ["1.5 liters", "3 liters", "4.5 liters"]
+    },
+    {
+        "question": "The depth limit for divers breathing air, as specified by the British Sub-Aqua Club and Sub-Aqua Association, is 50 meters (160 feet), this is mainly due to the risks associated with:",
+        "correct_answer": "nitrogen narcosis",
+        "wrong_answers": [
+            "decompression sickness",
+            "oxygen toxicity",
+            "carbon dioxide toxicity"
+        ]
+    }
+]
+
+
+
+
 MGN = [
     {"question": "All genes and alleles in a population are called?",
      "correct_answer": "Gene pool",
