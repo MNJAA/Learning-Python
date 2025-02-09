@@ -59,7 +59,9 @@ class QuizLauncher:
         quizzes = [
             ("Embryology", "EM.py"),
             ("Medical Genetics", "MG.py"),
-            ("TBL Quiz", "TBL.py")
+            ("TBL Quiz", "TBL.py"),
+            ("HA4 Quiz 1", "HA.py"),
+            ("GPT prac Quiz", "GPT.py")
         ]
         
         for text, filename in quizzes:
