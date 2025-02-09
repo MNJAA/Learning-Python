@@ -20,6 +20,353 @@ Example_questions_form = [
 
 
 
+HA = [
+    {
+        "question": "Which lingual papillon does not have taste buds?",
+        "correct_answer": "Filiform",
+        "wrong_answers": ["Fungiform", "Circumvallate", "Foliate"]
+    },
+    {
+        "question": "What is the embryological remnant of the hypoglossal duct?",
+        "correct_answer": "Foramen Cecum",
+        "wrong_answers": ["Tuberculum impar", "Plica fimbriata", "Median sulcus"]
+    },
+    {
+        "question": "Which of the following is true regarding C1?",
+        "correct_answer": "the transverse ligament is in between the inner lateral masses",
+        "wrong_answers": [
+            "Spinal nerve 1 come from below C1",
+            "IV disc below C1",
+            "C1 vertebra has a standard vertebral body like other vertebrae"
+        ]
+    },
+    {
+        "question": "Coronal section of the C7 vertebrae, which one is responsible for spreading infection to axilla?",
+        "correct_answer": "Prevertebral (E)",
+        "wrong_answers": [
+            "Carotid space",
+            "Retropharyngeal space",
+            "Parapharyngeal space"
+        ]
+    },
+    {
+        "question": "Which muscle in the neck guides us to the internal thoracic vein?",
+        "correct_answer": "sternocleidomastoid SCM muscle",
+        "wrong_answers": ["trapezius", "scalenus anterior", "omohyoid"]
+    },
+    {
+        "question": "Damage to the middle of the posterior triangle, examine what?",
+        "correct_answer": "Shrugging of the shoulder against resistance",
+        "wrong_answers": [
+            "Flexion of shoulder",
+            "turning your head to the right against resistance",
+            "shoulder abduction"
+        ]
+    },
+    {
+        "question": "Scalp lacerations are common, what is responsible for profuse bleeding from the scalp?",
+        "correct_answer": "dense connective tissue",
+        "wrong_answers": [
+            "Pull of temporalis muscle",
+            "Presence of emissary veins",
+            "internal and external carotid arteries"
+        ]
+    },
+    {
+        "question": "The TMJ is a modified hinge synovial joint, what is meant by modified?",
+        "correct_answer": "An additional sliding transitional movement",
+        "wrong_answers": [
+            "It only allows hinge movement",
+            "It is a non-synovial joint",
+            "It functions like a ball-and-socket joint"
+        ]
+    },
+    {
+        "question": "Which branch of the facial nerve is not affected by mumps, a bacteria that affects the parotid gland?",
+        "correct_answer": "Posterior auricular",
+        "wrong_answers": ["Temporal branch", "Buccal branch", "Cervical branch"]
+    },
+    {
+        "question": "Which of the following is true? hypophyseal fossa is superior to sphenoid sinus",
+        "correct_answer": "hypophyseal fossa is superior to sphenoid sinus",
+        "wrong_answers": [
+            "hypophyseal fossa is inferior to sphenoid sinus",
+            "hypophyseal fossa is lateral to sphenoid sinus",
+            "hypophyseal fossa is posterior to sphenoid sinus"
+        ]
+    },
+    {
+        "question": "What is true about facial expression muscles?",
+        "correct_answer": "It’s attached to the skin",
+        "wrong_answers": ["Tendon", "All innervated by trigeminal", "includes masseter and temporalis muscle"]
+    },
+    {
+        "question": "What is true about the facial vein?",
+        "correct_answer": "It communicates with the cavernous sinus through the superior ophthalmic vein",
+        "wrong_answers": [
+            "The deep facial nerve drains into the internal jugular vein",
+            "The facial nerve drains into the external jugular vein",
+            "It communicates with the cavernous sinus through the inferior ophthalmic vein"
+        ]
+    },
+    {
+        "question": "What is true about the skull?",
+        "correct_answer": "The dura is attached to the crista galli",
+        "wrong_answers": [
+            "There are arachnoid granulations in the temporal bone",
+            "The skull base is entirely formed by cartilage",
+            "The frontal bone is not fused with the parietal bones"
+        ]
+    },
+    {
+        "question": "Due to a blow, the patient’s Pterion got fractured. Which of the following is the most likely to get fractured?",
+        "correct_answer": "Greater wing of sphenoid",
+        "wrong_answers": [
+            "Petrous part of temporal",
+            "All other choices were not parts of the pterion",
+            "Zygomatic arch"
+        ]
+    },
+    {
+        "question": "Anterior branch of the mandibular nerve is damaged, which of the following areas will lose sensation?",
+        "correct_answer": "Cheeks",
+        "wrong_answers": [
+            "Chin",
+            "Lower Lip",
+            "Temple"
+        ]
+    },
+    {
+        "question": "If the temporal branch of the facial nerve got damaged, which action will be affected?",
+        "correct_answer": "Blinking",
+        "wrong_answers": [
+            "Opening the eye",
+            "Puckering the lips",
+            "Smiling"
+        ]
+    },
+    {
+        "question": "What is true about the normal anatomical structure of the middle ear (Tympanic cavity)?",
+        "correct_answer": "It is filled with air and the facial nerve lies in the posterior wall of the middle ear",
+        "wrong_answers": [
+            "It is filled with fluid and the facial nerve lies in the superior wall of the middle ear",
+            "It is a solid structure without a cavity",
+            "The facial nerve lies in the medial wall of the middle ear"
+        ]
+    },
+    {
+        "question": "What is true about the normal structure of the tympanic membrane?",
+        "correct_answer": "Concave when looking from the outside",
+        "wrong_answers": [
+            "Convex when viewed from the outside",
+            "Flat",
+            "Irregular and retracted"
+        ]
+    },
+    {
+        "question": "A child with recurrent otitis presents with bulging ears, to which area was the infection most likely spread?",
+        "correct_answer": "Sigmoid venous sinus",
+        "wrong_answers": [
+            "Mastoid air cells",
+            "Middle ear",
+            "Petrosquamous suture"
+        ]
+    },
+    {
+        "question": "A man experiencing pain in the anterior part of the roof of the mouth, what nerve is affected?",
+        "correct_answer": "Nasopalatine nerve",
+        "wrong_answers": [
+            "Lesser palatine nerve",
+            "Greater palatine nerve",
+            "Infraorbital nerve"
+        ]
+    },
+    {
+        "question": "What muscle is important to prevent anterior dislocation of the jaw?",
+        "correct_answer": "Temporalis",
+        "wrong_answers": [
+            "Masseter",
+            "Medial pterygoid",
+            "Lateral pterygoid"
+        ]
+    },
+    {
+        "question": "Where is the oculomotor nerve located?",
+        "correct_answer": "In the superior orbital fissure, within the common tendinous ring",
+        "wrong_answers": [
+            "In the optic canal",
+            "In the inferior orbital fissure",
+            "In the pterygopalatine fossa"
+        ]
+    },
+    {
+        "question": "Dentists use cotton wool and place it on the parotid gland to keep the mouth of the patient dry while working. Where does the parotid gland open?",
+        "correct_answer": "Upper 2nd molar tooth",
+        "wrong_answers": [
+            "Lower 2nd molar tooth",
+            "Upper last molar tooth",
+            "Lower last molar tooth"
+        ]
+    },
+    {
+        "question": "What is the MOST important function of the aqueous layer?",
+        "correct_answer": "Supplies atmospheric oxygen to the corneal epithelium",
+        "wrong_answers": [
+            "Has antibacterial substances",
+            "Lubricates the corneal surface",
+            "Facilitates nutrient delivery to the lens"
+        ]
+    },
+    {
+        "question": "A girl tilts her head to the left to improve visualization. The right eye exhibits extorsion while the left shows intorsion (face tilted opposite to lesion side). Which muscle is affected?",
+        "correct_answer": "Right superior oblique",
+        "wrong_answers": [
+            "Right inferior oblique",
+            "Left superior oblique",
+            "Left inferior oblique"
+        ]
+    },
+    {
+        "question": "Patient with palatine tonsillitis: which lymph node is the first to drain the infected tonsils?",
+        "correct_answer": "Jugulo-digastric lymph node",
+        "wrong_answers": [
+            "Submandibular lymph node",
+            "Posterior cervical lymph node",
+            "Preauricular lymph node"
+        ]
+    },
+    {
+        "question": "What's true about the middle ear?",
+        "correct_answer": "It is anterior to the nasopharynx",
+        "wrong_answers": [
+            "It’s 2cm in size",
+            "It is filled with fluid",
+            "The facial nerve lies on the anterior wall"
+        ]
+    },
+    {
+        "question": "Which part of the temporal bone is considered the hardest?",
+        "correct_answer": "Petrous part of the temporal bone",
+        "wrong_answers": [
+            "Squamous part of the temporal bone",
+            "Mastoid part of the temporal bone",
+            "Tympanic part of the temporal bone"
+        ]
+    },
+    {
+        "question": "During interscalene nerve block surgery, which structure is at risk of injury?",
+        "correct_answer": "Subclavian artery",
+        "wrong_answers": [
+            "Brachial plexus",
+            "Phrenic nerve",
+            "Vertebral artery"
+        ]
+    },
+    {
+        "question": "During thyroid surgery, which structure separates the thyroid gland from the strap muscles?",
+        "correct_answer": "Pretracheal fascia",
+        "wrong_answers": [
+            "Investing fascia",
+            "Carotid sheath",
+            "Deep cervical fascia"
+        ]
+    },
+    {
+        "question": "Which branch is the medial branch of the external carotid artery?",
+        "correct_answer": "Ascending pharyngeal artery",
+        "wrong_answers": [
+            "Superior thyroid artery",
+            "Facial artery",
+            "Occipital artery"
+        ]
+    },
+    {
+        "question": "Which muscle is supplied by the ansa cervicalis?",
+        "correct_answer": "Omohyoid",
+        "wrong_answers": [
+            "Sternocleidomastoid",
+            "Digastric",
+            "Levator scapulae"
+        ]
+    },
+    {
+        "question": "What is true regarding the skull?",
+        "correct_answer": "The sphenoid bone forms the optic canal",
+        "wrong_answers": [
+            "The frontal bone forms the optic canal",
+            "The ethmoid bone forms the optic canal",
+            "The parietal bone forms the optic canal"
+        ]
+    },
+    {
+        "question": "What is the structure indicated by the arrow?",
+        "correct_answer": "Chorda tympani nerve",
+        "wrong_answers": [
+            "Facial nerve",
+            "Incus",
+            "Handle of malleus"
+        ]
+    },
+    {
+        "question": "Which nerve is responsible for closing the eyes?",
+        "correct_answer": "Cranial nerve VII (Facial nerve)",
+        "wrong_answers": [
+            "Oculomotor nerve (CN III)",
+            "Trigeminal nerve (CN V)",
+            "Abducens nerve (CN VI)"
+        ]
+    },
+    {
+        "question": "Which of the following muscles is known for keeping the upper airway open?",
+        "correct_answer": "Genioglossus",
+        "wrong_answers": [
+            "Hyoglossus",
+            "Styloglossus",
+            "Palatoglossus"
+        ]
+    },
+    {
+        "question": "What is the typical mechanism of a Hangman fracture?",
+        "correct_answer": "Hyperextension of the head on the neck",
+        "wrong_answers": [
+            "Direct lateral impact",
+            "Flexion injury",
+            "Axial loading"
+        ]
+    },
+    {
+        "question": "Which structure is responsible for turning the hydrophobic layer to a hydrophilic layer?",
+        "correct_answer": "Conjunctiva",
+        "wrong_answers": [
+            "Meibomian glands",
+            "Lacrimal glands",
+            "Corneal epithelium"
+        ]
+    },
+    {
+        "question": "Which of the following statements is false?",
+        "correct_answer": "Disc is made of hyaline cartilage",
+        "wrong_answers": [
+            "Disc is made of fibrocartilage",
+            "Disc is avascular",
+            "Disc contains type I collagen"
+        ]
+    },
+    {
+        "question": "What muscle is primarily responsible for opening the mouth?",
+        "correct_answer": "Lateral pterygoid",
+        "wrong_answers": [
+            "Masseter",
+            "Temporalis",
+            "Medial pterygoid"
+        ]
+    }
+    
+]
+
+
+
+
 HP_TBL_diving= [
     {
         "question": "10m under. Find PN2 and PO2.",
