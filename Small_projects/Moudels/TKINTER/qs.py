@@ -364,8 +364,141 @@ HA = [
     
 ]
 
-
-
+GPT = [
+    {
+        "question": "What type of inflammation?",
+        "correct_answer": "Fibrinous Inflammation",
+        "wrong_answers": ["Serous Inflammation", "Hemorrhagic Inflammation", "Suppurative Inflammation"],
+        "image": "images\image1.png"
+    },
+    {
+        "question": "Patient with 6 day diarrhea. What microbe?",
+        "correct_answer": "Parasite",
+        "wrong_answers": ["Gram negative", "Gram positive", "Virus"],
+        "image": "images\image2.png"
+    },
+    {
+        "question": "Rheumatoid arthritis patient, Which of the acute phase proteins cause anemia?",
+        "correct_answer": "Hepcidin",
+        "wrong_answers": ["Serum amyloid A", "Fibronectin", "C-reactive protein"],
+        "image": "images\image.png"
+    },
+    {
+        "question": "Patient with asthma. Which mediator is involved in bronchoconstriction/bronchospasms?",
+        "correct_answer": "Leukotrienes",
+        "wrong_answers": ["Histamine", "Prostaglandins", "Cytokines"],
+        "image": "images\image.png"
+    },
+    {
+        "question": "Lady did a piercing 8 weeks ago and then she had this lesion growing gradually. She also had one @ 7 years old after abdominal surgery. What do you expect in microscopic examination of this lesion?",
+        "correct_answer": "Accumulation of collagen - dense collagen bundles",
+        "wrong_answers": ["Granulomatous inflammation", "Epithelial hyperplasia", "Lymphocyte infiltration"],
+        "image": "images\image3.png"
+    },
+    {
+        "question": "Patient has problems in the lung. Take a scan (of lung shadow) under a microscope. You see giant cells what is the cause?",
+        "correct_answer": ["cocaine snorting"],
+        "wrong_answers": ["Influenza virus", "Chest trauma", "meow"],
+        "image": "images\image4.png"
+    },
+    {
+        "question": "Patient had an appendectomy, the appendix was placed in formalin, what is its function?",
+        "correct_answer": "To prevent autolysis",
+        "wrong_answers": ["To prevent atrophy", "To enhance nuclear condensation", "To kill bacteria"],
+        "image": "images\image.png"
+    },
+    {
+        "question": "Example of?",
+        "correct_answer": "Cytology",
+        "wrong_answers": ["Biopsy", "Autopsy", "Histopathology"],
+        "image": "images\image5.png"
+    },
+    {
+        "question": "Example of?",
+        "correct_answer": "Biopsy",
+        "wrong_answers": ["Cytology", "Autopsy", "Histopathology"],
+        "image": "images\image6.png"
+    },
+    {
+        "question": "Example of?",
+        "correct_answer": "Liquefactive necrosis",
+        "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
+        "image": "images\image7.png"
+    },
+    
+    {
+        "question": "Example of?",
+        "correct_answer": "Atrophy",
+        "wrong_answers": ["Hypertrophy", "Hyperplasia", "Metaplasia"],
+        "image": "images\image8.png"
+    },
+    {
+        "question": "Example of?",
+        "correct_answer": "Coagulative necrosis",
+        "wrong_answers": ["Liquefactive necrosis", "Caseous necrosis", "Gangrenous necrosis"],
+        "image": "images\image9.png"
+    },
+    {
+        "question": "Example of?",
+        "correct_answer": "Atrophy",
+        "wrong_answers": ["Hypertrophy", "Hyperplasia", "Metaplasia"],
+        "image": "images\image10.png"
+    },
+    {
+        "question": "Lung with tuberculosis?",
+        "correct_answer": "Caseous necrosis",
+        "wrong_answers": ["Liquefactive necrosis", "Coagulative necrosis", "Gangrenous necrosis"],
+        "image": "images\image11.png"
+    },
+    {
+        "question": "Example of?",
+        "correct_answer": "Hypertrophy",
+        "wrong_answers": ["Atrophy", "Hyperplasia", "Metaplasia"],
+        "image": "images\image12.png"
+    },
+    {
+        "question": "Pregnant women diff in the uterus?",
+        "correct_answer": "Hypertrophy",
+        "wrong_answers": ["Atrophy", "Hyperplasia", "Metaplasia"],
+        "image": "images\image13.png"
+    },
+    {
+        "question": "Brain hole?",
+        "correct_answer": "liquefactive necrosis",
+        "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
+        "image": "images\image14.png"
+    },
+    {
+        "question": "If you want to take appendix for examination you should...",
+        "correct_answer": "Put it in formalin",
+        "wrong_answers": ["Put it in saline", "Put it in alcohol", "Put it on tray (Plate)"],
+        "image": "images\image.png"
+    },
+    {
+        "question": "Big mass on neck because of enlarged lymph node because of teeth infection?",
+        "correct_answer": "Hyperplasia",
+        "wrong_answers": ["Atrophy", "Hypertrophy", "Metaplasia"],
+        "image": "images\image.png"
+    },
+    {
+        "question": "Example of?",
+        "correct_answer": "Resection",
+        "wrong_answers": ["Biopsy", "Cytology", "Autopsy"],
+        "image": "images\image16.png"
+    },
+    {
+        "question": "Example of?",
+        "correct_answer": "Fat necrosis",
+        "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
+        "image": "images\image17.png"
+    },
+    {
+        "question": "Example of? ",
+        "correct_answer": "caseous microscopic",
+        "wrong_answers": ["Liquefactive necrosis", "Coagulative necrosis", "Gangrenous necrosis"],
+        "image": "images\image18.png"
+    }
+]
 
 HP_TBL_diving= [
     {
