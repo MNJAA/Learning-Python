@@ -78,7 +78,7 @@ class QuizLauncher:
             ("TBL Quiz", "TBL.py"),
             ("HA4 Quiz 1", "HA.py"),
             ("GPT prac Quiz", "GPT.py"),
-            ("pharma", "pharma.py")
+            ("pharma", "pharma.py") 
         ]
 
         for text, filename in quizzes:
