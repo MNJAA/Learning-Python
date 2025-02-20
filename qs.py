@@ -21,285 +21,699 @@ Example_questions_form = [
 
 pharm = [
      {
-        "question": "What is the precursor of serotonin?",
-        "correct_answer": "Tryptophan",
-        "wrong_answers": [
-            "Serine",
-            "Tyrosine",
-            "Phenylalanine"
-        ]
-    },
-    {
-        "question": "L-histidine is a precursor to what?",
-        "correct_answer": "Histamine",
-        "wrong_answers": [
-            "Dopamine",
-            "Acetylcholine",
-            "Serotonin"
-        ]
-    },
-    {
-        "question": "Movement from high to low concentration with a carrier protein?",
-        "correct_answer": "Facilitated diffusion",
-        "wrong_answers": [
-            "Active transport",
-            "Simple diffusion",
-            "Endocytosis"
-        ]
-    },
-    {
-        "question": "Movement from low to high concentration with a carrier protein that uses ATP?",
-        "correct_answer": "Active transport",
-        "wrong_answers": [
-            "Facilitated diffusion",
-            "Osmosis",
-            "Simple diffusion"
-        ]
-    },
-    {
-        "question": "What is the measure of drug safety?",
-        "correct_answer": "Therapeutic index",
-        "wrong_answers": [
-            "Half-life",
-            "Bioavailability",
-            "Potency"
-        ]
-    },
-    {
-        "question": "A pregnant woman who takes drugs that may cause fetal birth defects is experiencing what?",
-        "correct_answer": "Teratogenicity",
-        "wrong_answers": [
-            "Carcinogenicity",
-            "Mutagenicity",
-            "Hepatotoxicity"
-        ]
-    },
-    {
-        "question": "The FDA made categories (A, B, C, D, X) for what purpose?",
-        "correct_answer": "Teratogenicity",
-        "wrong_answers": [
-            "Drug potency",
-            "Bioavailability classification",
-            "Drug clearance rates"
-        ]
-    },
-    {
-        "question": "An uncommon drug response due to genetic disposition is called?",
-        "correct_answer": "Idiosyncratic",
-        "wrong_answers": [
-            "Allergic reaction",
-            "Toxicity",
-            "Iatrogenic reaction"
-        ]
-    },
-    {
-        "question": "Parkinson's disease is treated with Pramipexole. What does this drug do?",
-        "correct_answer": "It is an agonist for D2 receptors",
-        "wrong_answers": [
-            "It is an agonist for H2 receptors",
-            "It blocks dopamine receptors",
-            "It inhibits serotonin reuptake"
-        ]
-    },
-    {
-        "question": "Which of the following is an inhibitory neurotransmitter?",
-        "correct_answer": "GABA and Serotonin",
-        "wrong_answers": [
-            "Dopamine and Glutamate",
-            "Noradrenaline and Acetylcholine",
-            "Glutamate and Epinephrine"
-        ]
-    },
-    {
-        "question": "What branch of science deals with mechanisms of action, clinical applications, side effects, and drug metabolism?",
-        "correct_answer": "Pharmacology",
-        "wrong_answers": [
-            "Toxicology",
-            "Pharmacokinetics",
-            "Therapeutics"
-        ]
-    },
-    {
-        "question": "What decreases bioavailability?",
-        "correct_answer": "Excessive first-pass metabolism",
-        "wrong_answers": [
-            "Low drug potency",
-            "Low volume of distribution",
-            "Decreased renal clearance"
-        ]
-    },
-    {
-        "question": "Which phase of clinical trials is associated with pharmacovigilance?",
-        "correct_answer": "Phase IV",
-        "wrong_answers": [
-            "Phase I",
-            "Phase II",
-            "Phase III"
-        ]
-    },
-    {
-        "question": "What is the main goal of Phase II in clinical trials?",
-        "correct_answer": "Determine the efficacy of the drug",
-        "wrong_answers": [
-            "Determine drug safety",
-            "Test on healthy volunteers",
-            "Compare with placebo"
-        ]
-    },
-    {
-        "question": "Bioavailability is compared to which route of administration?",
-        "correct_answer": "Intravenous",
-        "wrong_answers": [
-            "Oral",
-            "Sublingual",
-            "Intramuscular"
-        ]
-    },
-    {
-        "question": "Definition of synergism?",
-        "correct_answer": "Interaction of two or more drugs where their combined effect is greater than the sum of their individual effects",
-        "wrong_answers": [
-            "Combined effect is equal to the sum of the effects of each drug alone",
-            "Combined effect is less than the sum of individual effects",
-            "One drug inhibits the effect of the other"
-        ]
-    },
-    {
-        "question": "Which method of drug absorption provides a slow release with a long-term effect?",
-        "correct_answer": "Transdermal",
-        "wrong_answers": [
-            "Intravenous",
-            "Sublingual",
-            "Intramuscular"
-        ]
-    },
-    {
-        "question": "Where does the majority of drug absorption occur for orally administered drugs?",
-        "correct_answer": "Small intestine",
-        "wrong_answers": [
-            "Stomach",
-            "Colon",
-            "Rectum"
-        ]
-    },
-    {
-        "question": "A patient developed hepatitis from taking isoniazid. This is an example of?",
-        "correct_answer": "Idiosyncratic reaction",
-        "wrong_answers": [
-            "Iatrogenic disease",
-            "Hypersensitivity reaction",
-            "Teratogenicity"
-        ]
-    },
-    {
-        "question": "What is a drug reaction caused by genetic predisposition?",
-        "correct_answer": "Idiosyncratic reaction",
-        "wrong_answers": [
-            "Allergic reaction",
-            "Toxicity",
-            "Iatrogenic reaction"
-        ]
-    },
-    {
-        "question": "Abstinence syndrome occurs when a patient stops taking benzodiazepines or amphetamines. This is known as?",
-        "correct_answer": "Physical dependence",
-        "wrong_answers": [
-            "Psychological dependence",
-            "Drug resistance",
-            "Tolerance"
-        ]
-    },
-    {
-        "question": "A single dose of carbamazepine causes ataxia. This is an example of?",
-        "correct_answer": "Intolerance",
-        "wrong_answers": [
-            "Idiosyncratic reaction",
-            "Toxicity",
-            "Allergic reaction"
-        ]
-    },
-    {
-        "question": "Which of the following is an adverse reaction to drugs that increases sensitivity to UV light?",
-        "correct_answer": "Photosensitivity",
-        "wrong_answers": [
-            "Toxicity",
-            "Carcinogenicity",
-            "Neurotoxicity"
-        ]
-    },
-    {
-        "question": "What is the effect of quinolones?",
-        "correct_answer": "Forms a divalent chelate complex with Ca²⁺",
-        "wrong_answers": [
-            "Forms a monovalent chelate complex with Na⁺",
-            "Inhibits potassium channels",
-            "Enhances calcium absorption"
-        ]
-    },
-    {
-        "question": "A 2-year-old with fever and nausea needs a drug. What is the best method of administration?",
-        "correct_answer": "Suppository",
-        "wrong_answers": [
-            "Intravenous",
-            "Oral tablet",
-            "Inhalation"
-        ]
-    },
-    {
-        "question": "What reuptakes Acetylcholine in the presynaptic terminal from the synaptic cleft?",
-        "correct_answer": "Acetylcholine esterase",
-        "wrong_answers": [
-            "Choline Acetyltransferase",
-            "Acetylcholine transferase",
-            "Choline uptake transporter"
-        ]
-    },
-    {
-        "question": "A drug is successful but now they added a black box warning, what does this warning contain?",
-        "correct_answer": "Occurrence of adverse effect",
-        "wrong_answers": [
-            "Lack of efficacy",
-            "Contraindication for specific populations",
-            "Interaction with other drugs"
-        ]
-    },
-    {
-        "question": "Vasopressin used as a drug, what does it do?",
-        "correct_answer": "Increase water absorption in the collecting duct",
-        "wrong_answers": [
-            "Increase water absorption in proximal tubules",
-            "Has an effect in kidneys, blood vessels and respiratory system",
-            "Vasodilation by binding to V1 receptors"
-        ]
-    },
-    {
-        "question": "Induction of hepatic oxidative enzymes will cause a decrease in the concentration of warfarin. What happened?",
-        "correct_answer": "Acceleration of warfarin metabolism",
-        "wrong_answers": [
-            "Inhibition of warfarin metabolism",
-            "Decreased warfarin absorption",
-            "Increased protein binding of warfarin"
-        ]
-    },
-    {
-        "question": "Which of the following has the shortest half-life?",
-        "correct_answer": "Water-soluble drugs",
-        "wrong_answers": [
-            "Highly ionized drugs",
-            "Lipid-soluble drugs",
-            "Drugs bound to protein"
-        ]
-    },
-    {
-        "question": "Which mechanism causes the transformation of drugs from active to inactive forms?",
-        "correct_answer": "Metabolism",
-        "wrong_answers": [
-            "Absorption",
-            "Distribution",
-            "Clearance"
-        ]
-    }
-
+    "question": "Histamin decarboxylation?",
+    "correct_answer": "L-histadin",
+    "wrong_answers": [
+      "L-histidine",
+      "Histamine",
+      "D-histadin"
+    ]
+  },
+  {
+    "question": "Low threshold, developed Ataxia after one dose.",
+    "correct_answer": "Intolerance",
+    "wrong_answers": [
+      "Allergic reaction",
+      "Acute toxicity",
+      "Idiosyncratic response"
+    ]
+  },
+  {
+    "question": "Pharmacodynamic ?",
+    "correct_answer": "Bronchodilation",
+    "wrong_answers": [
+      "Bronchoconstriction",
+      "Airway obstruction",
+      "Increased pulmonary resistance"
+    ]
+  },
+  {
+    "question": "AA form of dopamine?",
+    "correct_answer": "L-DOPA",
+    "wrong_answers": [
+      "D-DOPA",
+      "L-dopamine",
+      "L-tyrosine"
+    ]
+  },
+  {
+    "question": "Which one is a synergistic effect?",
+    "correct_answer": "20 + 30 = 90",
+    "wrong_answers": [
+      "20 + 30 = 70",
+      "20 + 30 = 80",
+      "20 + 30 = 100"
+    ]
+  },
+  {
+    "question": "Inactive drug A increases pharmacological effect of drug?",
+    "correct_answer": "Potentiation",
+    "wrong_answers": [
+      "Synergism",
+      "Additive effect",
+      "Enhancement"
+    ]
+  },
+  {
+    "question": "Abstinence syndrome from discontinuation of benzodiazepines and amphetamines therapy is example of?",
+    "correct_answer": "Physical dependence",
+    "wrong_answers": [
+      "Psychological dependence",
+      "Withdrawal phenomenon",
+      "Tolerance"
+    ]
+  },
+  {
+    "question": "Inhibition of hepatic oxidative Enzymes increase concentration of Warfarin by?",
+    "correct_answer": "Blockage of Warfarin metabolism",
+    "wrong_answers": [
+      "Induction of Warfarin metabolism",
+      "Increased Warfarin absorption",
+      "Enhanced Warfarin excretion"
+    ]
+  },
+  {
+    "question": "Protamine sulfate form complex with heparin which inactivate its anticoagulant activity, is example of?",
+    "correct_answer": "Chemical antagonism",
+    "wrong_answers": [
+      "Physiological antagonism",
+      "Competitive inhibition",
+      "Pharmacokinetic antagonism"
+    ]
+  },
+  {
+    "question": "Slow absorption and prolonged duration of action?",
+    "correct_answer": "Transdermal",
+    "wrong_answers": [
+      "Sustained release",
+      "Extended-release",
+      "Intramuscular depot"
+    ]
+  },
+  {
+    "question": "Drug Effect of vasopressin?",
+    "correct_answer": "Increase water reabsorption in collecting ducts",
+    "wrong_answers": [
+      "Decrease water reabsorption in collecting ducts",
+      "Increase urine output",
+      "Vasoconstriction of renal arteries"
+    ]
+  },
+  {
+    "question": "Tetracycline?",
+    "correct_answer": "Form complex with divalent molecule such as Fe2+",
+    "wrong_answers": [
+      "Enhances absorption when bound to Fe2+",
+      "Forms complex with monovalent ions like Na+",
+      "Binds exclusively to trivalent ions"
+    ]
+  },
+  {
+    "question": "Pramipexole and parkinson disease?",
+    "correct_answer": "D2 like agonist",
+    "wrong_answers": [
+      "D2 receptor antagonist",
+      "D1 receptor agonist",
+      "D3 receptor antagonist"
+    ]
+  },
+  {
+    "question": "Black box warning for anti epileptic drugs. What is usual reason for black box?",
+    "correct_answer": "Occurrence of severe adverse effects",
+    "wrong_answers": [
+      "Lack of efficacy",
+      "Minor drug interactions",
+      "Mild side effects"
+    ]
+  },
+  {
+    "question": "Genetic predisposition?",
+    "correct_answer": "idiosyncratic",
+    "wrong_answers": [
+      "Acquired tolerance",
+      "Immune-mediated reaction",
+      "Environmental sensitivity"
+    ]
+  },
+  {
+    "question": "Decrease in bioavailability?",
+    "correct_answer": "Excessive first pass effect",
+    "wrong_answers": [
+      "Poor solubility",
+      "Low permeability",
+      "Increased renal clearance"
+    ]
+  },
+  {
+    "question": "Biotransrformation organ?",
+    "correct_answer": "Liver",
+    "wrong_answers": [
+      "Kidney",
+      "Lungs",
+      "Intestine"
+    ]
+  },
+  {
+    "question": "Pharmacovigiiliance which phase?",
+    "correct_answer": "Phase 4",
+    "wrong_answers": [
+      "Phase 2",
+      "Phase 3",
+      "Preclinical phase"
+    ]
+  },
+  {
+    "question": "Acetylcholine metabolism in synaptic cleft?",
+    "correct_answer": "Acetylcholine estrase",
+    "wrong_answers": [
+      "Choline acetyltransferase",
+      "Monoamine oxidase",
+      "Acetylcholine oxidase"
+    ]
+  },
+  {
+    "question": "Pharmacodynamics?",
+    "correct_answer": "Drug effect",
+    "wrong_answers": [
+      "Drug concentration",
+      "Drug metabolism",
+      "Drug absorption"
+    ]
+  },
+  {
+    "question": "Phase II clinical trials?",
+    "correct_answer": "Determine efficacy",
+    "wrong_answers": [
+      "Assess safety profile",
+      "Establish dosing regimen",
+      "Post-marketing surveillance"
+    ]
+  },
+  {
+    "question": "Drug taken orally most absorption?",
+    "correct_answer": "Small intestine",
+    "wrong_answers": [
+      "Stomach",
+      "Large intestine",
+      "Esophagus"
+    ]
+  },
+  {
+    "question": "Patients take drug and develop hepatitis by isonaids?",
+    "correct_answer": "Latrogenic",
+    "wrong_answers": [
+      "Viral hepatitis",
+      "Autoimmune hepatitis",
+      "Allergic hepatitis"
+    ]
+  },
+  {
+    "question": "Pregnancy fetal defects?",
+    "correct_answer": "Teratogenicity",
+    "wrong_answers": [
+      "Embryotoxicity",
+      "Genotoxicity",
+      "Mutagenicity"
+    ]
+  },
+  {
+    "question": "2 year old with nausea and fever given paracetamol?",
+    "correct_answer": "Suppository",
+    "wrong_answers": [
+      "Oral suspension",
+      "Intravenous injection",
+      "Chewable tablet"
+    ]
+  },
+  {
+    "question": "Acid drug best given under?",
+    "correct_answer": "Acidic environment",
+    "wrong_answers": [
+      "Alkaline environment",
+      "Neutral pH",
+      "Buffered solution"
+    ]
+  },
+  {
+    "question": "Dopamine precursor?",
+    "correct_answer": "Dopa",
+    "wrong_answers": [
+      "Tyrosine",
+      "Phenylalanine",
+      "Dopamine itself"
+    ]
+  },
+  {
+    "question": "After taking drugs becomes sensitive to UVA long wave?",
+    "correct_answer": "Photosensitivity",
+    "wrong_answers": [
+      "Photoprotection",
+      "Hyperpigmentation",
+      "UVA resistance"
+    ]
+  },
+  {
+    "question": "Graph, which one has reduced efficacy?",
+    "correct_answer": "B",
+    "wrong_answers": [
+      "A",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "question": "Histamine makes bronchospasm. Epinephrine bronchodilate. This is?",
+    "correct_answer": "Functional Antagonism",
+    "wrong_answers": [
+      "Chemical antagonism",
+      "Physiological antagonism",
+      "Competitive antagonism"
+    ]
+  },
+  {
+    "question": "Precursor of serotonin?",
+    "correct_answer": "Tryptophan",
+    "wrong_answers": [
+      "Tyrosine",
+      "Phenylalanine",
+      "Tryptamine"
+    ]
+  },
+  {
+    "question": "What is the main inhibitory neurotransmitter in the CNS?",
+    "correct_answer": "GABA",
+    "wrong_answers": [
+      "Dopamine",
+      "Serotonin",
+      "Norepinephrine"
+    ]
+  },
+  {
+    "question": "Which impairs reabsorption of oral contraceptives in the GIT?",
+    "correct_answer": "Co-administration with oral penicillin antibiotic",
+    "wrong_answers": [
+      "Concurrent use of antacids",
+      "Consumption with high-fiber foods",
+      "Administration with dairy products"
+    ]
+  },
+  {
+    "question": "Name the measure of safety of drugs, represented as a ratio?",
+    "correct_answer": "Therapeutic index",
+    "wrong_answers": [
+      "Margin of safety",
+      "Safety ratio",
+      "Therapeutic window"
+    ]
+  },
+  {
+    "question": "What do you use to determine the bioavailability of a drug?",
+    "correct_answer": "Intravenous route",
+    "wrong_answers": [
+      "Intramuscular route",
+      "Subcutaneous injection",
+      "Sublingual administration"
+    ]
+  },
+  {
+    "question": "Which phase converts substances from active to inactive?",
+    "correct_answer": "Metabolism",
+    "wrong_answers": [
+      "Absorption",
+      "Excretion",
+      "Distribution"
+    ]
+  },
+  {
+    "question": "What is the science that deals with the mechanism of action, clinical application, side effects, and fate of drugs in animals and humans?",
+    "correct_answer": "Pharmacology",
+    "wrong_answers": [
+      "Pharmacokinetics",
+      "Toxicology",
+      "Biochemistry"
+    ]
+  },
+  {
+    "question": "What type of transport moves substances from low to high concentration using energy?",
+    "correct_answer": "Active transport",
+    "wrong_answers": [
+      "Facilitated diffusion",
+      "Passive diffusion",
+      "Osmosis"
+    ]
+  },
+  {
+    "question": "Which transport mechanism uses a carrier protein to move substances from high to low concentration without ATP?",
+    "correct_answer": "Facilitated diffusion",
+    "wrong_answers": [
+      "Active transport",
+      "Secondary active transport",
+      "Endocytosis"
+    ]
+  },
+  {
+    "question": "Teratogenicity?",
+    "correct_answer": "ABCDX",
+    "wrong_answers": [
+      "ABCDY",
+      "ABCDZ",
+      "ABCDF"
+    ]
+  },
+  {
+    "question": "Which factor is associated with the shortest half-life of a drug?",
+    "correct_answer": "Highly ionized",
+    "wrong_answers": [
+      "Highly lipophilic",
+      "High protein binding",
+      "Low pKa"
+    ]
+  },
+  {
+    "question": "Which statement is incorrect about preclinical trials?",
+    "correct_answer": "They use a small number of healthy volunteers",
+    "wrong_answers": [
+      "They are conducted exclusively in animal models",
+      "They assess pharmacokinetics and toxicity",
+      "They do not involve human subjects"
+    ]
+  },
+  {
+    "question": "Pharmacodynamics?",
+    "correct_answer": "Vasodilator",
+    "wrong_answers": [
+      "Vasoconstrictor",
+      "Diuretic",
+      "Beta blocker"
+    ]
+  },
+  {
+    "question": "Precursor of serotonin?",
+    "correct_answer": "Tryptophan",
+    "wrong_answers": [
+      "Tyrosine",
+      "5-HTP",
+      "Tryptamine"
+    ]
+  },
+  {
+    "question": "L-histidine is a precursor to what?",
+    "correct_answer": "Histamine",
+    "wrong_answers": [
+      "Histidinol",
+      "Imidazole",
+      "Histidine hydrochloride"
+    ]
+  },
+  {
+    "question": "Movement from high to low concentration with a carrier protein?",
+    "correct_answer": "Facilitated diffusion",
+    "wrong_answers": [
+      "Simple diffusion",
+      "Active transport",
+      "Osmosis"
+    ]
+  },
+  {
+    "question": "Movement from low to high concentration, with a carrier protein that uses ATP?",
+    "correct_answer": "Active transport",
+    "wrong_answers": [
+      "Facilitated diffusion",
+      "Passive diffusion",
+      "Secondary active transport"
+    ]
+  },
+  {
+    "question": "Name of the measure of safety of drugs?",
+    "correct_answer": "Therapeutic index",
+    "wrong_answers": [
+      "Safety ratio",
+      "Margin of safety",
+      "Therapeutic window"
+    ]
+  },
+  {
+    "question": "Calculate the Vd (150mg / 3mg/L)?",
+    "correct_answer": "50L",
+    "wrong_answers": [
+      "45L",
+      "55L",
+      "60L"
+    ]
+  },
+  {
+    "question": "Pregnant woman who takes drugs that may cause fetal birth defects?",
+    "correct_answer": "Teratogenicity",
+    "wrong_answers": [
+      "Embryotoxicity",
+      "Mutagenicity",
+      "Carcinogenicity"
+    ]
+  },
+  {
+    "question": "The FDA made categories (A, B, C, D, X) for what?",
+    "correct_answer": "Teratogenicity",
+    "wrong_answers": [
+      "Pharmacokinetics",
+      "Drug efficacy",
+      "Side effect profiles"
+    ]
+  },
+  {
+    "question": "Uncommon drug response due to genetic disposition?",
+    "correct_answer": "Idiosyncratic",
+    "wrong_answers": [
+      "Allergic reaction",
+      "Dose-dependent toxicity",
+      "Pharmacodynamic variability"
+    ]
+  },
+  {
+    "question": "Parkinson's disease is treated with Pramipexole, what does this drug do?",
+    "correct_answer": "It is an agonist for D2 receptors",
+    "wrong_answers": [
+      "It is an antagonist for D2 receptors",
+      "It increases dopamine reuptake",
+      "It inhibits monoamine oxidase"
+    ]
+  },
+  {
+    "question": "Inhibitory neurotransmitter?",
+    "correct_answer": "Dopamine and Serotonin",
+    "wrong_answers": [
+      "GABA and glycine",
+      "Acetylcholine and glutamate",
+      "Norepinephrine and histamine"
+    ]
+  },
+  {
+    "question": "What is the science that deals with the mechanism of action, clinical application, side effects, and the fate of drugs in animals and humans?",
+    "correct_answer": "Pharmacology",
+    "wrong_answers": [
+      "Pharmacokinetics",
+      "Toxicology",
+      "Medicinal chemistry"
+    ]
+  },
+  {
+    "question": "What decreases bioavailability?",
+    "correct_answer": "Excessive first pass metabolism",
+    "wrong_answers": [
+      "Poor solubility",
+      "Gastric instability",
+      "Low permeability"
+    ]
+  },
+  {
+    "question": "Pharmacovigilance, which phase?",
+    "correct_answer": "Phase IV",
+    "wrong_answers": [
+      "Phase I",
+      "Phase II",
+      "Phase III"
+    ]
+  },
+  {
+    "question": "Phase I (Pre-clinical), all are correct except?",
+    "correct_answer": "Healthy volunteers take part in it",
+    "wrong_answers": [
+      "It is conducted only in animals",
+      "It uses a very small number of subjects",
+      "It follows preclinical testing"
+    ]
+  },
+  {
+    "question": "What's true about phase 2?",
+    "correct_answer": "Know the efficacy of drug",
+    "wrong_answers": [
+      "Assess long-term safety",
+      "Determine maximum tolerated dose",
+      "Exclusively study pharmacokinetics"
+    ]
+  },
+  {
+    "question": "Bioavailability: you compare a route of administration with which route?",
+    "correct_answer": "Intravenous",
+    "wrong_answers": [
+      "Intramuscular",
+      "Subcutaneous",
+      "Oral"
+    ]
+  },
+  {
+    "question": "Definition of synergism?",
+    "correct_answer": "Interaction of two or more drugs when their combined effect is greater than the sum of the effects seen when each drug is given alone.",
+    "wrong_answers": [
+      "An additive effect of drugs",
+      "A diminished effect when drugs are combined",
+      "An effect produced by one drug masking another"
+    ]
+  },
+  {
+    "question": "Pharmacodynamic effect?",
+    "correct_answer": "Vasodilation",
+    "wrong_answers": [
+      "Vasoconstriction",
+      "Increased heart rate",
+      "Diuresis"
+    ]
+  },
+  {
+    "question": "Slow method of absorption with long term effect?",
+    "correct_answer": "Transdermal",
+    "wrong_answers": [
+      "Intravenous infusion",
+      "Sublingual administration",
+      "Rectal administration"
+    ]
+  },
+  {
+    "question": "Most absorption of a drug taken orally?",
+    "correct_answer": "Small intestine",
+    "wrong_answers": [
+      "Stomach",
+      "Large intestine",
+      "Esophagus"
+    ]
+  },
+  {
+    "question": "Patient developed Hepatitis from taking isoniazid?",
+    "correct_answer": "Idiosyncratic",
+    "wrong_answers": [
+      "Dose-dependent toxicity",
+      "Immune-mediated reaction",
+      "Viral hepatitis"
+    ]
+  },
+  {
+    "question": "Genetic predisposition?",
+    "correct_answer": "Idiosyncratic",
+    "wrong_answers": [
+      "Iatrogenic Disease",
+      "Allergic reaction",
+      "Enzymatic deficiency"
+    ]
+  },
+  {
+    "question": "Abstinence syndrome occurs when the patient stops taking benzodiazepines or amphetamines?",
+    "correct_answer": "Physical dependence",
+    "wrong_answers": [
+      "Psychological dependence",
+      "Tolerance",
+      "Withdrawal due to receptor upregulation"
+    ]
+  },
+  {
+    "question": "Case: One dose of carbamazepine causes ataxia?",
+    "correct_answer": "Intolerance",
+    "wrong_answers": [
+      "Idiosyncratic reaction",
+      "Allergic reaction",
+      "Overdose effect"
+    ]
+  },
+  {
+    "question": "Sensitive to UV light?",
+    "correct_answer": "Photosensitivity",
+    "wrong_answers": [
+      "Photoprotection",
+      "UV resistance",
+      "Hyperpigmentation"
+    ]
+  },
+  {
+    "question": "Quinolones effect?",
+    "correct_answer": "Forms a divalent chelate complex with Ca",
+    "wrong_answers": [
+      "Enhances calcium absorption",
+      "Inhibits calcium channels",
+      "Binds preferentially to magnesium ions"
+    ]
+  },
+  {
+    "question": "A 2 year old with fever and nausea, we want to give him a drug, which method is the best approach?",
+    "correct_answer": "Suppository",
+    "wrong_answers": [
+      "Oral liquid formulation",
+      "Intramuscular injection",
+      "Buccal tablet"
+    ]
+  },
+  {
+    "question": "What reuptakes Acetylcholine in the presynaptic terminal from the synaptic cleft?",
+    "correct_answer": "Choline Acetyltransferase",
+    "wrong_answers": [
+      "Acetylcholinesterase",
+      "Choline transporter",
+      "Monoamine oxidase"
+    ]
+  },
+  {
+    "question": "A drug is successful but now they added a black box warning, what does this warning contain?",
+    "correct_answer": "Occurrence of adverse effect",
+    "wrong_answers": [
+      "Lack of efficacy",
+      "High therapeutic index",
+      "Improved safety profile"
+    ]
+  },
+  {
+    "question": "Vasopressin used as a drug, what does it do?",
+    "correct_answer": "Increase water absorption in collecting duct",
+    "wrong_answers": [
+      "Cause vasodilation via V1 receptor",
+      "Decrease urine production by stimulating diuresis",
+      "Directly stimulate renal excretion"
+    ]
+  },
+  {
+    "question": "Induction of hepatic oxidative enzyme will cause a decrease in concentration of warfarin, explain what happened?",
+    "correct_answer": "Acceleration of warfarin metabolism",
+    "wrong_answers": [
+      "Inhibition of warfarin metabolism",
+      "Increased warfarin absorption",
+      "Enhanced warfarin excretion independent of metabolism"
+    ]
+  },
+  {
+    "question": "Which of the following has the shortest half-life?",
+    "correct_answer": "Highly ionized drugs",
+    "wrong_answers": [
+      "Highly lipophilic drugs",
+      "Drugs with high protein binding",
+      "Drugs with a large volume of distribution"
+    ]
+  },
+  {
+    "question": "Which mechanism causes transformation of drugs active to inactive?",
+    "correct_answer": "Metabolism",
+    "wrong_answers": [
+      "Excretion",
+      "Absorption",
+      "Distribution"
+    ]
+  }
+  
 ]
 
 
