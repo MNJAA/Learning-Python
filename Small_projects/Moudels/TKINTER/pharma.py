@@ -2,7 +2,7 @@ import sys
 import random
 import time
 import winsound  # For playing sounds on Windows
-from qs import HA, Example_questions_form  # Import your questions from qs.py
+from qs import pharm, Example_questions_form  # Import your questions from qs.py
 
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
@@ -321,7 +321,7 @@ class Quiz(QMainWindow):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    exam_questions = HA
+    exam_questions = pharm
     quiz = Quiz(exam_questions)
     quiz.show()
     sys.exit(app.exec())

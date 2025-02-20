@@ -16,94 +16,115 @@ except ImportError:
     sys.exit(1)
 
 # ----------------------------
-# 2. Main Menu Class
+# 2. Main Menu Class with Upgraded UI
 # ----------------------------
 class QuizLauncher:
     def __init__(self, root):
         self.root = root
         self.root.title("Quiz Menu")
-        self.root.geometry("400x300")
-        self.root.configure(bg="#2E3440")
-        
-        # Get path to TKINTER folder
+        self.root.geometry("500x400")
+        self.root.configure(bg="#3B4252")  # Modern dark background
+
         self.quiz_path = self.get_quiz_path()
-        
-        # Create GUI
+        self.setup_styles()  # Apply modern ttk styles
         self.create_widgets()
-        
+
     def get_quiz_path(self):
         """Get path to TKINTER folder from Learning_Python root"""
-        # Path to Learning_Python (where this script is located)
         learning_python_root = os.path.dirname(os.path.abspath(__file__))
-        
-        # Path to TKINTER folder
         return os.path.join(
             learning_python_root,
             "Small_projects",
             "Moudels",
             "TKINTER"
         )
-        
+
+    def setup_styles(self):
+        # Setup ttk styles for a modern look
+        style = ttk.Style(self.root)
+        style.theme_use("clam")
+        style.configure("TButton", font=("Segoe UI", 12), padding=6)
+        style.configure("TLabel", font=("Segoe UI", 12))
+
+    def add_hover(self, widget, normal_bg, hover_bg):
+        # Adds a simple hover effect to buttons
+        def on_enter(e):
+            widget['bg'] = hover_bg
+        def on_leave(e):
+            widget['bg'] = normal_bg
+        widget.bind("<Enter>", on_enter)
+        widget.bind("<Leave>", on_leave)
+
     def create_widgets(self):
-        # Header
+        # Header Frame
+        header_frame = tk.Frame(self.root, bg="#3B4252")
+        header_frame.pack(pady=30)
         header = tk.Label(
-            self.root, 
+            header_frame, 
             text="Select a Quiz", 
-            font=("Helvetica", 18, "bold"), 
-            bg="#2E3440", 
+            font=("Segoe UI", 20, "bold"), 
+            bg="#3B4252", 
             fg="#88C0D0"
         )
-        header.pack(pady=20)
-        
-        # Quiz buttons
+        header.pack()
+
+        # Buttons Frame
+        buttons_frame = tk.Frame(self.root, bg="#3B4252")
+        buttons_frame.pack(pady=20)
+
         quizzes = [
             ("Embryology", "EM.py"),
             ("Medical Genetics", "MG.py"),
-            ("TBL Quiz", "TBL.py")
+            ("TBL Quiz", "TBL.py"),
+            ("HA4 Quiz 1", "HA.py"),
+            ("GPT prac Quiz", "GPT.py"),
+            ("pharma", "pharma.py")
         ]
-        
+
         for text, filename in quizzes:
             btn = tk.Button(
-                self.root,
+                buttons_frame,
                 text=text,
                 command=lambda f=filename: self.launch_quiz(f),
                 bg="#4C566A",
                 fg="#ECEFF4",
                 activebackground="#5E81AC",
-                font=("Arial", 12),
+                font=("Segoe UI", 14),
                 width=25,
                 relief="flat"
             )
-            btn.pack(pady=7)
-            
-        # Exit button
+            btn.pack(pady=8)
+            self.add_hover(btn, "#4C566A", "#5E81AC")
+
+        # Exit Button
+        exit_frame = tk.Frame(self.root, bg="#3B4252")
+        exit_frame.pack(pady=20)
         exit_btn = tk.Button(
-            self.root,
+            exit_frame,
             text="Exit",
             command=self.root.destroy,
             bg="#BF616A",
             fg="#ECEFF4",
-            font=("Arial", 12),
+            activebackground="#D08770",
+            font=("Segoe UI", 14),
             width=15,
             relief="flat"
         )
-        exit_btn.pack(pady=20)
-        
+        exit_btn.pack()
+        self.add_hover(exit_btn, "#BF616A", "#D08770")
+
     def launch_quiz(self, filename):
         full_path = os.path.join(self.quiz_path, filename)
-        
         if not os.path.exists(full_path):
-            messagebox.showerror("Error", 
-                f"Quiz file not found:\n{filename}\n"
-                f"Expected at: {self.quiz_path}")
+            messagebox.showerror(
+                "Error", 
+                f"Quiz file not found:\n{filename}\nExpected at: {self.quiz_path}"
+            )
             return
-            
         try:
-            # Launch quiz in its own process
             subprocess.Popen([sys.executable, full_path])
         except Exception as e:
-            messagebox.showerror("Error", 
-                f"Failed to launch {filename}:\n{str(e)}")
+            messagebox.showerror("Error", f"Failed to launch {filename}:\n{str(e)}")
 
 # ----------------------------
 # 3. Run the Application

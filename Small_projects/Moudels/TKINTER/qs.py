@@ -19,12 +19,296 @@ Example_questions_form = [
 
 
 
+pharm = [
+     {
+        "question": "What is the precursor of serotonin?",
+        "correct_answer": "Tryptophan",
+        "wrong_answers": [
+            "Serine",
+            "Tyrosine",
+            "Phenylalanine"
+        ]
+    },
+    {
+        "question": "L-histidine is a precursor to what?",
+        "correct_answer": "Histamine",
+        "wrong_answers": [
+            "Dopamine",
+            "Acetylcholine",
+            "Serotonin"
+        ]
+    },
+    {
+        "question": "Movement from high to low concentration with a carrier protein?",
+        "correct_answer": "Facilitated diffusion",
+        "wrong_answers": [
+            "Active transport",
+            "Simple diffusion",
+            "Endocytosis"
+        ]
+    },
+    {
+        "question": "Movement from low to high concentration with a carrier protein that uses ATP?",
+        "correct_answer": "Active transport",
+        "wrong_answers": [
+            "Facilitated diffusion",
+            "Osmosis",
+            "Simple diffusion"
+        ]
+    },
+    {
+        "question": "What is the measure of drug safety?",
+        "correct_answer": "Therapeutic index",
+        "wrong_answers": [
+            "Half-life",
+            "Bioavailability",
+            "Potency"
+        ]
+    },
+    {
+        "question": "A pregnant woman who takes drugs that may cause fetal birth defects is experiencing what?",
+        "correct_answer": "Teratogenicity",
+        "wrong_answers": [
+            "Carcinogenicity",
+            "Mutagenicity",
+            "Hepatotoxicity"
+        ]
+    },
+    {
+        "question": "The FDA made categories (A, B, C, D, X) for what purpose?",
+        "correct_answer": "Teratogenicity",
+        "wrong_answers": [
+            "Drug potency",
+            "Bioavailability classification",
+            "Drug clearance rates"
+        ]
+    },
+    {
+        "question": "An uncommon drug response due to genetic disposition is called?",
+        "correct_answer": "Idiosyncratic",
+        "wrong_answers": [
+            "Allergic reaction",
+            "Toxicity",
+            "Iatrogenic reaction"
+        ]
+    },
+    {
+        "question": "Parkinson's disease is treated with Pramipexole. What does this drug do?",
+        "correct_answer": "It is an agonist for D2 receptors",
+        "wrong_answers": [
+            "It is an agonist for H2 receptors",
+            "It blocks dopamine receptors",
+            "It inhibits serotonin reuptake"
+        ]
+    },
+    {
+        "question": "Which of the following is an inhibitory neurotransmitter?",
+        "correct_answer": "GABA and Serotonin",
+        "wrong_answers": [
+            "Dopamine and Glutamate",
+            "Noradrenaline and Acetylcholine",
+            "Glutamate and Epinephrine"
+        ]
+    },
+    {
+        "question": "What branch of science deals with mechanisms of action, clinical applications, side effects, and drug metabolism?",
+        "correct_answer": "Pharmacology",
+        "wrong_answers": [
+            "Toxicology",
+            "Pharmacokinetics",
+            "Therapeutics"
+        ]
+    },
+    {
+        "question": "What decreases bioavailability?",
+        "correct_answer": "Excessive first-pass metabolism",
+        "wrong_answers": [
+            "Low drug potency",
+            "Low volume of distribution",
+            "Decreased renal clearance"
+        ]
+    },
+    {
+        "question": "Which phase of clinical trials is associated with pharmacovigilance?",
+        "correct_answer": "Phase IV",
+        "wrong_answers": [
+            "Phase I",
+            "Phase II",
+            "Phase III"
+        ]
+    },
+    {
+        "question": "What is the main goal of Phase II in clinical trials?",
+        "correct_answer": "Determine the efficacy of the drug",
+        "wrong_answers": [
+            "Determine drug safety",
+            "Test on healthy volunteers",
+            "Compare with placebo"
+        ]
+    },
+    {
+        "question": "Bioavailability is compared to which route of administration?",
+        "correct_answer": "Intravenous",
+        "wrong_answers": [
+            "Oral",
+            "Sublingual",
+            "Intramuscular"
+        ]
+    },
+    {
+        "question": "Definition of synergism?",
+        "correct_answer": "Interaction of two or more drugs where their combined effect is greater than the sum of their individual effects",
+        "wrong_answers": [
+            "Combined effect is equal to the sum of the effects of each drug alone",
+            "Combined effect is less than the sum of individual effects",
+            "One drug inhibits the effect of the other"
+        ]
+    },
+    {
+        "question": "Which method of drug absorption provides a slow release with a long-term effect?",
+        "correct_answer": "Transdermal",
+        "wrong_answers": [
+            "Intravenous",
+            "Sublingual",
+            "Intramuscular"
+        ]
+    },
+    {
+        "question": "Where does the majority of drug absorption occur for orally administered drugs?",
+        "correct_answer": "Small intestine",
+        "wrong_answers": [
+            "Stomach",
+            "Colon",
+            "Rectum"
+        ]
+    },
+    {
+        "question": "A patient developed hepatitis from taking isoniazid. This is an example of?",
+        "correct_answer": "Idiosyncratic reaction",
+        "wrong_answers": [
+            "Iatrogenic disease",
+            "Hypersensitivity reaction",
+            "Teratogenicity"
+        ]
+    },
+    {
+        "question": "What is a drug reaction caused by genetic predisposition?",
+        "correct_answer": "Idiosyncratic reaction",
+        "wrong_answers": [
+            "Allergic reaction",
+            "Toxicity",
+            "Iatrogenic reaction"
+        ]
+    },
+    {
+        "question": "Abstinence syndrome occurs when a patient stops taking benzodiazepines or amphetamines. This is known as?",
+        "correct_answer": "Physical dependence",
+        "wrong_answers": [
+            "Psychological dependence",
+            "Drug resistance",
+            "Tolerance"
+        ]
+    },
+    {
+        "question": "A single dose of carbamazepine causes ataxia. This is an example of?",
+        "correct_answer": "Intolerance",
+        "wrong_answers": [
+            "Idiosyncratic reaction",
+            "Toxicity",
+            "Allergic reaction"
+        ]
+    },
+    {
+        "question": "Which of the following is an adverse reaction to drugs that increases sensitivity to UV light?",
+        "correct_answer": "Photosensitivity",
+        "wrong_answers": [
+            "Toxicity",
+            "Carcinogenicity",
+            "Neurotoxicity"
+        ]
+    },
+    {
+        "question": "What is the effect of quinolones?",
+        "correct_answer": "Forms a divalent chelate complex with Ca²⁺",
+        "wrong_answers": [
+            "Forms a monovalent chelate complex with Na⁺",
+            "Inhibits potassium channels",
+            "Enhances calcium absorption"
+        ]
+    },
+    {
+        "question": "A 2-year-old with fever and nausea needs a drug. What is the best method of administration?",
+        "correct_answer": "Suppository",
+        "wrong_answers": [
+            "Intravenous",
+            "Oral tablet",
+            "Inhalation"
+        ]
+    },
+    {
+        "question": "What reuptakes Acetylcholine in the presynaptic terminal from the synaptic cleft?",
+        "correct_answer": "Acetylcholine esterase",
+        "wrong_answers": [
+            "Choline Acetyltransferase",
+            "Acetylcholine transferase",
+            "Choline uptake transporter"
+        ]
+    },
+    {
+        "question": "A drug is successful but now they added a black box warning, what does this warning contain?",
+        "correct_answer": "Occurrence of adverse effect",
+        "wrong_answers": [
+            "Lack of efficacy",
+            "Contraindication for specific populations",
+            "Interaction with other drugs"
+        ]
+    },
+    {
+        "question": "Vasopressin used as a drug, what does it do?",
+        "correct_answer": "Increase water absorption in the collecting duct",
+        "wrong_answers": [
+            "Increase water absorption in proximal tubules",
+            "Has an effect in kidneys, blood vessels and respiratory system",
+            "Vasodilation by binding to V1 receptors"
+        ]
+    },
+    {
+        "question": "Induction of hepatic oxidative enzymes will cause a decrease in the concentration of warfarin. What happened?",
+        "correct_answer": "Acceleration of warfarin metabolism",
+        "wrong_answers": [
+            "Inhibition of warfarin metabolism",
+            "Decreased warfarin absorption",
+            "Increased protein binding of warfarin"
+        ]
+    },
+    {
+        "question": "Which of the following has the shortest half-life?",
+        "correct_answer": "Water-soluble drugs",
+        "wrong_answers": [
+            "Highly ionized drugs",
+            "Lipid-soluble drugs",
+            "Drugs bound to protein"
+        ]
+    },
+    {
+        "question": "Which mechanism causes the transformation of drugs from active to inactive forms?",
+        "correct_answer": "Metabolism",
+        "wrong_answers": [
+            "Absorption",
+            "Distribution",
+            "Clearance"
+        ]
+    }
+
+]
+
 
 HA = [
     {
         "question": "Which lingual papillon does not have taste buds?",
         "correct_answer": "Filiform",
-        "wrong_answers": ["Fungiform", "Circumvallate", "Foliate"]
+        "wrong_answers": ["Fungiform", "Circumvallate", "Foliate"],
+        'image':'Small_projects\Moudels\TKINTER\images\image.png'
     },
     {
         "question": "What is the embryological remnant of the hypoglossal duct?",
