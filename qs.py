@@ -1,7 +1,3 @@
-from ANSI import CR,C,SL
-print(C,CR)
-
-
 Example_questions_form = [
     {"question": "Example question",
      "correct_answer": "Example correct answer",
@@ -16,7 +12,6 @@ Example_questions_form = [
                        "Example wrong answer"]
      },
 ]
-
 
 
 pharm = [
@@ -716,13 +711,673 @@ pharm = [
   
 ]
 
+HA4mid = [
+     {
+    "question": "What is the nerve supplying the buccinator?",
+    "correct_answer": "Buccal branch of facial nerve",
+    "wrong_answers": [
+      "Mandibular branch of trigeminal nerve",
+      "Temporal branch of facial nerve",
+      "Lingual nerve"
+    ]
+  },
+  {
+    "question": "What can be damaged when removing a tumor from anterior scalene?",
+    "correct_answer": "Phrenic nerve",
+    "wrong_answers": [
+      "Brachial plexus",
+      "Vagus nerve",
+      "Cervical sympathetic chain"
+    ]
+  },
+  {
+    "question": "What is attached to the tympanic membrane?",
+    "correct_answer": "Handle of malleus",
+    "wrong_answers": [
+      "Incus",
+      "Stapes",
+      "Malleus head"
+    ]
+  },
+  {
+    "question": "What is true about the prevertebral fascia?",
+    "correct_answer": "Phrenic nerve is superficial to it",
+    "wrong_answers": [
+      "It lies deep to the phrenic nerve",
+      "It is part of the carotid sheath",
+      "It attaches directly to the cervical vertebrae"
+    ]
+  },
+  {
+    "question": "Damage to facial nerves can cause?",
+    "correct_answer": "Hyperacusis",
+    "wrong_answers": [
+      "Facial paralysis",
+      "Loss of taste",
+      "Inability to close the eye"
+    ]
+  },
+  {
+    "question": "Injury leading to severe epistaxis, damage to the anterior inferior nasal septum, which artery is most responsible for the bleeding?",
+    "correct_answer": "Sphenopalatine artery",
+    "wrong_answers": [
+      "Anterior ethmoidal artery",
+      "Superior labial artery",
+      "Greater palatine artery"
+    ]
+  },
+  {
+    "question": "Which part does not contribute to the temporomandibular joint?",
+    "correct_answer": "Neck of mandible",
+    "wrong_answers": [
+      "Condylar process of mandible",
+      "Articular disc",
+      "Glenoid fossa of temporal bone"
+    ]
+  },
+  {
+    "question": "Where is the pharyngeal tonsils found?",
+    "correct_answer": "Superior aspect of nasopharynx",
+    "wrong_answers": [
+      "Oropharynx",
+      "Inferior nasopharynx",
+      "Lateral wall of the oropharynx"
+    ]
+  },
+  {
+    "question": "Child SCM defect?",
+    "correct_answer": "Right face tilt",
+    "wrong_answers": [
+      "Left face tilt",
+      "Bilateral head tilt",
+      "No noticeable tilt"
+    ]
+  },
+  {
+    "question": "Which is the last permanent tooth to erupt?",
+    "correct_answer": "Canine",
+    "wrong_answers": [
+      "Second molar",
+      "Third molar",
+      "First premolar"
+    ]
+  },
+  {
+    "question": "What is the 'freeway space'?",
+    "correct_answer": "Space between upper and lower teeth when the mandible is at physiological rest",
+    "wrong_answers": [
+      "The gap between the lips when smiling",
+      "The vertical space during maximum mouth opening",
+      "The interocclusal distance during chewing"
+    ]
+  },
+  {
+    "question": "What is true about the skull?",
+    "correct_answer": "Lesser wing of sphenoid is the posterior surface of the anterior cranial fossa",
+    "wrong_answers": [
+      "Greater wing of sphenoid forms the lateral wall of the skull",
+      "Lesser wing of sphenoid forms the floor of the middle cranial fossa",
+      "Greater wing of sphenoid is the anterior surface of the anterior cranial fossa"
+    ]
+  },
+  {
+    "question": "Which ligament is damaged in whiplash?",
+    "correct_answer": "Rupture of transverse ligament of atlas",
+    "wrong_answers": [
+      "Alar ligament",
+      "Nuchal ligament",
+      "Anterior longitudinal ligament"
+    ]
+  },
+  {
+    "question": "What is true about the cervical vertebrae?",
+    "correct_answer": "All has transverse foramen",
+    "wrong_answers": [
+      "None have transverse foramina",
+      "Only the upper three have transverse foramina",
+      "All have bifid spinous processes"
+    ]
+  },
+  {
+    "question": "Tumor at posterior ⅓ of tongue?",
+    "correct_answer": "Jugulo-diagastric LN",
+    "wrong_answers": [
+      "Submental lymph node",
+      "Deep cervical lymph node",
+      "Submandibular lymph node"
+    ]
+  },
+  {
+    "question": "Which of the following is true about the pharynx?",
+    "correct_answer": "Vallecula is between the posterior part of tongue and the epiglottis",
+    "wrong_answers": [
+      "The vallecula is located at the base of the tongue",
+      "The vallecula is a part of the larynx",
+      "The vallecula is the space behind the soft palate"
+    ]
+  },
+  {
+    "question": "Which of the following is true about the middle ear?",
+    "correct_answer": "It has capacity of 1cm^3",
+    "wrong_answers": [
+      "It has a capacity of 0.5 cm^3",
+      "It has a capacity of 2 cm^3",
+      "It is fluid-filled rather than air-filled"
+    ]
+  },
+  {
+    "question": "If the buccal nerve is damaged, what action will be affected?",
+    "correct_answer": "Whistling",
+    "wrong_answers": [
+      "Chewing",
+      "Speaking",
+      "Smiling"
+    ]
+  },
+  {
+    "question": "What is true about the tongue?",
+    "correct_answer": "Posterior ⅓ has taste buds",
+    "wrong_answers": [
+      "Anterior ⅔ has most of the taste buds",
+      "Taste buds are uniformly distributed across the tongue",
+      "Only the tip of the tongue has taste buds"
+    ]
+  },
+  {
+    "question": "Sympathetic nerve damage will cause?",
+    "correct_answer": "Ptosis and constrictor of the pupil",
+    "wrong_answers": [
+      "Exophthalmos and mydriasis",
+      "Loss of pupillary reflex",
+      "Conjunctival injection and lacrimation"
+    ]
+  },
+  {
+    "question": "Which muscle is attached to the greater wing of the sphenoid?",
+    "correct_answer": "Lateral pterygoid",
+    "wrong_answers": [
+      "Medial pterygoid",
+      "Temporalis",
+      "Masseter"
+    ]
+  },
+  {
+    "question": "Nerve supply to orbicularis oris?",
+    "correct_answer": "Marginal mandibular and buccal nerves (2+3)",
+    "wrong_answers": [
+      "Zygomatic and temporal branches of the facial nerve",
+      "Mandibular branch of the trigeminal nerve",
+      "Auriculotemporal nerve"
+    ]
+  },
+  {
+    "question": "Damage inferior to the orbit will affect what structure?",
+    "correct_answer": "Maxillary sinus",
+    "wrong_answers": [
+      "Ethmoid sinus",
+      "Frontal sinus",
+      "Sphenoid sinus"
+    ]
+  },
+  {
+    "question": "What is true about the carotid sheath?",
+    "correct_answer": "Sympathetic is posterior",
+    "wrong_answers": [
+      "Carotid artery is posterior",
+      "Vagus nerve is posterior",
+      "Internal jugular vein is posterior"
+    ]
+  },
+  {
+    "question": "Damage to the pterion affects which bone?",
+    "correct_answer": "Frontal",
+    "wrong_answers": [
+      "Parietal",
+      "Temporal",
+      "Sphenoid"
+    ]
+  },
+  {
+    "question": "Epitaxis (nosebleed), due to damage in a small area, what is responsible?",
+    "correct_answer": "Sphenopalatine artery",
+    "wrong_answers": [
+      "Greater palatine artery",
+      "Anterior ethmoidal artery",
+      "Superior labial artery"
+    ]
+  },
+  {
+    "question": "What is true about the mucous membrane of the inferior tongue?",
+    "correct_answer": "It is thin",
+    "wrong_answers": [
+      "It is thick and keratinized",
+      "It is highly vascular and robust",
+      "It is uniformly thick across all regions"
+    ]
+  },
+  {
+    "question": "If the submandibular duct is damaged, which nearby structure is most likely affected?",
+    "correct_answer": "Lingual nerve",
+    "wrong_answers": [
+      "Facial nerve",
+      "Hypoglossal nerve",
+      "Glossopharyngeal nerve"
+    ]
+  },
+  {
+    "question": "Which muscle is the sole abductor of the vocal cords?",
+    "correct_answer": "Posterior cricoarytenoid",
+    "wrong_answers": [
+      "Lateral cricoarytenoid",
+      "Thyroarytenoid",
+      "Cricothyroid"
+    ]
+  },
+  {
+    "question": "What is true about lymph nodes and tonsils?",
+    "correct_answer": "Tonsils drain into lymph nodes",
+    "wrong_answers": [
+      "Lymph nodes drain into tonsils",
+      "Tonsils are devoid of lymphatic drainage",
+      "Tonsils directly secrete lymph into the bloodstream"
+    ]
+  },
+  {
+    "question": "True about the scalp:",
+    "correct_answer": "It is rich in anastomoses of internal and external carotid arteries",
+    "wrong_answers": [
+      "It is supplied exclusively by the external carotid system",
+      "It has poor collateral circulation",
+      "It is primarily supplied by branches of the vertebral arteries"
+    ]
+  },
+  {
+    "question": "If whistling is affected, which nerve is most likely responsible?",
+    "correct_answer": "Facial nerve",
+    "wrong_answers": [
+      "Trigeminal nerve",
+      "Hypoglossal nerve",
+      "Vagus nerve"
+    ]
+  },
+  {
+    "question": "What is true about the pharynx in relation to neural anatomy?",
+    "correct_answer": "The glossopharyngeal nerve lies between the superior and middle constrictor muscles",
+    "wrong_answers": [
+      "The vagus nerve lies between the superior and middle constrictor muscles",
+      "The hypoglossal nerve is positioned between these muscles",
+      "The accessory nerve passes between the superior and middle constrictor muscles"
+    ]
+  },
+  {
+    "question": "Damage in the submandibular triangle may affect which structure?",
+    "correct_answer": "Hypoglossal nerve",
+    "wrong_answers": [
+      "Facial nerve",
+      "Lingual nerve",
+      "Vagus nerve"
+    ]
+  },
+  {
+    "question": "Damage in the submandibular triangle may clinically present as:",
+    "correct_answer": "Deviation of the tongue",
+    "wrong_answers": [
+      "Swelling of the neck",
+      "Loss of sensation in the chin",
+      "Difficulty in chewing"
+    ]
+  },
+  {
+    "question": "Which nerve provides innervation to the vestibular folds?",
+    "correct_answer": "Internal laryngeal nerve",
+    "wrong_answers": [
+      "Recurrent laryngeal nerve",
+      "Superior laryngeal nerve",
+      "Vagus nerve"
+    ]
+  },
+  {
+    "question": "In cases of posterior displacement/dislocation of the atlas, which ligament is ruptured?",
+    "correct_answer": "Transverse ligament",
+    "wrong_answers": [
+      "Alar ligament",
+      "Capsular ligament",
+      "Nuchal ligament"
+    ]
+  },
+  {
+    "question": "If the scalenus medius is ruptured or affected, what structure is most likely compromised?",
+    "correct_answer": "Brachial plexus",
+    "wrong_answers": [
+      "Phrenic nerve",
+      "Subclavian artery",
+      "Cervical sympathetic chain"
+    ]
+  },
+  {
+    "question": "What is a common sign of facial nerve damage?",
+    "correct_answer": "Eye infection",
+    "wrong_answers": [
+      "Hearing loss",
+      "Loss of taste sensation",
+      "Facial muscle spasm"
+    ]
+  },
+  {
+    "question": "Damage related to the posterior triangle that results in an inability to shrug the shoulder indicates injury to which nerve?",
+    "correct_answer": "Accessory nerve",
+    "wrong_answers": [
+      "Hypoglossal nerve",
+      "Vagus nerve",
+      "Trigeminal nerve"
+    ]
+  },
+  {
+    "question": "A boy with a damaged floor of the orbit likely affects which sinus?",
+    "correct_answer": "Maxillary sinus",
+    "wrong_answers": [
+      "Ethmoid sinus",
+      "Frontal sinus",
+      "Sphenoid sinus"
+    ]
+  },
+  {
+    "question": "For surgical access to the pituitary in a patient with hormonal problems, which sinus is used?",
+    "correct_answer": "Sphenoidal sinus",
+    "wrong_answers": [
+      "Ethmoidal sinus",
+      "Maxillary sinus",
+      "Frontal sinus"
+    ]
+  },
+  {
+    "question": "What is true about the tympanic membrane?",
+    "correct_answer": "It is 1 cm³ in capacity",
+    "wrong_answers": [
+      "It is 0.5 cm³ in capacity",
+      "It is 1.5 cm³ in capacity",
+      "It is 2 cm³ in capacity"
+    ]
+  },
+  {
+    "question": "Subdural hemorrhage is typically due to damage to which vascular structure?",
+    "correct_answer": "Cerebral vein",
+    "wrong_answers": [
+      "Bridging vein",
+      "Arterial rupture",
+      "Cerebellar vein"
+    ]
+  },
+  {
+    "question": "Which nerve is responsible for sensation at the tip of the nose?",
+    "correct_answer": "External nasal nerve",
+    "wrong_answers": [
+      "Infraorbital nerve",
+      "Supratrochlear nerve",
+      "Oculomotor nerve"
+    ]
+  },
+  {
+    "question": "Medial pterygoid muscle attachment?",
+    "correct_answer": "Lateral pterygoid plate",
+    "wrong_answers": [
+      "Medial pterygoid plate",
+      "Pterygoid fossa",
+      "Palatine bone"
+    ]
+  },
+  {
+    "question": "What prevents the scalp injury vessels from poorly healing?",
+    "correct_answer": "Occipitofrontalis muscle",
+    "wrong_answers": [
+      "Temporalis muscle",
+      "Galea aponeurotica",
+      "Trapezius muscle"
+    ]
+  },
+  {
+    "question": "What is true about the levator palpebrae (lavatory palpebra)?",
+    "correct_answer": "Its aponeurosis is between the palpable and orbital parts of the lacrimal gland",
+    "wrong_answers": [
+      "It directly attaches to the tarsal plate",
+      "It has no distinct aponeurosis",
+      "It originates from the orbital rim"
+    ]
+  },
+  {
+    "question": "Medial pterygoid muscle attachment?",
+    "correct_answer": "Lateral pterygoid plate",
+    "wrong_answers": [
+      "Medial pterygoid plate",
+      "Greater wing of sphenoid",
+      "Pterygoid hamulus"
+    ]
+  },
+  {
+    "question": "Patient fell on the side of his head. Can’t deviate his mandible to the right. Which muscle is mainly involved?",
+    "correct_answer": "Left lateral pterygoid muscle",
+    "wrong_answers": [
+      "Right lateral pterygoid muscle",
+      "Left medial pterygoid muscle",
+      "Right temporalis muscle"
+    ]
+  },
+  {
+    "question": "Permanent teeth in order?",
+    "correct_answer": "1st molar, central incisor, lateral incisor, 1st premolar, canine, 2nd premolar",
+    "wrong_answers": [
+      "Central incisor, lateral incisor, canine, 1st premolar, 2nd premolar, 1st molar",
+      "1st molar, lateral incisor, central incisor, canine, 1st premolar, 2nd premolar",
+      "1st premolar, canine, central incisor, lateral incisor, 2nd premolar, 1st molar"
+    ]
+  },
+  {
+    "question": "What is true about free highway space?",
+    "correct_answer": "The space between the upper and lower teeth when the mandible is at physiological rest",
+    "wrong_answers": [
+      "The maximum interocclusal distance during chewing",
+      "The space when the teeth are in full occlusion",
+      "The gap created by dental prostheses during function"
+    ]
+  },
+  {
+    "question": "What prevents scalp injury vessels from healing poorly?",
+    "correct_answer": "Occipitofrontalis muscle",
+    "wrong_answers": [
+      "Temporalis muscle",
+      "Sternocleidomastoid muscle",
+      "Trapezius muscle"
+    ]
+  },
+  {
+    "question": "Subdural hematoma on CT scan is located between which layers?",
+    "correct_answer": "Meningeal layer of dura and arachnoid",
+    "wrong_answers": [
+      "Between the periosteal layer of dura and skull",
+      "Subarachnoid space between arachnoid and pia mater",
+      "Interdural space"
+    ]
+  },
+  {
+    "question": "A slight tear to the levator scapulae suggests damage to which nerve?",
+    "correct_answer": "Spinal accessory nerve",
+    "wrong_answers": [
+      "Dorsal scapular nerve",
+      "Cervical plexus",
+      "Long thoracic nerve"
+    ]
+  },
+  {
+    "question": "Where is the phrenic nerve located in relation to the subclavian vein?",
+    "correct_answer": "Posterior to Subclavian vein",
+    "wrong_answers": [
+      "Posterior to subclavian artery",
+      "Anterior to Subclavian vein",
+      "Medial to Subclavian vein"
+    ]
+  },
+  {
+    "question": "Which statement is true about tonsils?",
+    "correct_answer": "Partly encapsulated",
+    "wrong_answers": [
+      "Fully encapsulated",
+      "Not encapsulated",
+      "Encapsulated by a thick fibrous capsule"
+    ]
+  },
+  {
+    "question": "What is true about facial nerves?",
+    "correct_answer": "Eye dryness",
+    "wrong_answers": [
+      "Facial drooping",
+      "Excessive tearing",
+      "Loss of taste"
+    ]
+  },
+  {
+    "question": "Which of the following is true about the pharynx?",
+    "correct_answer": "Opens auditory tube when constricts",
+    "wrong_answers": [
+      "Closes auditory tube when constricts",
+      "Has no effect on the auditory tube",
+      "Dilates the auditory tube when relaxed"
+    ]
+  },
+  {
+    "question": "Which muscle is responsible for inspiration?",
+    "correct_answer": "Posterior cricoarytenoid",
+    "wrong_answers": [
+      "Lateral cricoarytenoid",
+      "Thyroarytenoid",
+      "Cricothyroid"
+    ]
+  },
+  {
+    "question": "Medial to the tympanic membrane, which structure is found?",
+    "correct_answer": "Chorda tympani",
+    "wrong_answers": [
+      "Head of malleus",
+      "Incus",
+      "Stapes"
+    ]
+  },
+  {
+    "question": "Into which venous pathway does the facial nerve drain?",
+    "correct_answer": "Angular vein to cavernous sinus via superior ophthalmic vein",
+    "wrong_answers": [
+      "Angular vein to cavernous sinus via pterygoid plexus",
+      "Facial vein directly into the internal jugular vein",
+      "Superficial temporal vein"
+    ]
+  },
+  {
+    "question": "What is true about the middle ear?",
+    "correct_answer": "It’s in the Petrous bone",
+    "wrong_answers": [
+      "It’s posterior to the facial nerve",
+      "The auditory tube is inferior",
+      "It is located in the mastoid process"
+    ]
+  },
+  {
+    "question": "Which of the following is a branch of the cervical plexus?",
+    "correct_answer": "Great auricular nerve",
+    "wrong_answers": [
+      "Greater occipital nerve",
+      "Transverse cervical nerve",
+      "Supraclavicular nerve"
+    ]
+  },
+  {
+    "question": "What provides sensory supply behind the ear?",
+    "correct_answer": "Lesser occipital nerve",
+    "wrong_answers": [
+      "Great auricular nerve",
+      "Greater occipital nerve",
+      "Auriculotemporal nerve"
+    ]
+  },
+  {
+    "question": "Her voice can’t reach high pitch. Which nerve is likely damaged?",
+    "correct_answer": "External laryngeal nerve",
+    "wrong_answers": [
+      "Recurrent laryngeal nerve",
+      "Superior laryngeal nerve",
+      "Vagus nerve"
+    ]
+  },
+  {
+    "question": "Into which meatus do the anterior ethmoidal cells open?",
+    "correct_answer": "Middle meatus",
+    "wrong_answers": [
+      "Superior meatus",
+      "Inferior meatus",
+      "Sphenoethmoidal recess"
+    ]
+  },
+  {
+    "question": "What is true about the levator palpebrae superioris?",
+    "correct_answer": "Its aponeurosis is between the palpable part and the orbital part of the lacrimal gland",
+    "wrong_answers": [
+      "It originates from the inferior orbital rim",
+      "Its aponeurosis attaches directly to the tarsal plate",
+      "It is innervated by the trigeminal nerve"
+    ]
+  },
+  {
+    "question": "What is true about the carotid sheath?",
+    "correct_answer": "Cervical sympathetic is posterior to the carotid sheath",
+    "wrong_answers": [
+      "Internal and external carotid arteries run within the sheath",
+      "The external jugular vein pierces it anteriorly",
+      "The vagus nerve is located lateral to it"
+    ]
+  },
+  {
+    "question": "What is the innervation of the tip of the nose?",
+    "correct_answer": "Ophthalmic nerve",
+    "wrong_answers": [
+      "Maxillary nerve",
+      "Mandibular nerve",
+      "Facial nerve"
+    ]
+  },
+  {
+    "question": "Which structure takes part in epistaxis?",
+    "correct_answer": "Greater palatine artery",
+    "wrong_answers": [
+      "Sphenopalatine artery",
+      "Anterior ethmoidal artery",
+      "Superior labial artery"
+    ]
+  },
+  {
+    "question": "Whiplash injury results in damage to which ligament?",
+    "correct_answer": "Transverse ligament",
+    "wrong_answers": [
+      "Alar ligament",
+      "Nuchal ligament",
+      "Anterior longitudinal ligament"
+    ]
+  },
+  {
+    "question": "What is true about the vestibular folds?",
+    "correct_answer": "Supplied by internal laryngeal nerve",
+    "wrong_answers": [
+      "Their epithelium is stratified squamous",
+      "They are innervated by the recurrent laryngeal nerve",
+      "They contain skeletal muscle fibers"
+    ]
+  }
+    
+]
 
 HA = [
     {
         "question": "Which lingual papillon does not have taste buds?",
         "correct_answer": "Filiform",
         "wrong_answers": ["Fungiform", "Circumvallate", "Foliate"],
-        'image':'Small_projects\Moudels\TKINTER\images\image.png'
+        'image':'images/image.png'
     },
     {
         "question": "What is the embryological remnant of the hypoglossal duct?",
@@ -1067,134 +1722,134 @@ GPT = [
         "question": "What type of inflammation?",
         "correct_answer": "Fibrinous Inflammation",
         "wrong_answers": ["Serous Inflammation", "Hemorrhagic Inflammation", "Suppurative Inflammation"],
-        "image": "images\image1.png"
+        "image": "images/image1.png"
     },
     {
         "question": "Patient with 6 day diarrhea. What microbe?",
         "correct_answer": "Parasite",
         "wrong_answers": ["Gram negative", "Gram positive", "Virus"],
-        "image": "images\image2.png"
+        "image": "images/image2.png"
     },
     {
         "question": "Rheumatoid arthritis patient, Which of the acute phase proteins cause anemia?",
         "correct_answer": "Hepcidin",
         "wrong_answers": ["Serum amyloid A", "Fibronectin", "C-reactive protein"],
-        "image": "images\image.png"
+        "image": "images/image.png"
     },
     {
         "question": "Patient with asthma. Which mediator is involved in bronchoconstriction/bronchospasms?",
         "correct_answer": "Leukotrienes",
         "wrong_answers": ["Histamine", "Prostaglandins", "Cytokines"],
-        "image": "images\image.png"
+        "image": "images/image.png"
     },
     {
         "question": "Lady did a piercing 8 weeks ago and then she had this lesion growing gradually. She also had one @ 7 years old after abdominal surgery. What do you expect in microscopic examination of this lesion?",
         "correct_answer": "Accumulation of collagen - dense collagen bundles",
         "wrong_answers": ["Granulomatous inflammation", "Epithelial hyperplasia", "Lymphocyte infiltration"],
-        "image": "images\image3.png"
+        "image": "images/image3.png"
     },
     {
         "question": "Patient has problems in the lung. Take a scan (of lung shadow) under a microscope. You see giant cells what is the cause?",
         "correct_answer": ["cocaine snorting"],
         "wrong_answers": ["Influenza virus", "Chest trauma", "meow"],
-        "image": "images\image4.png"
+        "image": "images/image4.png"
     },
     {
         "question": "Patient had an appendectomy, the appendix was placed in formalin, what is its function?",
         "correct_answer": "To prevent autolysis",
         "wrong_answers": ["To prevent atrophy", "To enhance nuclear condensation", "To kill bacteria"],
-        "image": "images\image.png"
+        "image": "images/image.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Cytology",
         "wrong_answers": ["Biopsy", "Autopsy", "Histopathology"],
-        "image": "images\image5.png"
+        "image": "images/image5.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Biopsy",
         "wrong_answers": ["Cytology", "Autopsy", "Histopathology"],
-        "image": "images\image6.png"
+        "image": "images/image6.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Liquefactive necrosis",
         "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
-        "image": "images\image7.png"
+        "image": "images/image7.png"
     },
     
     {
         "question": "Example of?",
         "correct_answer": "Atrophy",
         "wrong_answers": ["Hypertrophy", "Hyperplasia", "Metaplasia"],
-        "image": "images\image8.png"
+        "image": "images/image8.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Coagulative necrosis",
         "wrong_answers": ["Liquefactive necrosis", "Caseous necrosis", "Gangrenous necrosis"],
-        "image": "images\image9.png"
+        "image": "images/image9.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Atrophy",
         "wrong_answers": ["Hypertrophy", "Hyperplasia", "Metaplasia"],
-        "image": "images\image10.png"
+        "image": "images/image10.png"
     },
     {
         "question": "Lung with tuberculosis?",
         "correct_answer": "Caseous necrosis",
         "wrong_answers": ["Liquefactive necrosis", "Coagulative necrosis", "Gangrenous necrosis"],
-        "image": "images\image11.png"
+        "image": "images/image11.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Hypertrophy",
         "wrong_answers": ["Atrophy", "Hyperplasia", "Metaplasia"],
-        "image": "images\image12.png"
+        "image": "images/image12.png"
     },
     {
         "question": "Pregnant women diff in the uterus?",
         "correct_answer": "Hypertrophy",
         "wrong_answers": ["Atrophy", "Hyperplasia", "Metaplasia"],
-        "image": "images\image13.png"
+        "image": "images/image13.png"
     },
     {
         "question": "Brain hole?",
         "correct_answer": "liquefactive necrosis",
         "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
-        "image": "images\image14.png"
+        "image": "images/image14.png"
     },
     {
         "question": "If you want to take appendix for examination you should...",
         "correct_answer": "Put it in formalin",
         "wrong_answers": ["Put it in saline", "Put it in alcohol", "Put it on tray (Plate)"],
-        "image": "images\image.png"
+        "image": "images/image.png"
     },
     {
         "question": "Big mass on neck because of enlarged lymph node because of teeth infection?",
         "correct_answer": "Hyperplasia",
         "wrong_answers": ["Atrophy", "Hypertrophy", "Metaplasia"],
-        "image": "images\image.png"
+        "image": "images/image.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Resection",
         "wrong_answers": ["Biopsy", "Cytology", "Autopsy"],
-        "image": "images\image16.png"
+        "image": "images/image16.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Fat necrosis",
         "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
-        "image": "images\image17.png"
+        "image": "images/image17.png"
     },
     {
         "question": "Example of? ",
         "correct_answer": "caseous microscopic",
         "wrong_answers": ["Liquefactive necrosis", "Coagulative necrosis", "Gangrenous necrosis"],
-        "image": "images\image18.png"
+        "image": "images/image18.png"
     }
 ]
 
@@ -1308,9 +1963,6 @@ HP_TBL_diving= [
         ]
     }
 ]
-
-
-
 
 MGN = [
     {"question": "All genes and alleles in a population are called?",
@@ -2791,9 +3443,6 @@ MGN = [
                        "50%"]
      }
 ]
-
-
-
 
 
 HEM = [
@@ -5344,14 +5993,6 @@ HEM = [
     
 ]
 
-
-
-
-
-
-
-
-
 #premid 1 Theoretical 
 Anatomy_questions = [
     {
@@ -6100,7 +6741,6 @@ Anatomy_questions = [
     }
 ]
 
-
 Biology_questions = [
       {
         "question": "What is the difference between meiosis I and mitosis?",
@@ -6381,9 +7021,7 @@ Biology_questions = [
         "wrong_answers": ["Frontal", "Transverse", "Not specified"]
     }
     
-      
-]
-
+    ]
 
 Chemistry_questions = [
     {"question": "What is true about bilayer in the cell membrane?",
@@ -6649,7 +7287,6 @@ Chemistry_questions = [
             "Carboxylic acid + Alcohol"]
     }
 ]
-
 
 NIT_questions = [
     {
@@ -6953,7 +7590,6 @@ NIT_questions = [
         "wrong_answers": ["Keyword search", "Boolean operators", "Wildcard search"]
     },
 ]
-
 
 PPC_questions = [
     {
@@ -7381,7 +8017,6 @@ PPC_questions = [
     }
 ]
 
-
 #premid 1 practical
 Anatomy_practical = [
     {
@@ -7448,7 +8083,6 @@ Anatomy_practical = [
 }
 ]
 
-
 Chemistry_practical = [
     {
         "question": "What is this?",
@@ -7472,7 +8106,6 @@ Chemistry_practical = [
         'wrong_answers': ["trans-5-chloro-2-hexene", "3-methyl-1-butene", "1,2-dimethylcyclohexane"]
     }
 ]
-
 
 #premid 2 Theoretical 
 Anatomy2_questions = [
@@ -11401,41 +12034,11 @@ Histology_practical = [
 ]
 
 
-#Total questions for premid 1
-total_Anatomy = len(Anatomy_questions + Anatomy_practical)
-print(f"created a total of {total_Anatomy} questions for Anatomy questions.")
-
-total_Biology = len(Biology_questions)
-print(f"created a total of {total_Biology} questions for Biology questions.")
-
-total_chemistry = len(Chemistry_questions + Chemistry_practical)
-print(f"created a total of {total_chemistry} questions for Chemistry questions.")
-
-total_NIT = len(NIT_questions)
-print(f"created a total of {total_NIT} questions for NIT questions.")
-
-total_PPC = len(PPC_questions)
-print(f"created a total of {total_PPC} questions for PPC questions.")
 
 
-total_questions = (total_Anatomy + total_Biology + total_chemistry + total_NIT + total_PPC )
-print(f"{SL}created a total of {total_questions} for premid 1 questions.{SL}")
+total_questions = len(
+    Anatomy_questions + Anatomy_practical + Biology_questions + Chemistry_questions + 
+    Chemistry_practical + NIT_questions + PPC_questions + Anatomy2_questions + 
+    Anatomy2_questions + Histology_questions + PPC_terms + HEM + pharm + Histology_practical + MGN + HP_TBL_diving + GPT + HA )
+print(f"created a total of {total_questions} questions.")
 
-
-#Total questions for premid 2
-
-total_Anatomy2 = len(Anatomy2_questions)
-print(f"created a total of {total_Anatomy2} questions for Anatomy 2 questions.")
-
-total_Histology = len(Histology_questions)
-print(f"created a total of {total_Histology} questions for Histology questions.")
-
-total_PPCT = len(PPC_terms)
-print(f"created a total of {total_PPCT} questions for PPCT questions.")
-
-total_HEM = len(HEM)
-print(f"created a total of {total_HEM} questions for HEM questions.")
-
-
-total_questions = (total_Anatomy2 + total_Histology + total_PPCT + total_HEM )
-print(f"{SL}created a total of {total_questions} for premid 2 questions.{SL}")
