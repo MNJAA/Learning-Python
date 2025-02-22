@@ -6,10 +6,196 @@ import json, os
 from PySide6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QPushButton, QLabel, QProgressBar, QMessageBox, QRadioButton, QButtonGroup,
-    QTextBrowser, QGraphicsOpacityEffect, QTableWidget, QTableWidgetItem, QLineEdit, QInputDialog
+    QTextBrowser, QGraphicsOpacityEffect, QTableWidget, QTableWidgetItem, QLineEdit, QInputDialog,
+    QMenu, QFrame, QGridLayout, QScrollArea, QWidgetAction
 )
 from PySide6.QtGui import QFont, QPixmap
-from PySide6.QtCore import QTimer, Qt, QPropertyAnimation, QEasingCurve
+from PySide6.QtCore import QTimer, Qt, QPropertyAnimation, QEasingCurve, QPoint  # Added QPoint
+
+class QuestionNavigator(QMenu):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self.setFixedSize(400, 600)
+        
+        self.main_widget = QWidget()
+        self.main_layout = QVBoxLayout(self.main_widget)
+        self.main_layout.setSpacing(4)  # Reduced spacing
+        self.main_layout.setContentsMargins(10, 10, 10, 10)  # Reduced margins
+        
+        # Header setup
+        header = QLabel("Question Navigator")
+        header.setStyleSheet("""
+            font: bold 14pt 'Segoe UI';
+            color: white;
+            background-color: #2E236C;
+            padding: 8px;
+            border-radius: 4px;
+        """)
+        header.setAlignment(Qt.AlignCenter)
+        
+        # Compact legend in a horizontal layout
+        legend_layout = QHBoxLayout()
+        legend_layout.setSpacing(15)  # Space between legend items
+        legend_layout.setContentsMargins(5, 0, 5, 0)  # Minimal vertical space
+        
+        # Simplified legend items
+        for text, color, symbol in [
+            ("Not answered", "white", "○"),
+            ("Answered", "#90EE90", "●"),
+            ("Skipped", "#FFB6C6", "×")
+        ]:
+            item_layout = QHBoxLayout()
+            item_layout.setSpacing(2)  # Minimal space between icon and text
+            
+            icon = QLabel(symbol)
+            icon.setStyleSheet(f"color: {color}; font: bold 12pt;")  # Smaller icons
+            
+            label = QLabel(text)
+            label.setStyleSheet(f"color: {color}; font: 9pt 'Segoe UI';")
+            
+            item_layout.addWidget(icon)
+            item_layout.addWidget(label)
+            
+            container = QWidget()
+            container.setLayout(item_layout)
+            legend_layout.addWidget(container)
+        
+        legend_layout.addStretch()  # Push items to the left
+        
+        # Search box setup
+        self.jump_input = QLineEdit()
+        self.jump_input.setPlaceholderText("Jump to question...")
+        self.jump_input.setStyleSheet("""
+            QLineEdit {
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 4px;
+                color: white;
+                padding: 5px 8px;
+                font: 11pt 'Segoe UI';
+                min-height: 25px;
+            }
+        """)
+        self.jump_input.returnPressed.connect(self.jump_to_question)
+        
+        # Scrollable grid setup
+        scroll = QScrollArea()
+        scroll.setWidgetResizable(True)
+        scroll.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        scroll.setStyleSheet("""
+            QScrollArea { 
+                border: none;
+                background-color: transparent;
+            }
+            QScrollBar:vertical {
+                border: none;
+                background: rgba(255, 255, 255, 0.1);
+                width: 8px;
+                border-radius: 4px;
+            }
+            QScrollBar::handle:vertical {
+                background: rgba(255, 255, 255, 0.3);
+                border-radius: 4px;
+            }
+            QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical {
+                border: none;
+                background: none;
+            }
+        """)
+        
+        container = QWidget()
+        self.grid_layout = QGridLayout()
+        self.grid_layout.setSpacing(4)  # Reduced from 6 to 4
+        self.grid_layout.setContentsMargins(0, 0, 0, 0)  # Remove margins
+        container.setLayout(self.grid_layout)
+        scroll.setWidget(container)
+        
+        # Add widgets to main layout with minimal spacing
+        self.main_layout.addWidget(header)
+        self.main_layout.addSpacing(2)
+        self.main_layout.addLayout(legend_layout)
+        self.main_layout.addSpacing(2)
+        self.main_layout.addWidget(self.jump_input)
+        self.main_layout.addSpacing(2)
+        self.main_layout.addWidget(scroll, 1)
+        
+        # Add main_widget to the menu using QWidgetAction
+        widget_action = QWidgetAction(self)
+        widget_action.setDefaultWidget(self.main_widget)
+        self.addAction(widget_action)
+        
+        self.setFocusPolicy(Qt.StrongFocus)
+
+    def jump_to_question(self):
+        try:
+            question_num = int(self.jump_input.text())
+            if 1 <= question_num <= self.total_questions:
+                self.on_question_selected(question_num - 1)
+                self.hide()
+        except ValueError:
+            pass
+        self.jump_input.clear()
+
+    def update_questions(self, total_questions, answered_set, skipped_indices, current_index, on_question_selected):
+        self.total_questions = total_questions
+        self.on_question_selected = on_question_selected
+        
+        # Clear existing buttons
+        while self.grid_layout.count():
+            item = self.grid_layout.takeAt(0)
+            if item.widget():
+                item.widget().deleteLater()
+
+        # Create new grid of question buttons
+        for i in range(total_questions):
+            btn = QPushButton(str(i + 1))
+            btn.setFixedSize(35, 35)  # Reduced from 40x40 to 35x35
+            
+            # Set color and style based on question state
+            if i in answered_set:
+                status = "answered"
+                color = "#90EE90"
+                hover_color = "#70CE70"
+                tooltip = "Answered"
+            elif i in skipped_indices:
+                status = "skipped"
+                color = "#FFB6C6"
+                hover_color = "#FFB6B6"
+                tooltip = "Skipped"
+            else:
+                status = "unanswered"
+                color = "white"
+                hover_color = "#CCCCCC"
+                tooltip = "Not answered yet"
+            
+            # Highlight current question
+            border = "2px solid #FFF700" if i == current_index else "1px solid rgba(255, 255, 255, 0.2)"
+            
+            btn.setStyleSheet(f"""
+                QPushButton {{
+                    background-color: {color};
+                    border: {border};
+                    border-radius: 5px;
+                    font: bold 10pt 'Segoe UI';
+                    color: black;
+                }}
+                QPushButton:hover {{
+                    background-color: {hover_color};
+                    border: 2px solid white;
+                }}
+            """)
+            
+            btn.setToolTip(f"Question {i+1}: {tooltip}")
+            btn.clicked.connect(lambda checked, idx=i: on_question_selected(idx))
+            self.grid_layout.addWidget(btn, i // 8, i % 8)  # Changed from 5 columns to 8 columns
+
+    def keyPressEvent(self, event):
+        if event.key() == Qt.Key_Escape:
+            self.hide()
+        elif event.key() in (Qt.Key_Return, Qt.Key_Enter):
+            if self.jump_input.hasFocus():
+                self.jump_to_question()
+        super().keyPressEvent(event)
 
 class Quiz(QMainWindow):
     def __init__(self, questions, main_menu, scoreboard, time_limit=None):
@@ -58,8 +244,9 @@ class Quiz(QMainWindow):
         self.top_layout = QHBoxLayout()
         self.main_layout.addLayout(self.top_layout)
 
+        # Left side buttons
         self.finish_button = QPushButton("End")
-        self.finish_button.setStyleSheet(self.main_menu.theme["NAV_BUTTON_STYLE"])  # updated
+        self.finish_button.setStyleSheet(self.main_menu.theme["NAV_BUTTON_STYLE"])
         self.finish_button.clicked.connect(self.finish_quiz_early)
         self.top_layout.addWidget(self.finish_button)
 
@@ -69,18 +256,72 @@ class Quiz(QMainWindow):
         self.top_layout.addWidget(self.feedback_button)
 
         self.return_button = QPushButton("Menu")
-        self.return_button.setStyleSheet(self.main_menu.theme["RETURN_BUTTON_STYLE"])  # updated
+        self.return_button.setStyleSheet(self.main_menu.theme["RETURN_BUTTON_STYLE"])
         self.return_button.clicked.connect(self.return_to_menu)
         self.top_layout.addWidget(self.return_button)
 
+        # Center timer with stretch
         self.timer_label = QLabel("Time: 00:00:00")
         self.timer_label.setStyleSheet("font: 14pt 'Times New Roman'; color: white;")
         self.timer_label.setAlignment(Qt.AlignCenter)
         self.top_layout.addWidget(self.timer_label, stretch=1)
 
+        # Question tracking container (moved navigation button to the left)
+        question_tracking_container = QHBoxLayout()
+        question_tracking_container.setSpacing(5)  # Small gap between button and label
+
+        # Add navigation dropdown button before question number
+        self.nav_dropdown_btn = QPushButton("☰")
+        self.nav_dropdown_btn.setFixedSize(30, 30)
+        self.nav_dropdown_btn.setStyleSheet("""
+            QPushButton {
+                font-size: 16px;
+                background-color: #433D8B;
+                color: #ECDBBA;
+                border: none;
+                border-radius: 5px;
+            }
+            QPushButton:hover {
+                background-color: #2E236C;
+            }
+        """)
+        self.nav_dropdown_btn.clicked.connect(self.show_question_navigator)
+        question_tracking_container.addWidget(self.nav_dropdown_btn)
+
         self.question_number_label = QLabel(f"Question {self.current_question_index + 1} of {self.total_questions}")
         self.question_number_label.setStyleSheet("font: 16pt 'Times New Roman'; color: white;")
-        self.top_layout.addWidget(self.question_number_label)
+        question_tracking_container.addWidget(self.question_number_label)
+
+        # Add the question tracking container to the main layout
+        self.top_layout.addLayout(question_tracking_container)
+
+        # Create question navigator menu
+        self.question_navigator = QuestionNavigator(self)
+
+    def show_question_navigator(self):
+        # Get current skipped question indices
+        skipped_indices = {q["question_index"] for q in self.skipped_questions}
+        
+        # Update navigator and show it
+        self.question_navigator.update_questions(
+            self.total_questions,
+            self.answered_set,
+            skipped_indices,
+            self.current_question_index,
+            self.navigate_to_question
+        )
+        
+        # Position menu to the left of the button
+        button_pos = self.nav_dropdown_btn.mapToGlobal(self.nav_dropdown_btn.rect().topLeft())
+        menu_x = button_pos.x() - self.question_navigator.width()  # Position to the left
+        menu_y = button_pos.y()  # Align with top of button
+        self.question_navigator.popup(QPoint(menu_x, menu_y))  # Using QPoint directly
+
+    def navigate_to_question(self, index):
+        if 0 <= index < self.total_questions:
+            self.current_question_index = index
+            self.show_question()
+            self.question_navigator.hide()
 
     def setup_question_layout(self):
         self.question_label = QLabel("")

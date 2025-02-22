@@ -12,7 +12,7 @@ from PySide6.QtWidgets import (
 )
 from PySide6.QtGui import QFont, QPixmap
 from PySide6.QtCore import QTimer, Qt, QPropertyAnimation, QEasingCurve
-
+ 
 # Import theme dictionaries and helper function
 from styles import DARK_THEME, PINK_THEME, get_theme
 from quiz import Quiz
