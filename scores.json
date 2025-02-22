@@ -1,3 +1,26 @@
 {
-    
+    "HA 4 midterm": {
+        "highest_score": 23.28767123287671,
+        "lowest_score": 23.28767123287671,
+        "latest_score": 23.28767123287671,
+        "latest_time": "00:01:40",
+        "min_time": "00:01:40",
+        "max_time": "00:01:40"
+    },
+    "TBL Quiz": {
+        "highest_score": 18.75,
+        "lowest_score": 0.0,
+        "latest_score": 0.0,
+        "latest_time": "00:00:02",
+        "min_time": "00:00:01",
+        "max_time": "00:00:34"
+    },
+    "pharma": {
+        "highest_score": 3.896103896103896,
+        "lowest_score": 1.2987012987012987,
+        "latest_score": 3.896103896103896,
+        "latest_time": "00:01:34",
+        "min_time": "00:00:07",
+        "max_time": "00:01:34"
+    }
 }
