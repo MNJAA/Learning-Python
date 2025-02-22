@@ -1,34 +1,3 @@
 {
-    "TBL Quiz": {
-        "highest_score": 50.0,
-        "lowest_score": 0.0,
-        "latest_score": 12.5,
-        "latest_time": "00:00:15",
-        "min_time": "00:00:01",
-        "max_time": "00:04:39"
-    },
-    "Medical Genetics": {
-        "highest_score": 0.0,
-        "lowest_score": 0.0,
-        "latest_score": 0.0,
-        "latest_time": "00:00:01",
-        "min_time": "00:00:01",
-        "max_time": "00:00:07"
-    },
-    "HA 4 midter": {
-        "highest_score": 2.73972602739726,
-        "lowest_score": 2.73972602739726,
-        "latest_score": 2.73972602739726,
-        "latest_time": "00:00:20",
-        "min_time": "00:00:20",
-        "max_time": "00:00:20"
-    },
-    "HA 4 midterm": {
-        "highest_score": 0.0,
-        "lowest_score": 0.0,
-        "latest_score": 0.0,
-        "latest_time": "00:00:09",
-        "min_time": "00:00:03",
-        "max_time": "00:00:17"
-    }
+    
 }
