@@ -1480,7 +1480,7 @@ HA4mid_prac = [
       "Anterior jugular vein",
       "Subclavian vein"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_8.png"
+        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_7.png"
   },
   {
     "question": "In a diagram, if label 3 corresponds to a midline depression at the base of the tongue, which structure is it?",

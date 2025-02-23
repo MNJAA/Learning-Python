@@ -241,8 +241,7 @@ class Quiz(QMainWindow):
         # Start timer if time limit is set
         self.timer = QTimer()
         self.timer.timeout.connect(self.update_timer)
-        if time_limit:
-            self.timer.start(1000)
+        self.timer.start(1000)  # Start timer immediately
 
     def setup_ui(self):
         self.setWindowTitle("MCQ Quiz")
@@ -255,10 +254,6 @@ class Quiz(QMainWindow):
         self.setup_top_layout()
         self.setup_question_layout()
         self.setup_navigation_layout()  # Ensure this method is defined
-
-        self.timer = QTimer()
-        self.timer.timeout.connect(self.update_timer)
-        self.timer.start(1000)
 
         self.show_question()
 
@@ -527,12 +522,20 @@ class Quiz(QMainWindow):
             if self.time_limit and self.elapsed_seconds >= self.time_limit:
                 self.end_quiz()
                 return
-            remaining_time = self.time_limit - self.elapsed_seconds if self.time_limit else self.elapsed_seconds
-            hours = remaining_time // 3600
-            minutes = (remaining_time % 3600) // 60
-            seconds = remaining_time % 60
-            formatted_time = f"{hours:02}:{minutes:02}:{seconds:02}"
-            self.timer_label.setText(f"Time Remaining: {formatted_time}" if self.time_limit else f"Time Elapsed: {formatted_time}")
+            
+            if self.time_limit:
+                remaining_time = self.time_limit - self.elapsed_seconds
+                hours = remaining_time // 3600
+                minutes = (remaining_time % 3600) // 60
+                seconds = remaining_time % 60
+                formatted_time = f"Time Remaining: {hours:02}:{minutes:02}:{seconds:02}"
+            else:
+                hours = self.elapsed_seconds // 3600
+                minutes = (self.elapsed_seconds % 3600) // 60
+                seconds = self.elapsed_seconds % 60
+                formatted_time = f"Time Elapsed: {hours:02}:{minutes:02}:{seconds:02}"
+                
+            self.timer_label.setText(formatted_time)
 
     def submit_answer(self):
         selected_button = self.button_group.checkedButton()
