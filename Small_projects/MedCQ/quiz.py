@@ -7,7 +7,7 @@ from PySide6.QtWidgets import (
     QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QPushButton, QLabel, QProgressBar, QMessageBox, QRadioButton, QButtonGroup,
     QTextBrowser, QGraphicsOpacityEffect, QTableWidget, QTableWidgetItem, QLineEdit, QInputDialog,
-    QMenu, QFrame, QGridLayout, QScrollArea, QWidgetAction
+    QMenu, QFrame, QGridLayout, QScrollArea, QWidgetAction, QSlider
 )
 from PySide6.QtGui import QFont, QPixmap
 from PySide6.QtCore import QTimer, Qt, QPropertyAnimation, QEasingCurve, QPoint  # Added QPoint
@@ -200,30 +200,52 @@ class QuestionNavigator(QMenu):
 class Quiz(QMainWindow):
     def __init__(self, questions, main_menu, scoreboard, time_limit=None):
         super().__init__()
-        self.main_menu = main_menu
+        # Initialize basic attributes
         self.questions = questions
+        self.main_menu = main_menu
         self.scoreboard = scoreboard
-        self.time_limit = time_limit  # Time limit in seconds
-        random.shuffle(self.questions)
+        self.time_limit = time_limit
+        self.total_questions = len(questions)
         self.current_question_index = 0
         self.score = 0
         self.answered_questions = 0
-        self.total_questions = len(questions)
+        self.elapsed_seconds = 0
+        self.quiz_ended = False
+        
+        # Initialize collections for tracking
+        self.answer_buttons = []  # for radio buttons
+        self.answer_widgets = []  # add this list for container widgets
         self.incorrect_questions = []
         self.skipped_questions = []
-        self.start_time = time.time()
-        self.quiz_ended = False
-        self.elapsed_seconds = 0
         self.answered_set = set()
-        self.photo = None
-
+        
+        # Window setup
         self.setWindowState(Qt.WindowMaximized)
-        self.setWindowFlag(Qt.FramelessWindowHint, True)  # remove title bar
+        self.setWindowFlag(Qt.FramelessWindowHint, True)
+        
+        # Initialize UI components that will be set up later
+        self.central_widget = None
+        self.main_layout = None
+        self.question_label = None
+        self.image_label = None
+        self.answer_layout = None
+        self.button_group = None
+        self.progress = None
+        self.question_number_label = None
+        self.timer_label = None
+        self.detail_browser = None
+        
+        # Set up the UI
         self.setup_ui()
+        
+        # Start timer if time limit is set
+        self.timer = QTimer()
+        self.timer.timeout.connect(self.update_timer)
+        if time_limit:
+            self.timer.start(1000)
 
     def setup_ui(self):
         self.setWindowTitle("MCQ Quiz")
-        # Apply current theme from main_menu
         self.setStyleSheet(self.main_menu.theme["MAIN_WINDOW_STYLE"])
 
         self.central_widget = QWidget()
@@ -232,7 +254,7 @@ class Quiz(QMainWindow):
 
         self.setup_top_layout()
         self.setup_question_layout()
-        self.setup_navigation_layout()
+        self.setup_navigation_layout()  # Ensure this method is defined
 
         self.timer = QTimer()
         self.timer.timeout.connect(self.update_timer)
@@ -324,23 +346,69 @@ class Quiz(QMainWindow):
             self.question_navigator.hide()
 
     def setup_question_layout(self):
-        self.question_label = QLabel("")
+        # Create main content layout with spacing and margins
+        self.content_layout = QHBoxLayout()
+        self.content_layout.setSpacing(20)
+        self.content_layout.setContentsMargins(20, 20, 20, 20)
+
+        # Create scrollable image container
+        self.image_container = QScrollArea()
+        self.image_container.setWidgetResizable(True)
+        self.image_container.setHorizontalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.image_container.setVerticalScrollBarPolicy(Qt.ScrollBarAsNeeded)
+        self.image_container.setMinimumWidth(600)  # Set minimum width
+        self.image_container.setMaximumWidth(800)  # Set maximum width
+        
+        image_widget = QWidget()
+        self.image_layout = QVBoxLayout(image_widget)
+        self.image_layout.setAlignment(Qt.AlignCenter)
+        
+        self.image_label = QLabel()
+        self.image_label.setAlignment(Qt.AlignCenter)
+        self.image_label.setMinimumSize(580, 580)  # Slightly smaller than container
+        self.image_label.setScaledContents(False)  # Don't scale contents automatically
+        
+        self.image_layout.addWidget(self.image_label)
+        self.image_container.setWidget(image_widget)
+
+        # Create question and answers container
+        self.qa_container = QWidget()
+        self.qa_layout = QVBoxLayout(self.qa_container)
+        self.qa_layout.setAlignment(Qt.AlignTop)  # Align to top
+        self.qa_layout.setSpacing(30)  # Increased spacing between elements
+
+        # Question label setup
+        self.question_label = QLabel()
         self.question_label.setWordWrap(True)
         self.question_label.setStyleSheet(self.main_menu.theme["QUESTION_LABEL_STYLE"])
         self.question_label.setAlignment(Qt.AlignCenter)
-        self.question_label.setFixedWidth(600)  # Changed from 150 to 600
-        self.main_layout.addWidget(self.question_label, alignment=Qt.AlignCenter)  # Added alignment
-        self.main_layout.addSpacing(50)
+        self.question_label.setMinimumWidth(800)  # Set minimum width
+        self.qa_layout.addWidget(self.question_label)
 
-        self.image_label = QLabel("")
-        self.image_label.setAlignment(Qt.AlignCenter)
-        self.main_layout.addWidget(self.image_label)
+        # Answer options container
+        self.answer_container = QWidget()
+        self.answer_layout = QVBoxLayout(self.answer_container)
+        self.answer_layout.setAlignment(Qt.AlignTop)  # Align to top
+        self.answer_layout.setSpacing(15)
+        self.answer_layout.setContentsMargins(20, 20, 20, 20)
 
-        self.answer_layout = QVBoxLayout()
-        self.answer_layout.setAlignment(Qt.AlignCenter)
-        self.answer_layout.setSpacing(20)  # Increased spacing between options
-        self.answer_layout.setContentsMargins(30, 30, 30, 30)  # Increased margins around all options
-        self.main_layout.addLayout(self.answer_layout)
+        # Create a fixed-width container for answers
+        answer_width_container = QWidget()
+        answer_width_container.setMinimumWidth(800)  # Set minimum width
+        answer_width_container.setMaximumWidth(1200)  # Set maximum width
+        answer_width_container.setLayout(self.answer_layout)
+
+        self.qa_layout.addWidget(answer_width_container, alignment=Qt.AlignHCenter)
+
+        # Add containers to content layout
+        self.content_layout.addWidget(self.image_container)
+        self.content_layout.addWidget(self.qa_container, stretch=1)
+
+        # Add content layout to main layout
+        self.main_layout.addLayout(self.content_layout)
+        self.main_layout.addSpacing(30)
+
+        # Initialize button group and answer buttons list
         self.button_group = QButtonGroup()
         self.button_group.setExclusive(True)
         self.answer_buttons = []
@@ -366,9 +434,11 @@ class Quiz(QMainWindow):
         self.main_layout.addWidget(self.progress)
 
     def show_question(self):
-        for btn in self.answer_buttons:
-            self.answer_layout.removeWidget(btn)
-            btn.deleteLater()
+        # Clear previous answer option containers
+        for widget in self.answer_widgets:
+            self.answer_layout.removeWidget(widget)
+            widget.deleteLater()
+        self.answer_widgets.clear()
         self.answer_buttons.clear()
         self.button_group = QButtonGroup()
         self.button_group.setExclusive(True)
@@ -376,36 +446,77 @@ class Quiz(QMainWindow):
         question_data = self.questions[self.current_question_index]
         self.question_label.setText(question_data["question"])
 
-        if ("image" in question_data):
-            try:
-                pixmap = QPixmap(question_data["image"])
-                if not pixmap.isNull():
-                    pixmap = pixmap.scaled(400, 300, Qt.KeepAspectRatio, Qt.SmoothTransformation)
-                    self.image_label.setPixmap(pixmap)
-                    self.image_label.show()
-                else:
+        # Handle image
+        if "image" in question_data:
+            image_path = question_data["image"]
+            if os.path.exists(image_path):
+                try:
+                    pixmap = QPixmap(image_path)
+                    if not pixmap.isNull():
+                        # Calculate scaling while preserving aspect ratio
+                        available_width = self.image_label.width() - 20  # Subtract padding
+                        available_height = self.image_label.height() - 20  # Subtract padding
+                        
+                        # Scale pixmap while maintaining aspect ratio
+                        scaled_pixmap = pixmap.scaled(
+                            available_width,
+                            available_height,
+                            Qt.KeepAspectRatio,
+                            Qt.SmoothTransformation
+                        )
+                        
+                        self.image_label.setPixmap(scaled_pixmap)
+                        self.image_container.show()
+                    else:
+                        self.image_label.clear()
+                        self.image_container.hide()
+                except Exception as e:
+                    print(f"Error loading image: {e}")
                     self.image_label.clear()
-                    self.image_label.hide()
-            except Exception:
+                    self.image_container.hide()
+            else:
+                print(f"Image not found: {image_path}")
                 self.image_label.clear()
-                self.image_label.hide()
+                self.image_container.hide()
         else:
             self.image_label.clear()
-            self.image_label.hide()
+            self.image_container.hide()
 
+        # Handle answers
         all_answers = [question_data["correct_answer"]] + question_data["wrong_answers"]
         random.shuffle(all_answers)
         for i, answer in enumerate(all_answers):
-            rb = QRadioButton(answer)
+            if isinstance(answer, list):
+                answer = " ".join(str(item) for item in answer)
+
+            # Create container for the radio button to handle wrapping
+            container = QWidget()
+            container_layout = QHBoxLayout(container)
+            container_layout.setContentsMargins(0, 0, 0, 0)
+
+            rb = QRadioButton()
+            rb.setText(str(answer))
             rb.setStyleSheet(self.main_menu.theme["ANSWER_BUTTON_STYLE"] + """
-                color: black;
-                font-size: 14pt;
-                margin: 30px;  /* Increased from 10px to 30px */
-                padding: 5px;
+                QRadioButton {
+                    padding: 15px 20px;
+                    margin: 5px;
+                    font-size: 14pt;
+                    min-width: 500px;
+                    max-width: 1000px;
+                }
+                QRadioButton::indicator {
+                    width: 20px;
+                    height: 20px;
+                    margin-right: 10px;
+                }
             """)
-            self.answer_layout.addWidget(rb)
+            container.setFixedWidth(1200)  # Fixed width for container
+            container_layout.addWidget(rb, alignment=Qt.AlignLeft)
+
+            self.answer_layout.addWidget(container, alignment=Qt.AlignCenter)
             self.button_group.addButton(rb, i)
             self.answer_buttons.append(rb)
+            self.answer_widgets.append(container)
 
         self.progress.setValue(self.current_question_index + 1)
         self.question_number_label.setText(f"Question {self.current_question_index + 1} of {self.total_questions}")
@@ -570,14 +681,14 @@ class Quiz(QMainWindow):
         self.results_layout.addWidget(self.detail_browser)
         self.detail_browser.setHtml("<p style='color:white;'>Click a button above to view details.</p>")
 
-        # Add feedback section
+        # Feedback section
         self.feedback_input = QLineEdit()
         self.feedback_input.setStyleSheet(self.main_menu.theme["FEEDBACK_INPUT_STYLE"])  # updated
         self.feedback_input.setPlaceholderText("Write your feedback")
         self.results_layout.addWidget(self.feedback_input)
 
         self.submit_feedback_button = QPushButton("Submit Feedback")
-        self.submit_feedback_button.setStyleSheet(self.main_menu.theme["SUBMIT_FEEDBACK_BUTTON_STYLE"])  # updated
+        self.submit_feedback_button.setStyleSheet(self.main_menu.theme["SUBMIT_FEEDBACK_BUTTON_STYLE"])
         self.submit_feedback_button.clicked.connect(self.submit_feedback)
         self.results_layout.addWidget(self.submit_feedback_button)
 
@@ -591,11 +702,9 @@ class Quiz(QMainWindow):
 
     def submit_feedback(self):
         feedback = self.feedback_input.text()
-        rating = self.rating_slider.value()
         feedback_data = {
             "quiz_name": self.main_menu.current_quiz_name,
             "feedback": feedback,
-            "rating": rating,
             "timestamp": time.time()
         }
         feedback_file = "quiz_feedback.json"

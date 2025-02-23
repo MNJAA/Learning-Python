@@ -56,6 +56,7 @@ DARK_THEME = {
         "} "
         "QPushButton:hover { background-color: #2E236C; }"
     ),
+    "QA_CONTAINER_STYLE": "background-color: #17153B; border-radius: 10px; padding: 15px;",
     "SCOREBOARD_BUTTON_STYLE": (
         "QPushButton {"
         " background-color: #433D8B;"
@@ -213,6 +214,7 @@ PINK_THEME = {
         "} "
         "QPushButton:hover { background-color: #FFACC7; }"
     ),
+    "QA_CONTAINER_STYLE": "background-color: #FFB9B9; border-radius: 10px; padding: 15px;",
     "SCOREBOARD_BUTTON_STYLE": (
         "QPushButton {"
         " background-color: #FF8DC7;"

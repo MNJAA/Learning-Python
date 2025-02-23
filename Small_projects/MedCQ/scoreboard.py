@@ -6,24 +6,34 @@ from PySide6.QtWidgets import (
 from PySide6.QtCore import Qt
 
 class Scoreboard:
-    def __init__(self, filename="scores.json"):
+    def __init__(self, filename: str = "scores.json") -> None:
+        """Initialize scoreboard with a filename."""
         self.filename = filename
         self.scores = self.load_scores()
 
-    def load_scores(self):
-        if os.path.exists(self.filename):
-            with open(self.filename, "r") as file:
-                return json.load(file)
+    def load_scores(self) -> dict:
+        """Load scores from a JSON file."""
+        try:
+            if os.path.exists(self.filename):
+                with open(self.filename, "r") as file:
+                    return json.load(file)
+        except Exception as e:
+            print(f"Error reading scores: {e}")
         return {}
 
-    def save_scores(self):
-        with open(self.filename, "w") as file:
-            json.dump(self.scores, file, indent=4)
+    def save_scores(self) -> None:
+        """Save scores to a JSON file."""
+        try:
+            with open(self.filename, "w") as file:
+                json.dump(self.scores, file, indent=4)
+        except Exception as e:
+            print(f"Error saving scores: {e}")
 
-    def update_score(self, quiz_name, score, total_questions, elapsed_seconds):
+    def update_score(self, quiz_name: str, score: float, total_questions: int, elapsed_seconds: int) -> None:
+        """Update the scoreboard with a new score entry."""
         percentage_score = (score / total_questions) * 100
         formatted_time = self.format_time(elapsed_seconds)
-        if quiz_name not in self.scores:
+        if (quiz_name not in self.scores):
             self.scores[quiz_name] = {
                 "highest_score": percentage_score,
                 "lowest_score": percentage_score,
@@ -45,16 +55,19 @@ class Scoreboard:
                 self.scores[quiz_name]["max_time"] = formatted_time
         self.save_scores()
 
-    def get_scores(self):
+    def get_scores(self) -> dict:
+        """Return stored scores."""
         return self.scores
 
-    def format_time(self, seconds):
+    def format_time(self, seconds: int) -> str:
+        """Format seconds into HH:MM:SS string."""
         hours = seconds // 3600
         minutes = (seconds % 3600) // 60
         seconds = seconds % 60
         return f"{hours:02}:{minutes:02}:{seconds:02}"
 
-    def parse_time(self, time_str):
+    def parse_time(self, time_str: str) -> int:
+        """Convert HH:MM:SS string into total seconds."""
         hours, minutes, seconds = map(int, time_str.split(":"))
         return hours * 3600 + minutes * 60 + seconds
 

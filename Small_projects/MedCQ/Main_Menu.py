@@ -2,8 +2,9 @@ import sys
 import random
 import time
 import winsound
-from qs import Example_questions_form, HEM, MGN, HP_TBL_diving, HA, GPT, pharm, HA4mid
+from qs import Example_questions_form, HEM, MGN, HP_TBL_diving, HA, GPT, pharm, HA4mid, HA4mid_prac
 import json, os
+from typing import Optional  # added for type hints
 
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
@@ -18,17 +19,28 @@ from styles import DARK_THEME, PINK_THEME, get_theme
 from quiz import Quiz
 from scoreboard import Scoreboard, ScoreboardWidget
 
-def load_theme_preference():
-    pref_file = "preferences.json"
-    if os.path.exists(pref_file):
-        with open(pref_file, "r") as file:
-            prefs = json.load(file)
-            return prefs.get("theme", "dark")
+# Define a constant for the preferences file path
+PREFERENCES_FILE: str = "preferences.json"
+
+def load_theme_preference() -> str:
+    """Load the user's theme preference from the preferences file."""
+    if os.path.exists(PREFERENCES_FILE):
+        try:
+            with open(PREFERENCES_FILE, "r") as file:
+                prefs = json.load(file)
+                return prefs.get("theme", "dark")
+        except Exception as e:
+            print(f"Error loading preferences: {e}")
+            return "dark"
     return "dark"
 
-def save_theme_preference(theme_name):
-    with open("preferences.json", "w") as file:
-        json.dump({"theme": theme_name}, file, indent=4)
+def save_theme_preference(theme_name: str) -> None:
+    """Save the user's theme preference to the preferences file."""
+    try:
+        with open(PREFERENCES_FILE, "w") as file:
+            json.dump({"theme": theme_name}, file, indent=4)
+    except Exception as e:
+        print(f"Error saving preferences: {e}")
 
 # Mapping of quiz names to question dictionaries; modify as needed.
 quiz_mapping = {
@@ -38,14 +50,19 @@ quiz_mapping = {
     "HA4 Quiz 1": HA,
     "GPT prac Quiz": GPT,
     "pharma": pharm,
-    "HA 4 midterm": HA4mid
+    "HA 4 midterm": HA4mid,
+    "HA 4 midterm prac": HA4mid_prac
 }
 
 class MainMenu(QMainWindow):
+    """Main menu window for launching quizzes and managing themes."""
     def __init__(self, scoreboard):
+        """
+        Initialize the main menu with a scoreboard, load theme preference, and build the UI.
+        """
         super().__init__()
         self.scoreboard = scoreboard
-        self.current_quiz_name = None
+        self.current_quiz_name: Optional[str] = None
         # Load user preference and set theme dictionary accordingly
         self.current_theme = load_theme_preference()  # "dark" or "pink"
         self.theme = get_theme(self.current_theme)
@@ -75,7 +92,8 @@ class MainMenu(QMainWindow):
             "HA4 Quiz 1",
             "GPT prac Quiz",
             "pharma",
-            "HA 4 midterm"  # Added this line
+            "HA 4 midterm",  # Added this line
+            "HA 4 midterm prac"  # Added this line
         ]
 
         for quiz_name in quizzes:
@@ -96,7 +114,7 @@ class MainMenu(QMainWindow):
 
         exit_btn = QPushButton("Exit")
         exit_btn.setStyleSheet(self.theme["EXIT_BUTTON_STYLE"])
-        exit_btn.clicked.connect(self.close)
+        exit_btn.clicked.connect(self.confirm_exit)  # updated connection
         self.main_menu_layout.addWidget(exit_btn)
         
         # Add the Switch Theme button
@@ -106,6 +124,12 @@ class MainMenu(QMainWindow):
         self.main_menu_layout.addWidget(self.switch_theme_button)
 
         self.main_layout.addWidget(self.main_menu_widget)
+
+    def confirm_exit(self):
+        reply = QMessageBox.question(self, "Exit Confirmation", "Are you sure you want to exit?",
+                                     QMessageBox.Yes | QMessageBox.No)
+        if reply == QMessageBox.Yes:
+            self.close()
 
     def switch_theme(self):
         # Toggle current theme and update theme dictionary
@@ -141,7 +165,7 @@ class MainMenu(QMainWindow):
             self.main_layout.addWidget(self.scoreboard_widget)
         save_theme_preference(self.current_theme)
 
-    def launch_quiz(self, quiz_name):
+    def launch_quiz(self, quiz_name: str):
         self.current_quiz_name = quiz_name
         questions = quiz_mapping.get(quiz_name, Example_questions_form)
         time_limit = int(self.time_limit_input.text()) * 60 if self.time_limit_input.text().isdigit() else None
