@@ -9,7 +9,8 @@ from typing import Optional  # added for type hints
 from PySide6.QtWidgets import (
     QApplication, QMainWindow, QWidget, QVBoxLayout, QHBoxLayout,
     QPushButton, QLabel, QProgressBar, QMessageBox, QRadioButton, QButtonGroup,
-    QTextBrowser, QGraphicsOpacityEffect, QTableWidget, QTableWidgetItem, QLineEdit, QInputDialog, QSlider, QHeaderView
+    QTextBrowser, QGraphicsOpacityEffect, QTableWidget, QTableWidgetItem, QLineEdit, QInputDialog, QSlider, QHeaderView,
+    QGridLayout, QSizePolicy, QSpacerItem # Import QGridLayout, QSizePolicy, QSpacerItem
 )
 from PySide6.QtGui import QFont, QPixmap
 from PySide6.QtCore import QTimer, Qt, QPropertyAnimation, QEasingCurve
@@ -77,52 +78,79 @@ class MainMenu(QMainWindow):
     def setup_ui(self):
         self.main_menu_widget = QWidget()
         self.main_menu_layout = QVBoxLayout(self.main_menu_widget)
+        self.main_menu_layout.setSpacing(20)  # Add spacing between widgets
+        self.main_menu_layout.setContentsMargins(50, 30, 50, 30)  # Add margins
+
+        # Header
         header = QLabel("Select a Quiz")
         header.setStyleSheet(self.theme["HEADER_LABEL_STYLE"])
         header.setAlignment(Qt.AlignCenter)
+        header.setFixedHeight(60)  # Set fixed height for header
+        header.setFont(QFont("Arial", 24, QFont.Bold))
         self.main_menu_layout.addWidget(header)
 
-        self.buttons_layout = QVBoxLayout()
-        self.main_menu_layout.addLayout(self.buttons_layout)
-
-        quizzes = [
-            "Embryology",
-            "Medical Genetics",
-            "TBL Quiz",
-            "HA4 Quiz 1",
-            "GPT prac Quiz",
-            "pharma",
-            "HA 4 midterm",  # Added this line
-            "HA 4 midterm prac"  # Added this line
-        ]
-
-        for quiz_name in quizzes:
-            btn = QPushButton(quiz_name)
+        # Year selection buttons
+        year_container = QWidget()
+        self.year_layout = QHBoxLayout(year_container)
+        self.year_layout.setSpacing(15)  # Add spacing between year buttons
+        
+        self.year_buttons = {}
+        for year in range(1, 7):
+            btn = QPushButton(f"Year {year}")
             btn.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
-            btn.clicked.connect(lambda checked, q=quiz_name: self.launch_quiz(q))
-            self.buttons_layout.addWidget(btn)
+            btn.clicked.connect(lambda checked, y=year: self.show_year_options(y))
+            btn.setFixedSize(120, 50)  # Set fixed size for year buttons
+            btn.setFont(QFont("Arial", 12))
+            self.year_layout.addWidget(btn)
+            self.year_buttons[year] = btn
 
+        self.main_menu_layout.addWidget(year_container)
+        
+        # Add some spacing
+        self.main_menu_layout.addSpacerItem(QSpacerItem(20, 20))
+
+        # Quiz buttons container
+        quiz_container = QWidget()
+        quiz_container.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        self.quiz_buttons_layout = QGridLayout(quiz_container)
+        self.quiz_buttons_layout.setSpacing(15)
+        self.main_menu_layout.addWidget(quiz_container)
+
+        # Timer input
         self.time_limit_input = QLineEdit()
-        self.time_limit_input.setPlaceholderText("set a timer, enter any number in minutes (optional)")
+        self.time_limit_input.setPlaceholderText("Set timer (minutes)")
         self.time_limit_input.setStyleSheet(self.theme["TIME_LIMIT_INPUT_STYLE"])
-        self.main_menu_layout.addWidget(self.time_limit_input)
+        self.time_limit_input.setFixedSize(200, 50)
+        self.time_limit_input.setAlignment(Qt.AlignCenter)
+        self.main_menu_layout.addWidget(self.time_limit_input, alignment=Qt.AlignCenter)
 
-        scoreboard_btn = QPushButton("View Scoreboard")
+        # Bottom buttons container
+        bottom_container = QWidget()
+        bottom_layout = QHBoxLayout(bottom_container)
+        bottom_layout.setSpacing(15)
+
+        # Scoreboard button
+        scoreboard_btn = QPushButton("Scoreboard")
         scoreboard_btn.setStyleSheet(self.theme["SCOREBOARD_BUTTON_STYLE"])
         scoreboard_btn.clicked.connect(self.show_scoreboard)
-        self.main_menu_layout.addWidget(scoreboard_btn)
+        scoreboard_btn.setFixedSize(150, 50)
+        bottom_layout.addWidget(scoreboard_btn)
 
-        exit_btn = QPushButton("Exit")
-        exit_btn.setStyleSheet(self.theme["EXIT_BUTTON_STYLE"])
-        exit_btn.clicked.connect(self.confirm_exit)  # updated connection
-        self.main_menu_layout.addWidget(exit_btn)
-        
-        # Add the Switch Theme button
+        # Switch Theme button
         self.switch_theme_button = QPushButton("Switch Theme")
         self.switch_theme_button.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
         self.switch_theme_button.clicked.connect(self.switch_theme)
-        self.main_menu_layout.addWidget(self.switch_theme_button)
+        self.switch_theme_button.setFixedSize(150, 50)
+        bottom_layout.addWidget(self.switch_theme_button)
 
+        # Exit button
+        exit_btn = QPushButton("Exit")
+        exit_btn.setStyleSheet(self.theme["EXIT_BUTTON_STYLE"])
+        exit_btn.clicked.connect(self.confirm_exit)
+        exit_btn.setFixedSize(150, 50)
+        bottom_layout.addWidget(exit_btn)
+
+        self.main_menu_layout.addWidget(bottom_container, alignment=Qt.AlignCenter)
         self.main_layout.addWidget(self.main_menu_widget)
 
     def confirm_exit(self):
@@ -165,9 +193,84 @@ class MainMenu(QMainWindow):
             self.main_layout.addWidget(self.scoreboard_widget)
         save_theme_preference(self.current_theme)
 
-    def launch_quiz(self, quiz_name: str):
+    def show_year_options(self, year: int):
+        """Show theory/practical options for all years."""
+        # Clear existing buttons
+        for i in reversed(range(self.quiz_buttons_layout.count())):
+            widget = self.quiz_buttons_layout.itemAt(i).widget()
+            self.quiz_buttons_layout.removeWidget(widget)
+            widget.deleteLater()
+
+        # Show Theory and Practical buttons for all years
+        theory_btn = QPushButton("Theory")
+        theory_btn.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
+        theory_btn.setFixedSize(200, 50)
+        theory_btn.setFont(QFont("Arial", 12))
+        theory_btn.clicked.connect(lambda checked, y=year, m="theory": self.show_quiz_selection(m, y))
+        
+        practical_btn = QPushButton("Practical")
+        practical_btn.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
+        practical_btn.setFixedSize(200, 50)
+        practical_btn.setFont(QFont("Arial", 12))
+        practical_btn.clicked.connect(lambda checked, y=year, m="practical": self.show_quiz_selection(m, y))
+
+        self.quiz_buttons_layout.addWidget(theory_btn, 0, 0)
+        self.quiz_buttons_layout.addWidget(practical_btn, 0, 1)
+
+    def show_quiz_selection(self, mode: str, year: int):
+        """Display quiz selection buttons based on the selected mode and year."""
+        # Clear existing buttons
+        for i in reversed(range(self.quiz_buttons_layout.count())):
+            widget = self.quiz_buttons_layout.itemAt(i).widget()
+            self.quiz_buttons_layout.removeWidget(widget)
+            widget.deleteLater()
+
+        # Quiz selection buttons
+        if year == 2:
+            if mode == "theory":
+                quizzes = [
+                    "Embryology",
+                    "Medical Genetics",
+                    "TBL Quiz",
+                    "HA4 Quiz 1",
+                    "pharma",
+                    "HA 4 midterm"
+                ]
+            else:  # mode == "practical"
+                quizzes = [
+                    "HA 4 midterm prac",
+                    "GPT prac"
+                ]
+        else:
+            # Example quizzes for other years
+            quizzes = [
+                f"Year {year} Quiz 1",
+                f"Year {year} Quiz 2",
+                f"Year {year} Quiz 3",
+                f"Year {year} Quiz 4"
+            ]
+
+        row, col = 0, 0
+        for quiz_name in quizzes:
+            btn = QPushButton(quiz_name)
+            btn.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
+            if year == 2:
+                btn.clicked.connect(lambda checked, q=quiz_name: self.launch_quiz(q))
+            else:
+                # Use Example_questions_form for other years
+                btn.clicked.connect(lambda checked, q=quiz_name: self.launch_quiz(q, use_example=True))
+            btn.setFixedSize(200, 50)
+            btn.setFont(QFont("Arial", 11))
+            self.quiz_buttons_layout.addWidget(btn, row, col)
+            col += 1
+            if col > 2:
+                col = 0
+                row += 1
+
+    def launch_quiz(self, quiz_name: str, use_example: bool = False):
+        """Launch quiz with either actual questions or example questions."""
         self.current_quiz_name = quiz_name
-        questions = quiz_mapping.get(quiz_name, Example_questions_form)
+        questions = Example_questions_form if use_example else quiz_mapping.get(quiz_name, Example_questions_form)
         time_limit = int(self.time_limit_input.text()) * 60 if self.time_limit_input.text().isdigit() else None
         self.quiz_widget = Quiz(questions, self, self.scoreboard, time_limit)
         self.main_layout.addWidget(self.quiz_widget)

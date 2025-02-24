@@ -201,7 +201,9 @@ class Quiz(QMainWindow):
     def __init__(self, questions, main_menu, scoreboard, time_limit=None):
         super().__init__()
         # Initialize basic attributes
-        self.questions = questions
+        # Copy and shuffle questions so each quiz starts with a random order
+        self.questions = questions.copy()
+        random.shuffle(self.questions)
         self.main_menu = main_menu
         self.scoreboard = scoreboard
         self.time_limit = time_limit
