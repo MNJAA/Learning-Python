@@ -2,7 +2,7 @@ import sys
 import random
 import time
 import winsound
-from qs import Example_questions_form, HEM, MGN, HP_TBL_diving, HA, GPT, pharm, HA4mid, HA4mid_prac
+from qs import Example_questions_form, HEM, MGN, HP_TBL_diving, HA, GPT, pharm, HA4mid, HA4mid_prac, CCM
 import json, os
 from typing import Optional  # added for type hints
 
@@ -52,7 +52,8 @@ quiz_mapping = {
     "GPT prac Quiz": GPT,
     "pharma": pharm,
     "HA 4 midterm": HA4mid,
-    "HA 4 midterm prac": HA4mid_prac
+    "HA 4 midterm prac": HA4mid_prac,
+    "CCM": CCM
 }
 
 class MainMenu(QMainWindow):
@@ -229,12 +230,7 @@ class MainMenu(QMainWindow):
         if year == 2:
             if mode == "theory":
                 quizzes = [
-                    "Embryology",
-                    "Medical Genetics",
-                    "TBL Quiz",
-                    "HA4 Quiz 1",
-                    "pharma",
-                    "HA 4 midterm"
+                    "CCM"
                 ]
             else:  # mode == "practical"
                 quizzes = [
