@@ -6058,6 +6058,290 @@ Histology_practical = [
 
 # premed 3-4 i think
 
+
+GPT_mid = [
+    {
+      "question": "What does opsonization do?",
+      "correct_answer": "Coating with antibodies",
+      "wrong_answers": [
+        "Directly lyses pathogens",
+        "Prevents phagocytosis",
+        "Neutralizes toxins"
+      ]
+    },
+    {
+      "question": "What type of macrophages are found in the liver?",
+      "correct_answer": "Kupffer Cells",
+      "wrong_answers": [
+        "Alveolar macrophages",
+        "Microglia",
+        "Splenic macrophages"
+      ]
+    },
+    {
+      "question": "In an allergic reaction to pollen, which white blood cell count is most likely to be elevated?",
+      "correct_answer": "Eosinophils",
+      "wrong_answers": [
+        "Neutrophils",
+        "Basophils",
+        "Lymphocytes"
+      ]
+    },
+    {
+      "question": "A pneumonia patient diagnosed 3 weeks ago with abscesses would most likely show an infiltrate of which cells?",
+      "correct_answer": "Neutrophils",
+      "wrong_answers": [
+        "Eosinophils",
+        "Lymphocytes",
+        "Monocytes"
+      ]
+    },
+    {
+      "question": "Which mediators are used in the production of C-reactive protein (CRP)?",
+      "correct_answer": "IL-6, IL-1, and TNF",
+      "wrong_answers": [
+        "IL-10, IL-4, and IL-2",
+        "Interferon-gamma, IL-12, and IL-17",
+        "Prostaglandins, leukotrienes, and histamine"
+      ]
+    },
+    {
+      "question": "Which molecule is expressed in the endothelium during the adhesion phase of inflammation?",
+      "correct_answer": "Selectins",
+      "wrong_answers": [
+        "Integrins",
+        "Cadherins",
+        "Immunoglobulins"
+      ]
+    },
+    {
+      "question": "COX-2 inhibitors are effective in treating inflammation but may pose what risk?",
+      "correct_answer": "Cerebral infarction and thrombosis",
+      "wrong_answers": [
+        "Renal failure",
+        "Gastrointestinal bleeding",
+        "Hepatic toxicity"
+      ]
+    },
+    {
+      "question": "After stroke treatment with partial restoration, which cellular change subsides?",
+      "correct_answer": "Cell swelling",
+      "wrong_answers": [
+        "Inflammatory cell infiltration",
+        "Fibrosis",
+        "Cytoplasmic vacuolization"
+      ]
+    },
+    {
+      "question": "When doctors discuss a tissue sample to understand disease development, what concept are they most likely addressing?",
+      "correct_answer": "Pathogenesis",
+      "wrong_answers": [
+        "Pathology",
+        "Morphogenesis",
+        "Physiology"
+      ]
+    },
+    {
+      "question": "PAS staining indicates a lysosomal storage disease. What is the underlying defect?",
+      "correct_answer": "Failure to degrade a metabolite",
+      "wrong_answers": [
+        "Excessive glycogen synthesis",
+        "Overactive lysosomal enzymes",
+        "Increased cellular uptake of proteins"
+      ]
+    },
+    {
+      "question": "Jet black pigment deposition in the lungs is indicative of which condition?",
+      "correct_answer": "Anthracosis",
+      "wrong_answers": [
+        "Silicosis",
+        "Asbestosis",
+        "Hemosiderin deposition"
+      ]
+    },
+    {
+      "question": "Constant dialysis can lead to deposition of which type of amyloid?",
+      "correct_answer": "Beta-2 microglobulin amyloidosis (AB2m)",
+      "wrong_answers": [
+        "AL amyloid",
+        "AA amyloid",
+        "Transthyretin amyloid"
+      ]
+    },
+    {
+      "question": "In early tuberculosis, what histological finding is typically expected?",
+      "correct_answer": "Caseating granuloma",
+      "wrong_answers": [
+        "Non-caseating granuloma",
+        "Abscess formation",
+        "Fibrous tissue deposition"
+      ]
+    },
+    {
+      "question": "Why do a woman's cheeks turn red during running?",
+      "correct_answer": "Vasodilation of subcutaneous vessels",
+      "wrong_answers": [
+        "Increased melanin production",
+        "Capillary rupture",
+        "Inflammatory cell infiltration"
+      ]
+    },
+    {
+      "question": "Following a leg injury, what is the first vascular change that occurs during inflammation?",
+      "correct_answer": "Increased vascular flow in arterioles due to histamine release",
+      "wrong_answers": [
+        "Leukocyte extravasation",
+        "Platelet aggregation",
+        "Fibrin deposition"
+      ]
+    },
+    {
+      "question": "Three days after a foreign object enters the finger causing redness, pain, and swelling, what inflammatory response is most likely observed?",
+      "correct_answer": "Acute inflammation with neutrophil infiltrate",
+      "wrong_answers": [
+        "Chronic inflammation with lymphocyte predominance",
+        "Granulomatous inflammation",
+        "Abscess formation"
+      ]
+    },
+    {
+      "question": "Which mediators are primarily responsible for the inflammatory response characterized by fever, chills, and increased blood pressure?",
+      "correct_answer": "IL-1 and TNF",
+      "wrong_answers": [
+        "IL-10 and TGF-beta",
+        "Interferon-gamma and IL-12",
+        "IL-4 and IL-5"
+      ]
+    },
+    {
+      "question": "Chronic Granulomatous Disease (CGD) is characterized by a deficiency in which cellular process?",
+      "correct_answer": "Deficiency in reactive oxygen species production",
+      "wrong_answers": [
+        "Excess production of reactive oxygen species",
+        "Deficiency in phagocytosis",
+        "Overactivation of neutrophils"
+      ]
+    },
+    {
+      "question": "A boy with severe burns healed well except on his abdomen. He takes his insulin injections in his abdominal fat. What is the main cause of the delayed healing in his abdominal area?",
+      "correct_answer": "Because he takes his insulin shots in his abdomen",
+      "wrong_answers": [
+        "Due to his eczema",
+        "Due to his diabetes mellitus",
+        "Due to poor nutritional status"
+      ]
+    },
+    {
+      "question": "In cardiac hypertrophy, there is a switch from alpha to beta myosin heavy chain isoforms. What is the primary reason for this switch?",
+      "correct_answer": "Decreased pressure",
+      "wrong_answers": [
+        "Increases mechanical force",
+        "Decreased load",
+        "Enhanced contractility"
+      ]
+    },
+    {
+      "question": "A patient with carcinoma loses weight rapidly over two months. Which metabolic process is primarily responsible for this weight loss?",
+      "correct_answer": "Metabolizing fat and protein",
+      "wrong_answers": [
+        "Increased calcium deposition",
+        "Hypercalcemia",
+        "Fluid retention"
+      ]
+    },
+    {
+      "question": "In the adhesion phase of leukocyte extravasation, which molecule is responsible for firm adhesion?",
+      "correct_answer": "Integrins",
+      "wrong_answers": [
+        "Selectins",
+        "IL-1",
+        "Rolling"
+      ]
+    },
+    {
+      "question": "An African American patient experiences recurrent scar formation after lesion removal. What type of scar is most likely to recur?",
+      "correct_answer": "Keloid",
+      "wrong_answers": [
+        "Hypertrophic scar",
+        "Atrophic scar",
+        "Contracture"
+      ]
+    },
+    {
+      "question": "Which of the following findings is seen in necrosis but not in apoptosis?",
+      "correct_answer": "Karyolysis",
+      "wrong_answers": [
+        "Infiltration of inflammatory cells",
+        "Nuclear fragmentation",
+        "Pyknosis"
+      ]
+    },
+    {
+      "question": "A biopsy from a worker in the cave industry reveals what type of inflammation?",
+      "correct_answer": "Granulomatous inflammation",
+      "wrong_answers": [
+        "Acute inflammation",
+        "Chronic nonspecific inflammation",
+        "Suppurative inflammation"
+      ]
+    },
+    {
+      "question": "When a deceased man is examined post-mortem, what is the procedure called?",
+      "correct_answer": "Autopsy",
+      "wrong_answers": [
+        "Biopsy",
+        "Forensic examination",
+        "Histological examination"
+      ]
+    },
+    {
+      "question": "In an elderly man with dementia, which protein is commonly implicated in the disease process?",
+      "correct_answer": "Amyloid precursor protein (APP) accumulation",
+      "wrong_answers": [
+        "Tau protein accumulation",
+        "Alpha-synuclein deposition",
+        "Prion protein deposition"
+      ]
+    },
+    {
+      "question": "Which type of amyloid deposition is typically associated with cardiac involvement?",
+      "correct_answer": "Transthyretin amyloid",
+      "wrong_answers": [
+        "Beta-2 microglobulin amyloid",
+        "AL amyloid",
+        "AA amyloid"
+      ]
+    },
+    {
+      "question": "A 16-year-old boy who smokes and has a history of bronchial asthma and eczema is not healing well after an appendectomy. What is the main cause of his delayed healing?",
+      "correct_answer": "Smoking",
+      "wrong_answers": [
+        "Bronchial asthma",
+        "Eczema",
+        "Postoperative infection"
+      ]
+    },
+    {
+      "question": "How does vitamin C deficiency affect wound healing?",
+      "correct_answer": "Impaired collagen cross-linking due to deficient hydroxylation",
+      "wrong_answers": [
+        "Increased collagen breakdown",
+        "Excessive collagen deposition",
+        "Enhanced angiogenesis"
+      ]
+    },
+    {
+      "question": "What type of necrosis is typically seen in brain tissue following an infarct?",
+      "correct_answer": "Liquefactive necrosis",
+      "wrong_answers": [
+        "Coagulative necrosis",
+        "Caseating necrosis",
+        "Fat necrosis"
+      ]
+    }
+]
+
+
 CCM = [
     {
     "question": "What is the function of thyroid peroxidase (TPO) in thyroid hormone synthesis?",
