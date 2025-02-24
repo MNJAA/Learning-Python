@@ -6058,6 +6058,810 @@ Histology_practical = [
 
 # premed 3-4 i think
 
+MIM_mid = [
+    {
+      "question": "B-lactamase?",
+      "correct_answer": "Enzyme degradation",
+      "wrong_answers": [
+        "Inhibition of protein synthesis",
+        "Blockage of cell wall synthesis",
+        "Disruption of DNA replication"
+      ]
+    },
+    {
+      "question": "Which of the following is NOT a mechanism of T regulatory cell function?",
+      "correct_answer": "Downregulation of CD25 (IL-2R)",
+      "wrong_answers": [
+        "Upregulation of inhibitory receptors on dendritic cells",
+        "Secretion of IL-10",
+        "Induction of T cell anergy"
+      ]
+    },
+    {
+      "question": "Tetanus vaccine is classified as which type of vaccine?",
+      "correct_answer": "Toxoid vaccine",
+      "wrong_answers": [
+        "Live attenuated vaccine",
+        "Killed vaccine",
+        "Conjugate vaccine"
+      ]
+    },
+    {
+      "question": "ELISA in COVID-19 testing is used to detect what?",
+      "correct_answer": "Antibodies against SARS-CoV-2 specific antigen",
+      "wrong_answers": [
+        "Viral RNA",
+        "Viral proteins in blood",
+        "Cell-mediated immune response"
+      ]
+    },
+    {
+      "question": "Biofilm is primarily composed of which substance?",
+      "correct_answer": "Glycocalyx",
+      "wrong_answers": [
+        "Endotoxins",
+        "Exopolysaccharides only",
+        "Lipopolysaccharides"
+      ]
+    },
+    {
+      "question": "CTLA-4 is upregulated on T cells under which condition and what is its role?",
+      "correct_answer": "It is expressed on activated T cells to downregulate immune responses",
+      "wrong_answers": [
+        "It is expressed on naive T cells to initiate activation",
+        "It acts as a co-stimulatory molecule to enhance T cell activation",
+        "It is found on B cells to promote antibody production"
+      ]
+    },
+    {
+      "question": "Which region is NOT responsible for generating diversity in the immunoglobulin gene?",
+      "correct_answer": "Fc constant region",
+      "wrong_answers": [
+        "V(D)J region",
+        "J region",
+        "Complementarity-determining regions (CDRs)"
+      ]
+    },
+    {
+      "question": "What is found on neutrophils that enables them to identify foreign invaders?",
+      "correct_answer": "C3b",
+      "wrong_answers": [
+        "IgG antibody",
+        "Mannose receptor",
+        "IL-6 receptor"
+      ]
+    },
+    {
+      "question": "Mycoplasma, which lacks a cell wall, exhibits what shape?",
+      "correct_answer": "Pleomorphic",
+      "wrong_answers": [
+        "Spirochete",
+        "Spirillum",
+        "Filamentous"
+      ]
+    },
+    {
+      "question": "Toxoid vaccine is used against which bacterium?",
+      "correct_answer": "Corynebacterium diphtheriae",
+      "wrong_answers": [
+        "Mycobacterium tuberculosis",
+        "Staphylococcus aureus",
+        "Neisseria meningitidis"
+      ]
+    },
+    {
+      "question": "An antibiotic with a bactericidal effect has a therapeutic index of less than 1. What does this imply?",
+      "correct_answer": "It is more toxic than it is safe to use",
+      "wrong_answers": [
+        "It is highly effective with minimal toxicity",
+        "It has a wide safety margin",
+        "It is bacteriostatic rather than bactericidal"
+      ]
+    },
+    {
+      "question": "What is true regarding gram positive and gram negative bacteria?",
+      "correct_answer": "Gram positive bacteria have thick peptidoglycan while gram negative bacteria have thin peptidoglycan",
+      "wrong_answers": [
+        "Gram negative bacteria have teichoic acids while gram positive do not",
+        "Gram positive bacteria have an outer membrane while gram negative do not",
+        "Gram positive bacteria lack phospholipids while gram negative contain them"
+      ]
+    },
+    {
+      "question": "Which characteristic best classifies obligate anaerobes?",
+      "correct_answer": "Lack of superoxide dismutase (SOD) and catalase",
+      "wrong_answers": [
+        "Ability to use fermentation for energy production",
+        "Inability to produce ATP",
+        "Presence of a thick capsule"
+      ]
+    },
+    {
+      "question": "What is the first protective mechanism against lung infection?",
+      "correct_answer": "Ciliary movement of the epithelium",
+      "wrong_answers": [
+        "Phagocytosis by alveolar macrophages",
+        "Activation of the complement system",
+        "Release of surfactant proteins"
+      ]
+    },
+    {
+      "question": "Which of the following is NOT a function of C3b?",
+      "correct_answer": "Increases vascular permeability",
+      "wrong_answers": [
+        "Opsonization for phagocytosis",
+        "Formation of the C5 convertase",
+        "Promotion of phagocytosis"
+      ]
+    },
+    {
+      "question": "Why do some antigens bind to MHC class I and others to MHC class II?",
+      "correct_answer": "Because they are processed into different peptides",
+      "wrong_answers": [
+        "Due to differences in the proteins that form MHC molecules",
+        "Because of the route of antigen entry into the cell",
+        "Because MHC I and II are expressed on different cell types"
+      ]
+    },
+    {
+      "question": "Where does somatic hypermutation occur in B cells?",
+      "correct_answer": "In the dark zone of the germinal center",
+      "wrong_answers": [
+        "In the light zone of the germinal center",
+        "Outside the germinal center",
+        "In the bone marrow"
+      ]
+    },
+    {
+      "question": "Which microorganism is effectively killed by autoclaving using steam under pressure?",
+      "correct_answer": "Endospores",
+      "wrong_answers": [
+        "Gram negative bacteria",
+        "Gram positive bacteria",
+        "Viruses"
+      ]
+    },
+    {
+      "question": "Which mechanism is commonly used in multiple drug resistance (MDR)?",
+      "correct_answer": "Efflux pump",
+      "wrong_answers": [
+        "Target overproduction",
+        "Target protection",
+        "Alteration of drug's target"
+      ]
+    },
+    {
+      "question": "Scarlet fever is caused by a bacterium that produces which toxin?",
+      "correct_answer": "Superantigen",
+      "wrong_answers": [
+        "Exotoxin A",
+        "Endotoxin",
+        "Hemolysin"
+      ]
+    },
+    {
+      "question": "Coregulated gene clusters in prokaryotes are organized into what?",
+      "correct_answer": "Operon",
+      "wrong_answers": [
+        "Polyamines",
+        "Transposons",
+        "Genomic islands"
+      ]
+    },
+    {
+      "question": "MHC class I molecules are highly polymorphic. What is the consequence of this variation?",
+      "correct_answer": "It affects polypeptide binding",
+      "wrong_answers": [
+        "It determines the cell type expressing MHC I",
+        "It alters the ability to present lipid antigens",
+        "It causes MHC I to be non-functional"
+      ]
+    },
+    {
+      "question": "Which enzyme unwinds double-stranded DNA by breaking hydrogen bonds?",
+      "correct_answer": "DNA Helicase",
+      "wrong_answers": [
+        "DNA Gyrase",
+        "DNA Polymerase",
+        "DNA Ligase"
+      ]
+    },
+    {
+      "question": "Which statement about T regulatory cells (Tregs) is incorrect?",
+      "correct_answer": "They produce TNFα to target effector cells",
+      "wrong_answers": [
+        "They upregulate CTLA-4 on their surface",
+        "They consume IL-2 to limit T cell proliferation",
+        "They can produce granzyme A and B to suppress other T cells"
+      ]
+    },
+    {
+      "question": "What is the primary reason for T cell death in the thymus during development?",
+      "correct_answer": "Failure to display a functional antigen receptor",
+      "wrong_answers": [
+        "Excessive stimulation by self-antigens",
+        "Insufficient IL-2 production",
+        "Overexpression of pro-apoptotic proteins"
+      ]
+    },
+    {
+      "question": "In C3 deficiency, which immune function is primarily impaired?",
+      "correct_answer": "Phagocytosis of microbes",
+      "wrong_answers": [
+        "Formation of the membrane attack complex (MAC)",
+        "Antibody production",
+        "Complement cleavage"
+      ]
+    },
+    {
+      "question": "Which statement about innate and adaptive immunity is incorrect?",
+      "correct_answer": "Innate immunity increases in the secondary response",
+      "wrong_answers": [
+        "Adaptive immunity increases in the secondary response",
+        "Innate immunity is the first line of defense",
+        "Both innate and adaptive responses are activated during infection"
+      ]
+    },
+    {
+      "question": "A modified antibiotic derived from a bacterium is classified as what?",
+      "correct_answer": "Semisynthetic",
+      "wrong_answers": [
+        "Synthetic",
+        "Naturally derived",
+        "Resistant"
+      ]
+    },
+    {
+      "question": "Which component of the complement system forms the membrane attack complex (MAC) leading to cell lysis?",
+      "correct_answer": "C5-C9",
+      "wrong_answers": [
+        "C1-C4",
+        "C3-C5",
+        "C2-C6"
+      ]
+    },
+    {
+      "question": "Which test is highly sensitive and rapid for diagnosing infections in high-risk patients?",
+      "correct_answer": "PCR",
+      "wrong_answers": [
+        "Latex agglutination",
+        "Culture methods",
+        "ELISA"
+      ]
+    },
+    {
+      "question": "Enterobacter is classified under which taxonomic rank?",
+      "correct_answer": "Genus",
+      "wrong_answers": [
+        "Species",
+        "Family",
+        "Kingdom"
+      ]
+    },
+    {
+      "question": "Immunoglobulin class switching is primarily driven by help from which cell type?",
+      "correct_answer": "T cells",
+      "wrong_answers": [
+        "B cells",
+        "Dendritic cells",
+        "Macrophages"
+      ]
+    },
+    {
+      "question": "In bacteria, where are phospholipids predominantly found?",
+      "correct_answer": "Cell membrane",
+      "wrong_answers": [
+        "Cell wall",
+        "Flagella",
+        "Ribosomes"
+      ]
+    },
+    {
+      "question": "What is a common side effect of beta-lactam antibiotics?",
+      "correct_answer": "Allergy",
+      "wrong_answers": [
+        "Yellow teeth",
+        "Aplastic anemia",
+        "Gastrointestinal bleeding"
+      ]
+    },
+    {
+      "question": "Variation in MHC compatibility in populations is characterized by what feature?",
+      "correct_answer": "Extensive polymorphism of many alleles",
+      "wrong_answers": [
+        "Similar expression to T cell receptors",
+        "Co-dominance of alleles",
+        "Limited genetic diversity"
+      ]
+    },
+    {
+      "question": "Which process, mediated by bacteriophages, is responsible for transferring genetic material between bacteria?",
+      "correct_answer": "Transduction",
+      "wrong_answers": [
+        "Conjugation",
+        "Transformation",
+        "Transposition"
+      ]
+    },
+    {
+      "question": "What process helps prevent milk-borne infections?",
+      "correct_answer": "Pasteurization",
+      "wrong_answers": [
+        "Boiling",
+        "Homogenization",
+        "UHT processing"
+      ]
+    },
+     {
+      "question": "What does opsonization do?",
+      "correct_answer": "Coating with antibodies",
+      "wrong_answers": [
+        "Directly lyses pathogens",
+        "Prevents phagocytosis",
+        "Neutralizes toxins"
+      ]
+    },
+    {
+      "question": "What type of macrophages are found in the liver?",
+      "correct_answer": "Kupffer Cells",
+      "wrong_answers": [
+        "Alveolar macrophages",
+        "Microglia",
+        "Splenic macrophages"
+      ]
+    },
+    {
+      "question": "In an allergic reaction to pollen, which white blood cell count is most likely to be elevated?",
+      "correct_answer": "Eosinophils",
+      "wrong_answers": [
+        "Neutrophils",
+        "Basophils",
+        "Lymphocytes"
+      ]
+    },
+    {
+      "question": "A pneumonia patient diagnosed 3 weeks ago with abscesses would most likely show an infiltrate of which cells?",
+      "correct_answer": "Neutrophils",
+      "wrong_answers": [
+        "Eosinophils",
+        "Lymphocytes",
+        "Monocytes"
+      ]
+    },
+    {
+      "question": "Which mediators are used in the production of C-reactive protein (CRP)?",
+      "correct_answer": "IL-6, IL-1, and TNF",
+      "wrong_answers": [
+        "IL-10, IL-4, and IL-2",
+        "Interferon-gamma, IL-12, and IL-17",
+        "Prostaglandins, leukotrienes, and histamine"
+      ]
+    },
+    {
+      "question": "Which molecule is expressed in the endothelium during the adhesion phase of inflammation?",
+      "correct_answer": "Selectins",
+      "wrong_answers": [
+        "Integrins",
+        "Cadherins",
+        "Immunoglobulins"
+      ]
+    },
+    {
+      "question": "COX-2 inhibitors are effective in treating inflammation but may pose what risk?",
+      "correct_answer": "Cerebral infarction and thrombosis",
+      "wrong_answers": [
+        "Renal failure",
+        "Gastrointestinal bleeding",
+        "Hepatic toxicity"
+      ]
+    },
+    {
+      "question": "After stroke treatment with partial restoration, which cellular change subsides?",
+      "correct_answer": "Cell swelling",
+      "wrong_answers": [
+        "Inflammatory cell infiltration",
+        "Fibrosis",
+        "Cytoplasmic vacuolization"
+      ]
+    },
+    {
+      "question": "When doctors discuss a tissue sample to understand disease development, what concept are they most likely addressing?",
+      "correct_answer": "Pathogenesis",
+      "wrong_answers": [
+        "Pathology",
+        "Morphogenesis",
+        "Physiology"
+      ]
+    },
+    {
+      "question": "PAS staining indicates a lysosomal storage disease. What is the underlying defect?",
+      "correct_answer": "Failure to degrade a metabolite",
+      "wrong_answers": [
+        "Excessive glycogen synthesis",
+        "Overactive lysosomal enzymes",
+        "Increased cellular uptake of proteins"
+      ]
+    },
+    {
+      "question": "Jet black pigment deposition in the lungs is indicative of which condition?",
+      "correct_answer": "Anthracosis",
+      "wrong_answers": [
+        "Silicosis",
+        "Asbestosis",
+        "Hemosiderin deposition"
+      ]
+    },
+    {
+      "question": "Constant dialysis can lead to deposition of which type of amyloid?",
+      "correct_answer": "Beta-2 microglobulin amyloidosis (AB2m)",
+      "wrong_answers": [
+        "AL amyloid",
+        "AA amyloid",
+        "Transthyretin amyloid"
+      ]
+    },
+    {
+      "question": "In early tuberculosis, what histological finding is typically expected?",
+      "correct_answer": "Caseating granuloma",
+      "wrong_answers": [
+        "Non-caseating granuloma",
+        "Abscess formation",
+        "Fibrous tissue deposition"
+      ]
+    },
+    {
+      "question": "Why do a woman's cheeks turn red during running?",
+      "correct_answer": "Vasodilation of subcutaneous vessels",
+      "wrong_answers": [
+        "Increased melanin production",
+        "Capillary rupture",
+        "Inflammatory cell infiltration"
+      ]
+    },
+    {
+      "question": "Following a leg injury, what is the first vascular change that occurs during inflammation?",
+      "correct_answer": "Increased vascular flow in arterioles due to histamine release",
+      "wrong_answers": [
+        "Leukocyte extravasation",
+        "Platelet aggregation",
+        "Fibrin deposition"
+      ]
+    },
+    {
+      "question": "Three days after a foreign object enters the finger causing redness, pain, and swelling, what inflammatory response is most likely observed?",
+      "correct_answer": "Acute inflammation with neutrophil infiltrate",
+      "wrong_answers": [
+        "Chronic inflammation with lymphocyte predominance",
+        "Granulomatous inflammation",
+        "Abscess formation"
+      ]
+    },
+    {
+      "question": "Which mediators are primarily responsible for the inflammatory response characterized by fever, chills, and increased blood pressure?",
+      "correct_answer": "IL-1 and TNF",
+      "wrong_answers": [
+        "IL-10 and TGF-beta",
+        "Interferon-gamma and IL-12",
+        "IL-4 and IL-5"
+      ]
+    },
+    {
+      "question": "Chronic Granulomatous Disease (CGD) is characterized by a deficiency in which cellular process?",
+      "correct_answer": "Deficiency in reactive oxygen species production",
+      "wrong_answers": [
+        "Excess production of reactive oxygen species",
+        "Deficiency in phagocytosis",
+        "Overactivation of neutrophils"
+      ]
+    },
+    {
+      "question": "A boy with severe burns healed well except on his abdomen. He takes his insulin injections in his abdominal fat. What is the main cause of the delayed healing in his abdominal area?",
+      "correct_answer": "Because he takes his insulin shots in his abdomen",
+      "wrong_answers": [
+        "Due to his eczema",
+        "Due to his diabetes mellitus",
+        "Due to poor nutritional status"
+      ]
+    },
+    {
+      "question": "In cardiac hypertrophy, there is a switch from alpha to beta myosin heavy chain isoforms. What is the primary reason for this switch?",
+      "correct_answer": "Decreased pressure",
+      "wrong_answers": [
+        "Increases mechanical force",
+        "Decreased load",
+        "Enhanced contractility"
+      ]
+    },
+    {
+      "question": "A patient with carcinoma loses weight rapidly over two months. Which metabolic process is primarily responsible for this weight loss?",
+      "correct_answer": "Metabolizing fat and protein",
+      "wrong_answers": [
+        "Increased calcium deposition",
+        "Hypercalcemia",
+        "Fluid retention"
+      ]
+    },
+    {
+      "question": "In the adhesion phase of leukocyte extravasation, which molecule is responsible for firm adhesion?",
+      "correct_answer": "Integrins",
+      "wrong_answers": [
+        "Selectins",
+        "IL-1",
+        "Rolling adhesion molecules"
+      ]
+    },
+    {
+      "question": "Scarlet fever is caused by a bacterium that produces which toxin?",
+      "correct_answer": "Superantigen",
+      "wrong_answers": [
+        "Exotoxin A",
+        "Endotoxin",
+        "Hemolysin"
+      ]
+    },
+    {
+      "question": "Coregulated gene clusters in prokaryotes are organized into what?",
+      "correct_answer": "Operon",
+      "wrong_answers": [
+        "Polyamines",
+        "Transposons",
+        "Genomic islands"
+      ]
+    },
+    {
+      "question": "MHC class I molecules are highly polymorphic. What is the consequence of this variation?",
+      "correct_answer": "It affects polypeptide binding",
+      "wrong_answers": [
+        "It determines the cell type expressing MHC I",
+        "It alters the ability to present lipid antigens",
+        "It causes MHC I to be non-functional"
+      ]
+    },
+    {
+      "question": "Which enzyme unwinds double-stranded DNA by breaking hydrogen bonds?",
+      "correct_answer": "DNA Helicase",
+      "wrong_answers": [
+        "DNA Gyrase",
+        "DNA Polymerase",
+        "DNA Ligase"
+      ]
+    },
+    {
+      "question": "Which statement about T regulatory cells (Tregs) is incorrect?",
+      "correct_answer": "They produce TNFα to target effector cells",
+      "wrong_answers": [
+        "They upregulate CTLA-4 on their surface",
+        "They consume IL-2 to limit T cell proliferation",
+        "They can produce granzyme A and B to suppress other T cells"
+      ]
+    },
+    {
+      "question": "What is the primary reason for T cell death in the thymus during development?",
+      "correct_answer": "Failure to display a functional antigen receptor",
+      "wrong_answers": [
+        "Excessive stimulation by self-antigens",
+        "Insufficient IL-2 production",
+        "Overexpression of pro-apoptotic proteins"
+      ]
+    },
+    {
+      "question": "In C3 deficiency, which immune function is primarily impaired?",
+      "correct_answer": "Phagocytosis of microbes",
+      "wrong_answers": [
+        "Formation of the membrane attack complex (MAC)",
+        "Antibody production",
+        "Complement cleavage"
+      ]
+    },
+    {
+      "question": "Which statement about innate and adaptive immunity is incorrect?",
+      "correct_answer": "Innate immunity increases in the secondary response",
+      "wrong_answers": [
+        "Adaptive immunity increases in the secondary response",
+        "Innate immunity is the first line of defense",
+        "Both innate and adaptive responses are activated during infection"
+      ]
+    },
+    {
+      "question": "A modified antibiotic derived from a bacterium is classified as what?",
+      "correct_answer": "Semisynthetic",
+      "wrong_answers": [
+        "Synthetic",
+        "Naturally derived",
+        "Resistant"
+      ]
+    },
+    {
+      "question": "Which component of the complement system forms the membrane attack complex (MAC) leading to cell lysis?",
+      "correct_answer": "C5-C9",
+      "wrong_answers": [
+        "C1-C4",
+        "C3-C5",
+        "C2-C6"
+      ]
+    },
+    {
+      "question": "Which test is highly sensitive and rapid for diagnosing infections in high-risk patients?",
+      "correct_answer": "PCR",
+      "wrong_answers": [
+        "Latex agglutination",
+        "Culture methods",
+        "ELISA"
+      ]
+    },
+    {
+      "question": "Enterobacter is classified under which taxonomic rank?",
+      "correct_answer": "Genus",
+      "wrong_answers": [
+        "Species",
+        "Family",
+        "Kingdom"
+      ]
+    },
+    {
+      "question": "Immunoglobulin class switching is primarily driven by help from which cell type?",
+      "correct_answer": "T cells",
+      "wrong_answers": [
+        "B cells",
+        "Dendritic cells",
+        "Macrophages"
+      ]
+    },
+    {
+      "question": "In bacteria, where are phospholipids predominantly found?",
+      "correct_answer": "Cell membrane",
+      "wrong_answers": [
+        "Cell wall",
+        "Flagella",
+        "Ribosomes"
+      ]
+    },
+    {
+      "question": "What is a common side effect of beta-lactam antibiotics?",
+      "correct_answer": "Allergy",
+      "wrong_answers": [
+        "Yellow teeth",
+        "Aplastic anemia",
+        "Gastrointestinal bleeding"
+      ]
+    },
+    {
+      "question": "Variation in MHC compatibility in populations is characterized by what feature?",
+      "correct_answer": "Extensive polymorphism of many alleles",
+      "wrong_answers": [
+        "Similar expression to T cell receptors",
+        "Co-dominance of alleles",
+        "Limited genetic diversity"
+      ]
+    },
+    {
+      "question": "Which process is responsible for the transfer of genetic material by bacteriophages?",
+      "correct_answer": "Transduction",
+      "wrong_answers": [
+        "Conjugation",
+        "Transformation",
+        "Transposition"
+      ]
+    },
+    {
+      "question": "What process helps prevent milk-borne infections?",
+      "correct_answer": "Pasteurization",
+      "wrong_answers": [
+        "Boiling",
+        "Homogenization",
+        "UHT processing"
+      ]
+    },
+    {
+      "question": "What is the function of penicillin-binding proteins (PBPs)?",
+      "correct_answer": "They are involved in bacterial cell wall synthesis and are targets for beta-lactam antibiotics",
+      "wrong_answers": [
+        "They degrade the bacterial cell wall",
+        "They facilitate bacterial DNA replication",
+        "They function as protein synthesis inhibitors"
+      ]
+    },
+    {
+      "question": "Which organism is an exception in the context of KOH preparation?",
+      "correct_answer": "Mycobacterium (specifically Mycobacterium leprae)",
+      "wrong_answers": [
+        "Staphylococcus aureus",
+        "Streptococcus pneumoniae",
+        "Escherichia coli"
+      ]
+    },
+    {
+      "question": "Which statement is true about Thiomargarita namibiensis?",
+      "correct_answer": "It is one of the largest bacteria known",
+      "wrong_answers": [
+        "It is the most antibiotic-resistant bacteria",
+        "It is the most motile bacteria",
+        "It is the smallest known bacterium"
+      ]
+    },
+    {
+      "question": "Which immunodeficiency is caused by a defect in V(D)J recombination?",
+      "correct_answer": "Severe Combined Immunodeficiency (SCID) affecting both B and T cells",
+      "wrong_answers": [
+        "X-linked agammaglobulinemia",
+        "DiGeorge syndrome",
+        "Common Variable Immunodeficiency"
+      ]
+    },
+    {
+      "question": "Which complement pathway does NOT require C2?",
+      "correct_answer": "Alternative pathway",
+      "wrong_answers": [
+        "Classical pathway",
+        "Lectin pathway",
+        "Terminal pathway"
+      ]
+    },
+    {
+      "question": "What do pathogen-associated molecular pattern (PAMP) receptors bind to?",
+      "correct_answer": "PAMPs present on pathogens",
+      "wrong_answers": [
+        "MHC molecules",
+        "T cell receptors",
+        "Host cell proteins"
+      ]
+    },
+    {
+      "question": "Which of the following is true regarding immunoglobulins?",
+      "correct_answer": "IgA is dimeric and protects mucosal surfaces; IgM is pentameric and is produced early; IgG is monomeric and is the predominant antibody in serum",
+      "wrong_answers": [
+        "IgA is monomeric and found in blood; IgM is dimeric; IgG is polymeric",
+        "IgM is only found in the placenta; IgG is only on naive B cells; IgA is secreted only in tears",
+        "IgG is dimeric; IgA is pentameric; IgM is monomeric"
+      ]
+    },
+    {
+      "question": "What does de-escalation of antibiotics mean?",
+      "correct_answer": "Switching from broad-spectrum to narrow-spectrum antibiotics",
+      "wrong_answers": [
+        "Increasing the dosage of antibiotics",
+        "Changing from intravenous to oral antibiotics",
+        "Using combination antibiotic therapy"
+      ]
+    },
+    {
+      "question": "Which cells typically interact with MHC class II molecules?",
+      "correct_answer": "Dendritic cells",
+      "wrong_answers": [
+        "Eosinophils",
+        "Neutrophils",
+        "Red blood cells"
+      ]
+    },
+    {
+      "question": "How do mycobacteria evade host defenses?",
+      "correct_answer": "They prevent phagosome-lysosome fusion",
+      "wrong_answers": [
+        "They lyse host cells immediately upon entry",
+        "They rapidly exit infected cells",
+        "They stimulate excessive antibody production"
+      ]
+    },
+    {
+      "question": "Which molecule is expressed on antigen-presenting cells and interacts with CD40L on T cells to promote immune activation?",
+      "correct_answer": "CD40",
+      "wrong_answers": [
+        "CD28",
+        "CTLA-4",
+        "CD80"
+      ]
+    },
+    {
+      "question": "Which mechanisms are involved in peripheral tolerance?",
+      "correct_answer": "Anergy and suppression by natural T regulatory cells",
+      "wrong_answers": [
+        "Activation of CD8+ cytotoxic cells",
+        "Overproduction of antibodies",
+        "Enhanced complement activation"
+      ]
+    }
+]
+
 
 GPT_mid = [
     {
