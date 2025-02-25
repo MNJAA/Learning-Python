@@ -556,14 +556,22 @@ class Quiz(QMainWindow):
                     "question_index": self.current_question_index
                 })
         else:
-            if self.current_question_index not in self.answered_set:
+            already_answered = self.current_question_index in self.answered_set
+            is_correct = selected_answer == correct_answer
+
+            if not already_answered:
                 self.answered_set.add(self.current_question_index)
                 self.answered_questions += 1
-            if selected_answer == correct_answer:
-                self.score += 1
+
+            if is_correct:
+                self.score += 1 if not already_answered else 0
                 self.incorrect_questions = [q for q in self.incorrect_questions if q["question_index"] != self.current_question_index]
                 self.provide_feedback_sound("correct")
             else:
+                if already_answered:
+                    self.answered_set.remove(self.current_question_index)
+                    self.answered_questions -= 1
+                    self.score -= 1
                 existing = next((q for q in self.incorrect_questions if q["question_index"] == self.current_question_index), None)
                 if existing:
                     existing["selected_answer"] = selected_answer
