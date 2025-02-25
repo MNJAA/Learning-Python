@@ -1,10 +1,18 @@
 {
-    "HA 4 midterm prac": {
-        "highest_score": 23.52941176470588,
+    "CCM": {
+        "highest_score": 0.0,
         "lowest_score": 0.0,
         "latest_score": 0.0,
-        "latest_time": "00:00:08",
-        "min_time": "00:00:00",
-        "max_time": "00:00:11"
+        "latest_time": "00:00:13",
+        "min_time": "00:00:13",
+        "max_time": "00:00:13"
+    },
+    "GPT midterm": {
+        "highest_score": 0.0,
+        "lowest_score": 0.0,
+        "latest_score": 0.0,
+        "latest_time": "00:00:06",
+        "min_time": "00:00:06",
+        "max_time": "00:00:06"
     }
 }

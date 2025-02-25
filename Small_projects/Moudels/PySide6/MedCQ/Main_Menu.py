@@ -14,7 +14,7 @@ from PySide6.QtWidgets import (
     QTextBrowser, QGraphicsOpacityEffect, QTableWidget, QTableWidgetItem, QLineEdit, QInputDialog, QSlider, QHeaderView,
     QGridLayout, QSizePolicy, QSpacerItem # Import QGridLayout, QSizePolicy, QSpacerItem
 )
-from PySide6.QtGui import QFont, QPixmap
+from PySide6.QtGui import QFont, QPixmap, QIcon
 from PySide6.QtCore import QTimer, Qt, QPropertyAnimation, QEasingCurve
  
 # Import theme dictionaries and helper function
@@ -51,7 +51,7 @@ quiz_mapping = {
     "Medical Genetics": MGN,
     "TBL Quiz": HP_TBL_diving,
     "HA4 Quiz 1": HA,
-    "GPT prac Quiz": GPT,
+    "GPT prac": GPT,
     "GPT midterm": GPT_mid,
     "pharma": pharm,
     "HA 4 midterm": HA4mid,
@@ -72,7 +72,8 @@ class MainMenu(QMainWindow):
         # Load user preference and set theme dictionary accordingly
         self.current_theme = load_theme_preference()  # "dark" or "pink"
         self.theme = get_theme(self.current_theme)
-        self.setWindowTitle("Quiz Menu")
+        self.setWindowTitle("MedCQ")
+        self.setWindowIcon(QIcon(r"Small_projects\Moudels\PySide6\MedCQ\images\icon3.png"))
         self.setWindowState(Qt.WindowMaximized)
         self.setStyleSheet(self.theme["MAIN_WINDOW_STYLE"])
         self.central_widget = QWidget()
@@ -83,21 +84,29 @@ class MainMenu(QMainWindow):
     def setup_ui(self):
         self.main_menu_widget = QWidget()
         self.main_menu_layout = QVBoxLayout(self.main_menu_widget)
-        self.main_menu_layout.setSpacing(20)  # Add spacing between widgets
-        self.main_menu_layout.setContentsMargins(50, 30, 50, 30)  # Add margins
+        self.main_menu_layout.setSpacing(20)
+        self.main_menu_layout.setContentsMargins(50, 30, 50, 30)
+
+        # Logo
+        logo_label = QLabel()
+        logo_pixmap = QPixmap("Small_projects\Moudels\PySide6\MedCQ\images\icon3.png")  # adjust path if needed
+        logo_pixmap = logo_pixmap.scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
+        logo_label.setPixmap(logo_pixmap)
+        logo_label.setAlignment(Qt.AlignCenter)
+        self.main_menu_layout.addWidget(logo_label, alignment=Qt.AlignCenter)
 
         # Header
-        header = QLabel("Select a Quiz")
+        header = QLabel("Welcome to MedCQ, Select a Quiz")
         header.setStyleSheet(self.theme["HEADER_LABEL_STYLE"])
         header.setAlignment(Qt.AlignCenter)
-        header.setFixedHeight(60)  # Set fixed height for header
+        header.setFixedHeight(45)
         header.setFont(QFont("Arial", 24, QFont.Bold))
         self.main_menu_layout.addWidget(header)
 
         # Year selection buttons
         year_container = QWidget()
         self.year_layout = QHBoxLayout(year_container)
-        self.year_layout.setSpacing(15)  # Add spacing between year buttons
+        self.year_layout.setSpacing(10)  # Add spacing between year buttons
         
         self.year_buttons = {}
         for year in range(1, 7):
@@ -123,7 +132,7 @@ class MainMenu(QMainWindow):
 
         # Timer input
         self.time_limit_input = QLineEdit()
-        self.time_limit_input.setPlaceholderText("Set timer (minutes)")
+        self.time_limit_input.setPlaceholderText("timer (minutes)")
         self.time_limit_input.setStyleSheet(self.theme["TIME_LIMIT_INPUT_STYLE"])
         self.time_limit_input.setFixedSize(200, 50)
         self.time_limit_input.setAlignment(Qt.AlignCenter)
@@ -175,12 +184,42 @@ class MainMenu(QMainWindow):
         self.time_limit_input.setStyleSheet(self.theme["TIME_LIMIT_INPUT_STYLE"])
         self.switch_theme_button.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
         # Update styles for all buttons in the main menu
-        for i in range(self.buttons_layout.count()):
-            button = self.buttons_layout.itemAt(i).widget()
+        for i in range(self.quiz_buttons_layout.count()):
+            button = self.quiz_buttons_layout.itemAt(i).widget()
             button.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
         # Update styles for scoreboard and exit buttons
         self.main_menu_layout.itemAt(self.main_menu_layout.count() - 3).widget().setStyleSheet(self.theme["SCOREBOARD_BUTTON_STYLE"])
         self.main_menu_layout.itemAt(self.main_menu_layout.count() - 2).widget().setStyleSheet(self.theme["EXIT_BUTTON_STYLE"])
+        
+        # Update styles for year buttons
+        for button in self.year_buttons.values():
+            button.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
+
+        # Iterate through all widgets in the main menu layout and reapply styles
+        for i in range(self.main_menu_layout.count()):
+            widget = self.main_menu_layout.itemAt(i).widget()
+            if widget:
+                if isinstance(widget, QPushButton):
+                    widget.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
+                elif isinstance(widget, QLineEdit):
+                    widget.setStyleSheet(self.theme["TIME_LIMIT_INPUT_STYLE"])
+                elif isinstance(widget, QLabel):
+                    widget.setStyleSheet(self.theme["HEADER_LABEL_STYLE"])
+        
+        # Update styles for bottom buttons (Scoreboard and Exit)
+        bottom_container = self.main_menu_layout.itemAt(self.main_menu_layout.count() - 1).widget()
+        if bottom_container:
+            bottom_layout = bottom_container.layout()
+            for i in range(bottom_layout.count()):
+                widget = bottom_layout.itemAt(i).widget()
+                if isinstance(widget, QPushButton):
+                    if widget.text() == "Scoreboard":
+                        widget.setStyleSheet(self.theme["SCOREBOARD_BUTTON_STYLE"])
+                    elif widget.text() == "Exit":
+                        widget.setStyleSheet(self.theme["EXIT_BUTTON_STYLE"])
+                    else:
+                        widget.setStyleSheet(self.theme["MENU_BUTTON_STYLE"])
+
         # If a Quiz page is active, restart it
         if hasattr(self, "quiz_widget"):
             current_quiz = self.current_quiz_name

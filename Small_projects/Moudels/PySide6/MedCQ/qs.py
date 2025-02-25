@@ -4024,18 +4024,18 @@ PPC_terms = [
     },
     {
         "question": "What is Computed Tomography (CT)?",
-        "correct_answer": "Imaging technique using X-rays to create cross-sectional Small_projects\MedCQ\images of the body.",
+        "correct_answer": "Imaging technique using X-rays to create cross-sectional of the body.",
         "wrong_answers": [
             "Imaging technique using sound waves to visualize internal organs.",
-            "Imaging technique using magnetic fields and radio waves to produce detailed Small_projects\MedCQ\images of the body.",
+            "Imaging technique using magnetic fields and radio waves to produce detailed of the body.",
             "Surgical procedure to remove abnormal tissue from the body."
         ]
     },
     {
         "question": "What is Magnetic Resonance Imaging (MRI)?",
-        "correct_answer": "Imaging technique using magnetic fields and radio waves to produce detailed Small_projects\MedCQ\images of the body.",
+        "correct_answer": "Imaging technique using magnetic fields and radio waves to produce detailed of the body.",
         "wrong_answers": [
-            "Imaging technique using X-rays to create cross-sectional Small_projects\MedCQ\images of the body.",
+            "Imaging technique using X-rays to create cross-sectional of the body.",
             "Imaging technique using sound waves to visualize internal organs.",
             "Surgical procedure to remove abnormal tissue from the body."
         ]
@@ -6865,6 +6865,24 @@ MIM_mid = [
 
 GPT_mid = [
     {
+      "question": "An elderly woman in a group home, with no chronic or genetic illnesses, is suspected of having a myocardial infarction. Which factor would most likely raise this suspicion?",
+      "correct_answer": "Advanced age",
+      "wrong_answers": [
+        "Obesity",
+        "Smoking",
+        "Hyperlipidemia"
+      ]
+    },
+    {
+      "question": "Regarding atherosclerosis, which factor is most classically associated with its development?",
+      "correct_answer": "Advanced age",
+      "wrong_answers": [
+        "T lymphocyte infiltration",
+        "High rate of occlusion",
+        "Hypertension"
+      ]
+    },
+    {
       "question": "What does opsonization do?",
       "correct_answer": "Coating with antibodies",
       "wrong_answers": [
@@ -8957,7 +8975,7 @@ HA4mid_prac = [
         "Ectatic diploic veins",
         "Meningeal ossifications",
         "Suture line depressions"],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_1.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_1.png"
   },
   {
     "question": "In the image of the crista galli, which structure attaches to it?",
@@ -8967,7 +8985,7 @@ HA4mid_prac = [
       "Tentorium cerebelli",
       "Diaphragma sellae"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_2.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_2.png"
   },
   {
     "question": "In the image of the jugular foramen, which vessel passes through it?",
@@ -8977,7 +8995,7 @@ HA4mid_prac = [
       "Sigmoid Sinus",
       "Cranial Nerve XI"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_2.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_2.png"
   },
   {
     "question": "In the image showing a groove on the atlas (C1), what structure passes through this groove?",
@@ -8987,7 +9005,7 @@ HA4mid_prac = [
       "Occipital artery",
       "Accessory nerve"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_3.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_3.png"
   },
   {
     "question": "Regarding the atlas (C1), what is the anatomical significance of the anterior arch?",
@@ -8997,7 +9015,7 @@ HA4mid_prac = [
       "It serves as the origin for the suboccipital muscles.",
       "It articulates with the occipital condyles."
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_3.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_3.png"
   },
   {
     "question": "In the upper mouth image, which foramen is indicated?",
@@ -9007,7 +9025,7 @@ HA4mid_prac = [
       "Greater palatine foramen",
       "Infraorbital foramen"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_4.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_4.png"
   },
   {
     "question": "In the dental image, which tooth is identified as the 2nd premolar?",
@@ -9017,7 +9035,7 @@ HA4mid_prac = [
       "Canine",
       "3rd molar"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_4.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_4.png"
   },
     {
     "question": "In the lingual region, which nerve passes through the groove?",
@@ -9027,7 +9045,7 @@ HA4mid_prac = [
       "Inferior alveolar nerve",
       "Chorda tympani"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_5.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_5.png"
   },
   {
     "question": "Which nerve supplies the lateral pterygoid muscle?",
@@ -9037,7 +9055,7 @@ HA4mid_prac = [
       "Facial nerve (VII)",
       "Glossopharyngeal nerve (IX)"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_6.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_6.png"
   },
   {
     "question": "A: Which nerve provides sensory innervation to the area over the parotid region and the auricle?",
@@ -9047,7 +9065,7 @@ HA4mid_prac = [
       "Lesser occipital nerve",
       "Transverse cervical nerve"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_7.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_7.png"
   },
   {
     "question": "B: Which vein is typically identified running superficial to the sternocleidomastoid muscle in the lateral neck?",
@@ -9057,7 +9075,7 @@ HA4mid_prac = [
       "Anterior jugular vein",
       "Subclavian vein"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_7.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_7.png"
   },
   {
     "question": "In a diagram, if label 3 corresponds to a midline depression at the base of the tongue, which structure is it?",
@@ -9067,7 +9085,7 @@ HA4mid_prac = [
       "Incisive foramen",
       "Obturator foramen"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_8.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_8.png"
   },
   {
     "question": "In a diagram, if label 2 corresponds to a cluster of taste buds on the tongue, which structure is it?",
@@ -9077,7 +9095,7 @@ HA4mid_prac = [
       "Filiform papillae",
       "Foliate papillae"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_8.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_8.png"
   },
   {
     "question": "Which nerve supplies the intrinsic muscles of the larynx (except the cricothyroid muscle)?",
@@ -9087,7 +9105,7 @@ HA4mid_prac = [
       "B: Hypoglossal nerve",
       "B: Glossopharyngeal nerve"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_9.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_9.png"
   },
   {
     "question": "Which anatomical structure in the laryngopharyngeal region is identified as the piriform recess?",
@@ -9097,7 +9115,7 @@ HA4mid_prac = [
       "B: Arytenoid fossa",
       "A: False vocal cord"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_9.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_9.png"
   },
   {
     "question": "In a paranasal sinus diagram, if label A indicates a sinus located between the orbits, which sinus is it?",
@@ -9107,7 +9125,7 @@ HA4mid_prac = [
       "Frontal sinus",
       "Sphenoid sinus"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_10.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_10.png"
   },
   {
     "question": "B: In a diagram of the middle ear and mastoid air cells, what does the structure labeled B open into?",
@@ -9117,7 +9135,7 @@ HA4mid_prac = [
       "It opens into the nasopharynx via the Eustachian tube",
       "It drains into the maxillary sinus"
     ],
-        "image": "Small_projects\MedCQ\images\HA4mid_prac\ID_10.png"
+        "image": r"Small_projects\MedCQ\images\HA4mid_prac\ID_10.png"
   }
 ]
 
@@ -9126,7 +9144,7 @@ HA = [
         "question": "Which lingual papillon does not have taste buds?",
         "correct_answer": "Filiform",
         "wrong_answers": ["Fungiform", "Circumvallate", "Foliate"],
-        'image':'Small_projects\MedCQ\images\image.png'
+        'image':r'Small_projects\MedCQ\images\image.png'
     },
     {
         "question": "What is the embryological remnant of the hypoglossal duct?",
@@ -9471,134 +9489,134 @@ GPT = [
         "question": "What type of inflammation?",
         "correct_answer": "Fibrinous Inflammation",
         "wrong_answers": ["Serous Inflammation", "Hemorrhagic Inflammation", "Suppurative Inflammation"],
-        "image": "Small_projects\MedCQ\images\image1.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image1.png"
     },
     {
         "question": "Patient with 6 day diarrhea. What microbe?",
         "correct_answer": "Parasite",
         "wrong_answers": ["Gram negative", "Gram positive", "Virus"],
-        "image": "Small_projects\MedCQ\images\image2.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image2.png"
     },
     {
         "question": "Rheumatoid arthritis patient, Which of the acute phase proteins cause anemia?",
         "correct_answer": "Hepcidin",
         "wrong_answers": ["Serum amyloid A", "Fibronectin", "C-reactive protein"],
-        "image": "Small_projects\MedCQ\images\image.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image.png"
     },
     {
         "question": "Patient with asthma. Which mediator is involved in bronchoconstriction/bronchospasms?",
         "correct_answer": "Leukotrienes",
         "wrong_answers": ["Histamine", "Prostaglandins", "Cytokines"],
-        "image": "Small_projects\MedCQ\images\image.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image.png"
     },
     {
         "question": "Lady did a piercing 8 weeks ago and then she had this lesion growing gradually. She also had one @ 7 years old after abdominal surgery. What do you expect in microscopic examination of this lesion?",
         "correct_answer": "Accumulation of collagen - dense collagen bundles",
         "wrong_answers": ["Granulomatous inflammation", "Epithelial hyperplasia", "Lymphocyte infiltration"],
-        "image": "Small_projects\MedCQ\images\image3.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image3.png"
     },
     {
         "question": "Patient has problems in the lung. Take a scan (of lung shadow) under a microscope. You see giant cells what is the cause?",
         "correct_answer": ["cocaine snorting"],
         "wrong_answers": ["Influenza virus", "Chest trauma", "meow"],
-        "image": "Small_projects\MedCQ\images\image4.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image4.png"
     },
     {
         "question": "Patient had an appendectomy, the appendix was placed in formalin, what is its function?",
         "correct_answer": "To prevent autolysis",
         "wrong_answers": ["To prevent atrophy", "To enhance nuclear condensation", "To kill bacteria"],
-        "image": "Small_projects\MedCQ\images\image.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Cytology",
         "wrong_answers": ["Biopsy", "Autopsy", "Histopathology"],
-        "image": "Small_projects\MedCQ\images\image5.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image5.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Biopsy",
         "wrong_answers": ["Cytology", "Autopsy", "Histopathology"],
-        "image": "Small_projects\MedCQ\images\image6.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image6.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Liquefactive necrosis",
         "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
-        "image": "Small_projects\MedCQ\images\image7.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image7.png"
     },
     
     {
         "question": "Example of?",
         "correct_answer": "Atrophy",
         "wrong_answers": ["Hypertrophy", "Hyperplasia", "Metaplasia"],
-        "image": "Small_projects\MedCQ\images\image8.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image8.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Coagulative necrosis",
         "wrong_answers": ["Liquefactive necrosis", "Caseous necrosis", "Gangrenous necrosis"],
-        "image": "Small_projects\MedCQ\images\image9.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image9.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Atrophy",
         "wrong_answers": ["Hypertrophy", "Hyperplasia", "Metaplasia"],
-        "image": "Small_projects\MedCQ\images\image10.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image10.png"
     },
     {
         "question": "Lung with tuberculosis?",
         "correct_answer": "Caseous necrosis",
         "wrong_answers": ["Liquefactive necrosis", "Coagulative necrosis", "Gangrenous necrosis"],
-        "image": "Small_projects\MedCQ\images\image11.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image11.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Hypertrophy",
         "wrong_answers": ["Atrophy", "Hyperplasia", "Metaplasia"],
-        "image": "Small_projects\MedCQ\images\image12.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image12.png"
     },
     {
         "question": "Pregnant women diff in the uterus?",
         "correct_answer": "Hypertrophy",
         "wrong_answers": ["Atrophy", "Hyperplasia", "Metaplasia"],
-        "image": "Small_projects\MedCQ\images\image13.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image13.png"
     },
     {
         "question": "Brain hole?",
         "correct_answer": "liquefactive necrosis",
         "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
-        "image": "Small_projects\MedCQ\images\image14.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image14.png"
     },
     {
         "question": "If you want to take appendix for examination you should...",
         "correct_answer": "Put it in formalin",
         "wrong_answers": ["Put it in saline", "Put it in alcohol", "Put it on tray (Plate)"],
-        "image": "Small_projects\MedCQ\images\image.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image.png"
     },
     {
         "question": "Big mass on neck because of enlarged lymph node because of teeth infection?",
         "correct_answer": "Hyperplasia",
         "wrong_answers": ["Atrophy", "Hypertrophy", "Metaplasia"],
-        "image": "Small_projects\MedCQ\images\image.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Resection",
         "wrong_answers": ["Biopsy", "Cytology", "Autopsy"],
-        "image": "Small_projects\MedCQ\images\image16.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image16.png"
     },
     {
         "question": "Example of?",
         "correct_answer": "Fat necrosis",
         "wrong_answers": ["Coagulative necrosis", "Caseous necrosis", "Gangrenous necrosis"],
-        "image": "Small_projects\MedCQ\images\image17.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image17.png"
     },
     {
         "question": "Example of? ",
         "correct_answer": "caseous microscopic",
         "wrong_answers": ["Liquefactive necrosis", "Coagulative necrosis", "Gangrenous necrosis"],
-        "image": "Small_projects\MedCQ\images\image18.png"
+        "image": r"Small_projects\Moudels\PySide6\MedCQ\images\GPT prac quiz\image18.png"
     }
 ]
 
@@ -10339,7 +10357,7 @@ MGN = [
      "correct_answer": "40-60%", 
      "wrong_answers": ["10-20%", "20-30%", "70-80%"]
      },
-    {"question": "Two Small_projects\MedCQ\images showing DiGeorge (deletion) FISH. Which of A or/and B have DiGeorge?", 
+    {"question": "Twor showing DiGeorge (deletion) FISH. Which of A or/and B have DiGeorge?", 
      "correct_answer": "B only (red missing)", 
      "wrong_answers": ["A only", "Both A and B", "Neither A nor B"]
      },
@@ -13211,7 +13229,7 @@ HEM = [
      "correct_answer": "Gut and derivatives",
      "wrong_answers": ["Heart", "Muscles", "Bones"]
      },
-    {"question": "What is the order of twins based on the Small_projects\MedCQ\images provided?",
+    {"question": "What is the order of twins based on ther provided?",
      "correct_answer": "2, 3, 1",
      "wrong_answers": ["1, 2, 3", "3, 1, 2", "1, 3, 2"]
      },
@@ -13746,5 +13764,6 @@ HEM = [
 total_questions = len(
     Anatomy_questions + Anatomy_practical + Biology_questions + Chemistry_questions + 
     Chemistry_practical + NIT_questions + PPC_questions + Anatomy2_questions + 
-    Anatomy2_questions + Histology_questions + PPC_terms + HEM + pharm + Histology_practical + MGN + HP_TBL_diving + GPT + HA + HA4mid + HA4mid_prac + CCM )
+    Anatomy2_questions + Histology_questions + PPC_terms + HEM + pharm + Histology_practical
+    + MGN + HP_TBL_diving + GPT + HA + HA4mid + HA4mid_prac + CCM + GPT_mid + MIM_mid )
 print(f"created a total of {total_questions} questions.")
