@@ -42,7 +42,7 @@ class QuestionNavigator(QMenu):
         for text, color, symbol in [
             ("Not answered", "white", "○"),
             ("Answered", "#90EE90", "●"),
-            ("Skipped", "#FFB6C6", "×")
+            ("Skipped", "#aF60C6", "×")
         ]:
             item_layout = QHBoxLayout()
             item_layout.setSpacing(2)  # Minimal space between icon and text
@@ -159,7 +159,7 @@ class QuestionNavigator(QMenu):
                 tooltip = "Answered"
             elif i in skipped_indices:
                 status = "skipped"
-                color = "#FFB6C6"
+                color = "#aF60C6"
                 hover_color = "#FFB6B6"
                 tooltip = "Skipped"
             else:
