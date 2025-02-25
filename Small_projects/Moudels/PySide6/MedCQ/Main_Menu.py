@@ -73,7 +73,7 @@ class MainMenu(QMainWindow):
         self.current_theme = load_theme_preference()  # "dark" or "pink"
         self.theme = get_theme(self.current_theme)
         self.setWindowTitle("MedCQ")
-        self.setWindowIcon(QIcon(r"Small_projects\Moudels\PySide6\MedCQ\images\icon3.png"))
+        self.setWindowIcon(QIcon(r"Small_projects\Moudels\PySide6\MedCQ\images\icon.png"))
         self.setWindowState(Qt.WindowMaximized)
         self.setStyleSheet(self.theme["MAIN_WINDOW_STYLE"])
         self.central_widget = QWidget()
@@ -89,7 +89,7 @@ class MainMenu(QMainWindow):
 
         # Logo
         logo_label = QLabel()
-        logo_pixmap = QPixmap("Small_projects\Moudels\PySide6\MedCQ\images\icon3.png")  # adjust path if needed
+        logo_pixmap = QPixmap("Small_projects\Moudels\PySide6\MedCQ\images\icon.png")  # adjust path if needed
         logo_pixmap = logo_pixmap.scaled(64, 64, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         logo_label.setPixmap(logo_pixmap)
         logo_label.setAlignment(Qt.AlignCenter)
