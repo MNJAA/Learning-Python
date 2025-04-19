@@ -13761,6 +13761,628 @@ HEM = [
 ]
 
 
+# HA4 final
+HA4final = [
+    
+    {
+        "question": "What is Rima glottidis?",
+        "correct_answer": "Aperture between the true vocal cords and arytenoid cartilages",
+        "wrong_answers": [
+            "Muscle that tenses the vocal cords",
+            "Ligament connecting the thyroid and cricoid cartilages",
+            "Space between the false vocal cords"
+        ]
+    },
+    {
+        "question": "Zenker's diverticulum is associated with weakness between which muscles?",
+        "correct_answer": "Thyropharyngeus and cricopharyngeus",
+        "wrong_answers": [
+            "Stylopharyngeus and palatopharyngeus",
+            "Superior and middle pharyngeal constrictors",
+            "Inferior and middle pharyngeal constrictors"
+        ]
+    },
+    {
+        "question": "Function of the vocalis muscle?",
+        "correct_answer": "Relaxes the vocal cords",
+        "wrong_answers": [
+            "Tenses the vocal cords",
+            "Adducts the vocal cords",
+            "Abducts the vocal cords"
+        ]
+    },
+    {
+        "question": "Which muscle tenses the vocal cords?",
+        "correct_answer": "Cricothyroid muscle",
+        "wrong_answers": [
+            "Thyroarytenoid muscle",
+            "Posterior cricoarytenoid muscle",
+            "Lateral cricoarytenoid muscle"
+        ]
+    },
+    {
+        "question": "MRI showing infarction of the right cerebral hemisphere indicates blockage of which artery?",
+        "correct_answer": "Middle cerebral artery",
+        "wrong_answers": [
+            "Anterior cerebral artery",
+            "Posterior cerebral artery",
+            "Basilar artery"
+        ]
+    },
+    {
+        "question": "Which nerve passes between the posterior communicating artery and the superior cerebellar artery?",
+        "correct_answer": "Oculomotor nerve",
+        "wrong_answers": [
+            "Trochlear nerve",
+            "Abducens nerve",
+            "Optic nerve"
+        ]
+    },
+    {
+        "question": "The retropharyngeal space is located between which fascial layers?",
+        "correct_answer": "Buccopharyngeal fascia and alar fascia",
+        "wrong_answers": [
+            "Prevertebral fascia and alar fascia",
+            "Buccopharyngeal fascia and prevertebral fascia",
+            "Alar fascia and carotid sheath"
+        ]
+    },
+    {
+        "question": "Damage to which nucleus causes diabetes insipidus?",
+        "correct_answer": "Supraoptic nucleus",
+        "wrong_answers": [
+            "Paraventricular nucleus",
+            "Arcuate nucleus",
+            "Ventromedial nucleus"
+        ]
+    },
+    {
+        "question": "Which tract connects the mammillary bodies to the thalamus and is involved in emotion?",
+        "correct_answer": "Mammillothalamic tract",
+        "wrong_answers": [
+            "Spinothalamic tract",
+            "Corticospinal tract",
+            "Medial lemniscus"
+        ]
+    },
+    {
+        "question": "In magnetic resonance venography, which sinus is commonly visualized?",
+        "correct_answer": "Sigmoid sinus",
+        "wrong_answers": [
+            "Straight sinus",
+            "Inferior sagittal sinus",
+            "Cavernous sinus"
+        ]
+    },
+    {
+        "question": "What is true about the ciliary ganglion?",
+        "correct_answer": "Involved in the pupillary reflex",
+        "wrong_answers": [
+            "Controls lacrimal secretion",
+            "Innervates the parotid gland",
+            "Regulates salivary secretion"
+        ]
+    },
+    {
+        "question": "Which artery is associated with urinary incontinence when infarcted?",
+        "correct_answer": "Anterior cerebral artery",
+        "wrong_answers": [
+            "Middle cerebral artery",
+            "Posterior cerebral artery",
+            "Basilar artery"
+        ]
+    },
+    {
+        "question": "Paralysis of limbs and difficulty speaking are symptoms of a lesion in which area?",
+        "correct_answer": "Bilateral lesion of the internal capsule",
+        "wrong_answers": [
+            "Unilateral lesion of the cerebellum",
+            "Lesion of the corpus callosum",
+            "Lesion of the basal ganglia"
+        ]
+    },
+    {
+        "question": "In a case of long-standing hypertension, rupture of which arteries is likely?",
+        "correct_answer": "Lenticulostriate branches of the middle cerebral artery",
+        "wrong_answers": [
+            "Anterior cerebral artery branches",
+            "Posterior cerebral artery branches",
+            "Basilar artery branches"
+        ]
+    },
+    {
+        "question": "Herpes simplex virus infection of the ear canal affects which ganglion?",
+        "correct_answer": "Geniculate ganglion",
+        "wrong_answers": [
+            "Trigeminal ganglion",
+            "Otic ganglion",
+            "Pterygopalatine ganglion"
+        ]
+    },
+    {
+        "question": "Sensory information from the trigeminal nerve is processed in which nucleus?",
+        "correct_answer": "Principal sensory nucleus",
+        "wrong_answers": [
+            "Mesencephalic nucleus",
+            "Spinal nucleus",
+            "Motor nucleus"
+        ]
+    },
+    {
+        "question": "Occlusion of the right internal carotid artery can lead to which visual defect?",
+        "correct_answer": "Nasal hemianopsia of the right eye",
+        "wrong_answers": [
+            "Temporal hemianopsia of the right eye",
+            "Complete blindness of the left eye",
+            "Bitemporal hemianopsia"
+        ]
+    },
+    {
+        "question": "Which branch of the facial nerve is not typically affected in Bell's palsy?",
+        "correct_answer": "Posterior auricular nerve",
+        "wrong_answers": [
+            "Temporal branch",
+            "Zygomatic branch",
+            "Buccal branch"
+        ]
+    },
+    {
+        "question": "Profuse bleeding from the scalp is primarily due to injury of which structures?",
+        "correct_answer": "Blood vessels in the dense connective tissue",
+        "wrong_answers": [
+            "Blood vessels in the loose areolar tissue",
+            "Blood vessels in the epicranial aponeurosis",
+            "Blood vessels in the skin"
+        ]
+    },
+    {
+        "question": "Which sinus drains into the superior meatus?",
+        "correct_answer": "Posterior ethmoid sinus",
+        "wrong_answers": [
+            "Anterior ethmoid sinus",
+            "Maxillary sinus",
+            "Frontal sinus"
+        ]
+    },
+    
+     {
+        "question": "Which muscle receives a branch from the cervical plexus?",
+        "correct_answer": "Geniohyoid",
+        "wrong_answers": [
+            "Platysma",
+            "Sternocleidomastoid",
+            "Omohyoid"
+        ]
+    },
+    {
+        "question": "Hoarseness and dysphagia are symptoms of a lesion in which nucleus?",
+        "correct_answer": "Nucleus ambiguus",
+        "wrong_answers": [
+            "Nucleus solitarius",
+            "Dorsal motor nucleus of vagus",
+            "Hypoglossal nucleus"
+        ]
+    },
+    {
+        "question": "Damage to the structure behind the carotid sheath can cause ptosis due to disruption of which structure?",
+        "correct_answer": "Cervical sympathetic chain",
+        "wrong_answers": [
+            "Vagus nerve",
+            "Hypoglossal nerve",
+            "Internal jugular vein"
+        ]
+    },
+    {
+        "question": "Which muscle is responsible for producing low-pitch sounds?",
+        "correct_answer": "Thyroarytenoid",
+        "wrong_answers": [
+            "Cricothyroid",
+            "Posterior cricoarytenoid",
+            "Lateral cricoarytenoid"
+        ]
+    },
+    {
+        "question": "Which ligament prevents posterior dislocation of the mandible?",
+        "correct_answer": "Temporomandibular ligament",
+        "wrong_answers": [
+            "Stylomandibular ligament",
+            "Sphenomandibular ligament",
+            "Capsular ligament"
+        ]
+    },
+    {
+        "question": "The periaqueductal gray matter (PAG) is primarily involved in which function?",
+        "correct_answer": "Pain modulation",
+        "wrong_answers": [
+            "Motor coordination",
+            "Visual processing",
+            "Auditory processing"
+        ]
+    },
+    {
+        "question": "Which of the following is true about the thyroid gland?",
+        "correct_answer": "It regulates metabolism through hormone secretion",
+        "wrong_answers": [
+            "It stores calcium in the bones",
+            "It produces insulin for blood sugar control",
+            "It filters toxins from the blood"
+        ]
+    },
+    {
+        "question": "Which thalamic nucleus is responsible for head and neck sensation?",
+        "correct_answer": "Ventral posteromedial nucleus (VPM)",
+        "wrong_answers": [
+            "Ventral posterolateral nucleus (VPL)",
+            "Medial geniculate nucleus",
+            "Lateral geniculate nucleus"
+        ]
+    },
+    {
+        "question": "Which muscle, if cut bilaterally, can be life-threatening?",
+        "correct_answer": "Genioglossus",
+        "wrong_answers": [
+            "Cricothyroid",
+            "Thyroarytenoid",
+            "Sternohyoid"
+        ]
+    },
+    
+    {
+        "question": "Which muscle abducts the vocal cords by opening the rima glottidis?",
+        "correct_answer": "Posterior cricoarytenoid",
+        "wrong_answers": [
+            "Lateral cricoarytenoid",
+            "Cricothyroid",
+            "Thyroarytenoid"
+        ]
+    },
+    {
+        "question": "Which vein communicates with the cavernous sinus and can cause infection?",
+        "correct_answer": "Facial vein",
+        "wrong_answers": [
+            "Retromandibular vein",
+            "External jugular vein",
+            "Occipital vein"
+        ]
+    },
+    {
+        "question": "Crocodile tears syndrome involves which nerve?",
+        "correct_answer": "Facial nerve",
+        "wrong_answers": [
+            "Trigeminal nerve",
+            "Glossopharyngeal nerve",
+            "Oculomotor nerve"
+        ]
+    },
+    {
+        "question": "What is true about the lingual nerve?",
+        "correct_answer": "It loops beneath the submandibular duct",
+        "wrong_answers": [
+            "It innervates the posterior third of the tongue",
+            "It carries motor fibers to the tongue",
+            "It arises from the maxillary division of the trigeminal nerve"
+        ]
+    },
+    {
+        "question": "Fracture of the pterion can lead to rupture of which artery?",
+        "correct_answer": "Middle meningeal artery",
+        "wrong_answers": [
+            "Anterior cerebral artery",
+            "Posterior communicating artery",
+            "Superior thyroid artery"
+        ]
+    },
+    {
+        "question": "What is true about the spinal cord?",
+        "correct_answer": "Contains neurons that control blood pressure (preganglionic sympathetic)",
+        "wrong_answers": [
+            "Lacks any autonomic neurons",
+            "Only transmits sensory information",
+            "Is not involved in reflex arcs"
+        ]
+    },
+    {
+        "question": "Substantia nigra contains neurons that produce which neurotransmitter?",
+        "correct_answer": "Dopamine",
+        "wrong_answers": [
+            "Serotonin",
+            "Acetylcholine",
+            "GABA"
+        ]
+    },
+    {
+        "question": "Which thalamic nucleus transmits pain and temperature sensations from the face?",
+        "correct_answer": "Ventral posteromedial nucleus (VPM)",
+        "wrong_answers": [
+            "Ventral posterolateral nucleus (VPL)",
+            "Medial geniculate nucleus",
+            "Lateral geniculate nucleus"
+        ]
+    },
+    {
+        "question": "Neglect syndrome and attentional deficits are associated with lesions in which nucleus?",
+        "correct_answer": "Pulvinar nucleus",
+        "wrong_answers": [
+            "Anterior nucleus",
+            "Mediodorsal nucleus",
+            "Lateral dorsal nucleus"
+        ]
+    },
+    {
+        "question": "Temporal lobe herniation through the tentorial notch compresses which nerve?",
+        "correct_answer": "Oculomotor nerve",
+        "wrong_answers": [
+            "Trochlear nerve",
+            "Abducens nerve",
+            "Optic nerve"
+        ]
+    },
+    {
+        "question": "What is true regarding parasympathetic fibers?",
+        "correct_answer": "Preganglionic fibers synapse in ganglia",
+        "wrong_answers": [
+            "Preganglionic fibers directly innervate target organs",
+            "Postganglionic fibers are longer than preganglionic fibers",
+            "They originate from thoracolumbar segments"
+        ]
+    },
+    {
+        "question": "What is true about the pharynx?",
+        "correct_answer": "Vallecula is anterior to the epiglottis",
+        "wrong_answers": [
+            "It extends from the nasal cavity to the larynx",
+            "It is innervated solely by the glossopharyngeal nerve",
+            "It contains the palatine tonsils in the nasopharynx"
+        ]
+    },
+    {
+        "question": "Injury to the facial nerve at the internal acoustic meatus would result in?",
+        "correct_answer": "Dryness of the eye",
+        "wrong_answers": [
+            "Loss of taste in the posterior third of the tongue",
+            "Hyperacusis",
+            "Loss of sensation in the external ear"
+        ]
+    },
+    {
+        "question": "Which artery's infarction is indicated by urinary incontinence?",
+        "correct_answer": "Anterior cerebral artery",
+        "wrong_answers": [
+            "Middle cerebral artery",
+            "Posterior cerebral artery",
+            "Basilar artery"
+        ]
+    },
+    {
+        "question": "What is true about the thyroid isthmus?",
+        "correct_answer": "Inferior thyroid veins are located at its inferior border",
+        "wrong_answers": [
+            "It lies at the level of the fifth cervical vertebra",
+            "It is supplied by the superior thyroid artery",
+            "It connects the superior poles of the thyroid lobes"
+        ]
+    },
+    {
+        "question": "Which muscle is supplied by C1 via the hypoglossal nerve?",
+        "correct_answer": "Geniohyoid",
+        "wrong_answers": [
+            "Mylohyoid",
+            "Sternohyoid",
+            "Omohyoid"
+        ]
+    },
+    {
+        "question": "Which ganglion is associated with the ciliary muscle?",
+        "correct_answer": "Ciliary ganglion",
+        "wrong_answers": [
+            "Pterygopalatine ganglion",
+            "Otic ganglion",
+            "Submandibular ganglion"
+        ]
+    },
+    {
+        "question": "Which sinus opens into the superior meatus?",
+        "correct_answer": "Posterior ethmoid sinus",
+        "wrong_answers": [
+            "Maxillary sinus",
+            "Frontal sinus",
+            "Anterior ethmoid sinus"
+        ]
+    },
+    {
+        "question": "What is the function of the superior oblique muscle?",
+        "correct_answer": "Intorsion",
+        "wrong_answers": [
+            "Extorsion",
+            "Elevation",
+            "Abduction"
+        ]
+    },
+    {
+        "question": "Which gland is affected in a stye?",
+        "correct_answer": "Ciliary (Zeis) gland",
+        "wrong_answers": [
+            "Lacrimal gland",
+            "Parotid gland",
+            "Meibomian gland"
+        ]
+    },
+    {
+        "question": "The axillary sheath is an extension of which fascia?",
+        "correct_answer": "Prevertebral fascia",
+        "wrong_answers": [
+            "Investing fascia",
+            "Pretracheal fascia",
+            "Buccopharyngeal fascia"
+        ]
+    },
+    
+    {
+        "question": "What is the axillary sheath made of?",
+        "correct_answer": "Prevertebral fascia",
+        "wrong_answers": [
+            "Pretracheal fascia",
+            "Investing fascia",
+            "Carotid sheath"
+        ]
+    },
+    {
+        "question": "A patient presents with right facial weakness and left body weakness. What is the most likely lesion location?",
+        "correct_answer": "Brainstem lesion affecting the facial nerve nucleus and corticospinal tract",
+        "wrong_answers": [
+            "Left cerebral cortex",
+            "Right spinal cord",
+            "Left cerebellum"
+        ]
+    },
+    {
+        "question": "Why does the thyroid gland move when swallowing?",
+        "correct_answer": "Attachment of pretracheal fascia to the hyoid bone",
+        "wrong_answers": [
+            "Attachment of investing fascia to the sternum",
+            "Attachment of prevertebral fascia to the thyroid cartilage",
+            "Attachment of carotid sheath to the cricoid cartilage"
+        ]
+    },
+    {
+        "question": "Tilting the head to the right causes hyperdeviation. Which nerve is likely damaged?",
+        "correct_answer": "Right trochlear nerve",
+        "wrong_answers": [
+            "Left oculomotor nerve",
+            "Right abducens nerve",
+            "Left optic nerve"
+        ]
+    },
+    {
+        "question": "Damage to which nerve impairs eye movement in all directions?",
+        "correct_answer": "Oculomotor nerve",
+        "wrong_answers": [
+            "Trochlear nerve",
+            "Abducens nerve",
+            "Optic nerve"
+        ]
+    },
+    {
+        "question": "Lymphatic drainage from the anterior part of the tongue primarily goes to which lymph nodes?",
+        "correct_answer": "Submental lymph nodes",
+        "wrong_answers": [
+            "Submandibular lymph nodes",
+            "Deep cervical lymph nodes",
+            "Parotid lymph nodes"
+        ]
+    },
+    {
+        "question": "On MRI, a 'spider-like' appearance in the subarachnoid space suggests which condition?",
+        "correct_answer": "Subarachnoid hemorrhage",
+        "wrong_answers": [
+            "Epidural hematoma",
+            "Subdural hematoma",
+            "Intraventricular hemorrhage"
+        ]
+    },
+    {
+        "question": "Which part of the temporomandibular joint (TMJ) allows for translational movement?",
+        "correct_answer": "Superior compartment",
+        "wrong_answers": [
+            "Inferior compartment",
+            "Articular disc",
+            "Mandibular condyle"
+        ]
+    },
+    {
+        "question": "Which statement about the medial pterygoid muscle is incorrect?",
+        "correct_answer": "It originates from the medial pterygoid plate",
+        "wrong_answers": [
+            "It inserts on the medial surface of the mandibular ramus",
+            "It assists in elevating the mandible",
+            "It is innervated by the mandibular nerve"
+        ]
+    },
+    {
+        "question": "Which nucleus provides motor innervation to the muscles involved in swallowing?",
+        "correct_answer": "Nucleus ambiguus",
+        "wrong_answers": [
+            "Dorsal motor nucleus of vagus",
+            "Hypoglossal nucleus",
+            "Solitary nucleus"
+        ]
+    },
+    {
+        "question": "Sweating while eating, known as Frey's syndrome, is due to damage to which nerve?",
+        "correct_answer": "Auriculotemporal nerve",
+        "wrong_answers": [
+            "Facial nerve",
+            "Glossopharyngeal nerve",
+            "Hypoglossal nerve"
+        ]
+    },
+    {
+        "question": "Which anatomical landmark helps locate the sternocleidomastoid muscle?",
+        "correct_answer": "Internal jugular vein",
+        "wrong_answers": [
+            "External carotid artery",
+            "Subclavian vein",
+            "Common carotid artery"
+        ]
+    },
+    {
+        "question": "Which muscle is innervated by fibers from the cervical plexus via the hypoglossal nerve?",
+        "correct_answer": "Geniohyoid",
+        "wrong_answers": [
+            "Mylohyoid",
+            "Stylohyoid",
+            "Digastric"
+        ]
+    },
+    {
+        "question": "Which nerve passes between two vessels in the circle of Willis?",
+        "correct_answer": "Oculomotor nerve",
+        "wrong_answers": [
+            "Trochlear nerve",
+            "Abducens nerve",
+            "Optic nerve"
+        ]
+    },
+    {
+        "question": "A fish bone lodged in the piriform recess causes pain due to irritation of which nerve?",
+        "correct_answer": "Internal laryngeal nerve",
+        "wrong_answers": [
+            "Recurrent laryngeal nerve",
+            "Glossopharyngeal nerve",
+            "External laryngeal nerve"
+        ]
+    },
+    {
+        "question": "Zenker's diverticulum is due to weakness between which two muscles?",
+        "correct_answer": "Thyropharyngeus and cricopharyngeus",
+        "wrong_answers": [
+            "Superior and middle pharyngeal constrictors",
+            "Middle and inferior pharyngeal constrictors",
+            "Stylopharyngeus and cricopharyngeus"
+        ]
+    },
+    {
+        "question": "A tumor in the third ventricle may compress which structure?",
+        "correct_answer": "Optic chiasm",
+        "wrong_answers": [
+            "Pineal gland",
+            "Corpus callosum",
+            "Cerebellum"
+        ]
+    },
+    {
+        "question": "Which statement about the inferior petrosal sinus is true?",
+        "correct_answer": "It lies between the periosteal and meningeal layers of dura mater",
+        "wrong_answers": [
+            "It drains directly into the superior sagittal sinus",
+            "It is located within the cavernous sinus",
+            "It receives blood from the transverse sinus"
+        ]
+    }
+]
+
+
+
 total_questions = len(
     Anatomy_questions + Anatomy_practical + Biology_questions + Chemistry_questions + 
     Chemistry_practical + NIT_questions + PPC_questions + Anatomy2_questions + 

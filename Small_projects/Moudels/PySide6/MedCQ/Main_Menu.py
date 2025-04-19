@@ -4,7 +4,7 @@ import time
 import winsound
 from qs import (Example_questions_form, 
     HEM, MGN, HP_TBL_diving, HA, GPT, pharm, 
-    HA4mid, HA4mid_prac, CCM, GPT_mid, MIM_mid)
+    HA4mid, HA4mid_prac, CCM, GPT_mid, MIM_mid, HA4final)
 import json, os
 from typing import Optional  # added for type hints
 
@@ -57,7 +57,8 @@ quiz_mapping = {
     "HA 4 midterm": HA4mid,
     "HA 4 midterm prac": HA4mid_prac,
     "CCM": CCM,
-    "MIM midterm": MIM_mid
+    "MIM midterm": MIM_mid,
+    "HA 4 final": HA4final,
 }
 
 class MainMenu(QMainWindow):
@@ -273,9 +274,7 @@ class MainMenu(QMainWindow):
         if year == 2:
             if mode == "theory":
                 quizzes = [
-                    "CCM",
-                    "GPT midterm",
-                    "MIM midterm"
+                    "HA 4 final",
                 ]
             else:  # mode == "practical"
                 quizzes = [
